@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body id="Kund">
+
+    <h1 class="Kassa">
+        <b>Kassa</b>
+        <BR />
+    </h1>
+    <div class="InputForm">
+        <h2 class="Kontaktuppgift">
+            <b>Kontaktuppgifter</b>
+            <BR />
+        </h2>
+        <p>
+            <input type="email" id="email" name="email" placeholder="E-post:" size="27" />
+        </p>
+        <p>
+            <input type="checkbox" id="Nyhetsbrev" name="Nyhetsbrev" value="Brev" />
+            <label for="Nyhetsbrev"> Jag tar gärna emot nyhetsbrev ifrån Naked Wine lovers</label><br>
+        </p>
+        <h2 class="leveransadress">
+            <b>Leveransadress</b>
+            <BR />
+        </h2>
+        <p>
+            <input type="text" id="firstName" placeholder="Förnamn:" size="10" />
+            <input type="text" id="lastName" placeholder="Efternamn:" size="10" />
+        </p>
+        <p>
+            <input type="text" id="Adress" placeholder="Gatuadress:" size="27" />
+        </p>
+        <p>
+            <input type="text" id="Lgh" placeholder="Lgh" size="27" />
+        </p>
+        <p>
+            <input type="text" id="Postnummer" placeholder="Postnummer:" size="10" />
+            <input type="text" id="Ort" placeholder="Stad/Ort:" size="10" />
+        </p>
+        <p>
+            <select id="land" name="land">
+                <option value="Sverige">Sverige</option>
+            </select>
+        </p>
+        <p>
+            <input type="tel" id="telefonnummer" placeholder="telefon" size="27" />
+        </p>
+        <hr color="Black">
+        <p>
+        <h2 class="Betalningsinformation">
+            <b>Betalningsinformation</b>
+        </h2>
+        </p>
+        <p>
+            <input type="number" id="creditcard" placeholder="kerditkort:" size="27" />
+        </p>
+    </div>
+    <div class="Button">
+        <p>
+            <button type="button" id="Betala" onclick="klickaknapp1()">Betalning</button>
+
+        </p>
+    </div>
+    <div>
+       <a id="return" href="/" title="Åter till varukorgen">Åter till varukorgen</a> 
+    </div>
+    <div class="VarukorgLitle">
+        <p id="text1">
+            <b>1 Artikel</b> Redigera
+        </p>
+
+        <hr color="Black">
+        <p id="bild">
+            "Bild" <b>1395 SEK</b>
+        </p>
+        <p id="text2">
+            VAD FAN ÄR NATURVINS-BOXEN
+        </p>
+        <p id="text3">
+            <b>Premuration: </b> Månadsvis
+        </p>
+        <p id="text4">
+            <b>Antal: 1</b>
+        </p>
+        <hr color="Black">
+        <p id="text5">
+            <b>Delsumma</b> 1395 SEK
+        </p>
+        <p id="text6">
+            <b>Leverans</b> 0 SEK
+        </p>
+        <p id="text7">
+            <b>Totalt att betala</b> 1395 SEK
+        </p>
+    </div>
+
+    <div class="NavBar">
+        <nav>
+
+        </nav>
+    </div>
+
+</body>
+
+</html>
