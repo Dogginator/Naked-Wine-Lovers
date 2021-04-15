@@ -16,12 +16,12 @@ export const Confirm = () => {
 return (
     <>
      <div className="container">
-            <h1>Naked Wine Lovers</h1>
+            <h1 id="ConfirmH1">Naked Wine Lovers</h1>
             <div className="row">
                 <div className="col-cm "></div>
                 <div className="col-sm-5">
-                    <h2>Tack för ditt köp!</h2>
-                    <h3> Ordernummer: 13589138813</h3>
+                    <h2 id="ConfirmH2">Tack för ditt köp!</h2>
+                    <h3 id="ConfirmH3"> Ordernummer: 13589138813</h3>
                     <Line color="black" />
                     <p id="p0">
                     <img src="Vinbildconf.png" height="50px" />    <b>1395 SEK</b> <br />
@@ -49,7 +49,7 @@ return (
                  </p>
             </div>
                 <div>
-                <button type="button" id="knappen">Tillbaka till start</button>
+                <button type="button" id="Confirmknappen">Tillbaka till start</button>
                 </div>
                 </div>
                 <div className="col-sm"></div>
