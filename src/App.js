@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import React from 'react'
+import {Browserrouter as Router,Route, Link, Switch } from 'react-router';
+import Kassa from './Components/Kassa'
+import Listing from './Components/Listing'
+import { useState } from 'react'
+
+const initialValues  = {
+    email: '',
+    Nyhetsbrev: '',
+    firstName: '',
+    lastName: '',
+    Adress: '',
+    Lgh: '',
+    Postnummer: '',
+    Ort: '',
+    land: '',
+    telefonnummer: '',
+    creditcard: '',
+};
+
+const [costumerInfo, setCostumerInfo]  = useState(initialValues);
+
+const home = () => {
+    <div>
+        <h1>
+            <b>HOME PAGE</b> 
+        </h1>
+        <Link to='/kassa'>
+            <button>Clickme</button>
+        </Link>
+        
     </div>
-  );
 }
+const App =() =>  
+<Router>
+<div>
+    <Switch>
+        <Route path='/' exact component={home}/>
+        <Route path='/Kassa' exact><Kassa setCostumerInfo = {setCostumerInfo} /> Kassa</Route>
+        <Route path='/Order' exact><Listing costumerInfo = {costumerInfo} />Order</Route>
+    </Switch>
+    </div>;
+</Router>
 
 export default App;
