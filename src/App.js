@@ -3,6 +3,8 @@ import React from 'react'
 import {Browserrouter as Router,Route, Link, Switch } from 'react-router';
 import Kassa from './Components/Kassa'
 import Listing from './Components/Listing'
+import Form from './Components/Form'
+import Payment from './Components/Payment'
 import { useState } from 'react'
 
 const initialValues  = {
@@ -32,7 +34,9 @@ const home = () => {
         
     </div>
 }
-const App =() =>  
+
+const App = () => {
+    return (
 <Router>
 <div>
     <Switch>
@@ -42,5 +46,7 @@ const App =() =>
     </Switch>
     </div>;
 </Router>
+    )
+}
 
 export default App;
