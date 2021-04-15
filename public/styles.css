@@ -194,6 +194,109 @@ h2  {
     
 }
 
+
+.col-sm-5 {
+    background-color: #C2BEB5;
+    border: 5;
+    padding: 1px;
+    border-radius: 5px;
+    margin-left:330px; 
+  }
+body {
+    background-color: white;
+  }
+
+  #ConfirmH1 {
+    text-align: center;
+    font-family: Amatic SC;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 88px;
+    letter-spacing: 0em;
+  }
+  #ConfirmH2 {
+    text-align: center;
+    font-family: Amatic SC;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0em;
+  }
+  
+  #ConfirmH3 {
+    text-align: center;
+    font-family: Amatic SC;
+    font-size: 15px;
+    font-style:italic;
+    font-weight: 900;
+    line-height: 20px;
+    letter-spacing: 0em;
+  }
+  
+  .bekräftelseInfo {
+    font-family: Amatic SC;
+    font-size: 15px;
+    margin-left: 40px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+  
+  }
+  .hr {
+    text-align: center;
+  }
+  
+  .bottle-wine {
+    font-size: 50px;
+  }
+  .DeliveryIcon {
+    font-size: 50px;
+  }
+   #p0 {
+    
+    font-family: Amatic SC;
+    font-size: 15px;
+    margin-left: 130px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  #Confirmknappen {
+    background-color: white;
+    position: absolute;
+    border: 0;
+    margin: 40px;
+    margin-left: 170px;
+    text-align: center;
+    text-decoration:underline;
+  }
+  
+  #Confirmknappen:hover {
+    cursor: pointer;
+  }
+  
+  #Subscribeknapp {
+      background-color: darkgray;
+      padding: 15px;
+      padding-left: 45px;
+      padding-right: 45px;
+      padding-top: 13px;
+      padding-bottom: 13px;
+      border-radius: 100px;
+      border: 0;
+      margin: 420px;
+      margin-left: 50em;
+  }
+  
+  #Subscribeknapp:hover {
+      background-color: dimgray;
+  }
+
 .payment-container {
     border: 2px solid grey;
     border-radius: 10px;
