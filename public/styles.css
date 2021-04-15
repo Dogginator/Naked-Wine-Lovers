@@ -2,6 +2,7 @@ body {
     background-color: #E5E5E5;
     
 }
+
 .Kassa {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 40px;
@@ -15,6 +16,7 @@ body {
     left: 689px;
     top: 177px;
 }
+
 .InputForm {
     background-color: #E4E0D7;
     display: inline-block;

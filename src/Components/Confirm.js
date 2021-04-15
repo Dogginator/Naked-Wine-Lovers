@@ -1,4 +1,5 @@
 import { GrDeliver } from 'react-icons/gr';
+import { Link } from 'react-router-dom'
 
 export const Confirm = () => {
     const Line = ({ color }) => (
@@ -49,7 +50,9 @@ return (
                  </p>
             </div>
                 <div>
-                <button type="button" id="Confirmknappen">Tillbaka till start</button>
+                    <Link to="/">
+                        <button type="button" id="Confirmknappen">Tillbaka till start</button>
+                    </Link>
                 </div>
                 </div>
                 <div className="col-sm"></div>

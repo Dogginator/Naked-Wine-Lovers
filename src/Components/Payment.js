@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import SwishPayment from './SwishPayment'
 import {BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom'
 
 const swish = "https://www.logo.wine/a/logo/Swish_(payment)/Swish_(payment)-Logo.wine.svg";
@@ -25,9 +24,7 @@ const Payment = ({setPhoneNumber}) => {
         <>
         <label className="phoneNumber">Telefonnummer</label>
         <input id="numberInput" type="number" placeholder="+46" onChange={(event) => setPhoneNumber(event.target.value)}></input> 
-        <Link to="/SwishPayment">
         <button class="submitSwish">Betala</button>
-        </Link>
         </>
       );
   }
@@ -39,10 +36,8 @@ const Payment = ({setPhoneNumber}) => {
         <input id="numberInput" type="number" placeholder="0000-0000-0000-0000"></input> 
         <label className="cvcCode">CVC</label>
         <input id="cvcNumber" type="number" placeholder="123"></input> 
-        
-        <Link to="/SwishPayment">
+
           <button class="submitSwish">Betala</button>
-        </Link>
         </>
       );
   }

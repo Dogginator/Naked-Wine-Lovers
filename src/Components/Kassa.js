@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
-
-    
+import {BrowserRouter as Router,Route, Link, Switch } from 'react-router-dom';
 
     const initialValues  = {
         email: '',
@@ -81,7 +80,7 @@ export default   function Kassa(){
     </div>
     <div class="Button">
         <p>
-            <Link to='/Order'>
+            <Link to='/Confirm'>
                 <button type="button" id="Betala" onclick="click1()">Betalning</button>
             </Link>
             
