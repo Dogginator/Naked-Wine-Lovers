@@ -1,6 +1,5 @@
 body {
     background-color: #E5E5E5;
-    
 }
 
 .Kassa {
@@ -23,7 +22,7 @@ body {
     position: absolute;
     padding: 100px;
     width: 660px;
-    height: 845px;
+    height: 1345px;
     left: 328px;
     top: 259px;
 }
@@ -46,8 +45,6 @@ body {
     height: 22px;
     left: 420px;
     top: 516px;
-
-
 }
 #firstName {
     width: 220px;
@@ -140,7 +137,7 @@ h2  {
     width: 180px;
     height: 67px;
     left: 561px;
-    top: 1139px;
+    top: 1500px;
     border-radius: 30px;
     font-size: 16px;
     margin: 4px 2px;
@@ -149,8 +146,8 @@ h2  {
     position: absolute;
     width: 110px;
     height: 19px;
-    left: 775px;
-    top: 1163px;
+    left: 130px;
+    top: 480px;
     font-size: 12px;
     line-height: 19px;
     color: black;
@@ -298,12 +295,12 @@ body {
   }
 
 .payment-container {
-    border: 2px solid grey;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-radius: 10px;
     width: 500px;
     height: 600px;
     margin-top: 50px;
-    margin-left: 30px;
+    margin-left: -20px;
   }
   
   #headerh2 {
@@ -338,29 +335,35 @@ body {
   }
   
   .swishButton {
+    padding: 0px;
     margin-left: 40px;
     margin-top: 20px;
-    background-color: white;
+    background-color: #E4E0D7;
     border: 1px solid grey;
   }
-  
+
   .swishButton:hover {
     border: 1px solid black;
   }
   
   #swishImg {
-    background-color: white;
+    background-color: #E4E0D7;
     width: 150px;
     height: 150px;
+  }
+
+  #swishImg:hover {
+    background-color: #e9e6da;
   }
   
   .cardButton {
     margin-left: 50px;
     border: 1px solid grey;
-    background-color: white;
+    background-color: #E4E0D7;
   }
   
   .cardButton:hover {
+    background-color: #e9e6da;
     border: 1px solid black;
   }
   
@@ -378,7 +381,7 @@ body {
   
   .phoneNumber {
     font-size: 30px;
-    margin-top: 100px;
+    margin-top: 0px;
     margin-left: 100px;
   }
   
@@ -394,7 +397,7 @@ body {
   
   .cardNumber {
     font-size: 30px;
-    margin-top: 100px;
+    margin-top: 0px;
     margin-left: 130px;
   }
   

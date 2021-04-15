@@ -1,6 +1,9 @@
 import React, {useState} from 'react'
 import {BrowserRouter as Router,Route, Link, Switch } from 'react-router-dom';
 
+const swish = "https://www.logo.wine/a/logo/Swish_(payment)/Swish_(payment)-Logo.wine.svg";
+const bankcard = "../pngegg.png";
+
     const initialValues  = {
         email: '',
         Nyhetsbrev: '',
@@ -24,8 +27,44 @@ export default   function Kassa(){
                 [name]: value,
               });
         };
+
+        const[showSwish,setShowSwish] = useState(false);
+        const[showCard,setShowCard] = useState(false);
+      
+        const swishClick = () => {
+            setShowSwish(true);
+            setShowCard(false);
+        }
+      
+        const cardClick = () => {
+          setShowCard(true);
+          setShowSwish(false);
+        }
+      
+        const swishComp = () => {
+            return (
+              <>
+              <label className="phoneNumber">Telefonnummer</label>
+              <input id="numberInput" type="number" placeholder="+46"></input> 
+              </>
+            );
+        }
+      
+        const cardComp = () => {
+            return (
+              <>
+              <label className="cardNumber">Kortnummer</label>
+              <input id="numberInput" type="number" placeholder="0000-0000-0000-0000"></input> 
+              <label className="cvcCode">CVC</label>
+              <input id="cvcNumber" type="number" placeholder="123"></input> 
+              </>
+            );
+        }
+
     return (
-        <form>
+        //<form>
+        <>
+        
              <h1 class="Kassa">
         <b>Kassa</b>
         <br />
@@ -70,26 +109,38 @@ export default   function Kassa(){
         </p>
         <hr color="Black"/>
         <p>
-        <h2 class="Betalningsinformation">
-            <b>Betalningsinformation</b>
-        </h2>
-        </p>
-        <p>
-            <input type="number" id="creditcard" name="creditcard" placeholder="kerditkort:" size="27" value={values.creditcard} onChange={handleInputChange} />
+
+        <div className="payment-container">
+                <p id="headerh2">BETALNING</p>
+                <hr id="hrheader"/>
+        
+                <div className="icons-container">
+                  <button className="swishButton" onClick={swishClick}>
+                    <img src={swish} alt="Swish" id="swishImg"></img>
+                  </button>
+                  <button className="cardButton" onClick={cardClick}>
+                  <img src={bankcard} alt="Card" id="cardImg"></img>
+                  </button>
+                </div>
+                <hr id="hrbelowpay"/>
+
+                <div className="payment">
+                  {showSwish && swishComp()}
+                  {showCard && cardComp()}
+                </div>
+              </div>
         </p>
     </div>
     <div class="Button">
         <p>
             <Link to='/Confirm'>
-                <button type="button" id="Betala" onclick="click1()">Betalning</button>
+                <button type="button" id="Betala">Betalning</button>
             </Link>
             
 
         </p>
     </div>
-    <div>
-       <a id="return" href="/" title="Åter till varukorgen">Åter till varukorgen</a> 
-    </div>
+
     <div class="VarukorgLitle">
         <p id="text1">
             <b>1 Artikel</b> Redigera
@@ -118,8 +169,12 @@ export default   function Kassa(){
         <p id="text7">
             <b>Totalt att betala</b> 1395 SEK
         </p>
+        <div>
+            <a id="return" href="/" title="Åter till varukorgen">Åter till varukorgen</a> 
+        </div>
     </div>
-        </form>
+    </>
+    //</form>
 
     );
 
