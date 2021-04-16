@@ -49,7 +49,7 @@ const Kassa = () =>{
         //<form>
         <>
         <div>
-            <Confirm SendValue ={this.value} /> 
+            <Confirm setValue ={setValue} /> 
         </div>
             
              <h1 class="Kassa">
