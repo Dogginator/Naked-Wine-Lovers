@@ -10,7 +10,7 @@ const bankcard = "../pngegg.png";
 const Kassa = () =>{
         const defaultValue = 'test@testmail.com'
         const[enteredValue, setEnteredValue] = React.useState('');
-        const[value, setValue] = useSessionStorageString('stringValue', defaultValue)
+        const[value, setValue] = useSessionStorageString('stringValue', defaultValue);
 
         const[showSwish,setShowSwish] = useState(false);
         const[showCard,setShowCard] = useState(false);
@@ -48,7 +48,10 @@ const Kassa = () =>{
     return (
         //<form>
         <>
+        <div>
             <Confirm SendValue ={this.value} /> 
+        </div>
+            
              <h1 class="Kassa">
         <b>Kassa</b>
         <br />
