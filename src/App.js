@@ -2,7 +2,6 @@
 import React from 'react'
 import {BrowserRouter as Router,Route, Link, Switch } from 'react-router-dom';
 import Kassa from './Components/Kassa'
-import Listing from './Components/Listing'
 import Subscribe from './Components/Subscribe'
 import Confirm from './Components/Confirm'
 import Form from './Components/Form'
