@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
-import {BrowserRouter as Router,Route, Link, Switch } from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
+import Confirm from './Confirm'
 const swish = "https://www.logo.wine/a/logo/Swish_(payment)/Swish_(payment)-Logo.wine.svg";
 const bankcard = "../pngegg.png";
 
@@ -18,7 +18,7 @@ const bankcard = "../pngegg.png";
         creditcard: '',
     };
 
-export default   function Kassa(){
+const Kassa = () =>{
         const[values, setValues] = useState(initialValues);
         const handleInputChange = (e) => {
             const { name, value } = e.target;
@@ -172,11 +172,16 @@ export default   function Kassa(){
         <div>
             <a id="return" href="/" title="Åter till varukorgen">Åter till varukorgen</a> 
         </div>
+        <div>
+            
+        </div>
     </div>
     </>
+
     //</form>
 
     );
 
     
 }
+export default Kassa
