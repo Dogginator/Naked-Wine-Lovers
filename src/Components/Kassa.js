@@ -48,7 +48,7 @@ const Kassa = () =>{
     return (
         //<form>
         <>
-        
+            <Confirm SendValue ={this.value} /> 
              <h1 class="Kassa">
         <b>Kassa</b>
         <br />
@@ -159,9 +159,7 @@ const Kassa = () =>{
         <div>
             <a id="return" href="/" title="Åter till varukorgen">Åter till varukorgen</a> 
         </div>
-        <div>
-           <Confirm value ={this.value} /> 
-        </div>
+        
     </div>
     </>
 
