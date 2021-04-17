@@ -39,7 +39,7 @@ a, a:hover, a:focus, a:active {
   position: absolute;
   background-color: black;
   height: 0.2px;
-  margin-top: 117px;
+  margin-top: 0px;
   width: 100%;
 
 }
@@ -472,11 +472,22 @@ body {
 
   .wineboxContainer {
     width: 100%;
-    height: 500px;
+    height: 1200px;
+  }
+
+  #boxRight {
+    padding: 0px;
   }
 
   .row {
-    margin-left: 100px;
+    width: 1400px;
+    margin-left: 80px;
+    margin-top: 40px;
+  }
+
+  #downRow {
+    padding-top: 0px;
+    padding-right: 0;
   }
 
   .wineboxHeader {
@@ -487,17 +498,55 @@ body {
 
   #headertexth2 {
   text-align: center;
+  padding-top: 100px;
   }
 
   .wineboxItem {
+    margin-top: 20px;
     width: 400px;
     height: 475px;
-    background-color: grey;
+    background-color: #fffaf4;
+  }
+
+  .wineboxImage {
+    margin-bottom: 30px;
+    margin-left: 75px;
+  }
+
+  .grapeImage {
+    position: absolute;
+    margin-left: 180px;
+    margin-top: -23px;
+  }
+
+  .headerBoxItem {
+    width: 100%;
+    height: 10%;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .boxInfo {
+    background-color: #E4E0D7;
+    width: 100%;
+    height: 51%;
+  }
+
+  .priceText {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    margin-top: 0px;
+  }
+
+  .descText {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   
 .TopNavbar {
-  background-color: #F3F1EE;
+  background-color: #E5E5E5;
   width: 100%;
   height: 88px;
   color: black;
@@ -511,7 +560,10 @@ body {
 }
 
 .winelogo {
-  background-color: white;
+  margin-top: -15px;
+  margin-left: 22px;
+  padding: 10px;
+  background-color: #E5E5E5;
   border-radius: 100%;
 }
 
@@ -578,14 +630,13 @@ a {
 #UnderLine {
   margin: 0em;
   padding: 0%;
-  border-width: 2px;
+  border-width: 0.5px;
   width: 100%;
 }
 
 .ProduktSida{
   background-color: #E4E0D7;
   display:inline-block;
-  position: absolute;
   width: 100%;
   height: 660px;
   left: -3px;
