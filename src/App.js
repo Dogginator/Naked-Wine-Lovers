@@ -6,7 +6,6 @@ import Subscribe from './Components/Subscribe'
 import Confirm from './Components/Confirm'
 import Form from './Components/Form'
 import Payment from './Components/Payment'
-
 import WineBoxes from './Components/WineBoxes'
 
 import Navbar from './Components/Navbar'
@@ -45,7 +44,8 @@ const initialValues  = {
     const [costumerInfo, setCostumerInfo]  = useState(initialValues);
 
     return (
-        
+        <>
+        <Navbar/>
 <Router>
     <Switch>
         <Route path='/' exact component={Subscribe}></Route>
@@ -54,6 +54,7 @@ const initialValues  = {
         <Route path='/WineBoxes' exact><WineBoxes/></Route>
     </Switch>
 </Router>
+</>
     )
 }
 
