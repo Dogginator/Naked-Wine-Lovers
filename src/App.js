@@ -45,14 +45,15 @@ const initialValues  = {
 
     return (
         <>
-        <Navbar/>
+        
 <Router>
-    <Switch>
-        <Route path='/' exact component={Subscribe}></Route>
-        <Route path='/Kassa' exact><Kassa setCostumerInfo = {setCostumerInfo} /></Route>
-        <Route path='/Confirm' exact><Confirm costumerInfo = {costumerInfo} /></Route>
-        <Route path='/WineBoxes' exact><WineBoxes/></Route>
-    </Switch>
+    <Navbar/>
+        <Switch>
+            <Route path='/' exact component={Subscribe}></Route>
+            <Route path='/Kassa' exact><Kassa setCostumerInfo = {setCostumerInfo} /></Route>
+            <Route path='/Confirm' exact><Confirm costumerInfo = {costumerInfo} /></Route>
+            <Route path='/WineBoxes' exact><WineBoxes/></Route>
+        </Switch>
 </Router>
 </>
     )
