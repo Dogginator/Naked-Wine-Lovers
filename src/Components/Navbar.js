@@ -1,7 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 return (
+
     <div className="navbarContainer">
         <ul className="TopNavbar">
             <div className="PosLeftNavbar1">
@@ -18,7 +20,7 @@ return (
             </div>
             <div className="IconNavbar">
                 <p>
-                <img className="winelogo" src="Images/TopIcon.png" />  
+                        <img className="winelogo" src="Images/TopIcon.png" />  
                 </p>
             </div>
             <div className="PosRightNavbar1">
@@ -29,8 +31,11 @@ return (
             </div>
             <div className="PosRightNavbar3">
                 <a href="#Varukorg">Varukorg(0)</a>
-            </div>        
+            </div>
+               
+                  
         </ul>
+         <hr id="UnderLine" color="Black"/>  
     </div>
 );
 }
