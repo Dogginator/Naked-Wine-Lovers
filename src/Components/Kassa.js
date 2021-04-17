@@ -1,32 +1,16 @@
 import React, {useState} from 'react'
-import {BrowserRouter as Router,Route, Link, Switch } from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
+import Confirm from './Confirm'
+import { useSessionStorageString } from 'react-use-window-sessionstorage';
 const swish = "https://www.logo.wine/a/logo/Swish_(payment)/Swish_(payment)-Logo.wine.svg";
 const bankcard = "../pngegg.png";
 
-    const initialValues  = {
-        email: '',
-        Nyhetsbrev: '',
-        firstName: '',
-        lastName: '',
-        Adress: '',
-        Lgh: '',
-        Postnummer: '',
-        Ort: '',
-        land: '',
-        telefonnummer: '',
-        creditcard: '',
-    };
 
-export default   function Kassa(){
-        const[values, setValues] = useState(initialValues);
-        const handleInputChange = (e) => {
-            const { name, value } = e.target;
-            setValues({
-                ...values,
-                [name]: value,
-              });
-        };
+
+const Kassa = () =>{
+        const defaultValue = 'test@testmail.com'
+        const[enteredValue, setEnteredValue] = React.useState('');
+        const[value, setValue] = useSessionStorageString('stringValue', defaultValue);
 
         const[showSwish,setShowSwish] = useState(false);
         const[showCard,setShowCard] = useState(false);
@@ -65,6 +49,10 @@ export default   function Kassa(){
         //<form>
         <>
         
+        <div>
+            <p hidden> <Confirm setValue ={setValue} />  </p>
+        </div>
+            
              <h1 class="Kassa">
         <b>Kassa</b>
         <br />
@@ -75,10 +63,14 @@ export default   function Kassa(){
             <br />
         </h2>
         <p>
-            <input type="email" id="email" name="email" placeholder="E-post:" size="27" value={values.email} onChange={handleInputChange} />
+            <input type="email" id="email" name="email" placeholder="E-post:" size="27" 
+            value={enteredValue} 
+            onChange={e => setEnteredValue(e.target.value)} 
+            onKeyPress={e => e.key === 'Enter'  && setValue(enteredValue)} 
+            />
         </p>
         <p>
-            <input type="checkbox" id="Nyhetsbrev" name="Nyhetsbrev" value={values.Nyhetsbrev}  onChange={handleInputChange}/>
+            <input type="checkbox" id="Nyhetsbrev" name="Nyhetsbrev" />
             <label for="Nyhetsbrev"> Jag tar gärna emot nyhetsbrev ifrån Naked Wine lovers</label><br/>
         </p>
         <h2 class="leveransadress">
@@ -86,26 +78,26 @@ export default   function Kassa(){
             <br />
         </h2>
         <p>
-            <input type="text" id="firstName" name="firstName" placeholder="Förnamn:" size="10" value={values.firstName} onChange={handleInputChange} />
-            <input type="text" id="lastName" name="lastName" placeholder="Efternamn:" size="10" value={values.lastName} onChange={handleInputChange} />
+            <input type="text" id="firstName" name="firstName" placeholder="Förnamn:" size="10"  />
+            <input type="text" id="lastName" name="lastName" placeholder="Efternamn:" size="10"  />
         </p>
         <p>
-            <input type="text" id="Adress" name="Adress" placeholder="Gatuadress:" size="27" value={values.Adress} onChange={handleInputChange}/>
+            <input type="text" id="Adress" name="Adress" placeholder="Gatuadress:" size="27" />
         </p>
         <p>
-            <input type="text" id="Lgh" name="Lgh" placeholder="Lgh" size="27" value={values.Lgh} onChange={handleInputChange} />
+            <input type="text" id="Lgh" name="Lgh" placeholder="Lgh" size="27"  />
         </p>
         <p>
-            <input type="text" id="Postnummer" name="Postnummer" placeholder="Postnummer:" size="10" value={values.Postnummer} onChange={handleInputChange} />
-            <input type="text" id="Ort" name="Ort" placeholder="Stad/Ort:" size="10" value={values.Ort} onChange={handleInputChange}/>
+            <input type="text" id="Postnummer" name="Postnummer" placeholder="Postnummer:" size="10"  />
+            <input type="text" id="Ort" name="Ort" placeholder="Stad/Ort:" size="10" />
         </p>
         <p>
-            <select id="land" name="land" value={values.land} onChange={handleInputChange}>
+            <select id="land" name="land" >
                 <option value="Sverige">Sverige</option>
             </select>
         </p>
         <p>
-            <input type="tel" id="telefonnummer" name="telefonnummer" placeholder="telefon" size="27" value={values.telefonnummer} onChange={handleInputChange}/>
+            <input type="tel" id="telefonnummer" name="telefonnummer" placeholder="telefon" size="27" />
         </p>
         <hr color="Black"/>
         <p>
@@ -134,7 +126,7 @@ export default   function Kassa(){
     <div class="Button">
         <p>
             <Link to='/Confirm'>
-                <button type="button" id="Betala">Betalning</button>
+                <button type="button" id="Betala" onClick={() => setValue(value) }>Betalning</button>
             </Link>
             
 
@@ -148,7 +140,7 @@ export default   function Kassa(){
 
         <hr color="Black"/>
         <p id="bild">
-            "Bild" <b>1395 SEK</b>
+        <img src="Vinbildconf.png" height="50px" /> <b>1395 SEK</b>
         </p>
         <p id="text2">
             VAD FAN ÄR NATURVINS-BOXEN
@@ -172,11 +164,14 @@ export default   function Kassa(){
         <div>
             <a id="return" href="/" title="Åter till varukorgen">Åter till varukorgen</a> 
         </div>
+        
     </div>
     </>
+
     //</form>
 
     );
 
     
 }
+export default Kassa
