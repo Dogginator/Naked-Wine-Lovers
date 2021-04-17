@@ -216,23 +216,6 @@ h2  {
     font-size: 14px;
     line-height: 18px;
 }
-#text3 {
-
-    
-}
-#text4 {
-
-}
-#text5 {
-    
-}
-#text6 {
-    
-}
-#text7 {
-    
-}
-
 
 .col-sm-5 {
     background-color: #C2BEB5;
@@ -522,7 +505,9 @@ body {
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
-  line-height: 19px
+  line-height: 19px;
+  margin: 0;
+  padding: 0; 
 }
 
 .winelogo {
@@ -590,6 +575,291 @@ body {
 a {
   color: black;
 }
+#UnderLine {
+  margin: 0em;
+  padding: 0%;
+  border-width: 2px;
+  width: 100%;
+}
 
+.ProduktSida{
+  background-color: #E4E0D7;
+  display:inline-block;
+  position: absolute;
+  width: 100%;
+  height: 660px;
+  left: -3px;
+  top: 89px;
+  padding-bottom: 93px;
 
+}
+.TopPicture {
+  position: absolute;
+  width: 465.75px;
+  height: 343px;
+  left: 181px;
+  top: 143px;
+}
+#ProduktH1 {
+  position: absolute;
+  width: 507px;
+  height: 53px;
+  left: 780px;
+  top: 116px;
+  font-family: Amatica SC;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 53px;
+}
+#ProduktH2 {
+  position: absolute;
+  width: 409px;
+  height: 35px;
+  left: 783px;
+  top: 200px;
+  font-family: Amatica SC;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 35px;
+}
+#ProduktH3 {
+  position: absolute;
+  width: 222px;
+  height: 25px;
+  left: 783px;
+  top: 401px;
+  font-family: Halant;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+}
+#selj1 {
+  position: absolute;
+  width: 99px;
+  height: 25px;
+  left: 781px;
+  top: 167px;
+  font-family: Halant;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+}
+#selj2 {
+  position: absolute;
+  width: 539px;
+  height: 125px;
+  left: 783px;
+  top: 244px;
+  font-family: Halant;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;  
+}
+#selj3 {
+  position: absolute;
+  width: 539px;
+  height: 100px;
+  left: 783px;
+  top: 426px;
+  font-family: Halant;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;  
+}
+#selj4 {
+  position: absolute;
+  width: 528px;
+  height: 66px;
+  left: 781px;
+  top: 548px;
+  font-family: Halant;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+}
+#VidareKnapp {
+  position: absolute;
+  width: 542px;
+  height: 46px;
+  left: 776px;
+  top: 609px;
+  
+  background: #D78255;
+  border: 1px solid #E6E2DA;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+#ReadInfo {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 384px;
+  top: 604px;
+  
+  background: #EED8D8;
+}
+#Nr1{
+  position: absolute;
+  width: 106px;
+  height: 382px;
+  left: 254px;
+  top: 967px;
+}
+#Nr2{
+  position: absolute;
+  width: 108px;
+  height: 414px;
+  left: 665px;
+  top: 936px;  
+}
+#Nr3{
+  position: absolute;
+  width: 108px;
+  height: 414px;
+  left: 1078px;
+  top: 936px;  
+}
+#Nr4{
+  position: absolute;
+  width: 110px;
+  height: 378px;
+  left: 250px;
+  top: 1765px;  
+}
+#Nr5{
+  position: absolute;
+  width: 112px;
+  height: 422px;
+  left: 684px;
+  top: 1721px;  
+}
+#Nr6{
+  position: absolute;
+  width: 112px;
+  height: 442px;
+  left: 1083px;
+  top: 1701px;  
+}
+#TextPos1 {
+  position: absolute;
+  width: 359px;
+  height: 125px;
+  left: 147px;
+  top: 1430px;
+  
+  font-family: Halant;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+}
+#TextPos2 {
+  position: absolute;
+  width: 359px;
+  height: 125px;
+  left: 560px;
+  top: 1430px;
+  
+  font-family: Halant;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  
+}
+#TextPos3 {
+  position: absolute;
+  width: 359px;
+  height: 125px;
+  left: 959px;
+  top: 1430px;
+  
+  font-family: Halant;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;  
+}
+#TextPos4 {
+  position: absolute;
+  width: 359px;
+  height: 125px;
+  left: 147px;
+  top: 2234px;
+  
+  font-family: Halant;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;  
+}
+#TextPos5 {
+  position: absolute;
+  width: 359px;
+  height: 125px;
+  left: 560px;
+  top: 2234px;
+  
+  font-family: Halant;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;  
+}
+#TextPos6 {
+  position: absolute;
+  width: 359px;
+  height: 125px;
+  left: 959px;
+  top: 2234px;
+  
+  font-family: Halant;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;  
+}
+#LadansViner {
+  position: absolute;
+  width: 1440px;
+  height: 77px;
+  left: 0px;
+  top: 773px;
+  
+  font-family: Amatica SC;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 66px;
+  text-align: center;
+}
+#KommandeLador {
+  position: absolute;
+  width: 1440px;
+  height: 77px;
+  left: 0px;
+  top: 2492px;
+  
+  font-family: Amatica SC;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 66px;
+  text-align: center;
+}
+.NextVine {
 
+}
+.PlaceHolder1 {
+
+}
+.PlaceHolder2 {
+  
+}
