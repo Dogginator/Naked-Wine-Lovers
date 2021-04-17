@@ -1,7 +1,7 @@
 import { GrDeliver } from 'react-icons/gr';
 import { Link } from 'react-router-dom'
 
-export const Confirm = ({setValue}) => {
+export const Confirm = ({pops}) => {
     const Line = ({ color }) => (
         <hr
             style={{
@@ -32,7 +32,7 @@ return (
                          </p>
                     <Line color="black" />
                 <div className="bekräftelseInfo">
-                <p id="p1">Håll utkik efter ditt bekräftelsemail som har skickats till din e-post {setValue}
+                <p id="p1">Håll utkik efter ditt bekräftelsemail som har skickats till din e-post {pops}
                            </p>
                 <p id="p2">Vi meddlar dig via e-post när dina varor har skickats.  <br />
                 Vi hoppas att du ska bli nöjd!</p>

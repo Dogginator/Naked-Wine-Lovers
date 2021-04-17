@@ -48,8 +48,9 @@ const Kassa = () =>{
     return (
         //<form>
         <>
+        
         <div>
-            <Confirm setValue ={setValue} /> 
+            <p hidden> <Confirm setValue ={setValue} />  </p>
         </div>
             
              <h1 class="Kassa">
@@ -65,7 +66,8 @@ const Kassa = () =>{
             <input type="email" id="email" name="email" placeholder="E-post:" size="27" 
             value={enteredValue} 
             onChange={e => setEnteredValue(e.target.value)} 
-            onKeyPress={e => e.key === 'Enter'} />
+            onKeyPress={e => e.key === 'Enter'  && setValue(enteredValue)} 
+            />
         </p>
         <p>
             <input type="checkbox" id="Nyhetsbrev" name="Nyhetsbrev" />
@@ -138,7 +140,7 @@ const Kassa = () =>{
 
         <hr color="Black"/>
         <p id="bild">
-            "Bild" <b>1395 SEK</b>
+        <img src="Vinbildconf.png" height="50px" /> <b>1395 SEK</b>
         </p>
         <p id="text2">
             VAD FAN ÄR NATURVINS-BOXEN

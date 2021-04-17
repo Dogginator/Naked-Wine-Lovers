@@ -444,6 +444,77 @@ body {
     opacity: 20%;
   }
   
+.TopNavbar {
+  position: absolute;
+  height: 88px;
+  background-color: bisque;
+  color: black;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 19px
 
+}
+.PosLeftNavbar1 {
+  position: absolute;
+  width: 30px;
+  height: 19px;
+  left: 90px;
+  top: 34px;
+}
+.PosLeftNavbar2 {
+  position: absolute;
+  width: 52px;
+  height: 19px;
+  left: 210px;
+  top: 34px;
+}
+.PosLeftNavbar3 {
+  position: absolute;
+  width: 88px;
+  height: 19px;
+  left: 352px;
+  top: 34px;
+}
+.PosLeftNavbar4 {
+  position: absolute;
+  width: 70px;
+  height: 19px;
+  left: 530px;
+  top: 34px;  
+}
+.IconNavbar {
+  position: absolute;
+  width: 78px;
+  height: 78.69px;
+  left: 681px;
+  top: 49px;
+
+}
+.PosRightNavbar1 {
+  position: absolute;
+  width: 50px;
+  height: 19px;
+  left: 980px;
+  top: 34px;
+}
+.PosRightNavbar2 {
+  position: absolute;
+  width: 50px;
+  height: 19px;
+  left: 1120px;
+  top: 34px;
+}
+.PosRightNavbar3 {
+  position: absolute;
+  width: 90px;
+  height: 19px;
+  left: 1260px;
+  top: 34px;
+}
+a {
+  color: black;
+}
 
 

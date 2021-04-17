@@ -6,6 +6,7 @@ import Subscribe from './Components/Subscribe'
 import Confirm from './Components/Confirm'
 import Form from './Components/Form'
 import Payment from './Components/Payment'
+import Navbar from './Components/Navbar'
 import { useState } from 'react'
 
 const home = () => {
@@ -40,9 +41,10 @@ const initialValues  = {
     const [costumerInfo, setCostumerInfo]  = useState(initialValues);
 
     return (
+        
 <Router>
     <Switch>
-        <Route path='/' exact component={Subscribe}/>
+        <Route path='/' exact component={Subscribe}></Route>
         <Route path='/Kassa' exact><Kassa setCostumerInfo = {setCostumerInfo} /></Route>
         <Route path='/Confirm' exact><Confirm costumerInfo = {costumerInfo} /></Route>
     </Switch>
