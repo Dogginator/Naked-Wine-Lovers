@@ -1,5 +1,47 @@
 body {
-    background-color: #E5E5E5;
+    background-color: #E4E0D7;
+}
+
+.navbar {
+  background-color: ##FAF8F7;
+  padding: 0;
+  width: 100%;
+  height: 100px;
+}
+
+.navText {
+  font-family:'Franklin Gothic SMall', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 100px;
+  margin-top: 60px;
+  width: 100%;
+  height: 50%;
+  display: grid;
+  grid-gap: 100px;
+  grid-template-columns: repeat(6, auto);
+}
+
+.navLink {
+  list-style: none;
+  color: black
+}
+
+.navLink:hover {
+  text-decoration: none;
+  color: grey;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+#underlineNav {
+  position: absolute;
+  background-color: black;
+  height: 0.2px;
+  margin-top: 117px;
+  width: 100%;
+
 }
 
 .Kassa {
@@ -33,7 +75,7 @@ body {
     top: 338px;
 }
 #email{
-    width: 444px;
+    width: 450px;
     height: 50px;
     left: 420px;
     top: 370px;
@@ -47,7 +89,7 @@ body {
     top: 516px;
 }
 #firstName {
-    width: 220px;
+    width: 225px;
     height: 50px;
     left: 420px;
     top: 548px;
@@ -55,7 +97,7 @@ body {
     line-height: 22px;
 }
 #lastName {
-    width: 220px;
+    width: 225px;
     height: 50px;
     left: 644px;
     top: 548px;
@@ -63,7 +105,7 @@ body {
     line-height: 22px;
 }
 #Adress {
-    width: 444px;
+    width: 450px;
     height: 50px;
     left: 420px;
     top: 613px;
@@ -71,7 +113,7 @@ body {
     line-height: 22px;
 }
 #Lgh {
-    width: 444px;
+    width: 450px;
     height: 50px;
     left: 420px;
     top: 678px;
@@ -79,7 +121,7 @@ body {
     line-height: 22px;
 }
 #Postnummer {
-    width: 220px;
+    width: 225px;
     height: 50px;
     left: 420px;
     top: 738px;
@@ -87,7 +129,7 @@ body {
     line-height: 22px;
 }
 #Ort {
-    width: 220px;
+    width: 225px;
     height: 50px;
     left: 644px;
     top: 738px;
@@ -95,7 +137,7 @@ body {
     line-height: 22px; 
 }
 #land {
-    width: 444px;
+    width: 450px;
     height: 50px;
     left: 420px;
     top: 798px;
@@ -103,7 +145,7 @@ body {
     line-height: 22px;
 }
 #telefonnummer {
-    width: 444px;
+    width: 450px;
     height: 50px;
     left: 420px;
     top: 858px;
@@ -160,7 +202,7 @@ h2  {
     width: 360px;
     height: 521px;
     left: 1007px;
-    top: 255px;
+    top: 259px;
     padding: 50px;
 }
 #text1 {
@@ -280,14 +322,14 @@ body {
   #Subscribeknapp {
       background-color: darkgray;
       padding: 15px;
-      padding-left: 45px;
+      padding-left: 40px;
       padding-right: 45px;
       padding-top: 13px;
       padding-bottom: 13px;
       border-radius: 100px;
       border: 0;
-      margin: 420px;
-      margin-left: 50em;
+      margin: 400px;
+      margin-left: 43em;
   }
   
   #Subscribeknapp:hover {
@@ -443,7 +485,30 @@ body {
     color:grey;
     opacity: 20%;
   }
-  
 
+  .wineboxContainer {
+    width: 100%;
+    height: 500px;
+  }
+
+  .row {
+    margin-left: 100px;
+  }
+
+  .wineboxHeader {
+    background-color: #F3F1EE;
+    width: 100%;
+    height: 300px;
+  }
+
+  #headertexth2 {
+  text-align: center;
+  }
+
+  .wineboxItem {
+    width: 400px;
+    height: 475px;
+    background-color: grey;
+  }
 
 
