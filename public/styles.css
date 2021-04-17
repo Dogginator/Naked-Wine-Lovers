@@ -489,7 +489,7 @@ body {
 
   .wineboxContainer {
     width: 100%;
-    height: 500px;
+    height: 800px;
   }
 
   .row {
@@ -507,9 +507,47 @@ body {
   }
 
   .wineboxItem {
+    margin-top: 20px;
     width: 400px;
     height: 475px;
-    background-color: grey;
+    background-color: #fffaf4;
+  }
+
+  .wineboxImage {
+    margin-bottom: 30px;
+    margin-left: 75px;
+  }
+
+  .grapeImage {
+    position: absolute;
+    margin-left: 180px;
+    margin-top: 17px;
+    align-items: center;
+  }
+
+  .headerBoxItem {
+    width: 100%;
+    height: 10%;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .boxInfo {
+    background-color: #E4E0D7;
+    width: 100%;
+    height: 51%;
+  }
+
+  .priceText {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    margin-top: 40px;
+  }
+
+  .descText {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   
