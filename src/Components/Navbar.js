@@ -10,7 +10,7 @@ return (
             <a href="/">Hem</a>
             </div>
             <div className="PosLeftNavbar2">
-            <a href="#Vinlådor">Vinlådor</a>
+            <a href="/Vinlådor">Vinlådor</a>
             </div>
             <div className="PosLeftNavbar3">
             <a href="#SaFunkarDet">Så funkar det</a>
