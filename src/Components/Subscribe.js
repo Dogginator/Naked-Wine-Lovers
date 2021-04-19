@@ -1,5 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+const FlaskaPlatsTvå = "../Images/FlaskaPlatsTvå.png"
+const FlaskaPlatsEtt = "../Images/FlaskaPlatsEtt.png"
+const Nr3 = "../Images/Nr3.png"
 
 export const Subscribe = () => {
     return (
@@ -7,7 +10,7 @@ export const Subscribe = () => {
             <div className="ProduktSida">
                 <div>
                     <p>
-                       <img className="TopPicture" scr="Images/#1.png"></img> 
+                    <img className="TopPicture" src="./Images/TopImage.png"/>
                     </p>
                 </div>
                 <p>
@@ -49,7 +52,10 @@ export const Subscribe = () => {
             </div>
             <h1 id="LadansViner"><b>LÅDANS VINER I APRIL 2021</b></h1>
             <div>
-                <img className="Nr1" scr="Images/Nr1.png"></img>
+                <p>
+                    <img className="FlaskaPlatsEtt" scr={FlaskaPlatsEtt} />
+                </p>
+                
             </div>
             <p id="TextPos1">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus urna laoreet aliquet cras est sagittis semper. 
@@ -57,7 +63,7 @@ export const Subscribe = () => {
             Tortor, consequat ac erat tristique luctus cras.
             </p>
             <div>
-                <img className="Nr2" scr="Images/Nr2.png"></img>
+                <img className="FlaskaPlatsTvå" scr={FlaskaPlatsTvå}/>
             </div>
             <p id="TextPos2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus urna laoreet aliquet cras est sagittis semper. 
@@ -65,7 +71,7 @@ export const Subscribe = () => {
             Tortor, consequat ac erat tristique luctus cras.
             </p>
             <div>
-                <img className="Nr3" scr="Images/Nr3.png"></img>
+                <img className="Nr3" scr={Nr3}/>
             </div>
             <p id="TextPos3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus urna laoreet aliquet cras est sagittis semper. 
@@ -73,7 +79,7 @@ export const Subscribe = () => {
             Tortor, consequat ac erat tristique luctus cras.
             </p>
             <div>
-                <img className="Nr4" scr="Images/Nr4.png"></img>
+                <img className="Nr4" scr="./Images/Nr4.png"/>
             </div>
             <p id="TextPos4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus urna laoreet aliquet cras est sagittis semper. 
@@ -81,7 +87,7 @@ export const Subscribe = () => {
             Tortor, consequat ac erat tristique luctus cras.
             </p>
             <div>
-                <img className="Nr5" scr="Images/Nr5.png"></img>
+                <img className="Nr5" scr="./Images/Nr5.png"/>
             </div>
             <p id="TextPos5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus urna laoreet aliquet cras est sagittis semper. 
@@ -89,7 +95,7 @@ export const Subscribe = () => {
             Tortor, consequat ac erat tristique luctus cras.
             </p>
             <div>
-                <img className="Nr6" scr="Images/Nr6.png"></img>
+                <img className="Nr6" scr="./Images/Nr6.png"/>
             </div>
             <p id="TextPos6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus urna laoreet aliquet cras est sagittis semper. 
@@ -98,15 +104,15 @@ export const Subscribe = () => {
             </p>
             <h1 id="KommandeLador"><b>KOMMANDE LÅDOR</b></h1>
             <div>
-                <img className="NextVine" scr="Images/Maj.png"/>
+                <img className="NextVine" scr="./Images/Maj.png"/>
             </div>
             <a href="/">Här kan du läsa om Maj lådan</a>
             <div>
-                <img className="PlaceHolder1" scr="Images/PlaceHolder.png"/>
+                <img className="PlaceHolder1" scr="./Images/PlaceHolder.png"/>
             </div>
             <a href="/">Ej urvalt ännu</a>
             <div>
-                <img className="PlaceHolder2" scr="Images/PlaceHolder.png"/>
+                <img className="PlaceHolder2" scr="./Images/PlaceHolder.png"/>
             </div>
             <a href="/">Ej urvalt ännu</a>
         </div>

@@ -756,42 +756,42 @@ a {
   
   background: #EED8D8;
 }
-#Nr1{
+.FlaskaPlatsEtt{
   position: absolute;
   width: 106px;
   height: 382px;
   left: 254px;
   top: 967px;
 }
-#Nr2{
+.FlaskaPlatsTvå{
   position: absolute;
   width: 108px;
   height: 414px;
   left: 665px;
   top: 936px;  
 }
-#Nr3{
+.Nr3{
   position: absolute;
   width: 108px;
   height: 414px;
   left: 1078px;
   top: 936px;  
 }
-#Nr4{
+.Nr4{
   position: absolute;
   width: 110px;
   height: 378px;
   left: 250px;
   top: 1765px;  
 }
-#Nr5{
+.Nr5{
   position: absolute;
   width: 112px;
   height: 422px;
   left: 684px;
   top: 1721px;  
 }
-#Nr6{
+.Nr6{
   position: absolute;
   width: 112px;
   height: 442px;
@@ -906,11 +906,26 @@ a {
   text-align: center;
 }
 .NextVine {
+  position: absolute;
+  width: 254px;
+  height: 175px;
+  left: 189px;
+  top: 2774px;
 
 }
 .PlaceHolder1 {
+  position: absolute;
+  width: 254px;
+  height: 175px;
+  left: 593px;
+  top: 2774px;
 
 }
 .PlaceHolder2 {
+  position: absolute;
+  width: 254px;
+  height: 175px;
+  left: 997px;
+  top: 2774px;
   
 }

@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import Confirm from './Confirm'
 import { useSessionStorageString } from 'react-use-window-sessionstorage';
 const swish = "https://www.logo.wine/a/logo/Swish_(payment)/Swish_(payment)-Logo.wine.svg";
-const bankcard = "../pngegg.png";
+const bankcard = "../Images/pngegg.png";
+const VinBox ="../Images/Vinbildconf.png"
 
 
 
@@ -140,7 +141,7 @@ const Kassa = () =>{
 
         <hr color="Black"/>
         <p id="bild">
-        <img src="Vinbildconf.png" height="50px" /> <b>1395 SEK</b>
+        <img src={VinBox} height="50px" /> <b>1395 SEK</b>
         </p>
         <p id="text2">
             VAD FAN ÄR NATURVINS-BOXEN
