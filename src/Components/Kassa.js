@@ -141,7 +141,7 @@ const Kassa = () =>{
 
         <hr color="Black"/>
         <p id="bild">
-        <img src={VinBox} height="50px" /> <b>1395 SEK</b>
+        <img src={VinBox} alt="WineBox" height="50px" /> <b>1395 SEK</b>
         </p>
         <p id="text2">
             VAD FAN ÄR NATURVINS-BOXEN

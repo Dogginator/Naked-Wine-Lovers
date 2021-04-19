@@ -53,7 +53,7 @@ export const Subscribe = () => {
             <h1 id="LadansViner"><b>LÅDANS VINER I APRIL 2021</b></h1>
             <div>
                 <p>
-                    <img className="FlaskaPlatsEtt" scr={FlaskaPlatsEtt} />
+                    <img  scr={FlaskaPlatsEtt} className="FlaskaPlatsEtt"/>
                 </p>
                 
             </div>
@@ -95,7 +95,9 @@ export const Subscribe = () => {
             Tortor, consequat ac erat tristique luctus cras.
             </p>
             <div>
+                <p>
                 <img className="Nr6" scr="./Images/Nr6.png"/>
+                </p>
             </div>
             <p id="TextPos6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus urna laoreet aliquet cras est sagittis semper. 
