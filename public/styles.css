@@ -965,6 +965,64 @@ a {
   top: 2774px;
   
 }
+
+
+/*----ShoppingCart----*/
+.cartContainer {
+  margin: auto;
+  width: 80%;
+}
+.shopping-cart {
+  margin: 20px 0;
+  float: right;
+  background: #C9D5C7;
+  width: 320px;
+  height: 500px;
+  position: relative;
+  border-radius: 50px;
+  padding:20px;
+  padding-bottom: 30px;
+}
+.shopping-cart-header {
+  
+  position: absolute;
+width: 90px;
+height: 22px;
+left: 18px;
+top: 18px;
+}
+
+.Shoppingcartbild {
+  background: url("/Images/Vinbildconf.png");
+  position: absolute;
+  width: 100px;
+  height: 64.41px;
+  left: 18px;
+  top: 70px;
+  
+}
+
+.shopping-cart-pris {
+  position: absolute;
+width: 115px;
+height: 22px;
+left: 139px;
+top: 70px;
+
+font-family: Halant;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 22px;
+  
+}
+.shopping-cart-varu-namn {
+  position: absolute;
+  width: 115px;
+  height: 18px;
+  left: 139px;
+  top: 95px;
+}
 #LinkTo1{
   position: absolute;
   width: 254px;
@@ -1029,14 +1087,60 @@ text-align: center;
   height: 45px;
   left: 618px;
   top: 2689px;
+
   
   font-family: Amatic SC;
   font-style: normal;
   font-weight: bold;
-  font-size: 26px;
-  line-height: 45px;
-  text-align: center; 
+
+  font-size: 14px;
+  line-height: 18px;
+    font-size: 26px;
 }
+.shopping-cart-antal {
+  position: absolute;
+  width: 91px;
+  height: 22px;
+  left: 139px;
+  top: 123px;
+  
+  font-family: Halant;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.Shoppingcartbild{
+  margin-right: 15px;
+  float: left;
+}
+
+.shopping-kassa {
+  background-color: #D78255;
+  border-radius: 20px;
+  border: 0;
+  color: White;
+  padding: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 200px;
+}
+.shopping-visa-varukorg {
+  background-color: #D78255;
+  border-radius: 20px;
+  border: 0;
+  color: White;
+  padding: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 250px;
+  
+}
+.clearfix {
+ margin-right: 50px;
+}
+
 #BoxMonth3{
   position: absolute;
   width: 196px;
@@ -1065,3 +1169,4 @@ text-align: center;
   line-height: 39px;
   text-decoration-line: underline;
 }
+
