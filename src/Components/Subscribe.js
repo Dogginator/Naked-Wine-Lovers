@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { Component, useRef, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import {IoIosArrowDown} from 'react-icons/io'
 const FlaskaPlatsTvå = "../Images/FlaskaPlatsTvå.png";
 const FlaskaPlatsEtt = "../Images/FlaskaPlatsEtt.png";
 const Nr3 = "../Images/Nr3.png";
 
+const useMountEffect = fun => useEffect(fun, []);
+
 export const Subscribe = () => {
+    const myRef = useRef(null);
+    const executeScroll = () => myRef.current.scrollIntoView();
+    useMountEffect(executeScroll);
+
     return (
         <div>        
             <div className="ProduktSida">
@@ -12,6 +19,9 @@ export const Subscribe = () => {
                     <p>
                     <img className="TopPicture" src="./Images/TopImage.png"/>
                     </p>
+                </div>
+                <div>
+                    <p id="ScrollDownInfo">Här kan du läsa om flaskorna!</p>
                 </div>
                 <p>
                   <h1 id="ProduktH1">Vinlåda #1</h1>
@@ -46,12 +56,12 @@ export const Subscribe = () => {
                     </Link>   
                 </div>
                 <div>
-                <button type="button" id="ReadInfo"></button>
+                <button type="button" id="ReadInfo" onClick={executeScroll}><IoIosArrowDown/></button>
                 </div>
                 
             </div>
             <h1 id="LadansViner"><b>LÅDANS VINER I APRIL 2021</b></h1>
-            <div>
+            <div ref={myRef} >
                 <p>
                     <img  scr={FlaskaPlatsEtt} className="FlaskaPlatsEtt"/>
                 </p>
@@ -122,5 +132,16 @@ export const Subscribe = () => {
             <a id="LinkTo3" href="/">Ej urvalt ännu</a>
         </div>
     )
+
 }
+    class ReadyToScroll extends Component {
+    constructor(props) {
+      super(props);
+      this.myRef = React.createRef();
+    }
+    render() {
+      return <div ref={this.myRef}>Element to scroll to</div>;
+    }
+    executeScroll = () => this.myRef.current.scrollIntoView();
+  }
 export default Subscribe;

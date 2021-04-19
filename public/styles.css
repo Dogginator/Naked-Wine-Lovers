@@ -755,6 +755,7 @@ a {
   top: 604px;
   
   background: #EED8D8;
+  border-radius: 100%;
 }
 .FlaskaPlatsEtt{
   background-image:Url(./Images/FlaskaPlatsEtt.png);
@@ -1023,4 +1024,18 @@ text-align: center;
   font-size: 26px;
   line-height: 45px;
   text-align: center; 
+}
+#ScrollDownInfo{
+  position: absolute;
+  width: 316px;
+  height: 39px;
+  left: 266px;
+  top: 563px;
+  
+  font-family: Halant;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 39px;
+  text-decoration-line: underline;
 }
