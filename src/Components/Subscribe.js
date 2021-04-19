@@ -96,7 +96,7 @@ export const Subscribe = () => {
             </p>
             <div>
                 <p>
-                <img className="Nr6" scr="./Images/Nr6.png"/>
+                <img className="Nr6" scr="Images/Nr6.png"/>
                 </p>
             </div>
             <p id="TextPos6">
@@ -105,18 +105,21 @@ export const Subscribe = () => {
             Tortor, consequat ac erat tristique luctus cras.
             </p>
             <h1 id="KommandeLador"><b>KOMMANDE LÅDOR</b></h1>
+            <h2 id="BoxMonth1">LÅDANS VINER I MAJ</h2>
+            <h2 id="BoxMonth2">LÅDANS VINER I JUNI</h2>
+            <h2 id="BoxMonth3">LÅDANS VINER I JULI</h2>
             <div>
                 <img className="NextVine" scr="./Images/Maj.png"/>
             </div>
-            <a href="/">Här kan du läsa om Maj lådan</a>
+            <a id="LinkTo1" href="/">Här kan du läsa om Maj lådan</a>
             <div>
                 <img className="PlaceHolder1" scr="./Images/PlaceHolder.png"/>
             </div>
-            <a href="/">Ej urvalt ännu</a>
+            <a id="LinkTo2" href="/">Ej urvalt ännu</a>
             <div>
                 <img className="PlaceHolder2" scr="./Images/PlaceHolder.png"/>
             </div>
-            <a href="/">Ej urvalt ännu</a>
+            <a id="LinkTo3" href="/">Ej urvalt ännu</a>
         </div>
     )
 }

@@ -757,6 +757,7 @@ a {
   background: #EED8D8;
 }
 .FlaskaPlatsEtt{
+  background-image:Url(./Images/FlaskaPlatsEtt.png);
   position: absolute;
   width: 106px;
   height: 382px;
@@ -764,6 +765,7 @@ a {
   top: 967px;
 }
 .FlaskaPlatsTvå{
+  background-image: Url(./Images/FlaskaPlatsTvå.png);
   position: absolute;
   width: 108px;
   height: 414px;
@@ -771,6 +773,7 @@ a {
   top: 936px;  
 }
 .Nr3{
+  background-image: Url(./Images/Nr3.png);
   position: absolute;
   width: 108px;
   height: 414px;
@@ -778,6 +781,7 @@ a {
   top: 936px;  
 }
 .Nr4{
+  background-image: Url(./Images/Nr4.png);
   position: absolute;
   width: 110px;
   height: 378px;
@@ -785,6 +789,7 @@ a {
   top: 1765px;  
 }
 .Nr5{
+  background-image: Url(./Images/Nr5.png);
   position: absolute;
   width: 112px;
   height: 422px;
@@ -792,6 +797,7 @@ a {
   top: 1721px;  
 }
 .Nr6{
+  background-image: Url(./Images/Nr6.png);
   position: absolute;
   width: 112px;
   height: 442px;
@@ -906,6 +912,7 @@ a {
   text-align: center;
 }
 .NextVine {
+  background-image: Url(./Images/Maj.png);
   position: absolute;
   width: 254px;
   height: 175px;
@@ -914,6 +921,7 @@ a {
 
 }
 .PlaceHolder1 {
+  background-image: url(./Images/PlaceHolder.png);
   position: absolute;
   width: 254px;
   height: 175px;
@@ -922,10 +930,97 @@ a {
 
 }
 .PlaceHolder2 {
+  background-image: url(./Images/PlaceHolder.png);
   position: absolute;
   width: 254px;
   height: 175px;
   left: 997px;
   top: 2774px;
   
+}
+#LinkTo1{
+  position: absolute;
+  width: 254px;
+  height: 78px;
+  left: 189px;
+  top: 2984px;
+  
+  font-family: Halant;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 39px;
+  text-align: center;
+  text-decoration-line: underline;
+
+}
+#LinkTo2{
+  position: absolute;
+  width: 155px;
+  height: 39px;
+  left: 642px;
+  top: 2984px;
+  
+  font-family: Halant;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 39px;
+  text-decoration-line: underline; 
+}
+#LinkTo3{
+  position: absolute;
+  width: 155px;
+  height: 39px;
+  left: 1050px;
+  top: 2984px;
+  
+  font-family: Halant;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 39px;
+  text-decoration-line: underline;
+}
+#BoxMonth1{
+position: absolute;
+width: 196px;
+height: 45px;
+left: 218px;
+top: 2689px;
+
+font-family: Amatic SC;
+font-style: normal;
+font-weight: bold;
+font-size: 26px;
+line-height: 45px;
+text-align: center;
+}
+#BoxMonth2{
+  position: absolute;
+  width: 204px;
+  height: 45px;
+  left: 618px;
+  top: 2689px;
+  
+  font-family: Amatic SC;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 45px;
+  text-align: center; 
+}
+#BoxMonth3{
+  position: absolute;
+  width: 196px;
+  height: 45px;
+  left: 1026px;
+  top: 2689px;
+  
+  font-family: Amatic SC;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 45px;
+  text-align: center; 
 }
