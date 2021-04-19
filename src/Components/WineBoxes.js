@@ -1,7 +1,7 @@
 import React from 'react';
 import { BoxData } from './Boxes'
 
-export const BoxContainer = ({boxId, colorId}) => {
+export const BoxContainer = ({boxId, colorId, winebox}) => {
     return (
     <div class="wineboxItem">
             {BoxData.filter(data => data.id === boxId).map((data) =>  { return (
@@ -17,7 +17,8 @@ export const BoxContainer = ({boxId, colorId}) => {
                     <p className="descText">{data.description}</p>
                 </div>
 
-                <button className="wineboxButton"><h5>VÄLJ & LÄS MER</h5></button> 
+                <a href={"/" + winebox}><div className="wineboxButton">VÄLJ & LÄS MER</div></a> 
+
                 </>
             )})
         }
@@ -31,18 +32,21 @@ return (
 <>
 <div className="wineboxHeader">
     <h2 id="headertexth2">JOIN THE CLUB!</h2>
+    <p id="headerTextWinebox">Hitta det perfekta naturvinet för dig! 
+        Du väljer, vi levererar hem till dörren, inga konstigheter.
+        <br></br>Nånting om att natutligt är bra, ekologiskt, giftfritt, glada vinodlare</p>
 </div>
 
 <div class="wineboxContainer">
   <div class="row">
     <div class="col-sm-4">
     <div class="wineboxItem">
-    {<BoxContainer boxId={1} colorId={'C9D5C7'}/>}
+    {<BoxContainer boxId={1} colorId={'C9D5C7'} winebox={''}/>}
         </div>
     </div>
     <div class="col-sm-4">
         <div class="wineboxItem">
-        {<BoxContainer boxId={2} colorId={'D4C7D7'}/>}
+        {<BoxContainer boxId={2} colorId={'D4C7D7'} winebox={'Confirm'}/>}
         </div>
     </div>
     <div class="col-sm-4"  id="boxRight">
