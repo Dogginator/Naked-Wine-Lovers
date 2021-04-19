@@ -1,11 +1,15 @@
 import React, { Component, useRef, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+const FlaskaPlatsTvå = "../Images/FlaskaPlatsTvå.png";
+const FlaskaPlatsEtt = "../Images/FlaskaPlatsEtt.png";
+const Nr3 = "../Images/Nr3.png";
 import {IoIosArrowDown} from 'react-icons/io'
 const FlaskaPlatsTvå = "../Images/FlaskaPlatsTvå.png";
 const FlaskaPlatsEtt = "../Images/FlaskaPlatsEtt.png";
 const Nr3 = "../Images/Nr3.png";
 
 const useMountEffect = fun => useEffect(fun, []);
+
 
 export const Subscribe = () => {
     const myRef = useRef(null);
@@ -62,6 +66,7 @@ export const Subscribe = () => {
             </div>
             <h1 id="LadansViner"><b>LÅDANS VINER I APRIL 2021</b></h1>
             <div ref={myRef} >
+
                 <p>
                     <img  scr={FlaskaPlatsEtt} className="FlaskaPlatsEtt"/>
                 </p>
@@ -106,7 +111,7 @@ export const Subscribe = () => {
             </p>
             <div>
                 <p>
-                <img className="Nr6" scr="Images/Nr6.png"/>
+                <img className="Nr6" scr="./Images/Nr6.png"/>
                 </p>
             </div>
             <p id="TextPos6">
