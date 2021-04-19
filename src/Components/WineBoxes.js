@@ -15,7 +15,9 @@ export const BoxContainer = ({boxId, colorId}) => {
                     <p className="priceText">{data.price}</p>
                     <br/>
                     <p className="descText">{data.description}</p>
-                </div> 
+                </div>
+
+                <button className="wineboxButton"><h5>VÄLJ & LÄS MER</h5></button> 
                 </>
             )})
         }
