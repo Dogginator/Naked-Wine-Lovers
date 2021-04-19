@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-const FlaskaPlatsTvå = "../Images/FlaskaPlatsTvå.png"
-const FlaskaPlatsEtt = "../Images/FlaskaPlatsEtt.png"
-const Nr3 = "../Images/Nr3.png"
+const FlaskaPlatsTvå = "../Images/FlaskaPlatsTvå.png";
+const FlaskaPlatsEtt = "../Images/FlaskaPlatsEtt.png";
+const Nr3 = "../Images/Nr3.png";
 
 export const Subscribe = () => {
     return (

@@ -4,7 +4,7 @@ import Confirm from './Confirm'
 import { useSessionStorageString } from 'react-use-window-sessionstorage';
 const swish = "https://www.logo.wine/a/logo/Swish_(payment)/Swish_(payment)-Logo.wine.svg";
 const bankcard = "../Images/pngegg.png";
-const VinBox ="../Images/Vinbildconf.png"
+const VinBox ="../Images/Vinbildconf.png";
 
 
 
