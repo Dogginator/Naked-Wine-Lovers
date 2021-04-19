@@ -1,8 +1,5 @@
 import React, { Component, useRef, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-const FlaskaPlatsTvå = "../Images/FlaskaPlatsTvå.png";
-const FlaskaPlatsEtt = "../Images/FlaskaPlatsEtt.png";
-const Nr3 = "../Images/Nr3.png";
 import {IoIosArrowDown} from 'react-icons/io'
 const FlaskaPlatsTvå = "../Images/FlaskaPlatsTvå.png";
 const FlaskaPlatsEtt = "../Images/FlaskaPlatsEtt.png";
