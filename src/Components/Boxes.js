@@ -35,6 +35,6 @@ export const BoxData = [
         id: 6,
         name: "Impa på dejten-lådan",
         price: "1429 KR /Månad",
-        description: "Du kan nu säga 'Detta är en Chardonnay'"  
+        description: "Du kan nu självsäkert säga 'Detta är en Chardonnay'"  
     }
 ];

@@ -2,6 +2,16 @@ body {
     background-color: #E4E0D7;
 }
 
+@font-face {
+  font-family: 'AmaticaSC';
+  src: url('fonts/AmaticaSC.eot'); /* IE9 Compat Modes */
+  src: url('fonts/AmaticaSC.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/AmaticaSC.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/AmaticaSC.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/AmaticaSC.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/AmaticaSC.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
 .navbar {
   background-color: #FAF8F7;
   padding: 0;
@@ -471,6 +481,7 @@ body {
 
 
   .wineboxContainer {
+    font-family: 'AmaticaSC';
     width: 100%;
     height: 1200px;
   }
@@ -486,7 +497,7 @@ body {
   }
 
   #downRow {
-    padding-top: 0px;
+    padding-top: 80px;
     padding-right: 0;
   }
 
@@ -542,6 +553,16 @@ body {
   .descText {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .wineboxButton {
+    text-align: center;
+    padding: 10px;
+    margin-top: 8px;
+    border: 2px solid black;
+    background-color: white;
+    width: 400px;
+    height: 50px;
   }
 
   
