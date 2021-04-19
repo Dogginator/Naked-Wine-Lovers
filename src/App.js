@@ -9,6 +9,7 @@ import Payment from './Components/Payment'
 import WineBoxes from './Components/WineBoxes'
 
 import Navbar from './Components/Navbar'
+import ShoppingCart from './Components/ShoppingCart'
 
 import { useState } from 'react'
 
@@ -53,6 +54,7 @@ const initialValues  = {
             <Route path='/Kassa' exact><Kassa setCostumerInfo = {setCostumerInfo} /></Route>
             <Route path='/Confirm' exact><Confirm costumerInfo = {costumerInfo} /></Route>
             <Route path='/Vinlådor' exact><WineBoxes/></Route>
+            <Route path='/ShoppingCart' exact><ShoppingCart /></Route>
         </Switch>
 </Router>
 </>

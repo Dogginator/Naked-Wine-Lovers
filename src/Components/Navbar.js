@@ -30,7 +30,7 @@ return (
                 <a href="#Villkor">Villkor</a>
             </div>
             <div className="PosRightNavbar3">
-                <a href="#Varukorg">Varukorg(0)</a>
+                <a href="/ShoppingCart">Varukorg(0)</a>
             </div>
                
                   
