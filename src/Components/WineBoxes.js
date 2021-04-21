@@ -41,17 +41,17 @@ return (
   <div class="row">
     <div class="col-sm-4">
     <div class="wineboxItem">
-    {<BoxContainer boxId={1} colorId={'C9D5C7'} winebox={''}/>}
+    {<BoxContainer boxId={1} colorId={'C9D5C7'} winebox={'1'}/>}
         </div>
     </div>
     <div class="col-sm-4">
         <div class="wineboxItem">
-        {<BoxContainer boxId={2} colorId={'D4C7D7'} winebox={'Confirm'}/>}
+        {<BoxContainer boxId={2} colorId={'D4C7D7'} winebox={'2'}/>}
         </div>
     </div>
     <div class="col-sm-4"  id="boxRight">
         <div class="wineboxItem">
-            {<BoxContainer boxId={3} colorId={'CAB19C'}/>}
+            {<BoxContainer boxId={3} colorId={'CAB19C'} winebox={'3'}/>}
         </div>
     </div>
   </div>
@@ -59,17 +59,17 @@ return (
   <div class="row" id="downRow">
     <div class="col-sm-4">
     <div class="wineboxItem">
-    {<BoxContainer boxId={4} colorId={'F3F1EE'}/>}
+    {<BoxContainer boxId={4} colorId={'F3F1EE'} winebox={'4'}/>}
         </div>
     </div>
     <div class="col-sm-4">
         <div class="wineboxItem">
-        {<BoxContainer boxId={5} colorId={'C7D6D7'}/>}
+        {<BoxContainer boxId={5} colorId={'C7D6D7'} winebox={'5'}/>}
         </div>
     </div>
     <div class="col-sm-4" id="boxRight">
         <div class="wineboxItem">
-            {<BoxContainer boxId={6} colorId={'D7C7C7'}/>}
+            {<BoxContainer boxId={6} colorId={'D7C7C7'} winebox={'6'}/>}
         </div>
     </div>
   </div>

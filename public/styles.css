@@ -991,7 +991,17 @@ a {
   margin: auto;
   width: 80%;
 }
+
+.testCart {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  color: white;
+}
+
 .shopping-cart {
+  position: absolute;
   margin: 20px 0;
   float: right;
   background: #C9D5C7;

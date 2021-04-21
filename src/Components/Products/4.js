@@ -5,18 +5,17 @@ const FlaskaPlatsTvå = "../Images/FlaskaPlatsTvå.png";
 const FlaskaPlatsEtt = "../Images/FlaskaPlatsEtt.png";
 const Nr3 = "../Images/Nr3.png";
 
+const useMountEffect = fun => useEffect(fun, []);
 
 
-
-export const Subscribe = () => {
+export const Box4 = () => {
     const myRef = useRef(null);
-    const mainRef = useRef(null);
     const executeScroll = () => myRef.current.scrollIntoView();
-    
+    useMountEffect(executeScroll);
 
     return (
         <div>        
-            <div ref = {mainRef} className="ProduktSida">
+            <div className="ProduktSida">
                 <div>
                     <p>
                     <img className="TopPicture" src="./Images/TopImage.png"/>
@@ -26,7 +25,7 @@ export const Subscribe = () => {
                     <p id="ScrollDownInfo">Här kan du läsa om flaskorna!</p>
                 </div>
                 <p>
-                  <h1 id="ProduktH1">Vinlåda #1</h1>
+                  <h1 id="ProduktH1">Vinlåda #4</h1>
                 </p>
                 <p id="selj1">
                     För nybörjaren
@@ -137,5 +136,14 @@ export const Subscribe = () => {
     )
 
 }
-
-export default Subscribe;
+    class ReadyToScroll extends Component {
+    constructor(props) {
+      super(props);
+      this.myRef = React.createRef();
+    }
+    render() {
+      return <div ref={this.myRef}>Element to scroll to</div>;
+    }
+    executeScroll = () => this.myRef.current.scrollIntoView();
+  }
+export default Box4;
