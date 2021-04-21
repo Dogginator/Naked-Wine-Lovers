@@ -939,13 +939,14 @@ a {
   margin: 20px 0;
   float: right;
   background: #C9D5C7;
-  width: 320px;
-  height: 500px;
+  width: 326px;
+  height: 460px;
   position: relative;
-  border-radius: 50px;
-  padding:20px;
+  border-radius: 30px;
+  padding: 20px;
   padding-bottom: 30px;
 }
+
 .shopping-cart-header {
   
   position: absolute;
@@ -961,13 +962,12 @@ font-size: 14px;
 line-height: 22px;
 }
 .Shoppingcartbild {
-  background: url("/Images/Vinbildconf.png");
+  background-image: url("/Images/Varukorg.png");
   position: absolute;
   width: 100px;
   height: 64.41px;
   left: 18px;
   top: 70px;
-  
 }
 
 .shopping-cart-pris {
@@ -1012,32 +1012,30 @@ line-height: 22px;
   line-height: 22px;
 }
 
-.Shoppingcartbild{
-  margin-right: 15px;
-  float: left;
-}
 
 .shopping-kassa {
-  background-color: #D78255;
-  border-radius: 20px;
+  position: absolute;
+  width: 94px;
+  height: 55px;
+  left: 191px;
+  top: 368px;
+  background: #C26D3D;
+  border-radius: 30px;
   border: 0;
-  color: White;
-  padding: 7px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-left: 200px;
+  color: white;
 }
+
 .shopping-visa-varukorg {
-  background-color: #D78255;
-  border-radius: 20px;
+  position: absolute;
+  width: 94px;
+  height: 55px;
+  left: 45px;
+  top: 368px;
+  background: #C26D3D;
+  border-radius: 30px;
   border: 0;
-  color: White;
-  padding: 7px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-top: 250px;
+  color: white;
+  
   
 }
-.clearfix {
- margin-right: 50px;
-}
+
