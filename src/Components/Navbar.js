@@ -1,7 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
+
+
+export const ShoppingCart = () => {
+    return (
+        <div className="testCart">
+            <h2>Hejo!</h2>
+        </div>
+    )
+}
 
 const Navbar = () => {
+
 return (
 
     <div className="navbarContainer">

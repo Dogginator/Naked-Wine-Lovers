@@ -2,7 +2,7 @@
 import React from 'react'
 import {BrowserRouter as Router,Route, Link, Switch } from 'react-router-dom';
 import Kassa from './Components/Kassa'
-import Subscribe from './Components/Subscribe'
+import Subscribe from './Components/Products/6'
 import Confirm from './Components/Confirm'
 import Form from './Components/Form'
 import Payment from './Components/Payment'
