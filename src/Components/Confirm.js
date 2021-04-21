@@ -1,7 +1,8 @@
 import { GrDeliver } from 'react-icons/gr';
 import { Link } from 'react-router-dom'
+import React, {useEffect, useState} from 'react'
 
-export const Confirm = ({pops}) => {
+export const Confirm = () => {
     const Line = ({ color }) => (
         <hr
             style={{
@@ -12,12 +13,22 @@ export const Confirm = ({pops}) => {
             }}
         />
     );
-
+const [info, setInfo] = useState('');
+const loadCostumerInfo = async () => {
+const response = await fetch("http://localhost:3000/Kassa");
+const data = await response.json();
+setInfo(data)
+}
+useEffect(() => {
+  if(info.length === 0){
+      loadCostumerInfo()
+  }  
+})
 
 return (
     <>
      <div className="container">
-            <h1 id="ConfirmH1">Naked Wine Lovers</h1>
+            <h2 id="ConfirmH1">Tack för ditt köp!</h2>
             <div className="row">
                 <div className="col-cm "></div>
                 <div className="col-sm-5">
@@ -25,14 +36,14 @@ return (
                     <h3 id="ConfirmH3"> Ordernummer: 13589138813</h3>
                     <Line color="black" />
                     <p id="p0">
-                    <img src="Vinbildconf.png" height="50px" />    <b>1395 SEK</b> <br />
+                    <img id="PicP0" src="Vinbildconf.png" height="50px" />    <b>1395 SEK</b> <br />
                     <i> Vad fan är naturvin-boxen </i><br />
                         Prenumeration: en månad <br />
                         <b> Antal: 1 </b>
                          </p>
                     <Line color="black" />
                 <div className="bekräftelseInfo">
-                <p id="p1">Håll utkik efter ditt bekräftelsemail som har skickats till din e-post {pops}
+                <p id="p1">Håll utkik efter ditt bekräftelsemail som har skickats till din e-post {info.email}
                            </p>
                 <p id="p2">Vi meddlar dig via e-post när dina varor har skickats.  <br />
                 Vi hoppas att du ska bli nöjd!</p>
@@ -49,14 +60,15 @@ return (
                 Telefon: 08 02000 00
                  </p>
             </div>
-                <div>
-                    <Link to="/">
-                        <button type="button" id="Confirmknappen">Tillbaka till start</button>
-                    </Link>
-                </div>
+
                 </div>
                 <div className="col-sm"></div>
             </div>
+                    <div>
+                    <Link to="/">
+                        <a href="/" id="Confirmknappen">Tillbaka till start</a>
+                    </Link>
+                </div>
         </div>
     </>
     )
