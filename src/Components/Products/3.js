@@ -8,7 +8,7 @@ const Nr3 = "../Images/Nr3.png";
 const useMountEffect = fun => useEffect(fun, []);
 
 
-export const Subscribe = () => {
+export const Box3 = () => {
     const myRef = useRef(null);
     const executeScroll = () => myRef.current.scrollIntoView();
     useMountEffect(executeScroll);
@@ -25,7 +25,7 @@ export const Subscribe = () => {
                     <p id="ScrollDownInfo">Här kan du läsa om flaskorna!</p>
                 </div>
                 <p>
-                  <h1 id="ProduktH1">Vinlåda #1</h1>
+                  <h1 id="ProduktH1">Vinlåda #3</h1>
                 </p>
                 <p id="selj1">
                     För nybörjaren
@@ -146,4 +146,4 @@ export const Subscribe = () => {
     }
     executeScroll = () => this.myRef.current.scrollIntoView();
   }
-export default Subscribe;
+export default Box3;

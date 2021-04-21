@@ -7,8 +7,7 @@ const Nr3 = "../Images/Nr3.png";
 
 const useMountEffect = fun => useEffect(fun, []);
 
-
-export const Subscribe = () => {
+export const Box1 = () => {
     const myRef = useRef(null);
     const executeScroll = () => myRef.current.scrollIntoView();
     useMountEffect(executeScroll);
@@ -146,4 +145,4 @@ export const Subscribe = () => {
     }
     executeScroll = () => this.myRef.current.scrollIntoView();
   }
-export default Subscribe;
+export default Box1;
