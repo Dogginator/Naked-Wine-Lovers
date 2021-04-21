@@ -1,7 +1,5 @@
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom';
-import Confirm from './Confirm'
-import { useSessionStorageString } from 'react-use-window-sessionstorage';
 const swish = "https://www.logo.wine/a/logo/Swish_(payment)/Swish_(payment)-Logo.wine.svg";
 const bankcard = "../Images/pngegg.png";
 const VinBox ="../Images/Vinbildconf.png";
@@ -9,9 +7,34 @@ const VinBox ="../Images/Vinbildconf.png";
 
 
 const Kassa = () =>{
-        const defaultValue = 'test@testmail.com'
-        const[enteredValue, setEnteredValue] = React.useState('');
-        const[value, setValue] = useSessionStorageString('stringValue', defaultValue);
+        const url = "http://localhost:3000/Confirm";
+        const[email, setEmail] = useState('');
+        const submitForm = (event) => {
+            event.preventDefault();
+    
+            const requestBody = {
+                email: email,
+                
+            };
+            fetch(url, {
+                method: 'POST',
+                header: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(requestBody)
+            }).then(responseFromAPI => {
+                if(responseFromAPI.status === 404) {
+                    alert("Det gick fel, sidan finns inte");
+                }
+                else {
+                    alert("Det gick bra!");
+                    setEmail('');
+                    
+                }
+                // console.log(responseFromAPI)
+            });
+        }
+        
 
         const[showSwish,setShowSwish] = useState(false);
         const[showCard,setShowCard] = useState(false);
@@ -47,17 +70,12 @@ const Kassa = () =>{
         }
 
     return (
-        //<form>
+    <form onSubmit={(event) => submitForm(event)}>
         <>
-        
-        <div>
-            <p hidden> <Confirm setValue ={setValue} />  </p>
-        </div>
-            
              <h1 class="Kassa">
         <b>Kassa</b>
         <br />
-    </h1>
+        </h1>
                 <div class="InputForm">
         <h2 class="Kontaktuppgift">
             <b>Kontaktuppgifter</b>
@@ -65,9 +83,10 @@ const Kassa = () =>{
         </h2>
         <p>
             <input type="email" id="email" name="email" placeholder="E-post:" size="27" 
-            value={enteredValue} 
-            onChange={e => setEnteredValue(e.target.value)} 
-            onKeyPress={e => e.key === 'Enter'  && setValue(enteredValue)} 
+            value={email} 
+            onChange={e => setEmail(e.target.value)} 
+            onKeyPress={e => e.key === 'Enter'  && setEmail(e.target.value)}
+            required 
             />
         </p>
         <p>
@@ -123,18 +142,18 @@ const Kassa = () =>{
                 </div>
               </div>
         </p>
-    </div>
-    <div class="Button">
+        </div>
+        <div class="Button">
         <p>
             <Link to='/Confirm'>
-                <button type="button" id="Betala" onClick={() => setValue(value) }>Betalning</button>
+                <button type="submit" id="Betala" value="send" >Betalning</button>
             </Link>
             
 
         </p>
-    </div>
+        </div>
 
-    <div class="VarukorgLitle">
+        <div class="VarukorgLitle">
         <p id="text1">
             <b>1 Artikel</b> Redigera
         </p>
@@ -166,10 +185,11 @@ const Kassa = () =>{
             <a id="return" href="/" title="Åter till varukorgen">Åter till varukorgen</a> 
         </div>
         
-    </div>
-    </>
-
-    //</form>
+        </div>
+    
+        </>
+    </form>
+    
 
     );
 
