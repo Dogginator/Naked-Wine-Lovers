@@ -7,10 +7,8 @@ import Confirm from './Components/Confirm'
 import Form from './Components/Form'
 import Payment from './Components/Payment'
 import WineBoxes from './Components/WineBoxes'
-
 import Navbar from './Components/Navbar'
 import ShoppingCart from './Components/ShoppingCart'
-
 import { useState } from 'react'
 
 const home = () => {
