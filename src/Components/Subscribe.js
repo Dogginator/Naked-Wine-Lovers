@@ -5,17 +5,18 @@ const FlaskaPlatsTvå = "../Images/FlaskaPlatsTvå.png";
 const FlaskaPlatsEtt = "../Images/FlaskaPlatsEtt.png";
 const Nr3 = "../Images/Nr3.png";
 
-const useMountEffect = fun => useEffect(fun, []);
+
 
 
 export const Subscribe = () => {
     const myRef = useRef(null);
+    const mainRef = useRef(null);
     const executeScroll = () => myRef.current.scrollIntoView();
-    useMountEffect(executeScroll);
+    
 
     return (
         <div>        
-            <div className="ProduktSida">
+            <div ref = {mainRef} className="ProduktSida">
                 <div>
                     <p>
                     <img className="TopPicture" src="./Images/TopImage.png"/>
@@ -136,14 +137,5 @@ export const Subscribe = () => {
     )
 
 }
-    class ReadyToScroll extends Component {
-    constructor(props) {
-      super(props);
-      this.myRef = React.createRef();
-    }
-    render() {
-      return <div ref={this.myRef}>Element to scroll to</div>;
-    }
-    executeScroll = () => this.myRef.current.scrollIntoView();
-  }
+
 export default Subscribe;
