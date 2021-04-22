@@ -12,7 +12,8 @@ const Navbar = () => {
 return (
 
     <div className="navbarContainer">
-        <nav className="TopNavbar">
+        <nav className="TopNavbar"> 
+        <hr id="UnderLine" color="Black"/>  
             <div className="PosLeftNavbar1">
             <a href="/">Hem</a>
             </div>
@@ -43,7 +44,7 @@ return (
                 </nav>
             </div>
                
-         <hr id="UnderLine" color="Black"/>           
+                 
         </nav>
          
     </div>
