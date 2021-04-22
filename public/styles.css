@@ -208,7 +208,7 @@ h2  {
 .VarukorgLitle {
     background-color: #E4E0D7;
     display: inline-block;
-    position: absolute;
+    position:absolute;
     width: 360px;
     height: 521px;
     left: 1007px;
@@ -668,14 +668,17 @@ body {
   height: 19px;
   left: 1260px;
   top: 34px;
+
 }
 a {
   color: black;
 }
 #UnderLine {
+  position: absolute;
+  top: 89px;
   margin: 0em;
   padding: 0%;
-  border-width: 0.5px;
+  border-width: 1px;
   width: 100%;
 }
 
@@ -1007,7 +1010,6 @@ a {
   background: #C9D5C7;
   width: 326px;
   height: 460px;
-  position: relative;
   border-radius: 30px;
   padding: 20px;
   padding-bottom: 30px;
@@ -1197,4 +1199,40 @@ text-align: center;
   line-height: 39px;
   text-decoration-line: underline;
 }
-  
+.menu-trigger {
+  background: #ffffff;
+  border-radius: 90px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  border: none;
+  vertical-align: middle;
+  transition: box-shadow 0.4s ease;
+  margin-left: auto; /* Strictly for positioning */
+}
+
+.menu-trigger:hover {
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+.menu {
+  background: #ffffff;
+  border-radius: 8px;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 300px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+}
+
+.menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}

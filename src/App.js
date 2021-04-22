@@ -1,6 +1,6 @@
 
 import React from 'react'
-import {BrowserRouter as Router,Route, Link, Switch } from 'react-router-dom';
+import {BrowserRouter as Router,Route, Switch } from 'react-router-dom';
 import Kassa from './Components/Kassa'
 import Box1 from './Components/Products/1'
 import Box2 from './Components/Products/2'
@@ -9,23 +9,11 @@ import Box4 from './Components/Products/4'
 import Box5 from './Components/Products/5'
 import Box6 from './Components/Products/6'
 import Confirm from './Components/Confirm'
-import Form from './Components/Form'
-import Payment from './Components/Payment'
 import WineBoxes from './Components/WineBoxes'
 import Navbar from './Components/Navbar'
 import ShoppingCart from './Components/ShoppingCart'
 import { useState } from 'react'
 
-const home = () => {
-    <div>
-        <h1>
-            <b>HOME PAGE</b> 
-        </h1>
-        <Link to='/kassa'>
-            <button>Clickme</button>
-        </Link>
-    </div>
-}
 
 const App = () => {
 
@@ -63,6 +51,7 @@ const initialValues  = {
             <Route path='/Vinlådor' exact><WineBoxes/></Route>
             <Route path='/ShoppingCart' exact><ShoppingCart /></Route>
         </Switch>
+    <Navbar/>
 </Router>
 </>
     )
