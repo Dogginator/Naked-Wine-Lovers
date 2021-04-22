@@ -9,7 +9,7 @@ const Nr3 = "../Images/Nr3.png";
 
 const Box2 = () => {
     const myRef = useRef(null);
-    const executeScroll = () => myRef.current.scrollIntoView();
+    const executeScroll = () => myRef.current.scrollIntoView({behavior: 'smooth'});
 
 
     return (

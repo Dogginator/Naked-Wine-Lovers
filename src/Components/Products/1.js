@@ -8,13 +8,12 @@ const Nr3 = "../Images/Nr3.png";
 
  const Box1 = () => {
     const myRef = useRef(null);
-    const mainRef = useRef(null);
-    const executeScroll = () => myRef.current.scrollIntoView();
+    const executeScroll = () => myRef.current.scrollIntoView({behavior: 'smooth'});
     
 
     return (
         <div>        
-            <div ref = {mainRef} className="ProduktSida">
+            <div className="ProduktSida">
                 <div>
                     <p>
                     <img className="TopPicture" src="./Images/TopImage.png"/>
