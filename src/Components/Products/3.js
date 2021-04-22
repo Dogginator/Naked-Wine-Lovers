@@ -6,8 +6,7 @@ const FlaskaPlatsEtt = "../Images/FlaskaPlatsEtt.png";
 const Nr3 = "../Images/Nr3.png";
 
 
-
-export const Box3 = () => {
+const Box3 = () => {
     const myRef = useRef(null);
     const executeScroll = () => myRef.current.scrollIntoView();
 
@@ -135,5 +134,4 @@ export const Box3 = () => {
     )
 
 }
-
 export default Box3;

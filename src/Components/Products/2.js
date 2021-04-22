@@ -7,7 +7,6 @@ const Nr3 = "../Images/Nr3.png";
 
 
 
-
 const Box2 = () => {
     const myRef = useRef(null);
     const executeScroll = () => myRef.current.scrollIntoView();
@@ -136,4 +135,5 @@ const Box2 = () => {
     )
 
 }
+
 export default Box2;
