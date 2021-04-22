@@ -5,13 +5,12 @@ const FlaskaPlatsTvå = "../Images/FlaskaPlatsTvå.png";
 const FlaskaPlatsEtt = "../Images/FlaskaPlatsEtt.png";
 const Nr3 = "../Images/Nr3.png";
 
-const useMountEffect = fun => useEffect(fun, []);
 
 
 export const Box5 = () => {
     const myRef = useRef(null);
     const executeScroll = () => myRef.current.scrollIntoView();
-    useMountEffect(executeScroll);
+
 
     return (
         <div>        
@@ -136,14 +135,4 @@ export const Box5 = () => {
     )
 
 }
-    class ReadyToScroll extends Component {
-    constructor(props) {
-      super(props);
-      this.myRef = React.createRef();
-    }
-    render() {
-      return <div ref={this.myRef}>Element to scroll to</div>;
-    }
-    executeScroll = () => this.myRef.current.scrollIntoView();
-  }
 export default Box5;
