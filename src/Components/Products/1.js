@@ -133,7 +133,7 @@ const Nr3 = "../Images/Nr3.png";
             <a id="LinkTo3" href="/">Ej urvalt ännu</a>
         </div>
     )
-
 }
 
 export default Box1
+

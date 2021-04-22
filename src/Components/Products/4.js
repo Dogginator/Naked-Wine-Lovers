@@ -10,7 +10,6 @@ const Nr3 = "../Images/Nr3.png";
     const myRef = useRef(null);
     const executeScroll = () => myRef.current.scrollIntoView();
 
-
     return (
         <div>        
             <div className="ProduktSida">
