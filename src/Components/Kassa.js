@@ -7,18 +7,18 @@ const VinBox ="../Images/Vinbildconf.png";
 
 
 const Kassa = () =>{
-        const url = "http://localhost:3000/Confirm";
+        const url = "DataTransfer.json";
         const[email, setEmail] = useState('');
         const submitForm = (event) => {
             event.preventDefault();
     
             const requestBody = {
-                email: email,
+                email : email,
                 
             };
             fetch(url, {
                 method: 'POST',
-                header: {
+                headers: {
                     'content-type': 'application/json'
                 },
                 body: JSON.stringify(requestBody)
@@ -31,7 +31,7 @@ const Kassa = () =>{
                     setEmail('');
                     
                 }
-                // console.log(responseFromAPI)
+                console.log(responseFromAPI)
             });
         }
         

@@ -13,9 +13,9 @@ export const Confirm = () => {
             }}
         />
     );
-const [info, setInfo] = useState('');
+const [info, setInfo] = useState([]);
 const loadCostumerInfo = async () => {
-const response = await fetch("http://localhost:3000/Kassa");
+const response = await fetch("DataTransfer.json");
 const data = await response.json();
 setInfo(data)
 }
@@ -36,15 +36,16 @@ return (
                     <h3 id="ConfirmH3"> Ordernummer: 13589138813</h3>
                     <Line color="black" />
                     <p id="p0">
-                    <img id="PicP0" src="Vinbildconf.png" height="50px" />    <b>1395 SEK</b> <br />
+                    <img id="PicP0" alt="Vinbildconf" src="Vinbildconf.png" height="50px" />    <b>1395 SEK</b> <br />
                     <i> Vad fan är naturvin-boxen </i><br />
                         Prenumeration: en månad <br />
                         <b> Antal: 1 </b>
                          </p>
                     <Line color="black" />
                 <div className="bekräftelseInfo">
-                <p id="p1">Håll utkik efter ditt bekräftelsemail som har skickats till din e-post {info.email}
-                           </p>
+                    {info.map(mail => (
+                        <p id="p1">Håll utkik efter ditt bekräftelsemail som har skickats till din e-post {mail.email}</p>
+                    ))}
                 <p id="p2">Vi meddlar dig via e-post när dina varor har skickats.  <br />
                 Vi hoppas att du ska bli nöjd!</p>
                  <p id="p3">

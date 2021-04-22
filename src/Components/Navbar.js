@@ -1,22 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useRef } from 'react';
+import ShoppingCart from './ShoppingCart'
+import {useDetectOutsideClick} from './useDitectClickOutside'
 
-
-export const ShoppingCart = () => {
-    return (
-        <div className="testCart">
-            <h2>Hejo!</h2>
-        </div>
-    )
-}
 
 const Navbar = () => {
-
+    const dropdownRef = useRef(null);
+    const [isActive, setIsActive] = useDetectOutsideClick(dropdownRef, false);
+    const onClick = () => setIsActive(!isActive);
 return (
 
     <div className="navbarContainer">
-        <ul className="TopNavbar">
+        <nav className="TopNavbar">
             <div className="PosLeftNavbar1">
             <a href="/">Hem</a>
             </div>
@@ -41,12 +37,15 @@ return (
                 <a href="#Villkor">Villkor</a>
             </div>
             <div className="PosRightNavbar3">
-                <a href="/ShoppingCart">Varukorg(0)</a>
+                <button cbutton onClick={onClick} className="menu-trigger">Varukorg(0)</button>
+                <nav ref={dropdownRef} className={`menu ${isActive ? 'active' : 'inactive'}`}>
+                <ShoppingCart/>
+                </nav>
             </div>
                
-                  
-        </ul>
-         <hr id="UnderLine" color="Black"/>  
+         <hr id="UnderLine" color="Black"/>           
+        </nav>
+         
     </div>
 );
 }
