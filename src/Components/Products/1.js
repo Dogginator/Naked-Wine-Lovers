@@ -6,7 +6,6 @@ const FlaskaPlatsEtt = "../Images/FlaskaPlatsEtt.png";
 const Nr3 = "../Images/Nr3.png";
 
 
-
  const Box1 = () => {
     const myRef = useRef(null);
     const mainRef = useRef(null);

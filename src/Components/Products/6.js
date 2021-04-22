@@ -7,8 +7,7 @@ const Nr3 = "../Images/Nr3.png";
 
 
 
-
-export const Box6 = () => {
+const Box6 = () => {
     const myRef = useRef(null);
     const executeScroll = () => myRef.current.scrollIntoView();
 
