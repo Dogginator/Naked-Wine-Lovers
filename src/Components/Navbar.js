@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { useRef } from 'react';
 import ShoppingCart from './ShoppingCart'
+import Ploygon from './Polygon'
 import {useDetectOutsideClick} from './useDitectClickOutside'
 
 
@@ -40,6 +41,7 @@ return (
             <div className="PosRightNavbar3">
                 <button cbutton onClick={onClick} className="menu-trigger">Varukorg(0)</button>
                 <nav ref={dropdownRef} className={`menu ${isActive ? 'active' : 'inactive'}`}>
+                <Ploygon/>
                 <ShoppingCart/>
                 </nav>
             </div>
