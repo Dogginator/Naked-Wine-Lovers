@@ -28,7 +28,7 @@ return (
             </div>
             <div className="IconNavbar">
                 <p>
-                        <img className="winelogo" src="Images/TopIcon.png" />  
+                <img className="winelogo" src="Images/TopIcon.png" />  
                 </p>
             </div>
             <div className="PosRightNavbar1">
@@ -38,15 +38,12 @@ return (
                 <a href="#Villkor">Villkor</a>
             </div>
             <div className="PosRightNavbar3">
-                <button cbutton onClick={onClick} className="menu-trigger">Varukorg(0)</button>
+                <button onClick={onClick} className="menu-trigger">Varukorg(0)</button>
                 <nav ref={dropdownRef} className={`menu ${isActive ? 'active' : 'inactive'}`}>
                 <ShoppingCart/>
                 </nav>
             </div>
-               
-                 
-        </nav>
-         
+        </nav>      
     </div>
 );
 }

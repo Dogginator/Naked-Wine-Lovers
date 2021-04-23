@@ -678,7 +678,7 @@ a {
   top: 89px;
   margin: 0em;
   padding: 0%;
-  border-width: 1px;
+  border-width: 0.5px;
   width: 100%;
 }
 
@@ -1200,23 +1200,19 @@ text-align: center;
   text-decoration-line: underline;
 }
 .menu-trigger {
-  background: #ffffff;
-  border-radius: 90px;
+  font-weight: bold;
+  background-color: #FAF8F7;
+  border-radius: 0px;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4px 6px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   border: none;
   vertical-align: middle;
   transition: box-shadow 0.4s ease;
   margin-left: auto; /* Strictly for positioning */
 }
 
-.menu-trigger:hover {
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
-}
 .menu {
   background: #ffffff;
   border-radius: 8px;
