@@ -36,7 +36,7 @@ return (
                     <h3 id="ConfirmH3"> Ordernummer: 13589138813</h3>
                     <Line color="black" />
                     <p id="p0">
-                    <img id="PicP0" alt="Vinbildconf" src="Vinbildconf.png" height="50px" />    <b>1395 SEK</b> <br />
+                    <img id="PicP0" alt="Vinbildconf" src="/Images/Varukorg.png" height="50px" />    <b>1395 SEK</b> <br />
                     <i> Vad fan är naturvin-boxen </i><br />
                         Prenumeration: en månad <br />
                         <b> Antal: 1 </b>
