@@ -1013,15 +1013,22 @@ a {
   border-radius: 30px;
   padding: 20px;
   padding-bottom: 30px;
+
 }
 
 .shopping-cart-header {
-  
   position: absolute;
-width: 90px;
-height: 22px;
-left: 18px;
-top: 18px;
+  width: 90px;
+  height: 22px;
+  left: 18px;
+  top: 18px;
+}
+.Shooping-cart-Ploygon {
+  background-image: url("/Images/Polygon.png");
+  position: absolute;
+  width: 26px;
+  height: 27px;
+  left: 255px;
 }
 
 .Shoppingcartbild {
@@ -1199,6 +1206,7 @@ text-align: center;
   line-height: 39px;
   text-decoration-line: underline;
 }
+
 .menu-trigger {
   font-weight: bold;
   background-color: #FAF8F7;
@@ -1217,7 +1225,7 @@ text-align: center;
   background: #ffffff;
   border-radius: 8px;
   position: absolute;
-  top: 60px;
+  top: 35px;
   right: 0;
   width: 300px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);

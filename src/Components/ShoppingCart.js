@@ -7,6 +7,7 @@ export const ShoppingCart = () => {
     return (
         <>
         <div className="cartContainer" id="Cart">
+            <div className="Shooping-cart-Ploygon"/>
             <div className="shopping-cart">
                 <div className="shopping-cart-header">
                     Min varukorg
