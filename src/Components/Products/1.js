@@ -23,7 +23,7 @@ const Nr3 = "../Images/Nr3.png";
                     <p id="ScrollDownInfo">Här kan du läsa om flaskorna!</p>
                 </div>
                 <p>
-                  <h1 id="ProduktH1">Vinlåda #1</h1>
+                  <h1 id="ProduktH1">Vad fan är naturvin-lådan</h1>
                 </p>
                 <p id="selj1">
                     För nybörjaren

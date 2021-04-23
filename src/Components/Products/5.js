@@ -24,7 +24,7 @@ const Box5 = () => {
                     <p id="ScrollDownInfo">Här kan du läsa om flaskorna!</p>
                 </div>
                 <p>
-                  <h1 id="ProduktH1">Vinlåda #5</h1>
+                  <h1 id="ProduktH1">Klockan har slagit 5-lådan</h1>
                 </p>
                 <p id="selj1">
                     För nybörjaren
