@@ -699,12 +699,13 @@ a {
   left: 181px;
   top: 143px;
 }
+
 #ProduktH1 {
   position: absolute;
   width: 507px;
   height: 53px;
-  left: 780px;
-  top: 116px;
+  left: 800px;
+  top: 130px;
   font-family: Amatica SC;
   font-style: normal;
   font-weight: bold;
@@ -715,8 +716,8 @@ a {
   position: absolute;
   width: 409px;
   height: 35px;
-  left: 783px;
-  top: 200px;
+  left: 803px;
+  top: 210px;
   font-family: Amatica SC;
   font-style: normal;
   font-weight: bold;
@@ -727,7 +728,7 @@ a {
   position: absolute;
   width: 222px;
   height: 25px;
-  left: 783px;
+  left: 803px;
   top: 401px;
   font-family: Halant;
   font-style: normal;
@@ -735,12 +736,13 @@ a {
   font-size: 16px;
   line-height: 25px;
 }
+
 #selj1 {
   position: absolute;
   width: 99px;
   height: 25px;
-  left: 781px;
-  top: 167px;
+  left: 804px;
+  top: 180px;
   font-family: Halant;
   font-style: normal;
   font-weight: normal;
@@ -751,8 +753,8 @@ a {
   position: absolute;
   width: 539px;
   height: 125px;
-  left: 783px;
-  top: 244px;
+  left: 803px;
+  top: 264px;
   font-family: Halant;
   font-style: normal;
   font-weight: normal;
@@ -763,7 +765,7 @@ a {
   position: absolute;
   width: 539px;
   height: 100px;
-  left: 783px;
+  left: 803px;
   top: 426px;
   font-family: Halant;
   font-style: normal;
@@ -775,7 +777,7 @@ a {
   position: absolute;
   width: 528px;
   height: 66px;
-  left: 781px;
+  left: 801px;
   top: 548px;
   font-family: Halant;
   font-style: normal;
@@ -787,7 +789,7 @@ a {
   position: absolute;
   width: 542px;
   height: 46px;
-  left: 776px;
+  left: 806px;
   top: 609px;
   
   background: #D78255;

@@ -23,7 +23,7 @@ const Box3 = () => {
                     <p id="ScrollDownInfo">Här kan du läsa om flaskorna!</p>
                 </div>
                 <p>
-                  <h1 id="ProduktH1">Vinlåda #3</h1>
+                  <h1 id="ProduktH1">Spela shoreline-lådan</h1>
                 </p>
                 <p id="selj1">
                     För nybörjaren
