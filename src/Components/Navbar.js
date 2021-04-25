@@ -12,19 +12,18 @@ const Navbar = () => {
     const onClick = () => setIsActive(!isActive);
 return (
 
-    <div className="navbarContainer">
-        <nav className="TopNavbar"> 
+    <nav className="TopNavbar"> 
         <hr id="UnderLine" color="Black"/>  
-            <div className="PosLeftNavbar1">
+            <div class="col-sm-4" id="gridNavBarLeft">
             <a href="/">Hem</a>
             </div>
-            <div className="PosLeftNavbar2">
+            <div class="col-sm-4" id="gridNavBarLeft">
             <a href="/Vinlådor">Vinlådor</a>
             </div>
-            <div className="PosLeftNavbar3">
+            <div class="col-sm-4" id="gridNavBarLeft">
             <a href="#SaFunkarDet">Så funkar det</a>
             </div>
-            <div className="PosLeftNavbar4">
+            <div class="col-sm-4" id="gridNavBarLeft">
             <a href="#Vingårdarna">Vingårdarna</a>
             </div>
             <div className="IconNavbar">
@@ -32,13 +31,13 @@ return (
                 <img className="winelogo" src="Images/TopIcon.png" />  
                 </p>
             </div>
-            <div className="PosRightNavbar1">
+            <div class="col-sm-4" id="gridNavBarRight">
                 <a href="#OmOss">Om oss</a>
             </div>
-            <div className="PosRightNavbar2">
+            <div class="col-sm-4" id="gridNavBarRight">
                 <a href="#Villkor">Villkor</a>
             </div>
-            <div className="PosRightNavbar3">
+            <div class="col-sm-4" id="gridNavBarRight">
                 <button onClick={onClick} className="menu-trigger">Varukorg(0)</button>
                 <nav ref={dropdownRef} className={`menu ${isActive ? 'active' : 'inactive'}`}>
                 <Ploygon/>
@@ -46,7 +45,6 @@ return (
                 </nav>
             </div>
         </nav>      
-    </div>
 );
 }
 

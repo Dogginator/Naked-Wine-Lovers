@@ -37,7 +37,7 @@ const initialValues  = {
     return (
         <>
         
-<Router>
+        <Router>
     <Navbar/>
         <Switch>
             <Route path='/1' exact component={Box1}></Route>
@@ -51,7 +51,6 @@ const initialValues  = {
             <Route path='/Vinlådor' exact><WineBoxes/></Route>
             <Route path='/ShoppingCart' exact><ShoppingCart /></Route>
         </Switch>
-    <Navbar/>
 </Router>
 </>
     )
