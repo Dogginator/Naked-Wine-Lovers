@@ -24,7 +24,7 @@ return (
             <a href="#SaFunkarDet">Så funkar det</a>
             </div>
             <div class="col-sm-4" id="gridNavBarLeft">
-            <a href="#Vingårdarna">Vingårdarna</a>
+            <a href="/Vingardarna">Vingårdarna</a>
             </div>
             <div className="IconNavbar">
                 <p>
