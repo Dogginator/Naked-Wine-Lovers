@@ -13,52 +13,48 @@ const Box2 = () => {
 
 
     return (
-        <div>        
-            <div className="ProduktSida">
-                <div>
+        <>
+        <div className="Product-page">
+        <div className="row" id="row-productInfo">       
+            <div className="col" id="col-grid-info">
+                <div className="infoContainer" id="picturePos">
                     <p>
                     <img className="TopPicture" src="./Images/TopImage.png"/>
                     </p>
-                </div>
-                <div>
                     <p id="ScrollDownInfo">Här kan du läsa om flaskorna!</p>
+                    <button type="button" id="ReadInfo" onClick={executeScroll}><IoIosArrowDown/></button>
                 </div>
+                </div>
+                <div className="col" id="col-grid-info">
+                    <div className="infoContainer">
+
+                  <h1>Vad fan är naturvin-lådan</h1>
+                    <p id="type">För nybörjaren</p>
+                    <h2>Prenumerera 1046 SEK/MÅNAD</h2>
                 <p>
-                  <h1 id="ProduktH1">Greta-lådan</h1>
-                </p>
-                <p id="selj1">
-                    För nybörjaren
-                </p>
-                <p>
-                    <h2 id="ProduktH2">Prenumerera 1046 SEK/MÅNAD</h2>
-                </p>
-                <p id="selj2">
                     Detta är den perfekta vinlådan för dig som är nybörjare och skulle vilja utforska världen av naturvin. 
                     Det finns många olika sorter och typer av naturvin, det kan vara svårt att som nybörjare veta vad du tycker om. 
                     Därför väljer vi noga ut ett antal viner som ingår i lådan. 
                     Du får nya viner varje månad så att du ska få en så mångsidig syn av alla goda naturviner som finns. 
                 </p>
+                    <h3>Så här funkar det.</h3>
                 <p>
-                    <h3 id="ProduktH3">Så här funkar det.</h3>
-                </p>
-                <p id="selj3">
                     Detta är en prenumeration där du får 6 flaskor naturvin per månaden i 4 månader.
                     Vinerna är noga utvalda från de bästa vingårdarna. Denna produktsida är för vinerna du får i April månad. 
                     Är du sugen på att se nästa månads utbud? Kika längst ner på denna sida.
                 </p>
-                <p id="selj4">
+                <p id="text-bold-14">
                 Välj att betala allt nu eller dela upp betalningen per månad. 
                 Totalpris: 4185 SEK. eller delbetala 1046 SEK i månaden. Fraktfritt och skatt ingår.           
                 </p>
+                </div>
+            </div>
+        </div>
                 <div>
                     <Link to="/Kassa">
                         <button type="button" id="VidareKnapp">Prenumerera</button>
                     </Link>   
-                </div>
-                <div>
-                <button type="button" id="ReadInfo" onClick={executeScroll}><IoIosArrowDown/></button>
-                </div>
-                
+                </div>             
             </div>
             <h1 id="LadansViner"><b>LÅDANS VINER I APRIL 2021</b></h1>
             <div ref={myRef} >
@@ -131,7 +127,7 @@ const Box2 = () => {
                 <img className="PlaceHolder2" scr="./Images/PlaceHolder.png"/>
             </div>
             <a id="LinkTo3" href="/">Ej urvalt ännu</a>
-        </div>
+        </>
     )
 
 }
