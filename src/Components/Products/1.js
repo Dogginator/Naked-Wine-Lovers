@@ -50,66 +50,115 @@ const Box1 = () => {
                     </div>
                 </div>
                 <div>
-                    <Link to="/Kassa">
-                        <button type="button" id="VidareKnapp">Prenumerera</button>
-                    </Link>
+                        <button type="button" id="VidareKnapp">Lägg till i varukorg</button>
                 </div>
             </div>
-            <h1 id="LadansViner"><b>LÅDANS VINER I APRIL 2021</b></h1>
-            <div ref={myRef} >
-
-                <p>
-                    <img scr={FlaskaPlatsEtt} className="FlaskaPlatsEtt" />
-                </p>
-
+            <div className="row">
+                <div className="col"/>
+                <div className="col">
+                     <h1 className="RubrikBlandat"><b>LÅDANS VINER I APRIL 2021</b></h1>
+                </div>
+                <div className="col"/>
             </div>
-            <p id="TextPos1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus urna laoreet aliquet cras est sagittis semper.
-                Purus urna fames amet eu venenatis lobortis. Dictum libero, nullam mauris ut.
-                Tortor, consequat ac erat tristique luctus cras.
-            </p>
-            <div>
-                <img className="FlaskaPlatsTvå" scr={FlaskaPlatsTvå} />
+            <div className="row">
+                <div className="col">
+                    <img className="Blandat1" scr="./Images/Blandat1.png"></img>
+                </div>
+                <div className="col" ref={myRef}>
+                    <h2>White is blanc</h2><br/>
+                    <p>Vitt, USA 2020</p><br/>
+                    <p id="infoText">
+                    Detta vita vinet från Garden of Eden Vinyard i Kalifornien, USA. Inslag av päron, färska örter och honung. 
+                    Ett bra första steg för dig som från början gillar vitt vin, men ännu inte prövat naturvin. 
+                    Funkar perfekt till fisk eller vegetarisk. 
+                    </p><br/>
+                    <p>
+                    Flaska: 750 ml
+                    Alkoholhalt 12%
+                    Sockerhalt 10 g/l   
+                    </p><br/>
+                    <p>
+                    <b>Läs mer om vingården:</b> <a href="#GardenOfEden">Garden of Eden</a>
+                    </p>
+                </div>
+                <div className="col">
+                    <img></img>
+                </div>
             </div>
-            <p id="TextPos2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus urna laoreet aliquet cras est sagittis semper.
-                Purus urna fames amet eu venenatis lobortis. Dictum libero, nullam mauris ut.
-                Tortor, consequat ac erat tristique luctus cras.
-            </p>
-            <div>
-                <img className="Nr3" scr={Nr3} />
+            <div className="row">
+            <div className="col">
+                    <img className="Blandat2" scr="./Images/Blandat2.png"></img>
+                </div>
+                <div className="col">
+                    <h2>orange you glad</h2><br/>
+                    <p>Orange, Frankrike  2020</p><br/>
+                    <p id="infoText">
+                    Ett fermenterat vitt vin från James and the Giant Grape. 
+                    Från norra Italien kommer denna otämjda rebell. Med smak av torkad frukt, 
+                    rostade nötter och job funkar det här vinet bäst till mustiga grytor och mycket kryddor.
+                    </p><br/>
+                    <p>
+                    Flaska: 750 ml
+                    Alkoholhalt 11,5%
+                    Sockerhalt 9 g/l   
+                    </p><br/>
+                    <p>
+                    <b>Läs mer om vingården:</b> <a href="#JamesAndTheGiantGrape">James and the Giant Grape</a>
+                    </p>
+                </div>
+                <div className="col">
+                    <img ></img>
+                </div>
             </div>
-            <p id="TextPos3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus urna laoreet aliquet cras est sagittis semper.
-                Purus urna fames amet eu venenatis lobortis. Dictum libero, nullam mauris ut.
-                Tortor, consequat ac erat tristique luctus cras.
-            </p>
-            <div>
-                <img className="Nr4" scr="./Images/Nr4.png" />
+            <div className="row">
+            <div className="col">
+                    <img className="Blandat3" scr="./Images/Blandat3.png"></img>
+                </div>
+                <div className="col">
+                    <h2>pink panther</h2><br/>
+                    <p>Mousserande, Frankrike 2020</p><br/>
+                    <p id="infoText">
+                    Ett sött mousserande från Three Seasons Vinyard vid den franska 
+                    riveran. Med sina toner av äppelcider, citrus och vita blommor 
+                    funkar detta bäst som apertif eller till desserter. 
+                    </p><br/>
+                    <p>
+                    Flaska: 750 ml
+                    Alkoholhalt 11,8%
+                    Sockerhalt 11 g/l   
+                    </p><br/>
+                    <p>
+                    <b>Läs mer om vingården:</b> <a href="#ThreeSeasonsVinyard">Three Seasons Vinyard</a>
+                    </p>
+                </div>
+                <div className="col">
+                    <img></img>
+                </div>
             </div>
-            <p id="TextPos4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus urna laoreet aliquet cras est sagittis semper.
-                Purus urna fames amet eu venenatis lobortis. Dictum libero, nullam mauris ut.
-                Tortor, consequat ac erat tristique luctus cras.
-            </p>
-            <div>
-                <img className="Nr5" scr="./Images/Nr5.png" />
+            <div className="row">
+            <div className="col">
+                    <img className="Blandat4" scr="./Images/Blandat4.png"></img>
+                </div>
+                <div className="col">
+                    <h2>girl in red</h2><br/>
+                    <p>Rött, Spanien 2020</p><br/>
+                    <p id="infoText">
+                    Ett mustigt rött vin från Amigos Vinyard med inslag av mörka 
+                    körsbär, blåbär och lakrits. Perfekt till kött och fågel. 
+                    </p><br/>
+                    <p>
+                    Flaska: 750 ml
+                    Alkoholhalt 12%
+                    Sockerhalt 8 g/l   
+                    </p><br/>
+                    <p>
+                    <b>Läs mer om vingården:</b> <a href="#AmigosVinyard">Amigos Vinyard</a>
+                    </p>
+                </div>
+                <div className="col">
+                    <img></img>
+                </div>
             </div>
-            <p id="TextPos5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus urna laoreet aliquet cras est sagittis semper.
-                Purus urna fames amet eu venenatis lobortis. Dictum libero, nullam mauris ut.
-                Tortor, consequat ac erat tristique luctus cras.
-            </p>
-            <div>
-                <p>
-                    <img className="Nr6" scr="./Images/Nr6.png" />
-                </p>
-            </div>
-            <p id="TextPos6">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus urna laoreet aliquet cras est sagittis semper.
-                Purus urna fames amet eu venenatis lobortis. Dictum libero, nullam mauris ut.
-                Tortor, consequat ac erat tristique luctus cras.
-            </p>
             <h1 id="KommandeLador"><b>KOMMANDE LÅDOR</b></h1>
             <h2 id="BoxMonth1">LÅDANS VINER I MAJ</h2>
             <h2 id="BoxMonth2">LÅDANS VINER I JUNI</h2>
