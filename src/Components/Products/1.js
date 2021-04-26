@@ -78,7 +78,7 @@ const Box1 = () => {
                     Sockerhalt 10 g/l   
                     </p><br/>
                     <p>
-                    <b>Läs mer om vingården:</b> <a href="#GardenOfEden">Garden of Eden</a>
+                    <b>Läs mer om vingården:</b> <a href="/GardenOfEden">Garden of Eden</a>
                     </p>
                 </div>
                 <div className="col">
@@ -103,7 +103,7 @@ const Box1 = () => {
                     Sockerhalt 9 g/l   
                     </p><br/>
                     <p>
-                    <b>Läs mer om vingården:</b> <a href="#JamesAndTheGiantGrape">James and the Giant Grape</a>
+                    <b>Läs mer om vingården:</b> <a href="/JamesAndTheGiantGrape">James and the Giant Grape</a>
                     </p>
                 </div>
                 <div className="col">
@@ -128,7 +128,7 @@ const Box1 = () => {
                     Sockerhalt 11 g/l   
                     </p><br/>
                     <p>
-                    <b>Läs mer om vingården:</b> <a href="#ThreeSeasonsVinyard">Three Seasons Vinyard</a>
+                    <b>Läs mer om vingården:</b> <a href="/ThreeSeasonsVinyard">Three Seasons Vinyard</a>
                     </p>
                 </div>
                 <div className="col">
@@ -152,7 +152,7 @@ const Box1 = () => {
                     Sockerhalt 8 g/l   
                     </p><br/>
                     <p>
-                    <b>Läs mer om vingården:</b> <a href="#AmigosVinyard">Amigos Vinyard</a>
+                    <b>Läs mer om vingården:</b> <a href="/AmigosVinyard">Amigos Vinyard</a>
                     </p>
                 </div>
                 <div className="col">
