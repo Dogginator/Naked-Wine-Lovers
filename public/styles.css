@@ -608,8 +608,7 @@ body {
 
 .winelogo {
   margin-top: -15px;
-  margin-left: 50%;
-  margin-right: 50%;
+  text-align: center;
   padding: 10px;
   background-color: #FAF8F7;
   border-radius: 100%;
@@ -617,15 +616,15 @@ body {
 
 #gridNavBarLeft {
   display: inline;
-  padding-left: 6.4%;
-  left: 2.5%;
-
+  text-align: center;
+  padding-left: 6.4%; 
 }
 
 #gridNavBarRight {
   display: inline;
+  text-align: center;
   left: 15%;
-  padding-left: 6.4%;
+  padding-left: 7.4%;
 }
 
 .IconNavbar {
@@ -767,7 +766,7 @@ line-height: 22px;
   height: 100%;
   padding-right: 137px;
   padding-left: 0px;
-  padding-top: 25px;
+  padding-top: 72px;
 }
 
 #row-productInfo {
@@ -782,7 +781,6 @@ line-height: 22px;
 #picturePos {
   padding-top: 38px;
   margin-left: 25%;
-  margin-right: 25%;
 }
 
 .infoContainer h1 {
@@ -815,9 +813,6 @@ line-height: 22px;
 #VidareKnapp {
   width: 542px;
   height: 46px;
-  margin-left:60%;
-  top: 609px;
-  
   background: #D78255;
   border: 1px solid #E6E2DA;
   box-sizing: border-box;
@@ -845,41 +840,43 @@ line-height: 22px;
   border-radius: 100%;
 }
 .RubrikBlandat{
+  text-align: center;
   margin-top: 30px;
   margin-bottom: 83px;
+}
+#InfoLink {
+  margin-bottom: 90px;
 }
 .Blandat1{
   background-image: Url(./Images/Blandat1.png);
   margin-left: 50%;
-  width: 88px;
-  height: 317px;
+  width: 80px;
+  height: 310px;
   
 
 }
 .Blandat2{
   background-image: Url(./Images/Blandat2.png);
   margin-left: 50%;
-  width: 89px;
-  height: 339px;
+  width: 80px;
+  height: 310px;
 }
 .Blandat3{
   background-image: Url(./Images/Blandat3.png);
   margin-left: 50%;
   width: 80px;
-  height: 285px
+  height: 310px;
 }
 .Blandat4{
   background-image: Url(./Images/Blandat4.png);
   margin-left: 50%;
-  width: 79px;
-  height: 299px;
+  width: 80px;
+  height: 310px;
 }
 #LadansViner {
   position: absolute;
-  width: 1440px;
+  width: 100%;
   height: 77px;
-  left: 0px;
-  top: 773px;
   
   font-family: Amatica SC;
   font-style: normal;
@@ -889,12 +886,10 @@ line-height: 22px;
   text-align: center;
 }
 #KommandeLador {
-  position: absolute;
-  width: 1440px;
+  padding-right: 0px;
+  margin-top: 140px;
+  margin-bottom: 109px;
   height: 77px;
-  left: 0px;
-  top: 2492px;
-  
   font-family: Amatica SC;
   font-style: normal;
   font-weight: bold;
@@ -903,86 +898,63 @@ line-height: 22px;
   text-align: center;
 }
 .NextVine {
+  margin-left: 20%;
   background-image: Url(./Images/Maj.png);
-  position: absolute;
   width: 254px;
   height: 175px;
-  left: 189px;
-  top: 2774px;
-
+  text-align: center;
+  margin-bottom: 28px;
 }
 .PlaceHolder1 {
-  background-image: url(./Images/PlaceHolder.png);
-  position: absolute;
-  width: 254px;
-  height: 175px;
-  left: 593px;
-  top: 2774px;
-
+  margin-left: 20%;
+  background-image: url(./Images/NewPlaceHolder.png);
+  width: 191px;
+  height: 197px;
+  text-align: center;
+  margin-bottom: 28px;
 }
 .PlaceHolder2 {
-  background-image: url(./Images/PlaceHolder.png);
-  position: absolute;
-  width: 254px;
-  height: 175px;
-  left: 997px;
-  top: 2774px;
-  
+  margin-left: 20%;
+  background-image: url(./Images/NewPlaceHolder.png);
+  width: 191px;
+  height: 197px;
+  text-align: center;
+  margin-bottom: 28px;
 }
-
-
-
 #LinkTo1{
-  position: absolute;
-  width: 254px;
-  height: 78px;
-  left: 189px;
-  top: 2984px;
-  
   font-family: Halant;
+  margin-left: 15%;
   font-style: normal;
   font-weight: normal;
   font-size: 25px;
   line-height: 39px;
   text-align: center;
   text-decoration-line: underline;
-
+  padding-bottom:  306px;
 }
 #LinkTo2{
-  position: absolute;
-  width: 155px;
-  height: 39px;
-  left: 642px;
-  top: 2984px;
-  
   font-family: Halant;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 25px;
-  line-height: 39px;
-  text-decoration-line: underline; 
-}
-#LinkTo3{
-  position: absolute;
-  width: 155px;
-  height: 39px;
-  left: 1050px;
-  top: 2984px;
-  
-  font-family: Halant;
+  margin-left: 25%;
   font-style: normal;
   font-weight: normal;
   font-size: 25px;
   line-height: 39px;
   text-decoration-line: underline;
+  text-align: center;
+  padding-bottom:  306px;
+}
+#LinkTo3{
+  font-family: Halant;
+  margin-left: 25%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 39px;
+  text-decoration-line: underline;
+  text-align: center;
+  padding-bottom:  306px;
 }
 #BoxMonth1{
-position: absolute;
-width: 196px;
-height: 45px;
-left: 218px;
-top: 2689px;
-
 font-family: Amatic SC;
 font-style: normal;
 font-weight: bold;
@@ -991,11 +963,6 @@ line-height: 45px;
 text-align: center;
 }
 #BoxMonth2{
-  position: absolute;
-  width: 204px;
-  height: 45px;
-  left: 618px;
-  top: 2689px;
   font-family: Amatic SC;
   font-style: normal;
   font-weight: bold;
@@ -1006,16 +973,19 @@ text-align: center;
   text-align: center;
 }
 #BoxMonth3{
-  position: absolute;
-  width: 196px;
-  height: 45px;
-  left: 1026px;
-  top: 2689px;
-  
   font-family: Amatic SC;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 45px;
   text-align: center; 
+}
+#ColPaddingZero {
+  padding:0px;
+}
+#ContainerWindow {
+  border:0px;
+  margin-right:0;
+  margin-left:0;
+  max-width:100%;
 }

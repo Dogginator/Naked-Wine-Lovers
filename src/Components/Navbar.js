@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import { useRef } from 'react';
 import ShoppingCart from './ShoppingCart'
 import Ploygon from './Polygon'
@@ -28,7 +27,7 @@ return (
             </div>
             <div className="IconNavbar">
                 <p>
-                <img className="winelogo" src="Images/TopIcon.png" />  
+                <img className="winelogo" src="Images/TopIcon.png" alt="NakedWineLover's Icon"/>  
                 </p>
             </div>
             <div class="col-sm-4" id="gridNavBarRight">

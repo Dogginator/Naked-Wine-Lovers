@@ -12,6 +12,7 @@ import Confirm from './Components/Confirm'
 import WineBoxes from './Components/WineBoxes'
 import Navbar from './Components/Navbar'
 import ShoppingCart from './Components/ShoppingCart'
+import Varukorg from './Components/Varukorg'
 import Vingardarna from './WineYards/Vingardarna'
 import AmigosVinyard from './WineYards/AmigosVinyard'
 import GardenOfEden from './WineYards/GardenOfEden'
@@ -55,6 +56,7 @@ const initialValues  = {
             <Route path='/Confirm' exact><Confirm costumerInfo = {costumerInfo} /></Route>
             <Route path='/Vinlådor' exact><WineBoxes/></Route>
             <Route path='/ShoppingCart' exact><ShoppingCart /></Route>
+            <Route path='/Varukorg' exact><Varukorg/></Route>
             <Route path='/Vingardarna' exact><Vingardarna/></Route>
             <Route path='/AmigosVinyard' exact><AmigosVinyard/></Route>
             <Route path='/GardenOfEden' exact><GardenOfEden/></Route>

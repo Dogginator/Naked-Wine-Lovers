@@ -1,5 +1,4 @@
-import React, { Component, useRef, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useRef } from 'react'
 import { IoIosArrowDown } from 'react-icons/io'
 
 
@@ -16,7 +15,7 @@ const Box1 = () => {
                     <div className="col" id="col-grid-info">
                         <div className="infoContainer" id="picturePos">
                             <p>
-                                <img className="TopPicture" src="./Images/TopImage.png" />
+                                <img className="TopPicture" src="./Images/TopImage.png" alt="WineBox" />
                             </p>
                             <p id="ScrollDownInfo">Här kan du läsa om flaskorna!</p>
                             <button type="button" id="ReadInfo" onClick={executeScroll}><IoIosArrowDown /></button>
@@ -25,7 +24,7 @@ const Box1 = () => {
                     <div className="col" id="col-grid-info">
                         <div className="infoContainer">
 
-                            <h1>Vad fan är naturvin-lådan</h1>
+                            <h1>Blandat</h1>
                             <p id="type">För nybörjaren</p>
                             <h2>Prenumerera 1046 SEK/MÅNAD</h2>
                             <p>
@@ -47,25 +46,26 @@ const Box1 = () => {
                         </div>
                     </div>
                 </div>
-                <div>
-                        <button type="button" id="VidareKnapp">Lägg till i varukorg</button>
+                <div className="row" id="ContainerWindow">
+                    <div className="col" id="ColPaddingZero"/>
+                    <div className="col" id="ColPaddingZero"><button type="button" id="VidareKnapp">Lägg till i varukorg</button></div>   
                 </div>
             </div>
-            <div className="row">
-                <div className="col"/>
-                <div className="col">
+            <div className="row" id="ContainerWindow">
+                <div className="col" id="ColPaddingZero"/>
+                <div className="col" id="ColPaddingZero">
                      <h1 className="RubrikBlandat"><b>LÅDANS VINER I APRIL 2021</b></h1>
                 </div>
-                <div className="col"/>
+                <div className="col" id="ColPaddingZero"/>
             </div>
-            <div className="row">
-                <div className="col">
+            <div className="row" id="ContainerWindow">
+                <div className="col" id="ColPaddingZero">
                     <img className="Blandat1" scr="./Images/Blandat1.png"></img>
                 </div>
-                <div className="col" ref={myRef}>
+                <div className="col" ref={myRef} id="ColPaddingZero">
                     <h2>White is blanc</h2><br/>
                     <p>Vitt, USA 2020</p><br/>
-                    <p id="infoText">
+                    <p>
                     Detta vita vinet från Garden of Eden Vinyard i Kalifornien, USA. Inslag av päron, färska örter och honung. 
                     Ett bra första steg för dig som från början gillar vitt vin, men ännu inte prövat naturvin. 
                     Funkar perfekt till fisk eller vegetarisk. 
@@ -75,22 +75,22 @@ const Box1 = () => {
                     Alkoholhalt 12%
                     Sockerhalt 10 g/l   
                     </p><br/>
-                    <p>
+                    <p id="InfoLink">
                     <b>Läs mer om vingården:</b> <a href="/GardenOfEden">Garden of Eden</a>
                     </p>
                 </div>
-                <div className="col">
-                    <img></img>
+                <div className="col" id="ColPaddingZero">
+                    <img alt="Scale"></img>
                 </div>
             </div>
-            <div className="row">
-            <div className="col">
+            <div className="row" id="ContainerWindow">
+            <div className="col" id="ColPaddingZero">
                     <img className="Blandat2" scr="./Images/Blandat2.png"></img>
                 </div>
-                <div className="col">
+                <div className="col" id="ColPaddingZero">
                     <h2>orange you glad</h2><br/>
                     <p>Orange, Frankrike  2020</p><br/>
-                    <p id="infoText">
+                    <p>
                     Ett fermenterat vitt vin från James and the Giant Grape. 
                     Från norra Italien kommer denna otämjda rebell. Med smak av torkad frukt, 
                     rostade nötter och job funkar det här vinet bäst till mustiga grytor och mycket kryddor.
@@ -100,22 +100,22 @@ const Box1 = () => {
                     Alkoholhalt 11,5%
                     Sockerhalt 9 g/l   
                     </p><br/>
-                    <p>
+                    <p id="InfoLink">
                     <b>Läs mer om vingården:</b> <a href="/JamesAndTheGiantGrape">James and the Giant Grape</a>
                     </p>
                 </div>
-                <div className="col">
-                    <img ></img>
+                <div className="col" id="ColPaddingZero">
+                    <img alt="Scale" ></img>
                 </div>
             </div>
-            <div className="row">
-            <div className="col">
+            <div className="row" id="ContainerWindow">
+            <div className="col" id="ColPaddingZero">
                     <img className="Blandat3" scr="./Images/Blandat3.png"></img>
                 </div>
-                <div className="col">
+                <div className="col" id="ColPaddingZero">
                     <h2>pink panther</h2><br/>
                     <p>Mousserande, Frankrike 2020</p><br/>
-                    <p id="infoText">
+                    <p>
                     Ett sött mousserande från Three Seasons Vinyard vid den franska 
                     riveran. Med sina toner av äppelcider, citrus och vita blommor 
                     funkar detta bäst som apertif eller till desserter. 
@@ -125,22 +125,22 @@ const Box1 = () => {
                     Alkoholhalt 11,8%
                     Sockerhalt 11 g/l   
                     </p><br/>
-                    <p>
+                    <p id="InfoLink">
                     <b>Läs mer om vingården:</b> <a href="/ThreeSeasonsVinyard">Three Seasons Vinyard</a>
                     </p>
                 </div>
-                <div className="col">
-                    <img></img>
+                <div className="col" id="ColPaddingZero">
+                    <img alt="Scale"></img>
                 </div>
             </div>
-            <div className="row">
-            <div className="col">
+            <div className="row" id="ContainerWindow">
+            <div className="col" id="ColPaddingZero">
                     <img className="Blandat4" scr="./Images/Blandat4.png"></img>
                 </div>
-                <div className="col">
+                <div className="col" id="ColPaddingZero">
                     <h2>girl in red</h2><br/>
                     <p>Rött, Spanien 2020</p><br/>
-                    <p id="infoText">
+                    <p>
                     Ett mustigt rött vin från Amigos Vinyard med inslag av mörka 
                     körsbär, blåbär och lakrits. Perfekt till kött och fågel. 
                     </p><br/>
@@ -149,30 +149,38 @@ const Box1 = () => {
                     Alkoholhalt 12%
                     Sockerhalt 8 g/l   
                     </p><br/>
-                    <p>
+                    <p id="InfoLink">
                     <b>Läs mer om vingården:</b> <a href="/AmigosVinyard">Amigos Vinyard</a>
                     </p>
                 </div>
-                <div className="col">
-                    <img></img>
+                <div className="col" id="ColPaddingZero">
+                    <img alt="Scale"></img>
                 </div>
             </div>
-            <h1 id="KommandeLador"><b>KOMMANDE LÅDOR</b></h1>
-            <h2 id="BoxMonth1">LÅDANS VINER I MAJ</h2>
-            <h2 id="BoxMonth2">LÅDANS VINER I JUNI</h2>
-            <h2 id="BoxMonth3">LÅDANS VINER I JULI</h2>
-            <div>
-                <img className="NextVine" scr="./Images/Maj.png" />
+            <div className="row" id="ContainerWindow">
+                <div className="col" id="ColPaddingZero"><h1 id="KommandeLador"><b>KOMMANDE LÅDOR</b></h1></div>
             </div>
-            <a id="LinkTo1" href="/">Här kan du läsa om Maj lådan</a>
-            <div>
-                <img className="PlaceHolder1" scr="./Images/PlaceHolder.png" />
+            <div className="row" id="ContainerWindow">
+                <div className="col" id="ColPaddingZero"/>
+                <div className="col" id="ColPaddingZero"><h2 id="BoxMonth1">LÅDANS VINER I MAJ</h2></div>
+                <div className="col" id="ColPaddingZero"><h2 id="BoxMonth1">LÅDANS VINER I JUNI</h2></div>
+                <div className="col" id="ColPaddingZero"><h2 id="BoxMonth3">LÅDANS VINER I JULI</h2></div>
+                <div className="col" id="ColPaddingZero"/>
             </div>
-            <a id="LinkTo2" href="/">Ej urvalt ännu</a>
-            <div>
-                <img className="PlaceHolder2" scr="./Images/PlaceHolder.png" />
+            <div className="row" id="ContainerWindow">
+                <div className="col" id="ColPaddingZero"/>
+                <div className="col" id="ColPaddingZero"><img className="NextVine" scr="./Images/Maj.png"/></div>
+                <div className="col" id="ColPaddingZero"><img className="PlaceHolder1" scr="./Images/NewPlaceHolder.png"/></div>
+                <div className="col" id="ColPaddingZero"><img className="PlaceHolder2" scr="./Images/NewPlaceHolder.png"/></div>
+                <div className="col" id="ColPaddingZero"/>
             </div>
-            <a id="LinkTo3" href="/">Ej urvalt ännu</a>
+            <div className="row" id="ContainerWindow">
+                <div className="col" id="ColPaddingZero"/>
+                <div className="col" id="ColPaddingZero"><a id="LinkTo1" href="/">Här kan du läsa om Maj lådan!</a></div>
+                <div className="col" id="ColPaddingZero"><a id="LinkTo2" href="/">Ej urvalt ännu</a></div>
+                <div className="col" id="ColPaddingZero"><a id="LinkTo3" href="/">Ej urvalt ännu</a></div>
+                <div className="col" id="ColPaddingZero"/>
+            </div>
         </>
     )
 }
