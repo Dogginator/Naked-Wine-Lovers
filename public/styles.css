@@ -805,12 +805,8 @@ line-height: 22px;
   font-size: 16px;
 }
 
-#text-bold-14 {
-  font-weight: bold;
-  font-size: 14px;
-}
-
 #VidareKnapp {
+  color:rgb(255, 255, 249);
   width: 542px;
   height: 46px;
   background: #D78255;
@@ -852,8 +848,6 @@ line-height: 22px;
   margin-left: 50%;
   width: 80px;
   height: 310px;
-  
-
 }
 .Blandat2{
   background-image: Url(./Images/Blandat2.png);
@@ -872,6 +866,30 @@ line-height: 22px;
   margin-left: 50%;
   width: 80px;
   height: 310px;
+}
+.Taste1{
+  background-image: Url(./Images/Plats1.png);
+  margin-left: 50%;
+  width: 223px;
+  height: 274px;
+}
+.Taste2{
+  background-image: Url(./Images/Plats2.png);
+  margin-left: 50%;
+  width: 223px;
+  height: 274px; 
+}
+.Taste3{
+  background-image: Url(./Images/Plats3-4.png);
+  margin-left: 50%;
+  width: 223px;
+  height: 274px;
+}
+.Taste4{
+  background-image: Url(./Images/Plats3-4.png);
+  margin-left: 50%;
+  width: 223px;
+  height: 274px;  
 }
 #LadansViner {
   position: absolute;

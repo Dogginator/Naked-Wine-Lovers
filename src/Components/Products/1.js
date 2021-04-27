@@ -25,23 +25,20 @@ const Box1 = () => {
                         <div className="infoContainer">
 
                             <h1>Blandat</h1>
-                            <p id="type">För nybörjaren</p>
-                            <h2>Prenumerera 1046 SEK/MÅNAD</h2>
+                            <p id="type">Vitt,  orange, rött och mousserande</p>
+                            <h2>Prenumerera 899 SEK /Månad</h2>
                             <p>
-                                Detta är den perfekta vinlådan för dig som är nybörjare och skulle vilja utforska världen av naturvin.
-                                Det finns många olika sorter och typer av naturvin, det kan vara svårt att som nybörjare veta vad du tycker om.
-                                Därför väljer vi noga ut ett antal viner som ingår i lådan.
-                                Du får nya viner varje månad så att du ska få en så mångsidig syn av alla goda naturviner som finns.
+                                Vinlådan för dig som vill prova på det bästa av alla världar. I den här lådan får du en av varje. 
+                                Det vill säga, ett vitt, ett orange, ett rött och ett mousserande. De passar alla till olika tillfällen, 
+                                men är alla lika goda! Månadens fyra gårdar är: Nonna Calbretta, Amigos, Three Season och Garden of Eden. 
                 </p>
                             <h3>Så här funkar det.</h3>
                             <p>
-                                Detta är en prenumeration där du får 6 flaskor naturvin per månaden i 4 månader.
-                                Vinerna är noga utvalda från de bästa vingårdarna. Denna produktsida är för vinerna du får i April månad.
-                                Är du sugen på att se nästa månads utbud? Kika längst ner på denna sida.
-                </p>
-                            <p id="text-bold-14">
-                                Välj att betala allt nu eller dela upp betalningen per månad.
-                                Totalpris: 4185 SEK. eller delbetala 1046 SEK i månaden. Fraktfritt och skatt ingår.
+                                Detta är en prenumeration. Prenumererar du på denna låda så får du fyra flaskor blandade viner varje månad. 
+                                Vinerna är noga utvalda från de bästa vingårdarna och byts varje månad ut. 
+                                Denna produktsida är för vinerna du får i april månad. 
+                                Nedan ser du varje flaska som kommer med i den här lådan. 
+                                Det är ingen bindningstid och du kan välja att avsluta prenumerationen när du vill. 
                 </p>
                         </div>
                     </div>
@@ -80,7 +77,7 @@ const Box1 = () => {
                     </p>
                 </div>
                 <div className="col" id="ColPaddingZero">
-                    <img alt="Scale"></img>
+                    <img className="Taste1"scr="./Images/Plats1.png"></img>
                 </div>
             </div>
             <div className="row" id="ContainerWindow">
@@ -105,7 +102,7 @@ const Box1 = () => {
                     </p>
                 </div>
                 <div className="col" id="ColPaddingZero">
-                    <img alt="Scale" ></img>
+                <img className="Taste2"scr="./Images/Plats2.png"></img>
                 </div>
             </div>
             <div className="row" id="ContainerWindow">
@@ -130,7 +127,7 @@ const Box1 = () => {
                     </p>
                 </div>
                 <div className="col" id="ColPaddingZero">
-                    <img alt="Scale"></img>
+                    <img className="Taste3"scr="./Images/Plats3-4.png"></img>
                 </div>
             </div>
             <div className="row" id="ContainerWindow">
@@ -154,7 +151,7 @@ const Box1 = () => {
                     </p>
                 </div>
                 <div className="col" id="ColPaddingZero">
-                    <img alt="Scale"></img>
+                    <img className="Taste4"scr="./Images/Plats3-4.png"></img>
                 </div>
             </div>
             <div className="row" id="ContainerWindow">
