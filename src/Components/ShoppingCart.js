@@ -19,7 +19,7 @@ export const ShoppingCart = () => {
                         <a className="shopping-cart-antal"><b>Antal: 1</b></a>
                         </div>
                         <div className="shop-sub">
-                <Link to="/Subscribe">
+                <Link to="/Varukorg">
                 <button type="button" className="shopping-visa-varukorg">Visa Varukorg</button>
                 </Link>
                 </div>
