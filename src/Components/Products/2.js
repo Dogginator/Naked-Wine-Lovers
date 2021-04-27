@@ -15,7 +15,7 @@ const Box2 = () => {
                     <div className="col" id="col-grid-info">
                         <div className="infoContainer" id="picturePos">
                             <p>
-                                <img className="TopPicture" src="./Images/BildBlandatLådan.png" alt="WineBox mixed"/>
+                                <img className="TopPicture" src="./Images/BildOrangeLådan.png" alt="WineBox mixed"/>
                             </p>
                             <p id="ScrollDownInfo">Här kan du läsa om flaskorna!</p>
                             <button type="button" id="ReadInfo" onClick={executeScroll}><IoIosArrowDown /></button>
@@ -166,9 +166,9 @@ const Box2 = () => {
             </div>
             <div className="row" id="ContainerWindow">
                 <div className="col" id="ColPaddingZero"/>
-                <div className="col" id="ColPaddingZero"><img className="NextVine" scr="./Images/Maj.png"/></div>
-                <div className="col" id="ColPaddingZero"><img className="PlaceHolder1" scr="./Images/NewPlaceHolder.png"/></div>
-                <div className="col" id="ColPaddingZero"><img className="PlaceHolder2" scr="./Images/NewPlaceHolder.png"/></div>
+                <div className="col" id="ColPaddingZero"><img className="NextOrange" scr="./Images/OrangeMaj.png"/></div>
+                <div className="col" id="ColPaddingZero"><img className="PlaceHolder1" scr="./Images/PlaceHolder2end.png"/></div>
+                <div className="col" id="ColPaddingZero"><img className="PlaceHolder2" scr="./Images/PlaceHolder2end.png"/></div>
                 <div className="col" id="ColPaddingZero"/>
             </div>
             <div className="row" id="ContainerWindow">

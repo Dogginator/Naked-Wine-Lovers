@@ -1015,27 +1015,60 @@ line-height: 22px;
   line-height: 66px;
   text-align: center;
 }
-.NextVine {
+.NextBlandat {
   margin-left: 20%;
-  background-image: Url(./Images/Maj.png);
-  width: 254px;
-  height: 175px;
+  background-image: Url(./Images/BubbelMaj.png);
+  width: 224px;
+  height: 200px;
   text-align: center;
   margin-bottom: 28px;
 }
+.NextOrange {
+  margin-left: 20%;
+  background-image: Url(./Images/OrangeMaj.png);
+  width: 224px;
+  height: 200px;
+  text-align: center;
+  margin-bottom: 28px;
+}
+.NextWhite {
+  margin-left: 20%;
+  background-image: Url(./Images/VittMaj.png);
+  width: 224px;
+  height: 200px;
+  text-align: center;
+  margin-bottom: 28px;
+}
+.NextRed {
+  margin-left: 20%;
+  background-image: Url(./Images/RedMaj.png);
+  width: 224px;
+  height: 200px;
+  text-align: center;
+  margin-bottom: 28px;
+}
+.NextBubbel {
+  margin-left: 20%;
+  background-image: Url(./Images/BubbelMaj.png);
+  width: 224px;
+  height: 200px;
+  text-align: center;
+  margin-bottom: 28px;
+
+}
 .PlaceHolder1 {
   margin-left: 20%;
-  background-image: url(./Images/NewPlaceHolder.png);
-  width: 191px;
-  height: 197px;
+  background-image: url(./Images/PlaceHolder2end.png);
+  width: 224px;
+  height: 200px;
   text-align: center;
   margin-bottom: 28px;
 }
 .PlaceHolder2 {
   margin-left: 20%;
-  background-image: url(./Images/NewPlaceHolder.png);
-  width: 191px;
-  height: 197px;
+  background-image: url(./Images/PlaceHolder2end.png);
+  width: 224px;
+  height: 200px;
   text-align: center;
   margin-bottom: 28px;
 }

@@ -166,9 +166,9 @@ const Box1 = () => {
             </div>
             <div className="row" id="ContainerWindow">
                 <div className="col" id="ColPaddingZero"/>
-                <div className="col" id="ColPaddingZero"><img className="NextVine" scr="./Images/Maj.png"/></div>
-                <div className="col" id="ColPaddingZero"><img className="PlaceHolder1" scr="./Images/NewPlaceHolder.png"/></div>
-                <div className="col" id="ColPaddingZero"><img className="PlaceHolder2" scr="./Images/NewPlaceHolder.png"/></div>
+                <div className="col" id="ColPaddingZero"><img className="NextBlandat" scr="./Images/BlandatMaj.png"/></div>
+                <div className="col" id="ColPaddingZero"><img className="PlaceHolder1" scr="./Images/PlaceHolder2end.png"/></div>
+                <div className="col" id="ColPaddingZero"><img className="PlaceHolder2" scr="./Images/PlaceHolder2end.png"/></div>
                 <div className="col" id="ColPaddingZero"/>
             </div>
             <div className="row" id="ContainerWindow">
