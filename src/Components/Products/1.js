@@ -15,7 +15,7 @@ const Box1 = () => {
                     <div className="col" id="col-grid-info">
                         <div className="infoContainer" id="picturePos">
                             <p>
-                                <img className="TopPicture" src="./Images/TopImage.png" alt="WineBox" />
+                                <img className="TopPicture" src="./Images/BildBlandatLådan.png" alt="WineBox mixed"/>
                             </p>
                             <p id="ScrollDownInfo">Här kan du läsa om flaskorna!</p>
                             <button type="button" id="ReadInfo" onClick={executeScroll}><IoIosArrowDown /></button>
