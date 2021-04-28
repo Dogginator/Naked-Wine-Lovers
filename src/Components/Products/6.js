@@ -78,12 +78,12 @@ const Box6 = () => {
                     </p>
                 </div>
                 <div className="col" id="ColPaddingZero">
-                    <img className="Taste1"scr="./Images/Plats1.png"></img>
+                    <img className="Taste1"src="./Images/Plats1.png"></img>
                 </div>
             </div>
             <div className="row" id="ContainerWindow">
             <div className="col" id="ColPaddingZero">
-                <img className="Bubble2" scr="./Images/Bubbel2.png"></img>
+                <img className="Bubble2" src="./Images/Bubbel2.png"></img>
                 </div>
                 <div className="col" id="ColPaddingZero">
                     <h2>THAT TICKLES</h2><br/>
@@ -103,12 +103,12 @@ const Box6 = () => {
                     </p>
                 </div>
                 <div className="col" id="ColPaddingZero">
-                <img className="Taste2"scr="./Images/Plats2.png"></img>
+                <img className="Taste2"src="./Images/Plats2.png"></img>
                 </div>
             </div>
             <div className="row" id="ContainerWindow">
             <div className="col" id="ColPaddingZero">
-                <img className="Bubble3" scr="./Images/Bubbel3.png"></img>
+                <img className="Bubble3" src="./Images/Bubbel3.png"></img>
                 </div>
                 <div className="col" id="ColPaddingZero">
                     <h2>DO NOT SHAKE</h2><br/>
@@ -128,12 +128,12 @@ const Box6 = () => {
                     </p>
                 </div>
                 <div className="col" id="ColPaddingZero">
-                    <img className="Taste3"scr="./Images/Plats3-4.png"></img>
+                    <img className="Taste3"src="./Images/Plats3-4.png"></img>
                 </div>
             </div>
             <div className="row" id="ContainerWindow">
             <div className="col" id="ColPaddingZero">
-                    <img className="Bubble4" scr="./Images/Bubbel4.png"></img>
+                    <img className="Bubble4" src="./Images/Bubbel4.png"></img>
                 </div>
                 <div className="col" id="ColPaddingZero">
                     <h2>BETTER THAN BUBBLEWRAP</h2><br/>
@@ -152,7 +152,7 @@ const Box6 = () => {
                     </p>
                 </div>
                 <div className="col" id="ColPaddingZero">
-                    <img className="Taste4"scr="./Images/Plats3-4.png"></img>
+                    <img className="Taste4"src="./Images/Plats3-4.png"></img>
                 </div>
             </div>
             <div className="row" id="ContainerWindow">
@@ -167,9 +167,9 @@ const Box6 = () => {
             </div>
             <div className="row" id="ContainerWindow">
                 <div className="col" id="ColPaddingZero"/>
-                <div className="col" id="ColPaddingZero"><img className="NextBlandat" scr="./Images/BlandatMaj.png"/></div>
-                <div className="col" id="ColPaddingZero"><img className="PlaceHolder1" scr="./Images/PlaceHolder2end.png"/></div>
-                <div className="col" id="ColPaddingZero"><img className="PlaceHolder2" scr="./Images/PlaceHolder2end.png"/></div>
+                <div className="col" id="ColPaddingZero"><img className="NextBlandat" src="./Images/BlandatMaj.png"/></div>
+                <div className="col" id="ColPaddingZero"><img className="PlaceHolder1" src="./Images/PlaceHolder2end.png"/></div>
+                <div className="col" id="ColPaddingZero"><img className="PlaceHolder2" src="./Images/PlaceHolder2end.png"/></div>
                 <div className="col" id="ColPaddingZero"/>
             </div>
             <div className="row" id="ContainerWindow">
