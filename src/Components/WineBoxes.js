@@ -4,11 +4,7 @@ import PRODUCTS_QUERY from './Products/Queries';
 import { Box } from './Products/BoxContainer';
 import ShoppingCart from './ShoppingCart'
 
-const WineBox = () =>  {
-
-    const[cart,setCart] = useState([]);
-
-    console.log(cart);
+const WineBox = (props) =>  {
 
     return (
       <Query query={PRODUCTS_QUERY}>
@@ -24,7 +20,7 @@ const WineBox = () =>  {
             <div class="wineboxContainer">
                 <div class="row" id="topRow">
                     
-                {items.map(item => <Box product={item} cart={cart} setCart={setCart}/>)}
+                {items.map(item => <Box product={item} cart={props.cart} setCart={props.setCart}/>)}
                 </div>
             </div>
           )

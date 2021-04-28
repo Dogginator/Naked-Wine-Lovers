@@ -717,7 +717,6 @@ body {
 }
 
 .shopping-cart-header {
-  position: absolute;
   width: 90px;
   height: 22px;
   left: 18px;
@@ -738,6 +737,22 @@ body {
   height: 64.41px;
   left: 18px;
   top: 70px;
+}
+
+#prodRow {
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+
+
+
+#prodInfo {
+  text-align: left;
+}
+
+.prodImg {
+  width: 100%;
+  height: 100%;
 }
 
 .shopping-cart-pris {
