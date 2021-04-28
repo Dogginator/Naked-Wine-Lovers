@@ -1,0 +1,11 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "email": "Hello@world.java"
+    }
+  ],
+  "profile": {
+    "name": "Dogginator"
+  }
+}
