@@ -2,7 +2,7 @@
   "posts": [
     {
       "id": 1,
-      "email": email
+      "email": "Hello@World.java"
     }
   ],
   "profile": {
