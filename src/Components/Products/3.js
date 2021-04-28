@@ -58,7 +58,7 @@ const Box3 = () => {
             </div>
             <div className="row" id="ContainerWindow">
                 <div className="col" id="ColPaddingZero">
-                    <img className="Vitt1" scr="./Images/Vit1-2.png"></img>
+                    <img className="Vitt1" src="./Images/Vit1-2.png"></img>
                 </div>
                 <div className="col" ref={myRef} id="ColPaddingZero">
                     <h2>SNOW WHITE</h2><br/>
@@ -78,12 +78,12 @@ const Box3 = () => {
                     </p>
                 </div>
                 <div className="col" id="ColPaddingZero">
-                    <img className="Taste1"scr="./Images/Plats1.png"></img>
+                    <img className="Taste1"src="./Images/Plats1.png"></img>
                 </div>
             </div>
             <div className="row" id="ContainerWindow">
             <div className="col" id="ColPaddingZero">
-                <img className="Vitt2" scr="./Images/Vit-2.png"></img>
+                <img className="Vitt2" src="./Images/Vit-2.png"></img>
                 </div>
                 <div className="col" id="ColPaddingZero">
                     <h2>AURORA BOREALIS</h2><br/>
@@ -103,12 +103,12 @@ const Box3 = () => {
                     </p>
                 </div>
                 <div className="col" id="ColPaddingZero">
-                <img className="Taste2"scr="./Images/Plats2.png"></img>
+                <img className="Taste2"src="./Images/Plats2.png"></img>
                 </div>
             </div>
             <div className="row" id="ContainerWindow">
             <div className="col" id="ColPaddingZero">
-                <img className="Vitt3" scr="./Images/Vit3-4.png"></img>
+                <img className="Vitt3" src="./Images/Vit3-4.png"></img>
                 </div>
                 <div className="col" id="ColPaddingZero">
                     <h2>URSA MAJOR</h2><br/>
@@ -128,12 +128,12 @@ const Box3 = () => {
                     </p>
                 </div>
                 <div className="col" id="ColPaddingZero">
-                    <img className="Taste3"scr="./Images/Plats3-4.png"></img>
+                    <img className="Taste3"src="./Images/Plats3-4.png"></img>
                 </div>
             </div>
             <div className="row" id="ContainerWindow">
             <div className="col" id="ColPaddingZero">
-                    <img className="Vitt4" scr="./Images/Vit3-4.png"></img>
+                    <img className="Vitt4" src="./Images/Vit3-4.png"></img>
                 </div>
                 <div className="col" id="ColPaddingZero">
                     <h2>66° 33ʹN</h2><br/>
@@ -152,7 +152,7 @@ const Box3 = () => {
                     </p>
                 </div>
                 <div className="col" id="ColPaddingZero">
-                    <img className="Taste4"scr="./Images/Plats3-4.png"></img>
+                    <img className="Taste4"src="./Images/Plats3-4.png"></img>
                 </div>
             </div>
             <div className="row" id="ContainerWindow">
@@ -167,9 +167,9 @@ const Box3 = () => {
             </div>
             <div className="row" id="ContainerWindow">
                 <div className="col" id="ColPaddingZero"/>
-                <div className="col" id="ColPaddingZero"><img className="NextWhite" scr="./Images/VittMaj.png"/></div>
-                <div className="col" id="ColPaddingZero"><img className="PlaceHolder1" scr="./Images/PlaceHolder2end.png"/></div>
-                <div className="col" id="ColPaddingZero"><img className="PlaceHolder2" scr="./Images/PlaceHolder2end.png"/></div>
+                <div className="col" id="ColPaddingZero"><img className="NextWhite" src="./Images/VittMaj.png"/></div>
+                <div className="col" id="ColPaddingZero"><img className="PlaceHolder1" src="./Images/PlaceHolder2end.png"/></div>
+                <div className="col" id="ColPaddingZero"><img className="PlaceHolder2" src="./Images/PlaceHolder2end.png"/></div>
                 <div className="col" id="ColPaddingZero"/>
             </div>
             <div className="row" id="ContainerWindow">

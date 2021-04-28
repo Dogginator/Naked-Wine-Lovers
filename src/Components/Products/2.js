@@ -57,7 +57,7 @@ const Box2 = () => {
             </div>
             <div className="row" id="ContainerWindow">
                 <div className="col" id="ColPaddingZero">
-                    <img className="Oragne1" scr="./Images/Orange1-4.png"></img>
+                    <img className="Oragne1" src="./Images/Orange1-4.png"></img>
                 </div>
                 <div className="col" ref={myRef} id="ColPaddingZero">
                     <h2>this is not juice</h2><br/>
@@ -77,12 +77,12 @@ const Box2 = () => {
                     </p>
                 </div>
                 <div className="col" id="ColPaddingZero">
-                    <img className="Taste1"scr="./Images/Plats1.png"></img>
+                    <img className="Taste1"src="./Images/Plats1.png"></img>
                 </div>
             </div>
             <div className="row" id="ContainerWindow">
             <div className="col" id="ColPaddingZero">
-                <img className="Oragne2" scr="./Images/Orange1-4.png"></img>
+                <img className="Oragne2" src="./Images/Orange1-4.png"></img>
                 </div>
                 <div className="col" id="ColPaddingZero">
                     <h2>orange you glad</h2><br/>
@@ -102,12 +102,12 @@ const Box2 = () => {
                     </p>
                 </div>
                 <div className="col" id="ColPaddingZero">
-                <img className="Taste2"scr="./Images/Plats2.png"></img>
+                <img className="Taste2"src="./Images/Plats2.png"></img>
                 </div>
             </div>
             <div className="row" id="ContainerWindow">
             <div className="col" id="ColPaddingZero">
-                <img className="Oragne3" scr="./Images/Orange1-4.png"></img>
+                <img className="Oragne3" src="./Images/Orange1-4.png"></img>
                 </div>
                 <div className="col" id="ColPaddingZero">
                     <h2>Arancione</h2><br/>
@@ -127,12 +127,12 @@ const Box2 = () => {
                     </p>
                 </div>
                 <div className="col" id="ColPaddingZero">
-                    <img className="Taste3"scr="./Images/Plats3-4.png"></img>
+                    <img className="Taste3"src="./Images/Plats3-4.png"></img>
                 </div>
             </div>
             <div className="row" id="ContainerWindow">
             <div className="col" id="ColPaddingZero">
-                    <img className="Oragne4" scr="./Images/Orange1-4.png"></img>
+                    <img className="Oragne4" src="./Images/Orange1-4.png"></img>
                 </div>
                 <div className="col" id="ColPaddingZero">
                     <h2>orange county</h2><br/>
@@ -151,7 +151,7 @@ const Box2 = () => {
                     </p>
                 </div>
                 <div className="col" id="ColPaddingZero">
-                    <img className="Taste4"scr="./Images/Plats3-4.png"></img>
+                    <img className="Taste4"src="./Images/Plats3-4.png"></img>
                 </div>
             </div>
             <div className="row" id="ContainerWindow">
@@ -166,9 +166,9 @@ const Box2 = () => {
             </div>
             <div className="row" id="ContainerWindow">
                 <div className="col" id="ColPaddingZero"/>
-                <div className="col" id="ColPaddingZero"><img className="NextOrange" scr="./Images/OrangeMaj.png"/></div>
-                <div className="col" id="ColPaddingZero"><img className="PlaceHolder1" scr="./Images/PlaceHolder2end.png"/></div>
-                <div className="col" id="ColPaddingZero"><img className="PlaceHolder2" scr="./Images/PlaceHolder2end.png"/></div>
+                <div className="col" id="ColPaddingZero"><img className="NextOrange" src="./Images/OrangeMaj.png"/></div>
+                <div className="col" id="ColPaddingZero"><img className="PlaceHolder1" src="./Images/PlaceHolder2end.png"/></div>
+                <div className="col" id="ColPaddingZero"><img className="PlaceHolder2" src="./Images/PlaceHolder2end.png"/></div>
                 <div className="col" id="ColPaddingZero"/>
             </div>
             <div className="row" id="ContainerWindow">

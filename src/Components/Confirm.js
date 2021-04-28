@@ -15,7 +15,7 @@ export const Confirm = () => {
     );
 const [info, setInfo] = useState([]);
 const loadCostumerInfo = async () => {
-const response = await fetch("DataTransfer.json");
+const response = await fetch("https://my-json-server.typicode.com/Dogginator/Naked-Wine-Lovers/posts");
 const data = await response.json();
 setInfo(data)
 }
@@ -45,6 +45,7 @@ return (
                 <div className="bekräftelseInfo">
                     {info.map(mail => (
                         <p id="p1">Håll utkik efter ditt bekräftelsemail som har skickats till din e-post {mail.email}</p>
+                        
                     ))}
                 <p id="p2">Vi meddlar dig via e-post när dina varor har skickats.  <br />
                 Vi hoppas att du ska bli nöjd!</p>
