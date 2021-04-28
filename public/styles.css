@@ -503,7 +503,7 @@ body {
     margin-bottom: 30px;
     margin-left: 75px;
   }
-
+  
   .grapeImage {
     position: absolute;
     margin-left: 180px;
@@ -1051,6 +1051,14 @@ text-align: center;
 .cartContainer {
   margin: auto;
   width: 80%;
+}
+#ShoppingCartLine {
+  position: absolute;
+  width: 324px;
+  height: 0px;
+  left: 0px;
+  top: 328.51px;
+  border: 1px solid #C26D3D;
 }
 
 .shopping-cart {
