@@ -18,6 +18,7 @@ export const ShoppingCart = () => {
                         <a className="shopping-cart-varu-namn">Vindlåda #1 </a>
                         <a className="shopping-cart-antal"><b>Antal: 1</b></a>
                         </div>
+                        <hr id="ShoppingCartLine" color="#C26D3D"/>
                         <div className="shop-sub">
                 <Link to="/Subscribe">
                 <button type="button" className="shopping-visa-varukorg">Visa Varukorg</button>
