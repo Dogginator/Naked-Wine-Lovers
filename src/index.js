@@ -2,12 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import { ApolloProvider } from "react-apollo";
+import ApolloClient from "apollo-boost";
 import reportWebVitals from './reportWebVitals';
 
+const client = new ApolloClient({
+  uri: "https://api-eu-central-1.graphcms.com/v2/cknxm2lmmxx7u01ytczj5e2l5/master"
+});
+
 ReactDOM.render(
-  <React.StrictMode>
+  <ApolloProvider client={client}>
     <App />
-  </React.StrictMode>,
+  </ApolloProvider>,
   document.getElementById('root')
 );
 
