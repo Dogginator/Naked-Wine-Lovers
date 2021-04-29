@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import { IoIosArrowDown } from 'react-icons/io'
-
+import { Link } from 'react-router-dom'
 
 
 
@@ -58,7 +58,7 @@ const Box5 = () => {
             </div>
             <div className="row" id="ContainerWindow">
                 <div className="col" id="ColPaddingZero">
-                    <img className="Bubble1" src="./Images/Bubbel1.png"></img>
+                    <img className="Bubble1" alt="bottle of The marangoni effect" src="./Images/Bubbel1.png"></img>
                 </div>
                 <div className="col" ref={myRef} id="ColPaddingZero">
                     <h2>THE MARANGONI EFFECT</h2><br/>
@@ -74,16 +74,16 @@ const Box5 = () => {
                     Sockerhalt 10 g/l   
                     </p><br/>
                     <p id="InfoLink">
-                    <b>Läs mer om vingården:</b> <a href="/GardenOfEden">Garden of Eden</a>
+                    <b>Läs mer om vingården:</b> <Link to="/GardenOfEden">Garden of Eden</Link>
                     </p>
                 </div>
                 <div className="col" id="ColPaddingZero">
-                    <img className="Taste1"src="./Images/Plats1.png"></img>
+                    <img className="Taste1" alt="Taste scale" src="./Images/Plats1.png"></img>
                 </div>
             </div>
             <div className="row" id="ContainerWindow">
             <div className="col" id="ColPaddingZero">
-                <img className="Bubble2" src="./Images/Bubbel2.png"></img>
+                <img className="Bubble2" alt="Bottle of That tickles" src="./Images/Bubbel2.png"></img>
                 </div>
                 <div className="col" id="ColPaddingZero">
                     <h2>THAT TICKLES</h2><br/>
@@ -99,16 +99,16 @@ const Box5 = () => {
                     Sockerhalt 9 g/l   
                     </p><br/>
                     <p id="InfoLink">
-                    <b>Läs mer om vingården:</b> <a href="/JamesAndTheGiantGrape">James and the Giant Grape</a>
+                    <b>Läs mer om vingården:</b> <Link to="/JamesAndTheGiantGrape">James and the Giant Grape</Link>
                     </p>
                 </div>
                 <div className="col" id="ColPaddingZero">
-                <img className="Taste2"src="./Images/Plats2.png"></img>
+                <img className="Taste2" alt="Taste scale" src="./Images/Plats2.png"></img>
                 </div>
             </div>
             <div className="row" id="ContainerWindow">
             <div className="col" id="ColPaddingZero">
-                <img className="Bubble3" src="./Images/Bubbel3.png"></img>
+                <img className="Bubble3" alt="Bottle of DO NOT SHAKE" src="./Images/Bubbel3.png"></img>
                 </div>
                 <div className="col" id="ColPaddingZero">
                     <h2>DO NOT SHAKE</h2><br/>
@@ -124,16 +124,16 @@ const Box5 = () => {
                     Sockerhalt 11 g/l   
                     </p><br/>
                     <p id="InfoLink">
-                    <b>Läs mer om vingården:</b> <a href="/ThreeSeasonsVinyard">Three Seasons Vinyard</a>
+                    <b>Läs mer om vingården:</b> <Link to="/ThreeSeasonsVinyard">Three Seasons Vinyard</Link>
                     </p>
                 </div>
                 <div className="col" id="ColPaddingZero">
-                    <img className="Taste3"src="./Images/Plats3-4.png"></img>
+                    <img className="Taste3" alt="Taste scale" src="./Images/Plats3-4.png"></img>
                 </div>
             </div>
             <div className="row" id="ContainerWindow">
             <div className="col" id="ColPaddingZero">
-                    <img className="Bubble4" src="./Images/Bubbel4.png"></img>
+                    <img className="Bubble4" alt="Bottle of Better than bubblewrap" src="./Images/Bubbel4.png"></img>
                 </div>
                 <div className="col" id="ColPaddingZero">
                     <h2>BETTER THAN BUBBLEWRAP</h2><br/>
@@ -148,11 +148,11 @@ const Box5 = () => {
                     Sockerhalt 8 g/l   
                     </p><br/>
                     <p id="InfoLink">
-                    <b>Läs mer om vingården:</b> <a href="/AmigosVinyard">Amigos Vinyard</a>
+                    <b>Läs mer om vingården:</b> <Link to="/AmigosVinyard">Amigos Vinyard</Link>
                     </p>
                 </div>
                 <div className="col" id="ColPaddingZero">
-                    <img className="Taste4"src="./Images/Plats3-4.png"></img>
+                    <img className="Taste4" alt="Taste scale" src="./Images/Plats3-4.png"></img>
                 </div>
             </div>
             <div className="row" id="ContainerWindow">
@@ -167,16 +167,16 @@ const Box5 = () => {
             </div>
             <div className="row" id="ContainerWindow">
                 <div className="col" id="ColPaddingZero"/>
-                <div className="col" id="ColPaddingZero"><img className="NextBubbel" src="./Images/BubbelMaj.png"/></div>
-                <div className="col" id="ColPaddingZero"><img className="PlaceHolder1" src="./Images/PlaceHolder2end.png"/></div>
-                <div className="col" id="ColPaddingZero"><img className="PlaceHolder2" src="./Images/PlaceHolder2end.png"/></div>
+                <div className="col" id="ColPaddingZero"><img className="NextBubbel" alt="Box of May" src="./Images/BubbelMaj.png"/></div>
+                <div className="col" id="ColPaddingZero"><img className="PlaceHolder1" alt="Box not selected" src="./Images/PlaceHolder2end.png"/></div>
+                <div className="col" id="ColPaddingZero"><img className="PlaceHolder2" alt="Box not selected"  src="./Images/PlaceHolder2end.png"/></div>
                 <div className="col" id="ColPaddingZero"/>
             </div>
             <div className="row" id="ContainerWindow">
                 <div className="col" id="ColPaddingZero"/>
-                <div className="col" id="ColPaddingZero"><a id="LinkTo1" href="/">Här kan du läsa om Maj lådan!</a></div>
-                <div className="col" id="ColPaddingZero"><a id="LinkTo2" href="/">Ej urvalt ännu</a></div>
-                <div className="col" id="ColPaddingZero"><a id="LinkTo3" href="/">Ej urvalt ännu</a></div>
+                <div className="col" id="ColPaddingZero"><Link id="LinkTo1" to="/">Här kan du läsa om Maj lådan!</Link></div>
+                <div className="col" id="ColPaddingZero"><Link id="LinkTo2" to="/">Ej urvalt ännu</Link></div>
+                <div className="col" id="ColPaddingZero"><Link id="LinkTo3" to="/">Ej urvalt ännu</Link></div>
                 <div className="col" id="ColPaddingZero"/>
             </div>
         </>
