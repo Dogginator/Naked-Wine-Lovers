@@ -42,7 +42,7 @@ export const ShoppingCart = (props) => {
                 <Link to="/Varukorg">
                 <button type="button" className="shopping-visa-varukorg">Visa Varukorg</button>
                 </Link>
-                {/* <button type="button" onClick={() => emptyCart()}>Töm</button> */}
+                <button type="button" onClick={() => emptyCart()}>Töm</button>
                 </div>
                 <div className="shop-pay">
                 <Link to="/Kassa">

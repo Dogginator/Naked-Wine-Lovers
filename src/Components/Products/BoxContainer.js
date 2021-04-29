@@ -34,12 +34,6 @@ export const Box = (props) => {
 
 // return (
 // <>
-// <header className="wineboxHeader">
-//     <h2>JOIN THE CLUB!</h2>
-//     <p>Hitta det perfekta naturvinet för dig! 
-//         Du väljer, vi levererar hem till dörren, inga konstigheter.
-//         <br></br>Nånting om att natutligt är bra, ekologiskt, giftfritt, glada vinodlare</p>
-// </header>
 
 // <div class="wineboxContainer">
 //   <div class="row" id="topRow">
