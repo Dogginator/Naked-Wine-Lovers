@@ -1,27 +1,48 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
+export const ShoppingCart = (props) => {
 
+    const emptyCart = () => {
+        props.setCart([]);
+    }
 
-export const ShoppingCart = () => {
+    const itemOutput = (prod) => {
+        console.log(prod);
+        return(
+            <div className="row" id="prodRow">
+                <div className="col-sm-4">
+                <img className="prodImg" style={{
+                    backgroundImage: `url(${prod.background.url})`,
+                    backgroundRepeat: 'no-repeat'
+                    }} src={prod.productimage.url}></img>
+                </div>
+
+                <div className="col-sm-8" id="prodInfo">
+                <h6>{prod.price}sek/månad</h6>
+                <h6>{prod.name}</h6>
+                </div>
+            </div>
+        );
+    }
+
+    console.log(props.cart);
+
     return (
         <>
         <div className="cartContainer" id="Cart">
             <div className="Shooping-cart-Ploygon"/>
             <div className="shopping-cart">
-                <div className="shopping-cart-header">
-                    Min varukorg
-                </div>
+                <div className="shopping-cart-header">Min varukorg</div>
                 <div className="shopping-cart-items">
-                        <div className="Shoppingcartbild" />
-                        <a className="shopping-cart-pris"><b>1046 SEK/Månad </b></a>
-                        <a className="shopping-cart-varu-namn">Vindlåda #1 </a>
-                        <a className="shopping-cart-antal"><b>Antal: 1</b></a>
+                            {props.cart.map((prod) => itemOutput(prod))
+                            }
                         </div>
                         <div className="shop-sub">
                 <Link to="/Varukorg">
                 <button type="button" className="shopping-visa-varukorg">Visa Varukorg</button>
                 </Link>
+                <button type="button" onClick={() => emptyCart()}>Töm</button>
                 </div>
                 <div className="shop-pay">
                 <Link to="/Kassa">

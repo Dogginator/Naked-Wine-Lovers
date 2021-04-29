@@ -9,9 +9,9 @@ import Box4 from './Components/Products/4'
 import Box5 from './Components/Products/5'
 import Box6 from './Components/Products/6'
 import Confirm from './Components/Confirm'
-import WineBoxes from './Components/WineBoxes'
 import Navbar from './Components/Navbar'
 import ShoppingCart from './Components/ShoppingCart'
+import WineBox from './Components/WineBoxes'
 import Varukorg from './Components/Varukorg'
 import Vingardarna from './WineYards/Vingardarna'
 import AmigosVinyard from './WineYards/AmigosVinyard'
@@ -22,6 +22,8 @@ import { useState } from 'react'
 
 
 const App = () => {
+
+const[cart,setCart] = useState([]);
 
     
 const initialValues  = {
@@ -44,7 +46,7 @@ const initialValues  = {
         <>
         
         <Router>
-    <Navbar/>
+    <Navbar cart={cart} setCart={setCart} />
         <Switch>
             <Route path='/1' exact component={Box1}></Route>
             <Route path='/2' exact component={Box2}></Route>
@@ -54,8 +56,8 @@ const initialValues  = {
             <Route path='/6' exact component={Box6}></Route>
             <Route path='/Kassa' exact><Kassa setCostumerInfo = {setCostumerInfo} /></Route>
             <Route path='/Confirm' exact><Confirm costumerInfo = {costumerInfo} /></Route>
-            <Route path='/Vinlådor' exact><WineBoxes/></Route>
-            <Route path='/ShoppingCart' exact><ShoppingCart /></Route>
+            <Route path='/Vinlådor' exact><WineBox cart={cart} setCart={setCart}/></Route>
+            <Route path='/ShoppingCart' exact><ShoppingCart/></Route>
             <Route path='/Varukorg' exact><Varukorg/></Route>
             <Route path='/Vingardarna' exact><Vingardarna/></Route>
             <Route path='/AmigosVinyard' exact><AmigosVinyard/></Route>
