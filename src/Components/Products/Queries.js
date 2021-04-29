@@ -2,7 +2,7 @@ import gql from "graphql-tag";
 const PRODUCTS_QUERY = gql`
   query {
     products {
-      id
+      prodid
       name
       price
       description

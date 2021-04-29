@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { useRef } from 'react';
 import ShoppingCart from './ShoppingCart'
 import Ploygon from './Polygon'
@@ -15,10 +16,10 @@ return (
     <nav className="TopNavbar"> 
         <hr id="UnderLine" color="Black"/>  
             <div class="col-sm-4" id="gridNavBarLeft">
-            <a href="/1">Hem</a>
+            <Link to="/1">Hem</Link>
             </div>
             <div class="col-sm-4" id="gridNavBarLeft">
-            <a href="/Vinlådor">Vinlådor</a>
+                <Link to="/Vinlådor">Vinlådor</Link>
             </div>
             <div class="col-sm-4" id="gridNavBarLeft">
             <a href="#SaFunkarDet">Så funkar det</a>
