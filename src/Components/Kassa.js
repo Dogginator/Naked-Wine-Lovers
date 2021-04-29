@@ -7,7 +7,7 @@ const VinBox ="../Images/Vinbildconf.png";
 
 
 const Kassa = () =>{
-        const url = "DataTransfer.json";
+        const url = "https://my-json-server.typicode.com/Dogginator/Naked-Wine-Lovers/posts";
         const[email, setEmail] = useState('');
         const submitForm = (event) => {
             event.preventDefault();
@@ -83,7 +83,8 @@ const Kassa = () =>{
         </h2>
         <p>
             <input type="email" id="email" name="email" placeholder="E-post:" size="27" 
-            value={email} 
+            value={email}
+            onSubmit={e => setEmail(e.target.value)} 
             onChange={e => setEmail(e.target.value)} 
             onKeyPress={e => e.key === 'Enter'  && setEmail(e.target.value)}
             required 

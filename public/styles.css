@@ -484,24 +484,33 @@ body {
   #topRow {
     width: 100%;
     margin-top: 60px;
-    padding-left: 5%
+    padding-left: 11%;
+    padding-right: 11%;
   }
 
   #downRow {
     width: 100%;
     padding-top: 20px;
-    padding-left: 5%;
+    padding-bottom: 40px;
+    padding-left: 20%;
   }
 
   #wineboxgrid {
     position:inherit;
+    align-items: center;
     padding-left: 40px;
     padding-right: 40px;
   }
 
+  .imageContWinebox {
+    text-align: center;
+  }
+
   .wineboxImage {
-    margin-bottom: 30px;
-    margin-left: 75px;
+    
+    width: 215px;
+    height: 165px;
+    align-items: center;
   }
   
   .grapeImage {
@@ -513,7 +522,8 @@ body {
   .headerBoxItem {
     width: 100%;
     height: 10%;
-    padding-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 50px;
     text-align: center;
   }
 
@@ -523,385 +533,38 @@ body {
   }
 
   .boxInfo {
-    background-color: #E4E0D7;
     width: 100%;
     height: 51%;
   }
 
-  .priceText {
-    height: 250px;
+  .descText {
+    width: 100%;
+    height: 200px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 20px;
+    padding-top: 30px;
     margin: 0px;
     margin-bottom: 5px;
+  }
+
+  #price {
+    height: 30px;
+    padding-top: 0px;
+    text-align: right;
   }
 
   .wineboxButton {
     text-align: center;
     padding: 10px;
     margin-top: 0px;
-    border: 2px solid black;
-    background-color: #FAF8F7;
-    width: 400px;
-    height: 50px;
+    border-radius: 4px;
+    color: white;
+    background-color: #D78255;
+    width: 100%;
+    height: 44px;
   }
 
-/* Product-page */
 
-.Product-page {
-  background-color: #E4E0D7;
-  font-family: Halant;
-  display:inline-block;
-  width: 100%;
-  height: 660px;
-  padding-bottom: 93px;
-
-}
-.TopPicture {
-  width: 465.75px;
-  height: 343px;
-}
-
-.infoContainer {
-  width: 100%;
-  height: 100%;
-  padding-right: 137px;
-  padding-left: 0px;
-  padding-top: 25px;
-}
-
-#row-productInfo {
-  width: 100%;
-}
-
-#col-grid-info {
-  position: static;
-  padding: 20px;
-}
-
-#picturePos {
-  padding-top: 38px;
-  padding-left: 174px;
-}
-
-.infoContainer h1 {
-  font-family: Amatica SC;
-  font-size: 36px;
-  font-weight: bold;
-}
-
-#type {
-  margin-top: -10px;
-}
-
-.infoContainer h2 {
-  padding-bottom: 10px;
-  font-family: Amatica SC;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.infoContainer h3 {
-  font-weight: bold;
-  font-size: 16px;
-}
-
-#text-bold-14 {
-  font-weight: bold;
-  font-size: 14px;
-}
-
-#VidareKnapp {
-  position: absolute;
-  width: 542px;
-  height: 46px;
-  left: 806px;
-  top: 609px;
-  
-  background: #D78255;
-  border: 1px solid #E6E2DA;
-  box-sizing: border-box;
-  border-radius: 30px;
-}
-
-#ScrollDownInfo{
-  width: 100%;
-  padding-top: 55px;
-  text-align: center;
-  font-family: Halant;
-  font-size: 25px;
-  text-decoration-line: underline;
-}
-
-
-#ReadInfo {
-  margin-top: -20px;
-  margin-left: 200px;
-  width: 48px;
-  height: 48px;
-  
-  background: #EED8D8;
-  border-radius: 100%;
-}
-.FlaskaPlatsEtt{
-  background-image:Url(./Images/FlaskaPlatsEtt.png);
-  position: absolute;
-  width: 106px;
-  height: 382px;
-  left: 254px;
-  top: 967px;
-}
-.FlaskaPlatsTvå{
-  background-image: Url(./Images/FlaskaPlatsTvå.png);
-  position: absolute;
-  width: 108px;
-  height: 414px;
-  left: 665px;
-  top: 936px;  
-}
-.Nr3{
-  background-image: Url(./Images/Nr3.png);
-  position: absolute;
-  width: 108px;
-  height: 414px;
-  left: 1078px;
-  top: 936px;  
-}
-.Nr4{
-  background-image: Url(./Images/Nr4.png);
-  position: absolute;
-  width: 110px;
-  height: 378px;
-  left: 250px;
-  top: 1765px;  
-}
-.Nr5{
-  background-image: Url(./Images/Nr5.png);
-  position: absolute;
-  width: 112px;
-  height: 422px;
-  left: 684px;
-  top: 1721px;  
-}
-.Nr6{
-  background-image: Url(./Images/Nr6.png);
-  position: absolute;
-  width: 112px;
-  height: 442px;
-  left: 1083px;
-  top: 1701px;  
-}
-#TextPos1 {
-  position: absolute;
-  width: 359px;
-  height: 125px;
-  left: 147px;
-  top: 1430px;
-  
-  font-family: Halant;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 25px;
-}
-#TextPos2 {
-  position: absolute;
-  width: 359px;
-  height: 125px;
-  left: 560px;
-  top: 1430px;
-  
-  font-family: Halant;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 25px;
-  
-}
-#TextPos3 {
-  position: absolute;
-  width: 359px;
-  height: 125px;
-  left: 959px;
-  top: 1430px;
-  
-  font-family: Halant;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 25px;  
-}
-#TextPos4 {
-  position: absolute;
-  width: 359px;
-  height: 125px;
-  left: 147px;
-  top: 2234px;
-  
-  font-family: Halant;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 25px;  
-}
-#TextPos5 {
-  position: absolute;
-  width: 359px;
-  height: 125px;
-  left: 560px;
-  top: 2234px;
-  
-  font-family: Halant;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 25px;  
-}
-#TextPos6 {
-  position: absolute;
-  width: 359px;
-  height: 125px;
-  left: 959px;
-  top: 2234px;
-  
-  font-family: Halant;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 25px;  
-}
-#LadansViner {
-  position: absolute;
-  width: 1440px;
-  height: 77px;
-  left: 0px;
-  top: 773px;
-  
-  font-family: Amatica SC;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 45px;
-  line-height: 66px;
-  text-align: center;
-}
-#KommandeLador {
-  position: absolute;
-  width: 1440px;
-  height: 77px;
-  left: 0px;
-  top: 2492px;
-  
-  font-family: Amatica SC;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 45px;
-  line-height: 66px;
-  text-align: center;
-}
-.NextVine {
-  background-image: Url(./Images/Maj.png);
-  position: absolute;
-  width: 254px;
-  height: 175px;
-  left: 189px;
-  top: 2774px;
-
-}
-.PlaceHolder1 {
-  background-image: url(./Images/PlaceHolder.png);
-  position: absolute;
-  width: 254px;
-  height: 175px;
-  left: 593px;
-  top: 2774px;
-
-}
-.PlaceHolder2 {
-  background-image: url(./Images/PlaceHolder.png);
-  position: absolute;
-  width: 254px;
-  height: 175px;
-  left: 997px;
-  top: 2774px;
-  
-}
-
-
-
-#LinkTo1{
-  position: absolute;
-  width: 254px;
-  height: 78px;
-  left: 189px;
-  top: 2984px;
-  
-  font-family: Halant;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 25px;
-  line-height: 39px;
-  text-align: center;
-  text-decoration-line: underline;
-
-}
-#LinkTo2{
-  position: absolute;
-  width: 155px;
-  height: 39px;
-  left: 642px;
-  top: 2984px;
-  
-  font-family: Halant;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 25px;
-  line-height: 39px;
-  text-decoration-line: underline; 
-}
-#LinkTo3{
-  position: absolute;
-  width: 155px;
-  height: 39px;
-  left: 1050px;
-  top: 2984px;
-  
-  font-family: Halant;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 25px;
-  line-height: 39px;
-  text-decoration-line: underline;
-}
-#BoxMonth1{
-position: absolute;
-width: 196px;
-height: 45px;
-left: 218px;
-top: 2689px;
-
-font-family: Amatic SC;
-font-style: normal;
-font-weight: bold;
-font-size: 26px;
-line-height: 45px;
-text-align: center;
-}
-#BoxMonth2{
-  position: absolute;
-  width: 204px;
-  height: 45px;
-  left: 618px;
-  top: 2689px;
-  font-family: Amatic SC;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 18px;
-  font-size: 26px;
-  line-height: 45px;
-  text-align: center;
-}
 .shopping-cart-antal {
   position: absolute;
   width: 91px;
@@ -946,21 +609,6 @@ text-align: center;
  margin-right: 50px;
 }
 
-#BoxMonth3{
-  position: absolute;
-  width: 196px;
-  height: 45px;
-  left: 1026px;
-  top: 2689px;
-  
-  font-family: Amatic SC;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 45px;
-  text-align: center; 
-}
-
 /* Navbar */
   
 .TopNavbar {
@@ -977,7 +625,7 @@ text-align: center;
 
 .winelogo {
   margin-top: -15px;
-  margin-left: 22px;
+  text-align: center;
   padding: 10px;
   background-color: #FAF8F7;
   border-radius: 100%;
@@ -985,14 +633,15 @@ text-align: center;
 
 #gridNavBarLeft {
   display: inline;
-  padding-left: 64px;
-  margin-left: 20px; 
+  text-align: center;
+  padding-left: 6.4%; 
 }
 
 #gridNavBarRight {
   display: inline;
-  left: 270px;
-  padding-left: 90px;
+  text-align: center;
+  left: 15%;
+  padding-left: 7.4%;
 }
 
 .IconNavbar {
@@ -1076,7 +725,6 @@ text-align: center;
 }
 
 .shopping-cart-header {
-  position: absolute;
   width: 90px;
   height: 22px;
   left: 18px;
@@ -1097,6 +745,22 @@ text-align: center;
   height: 64.41px;
   left: 18px;
   top: 70px;
+}
+
+#prodRow {
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+
+
+
+#prodInfo {
+  text-align: left;
+}
+
+.prodImg {
+  width: 100%;
+  height: 100%;
 }
 
 .shopping-cart-pris {
@@ -1225,3 +889,398 @@ color: #000000;
   color: #000000;
 }
 
+/* Product-page */
+
+.Product-page {
+  background-color: #E4E0D7;
+  font-family: Halant;
+  display:inline-block;
+  width: 100%;
+  height: 660px;
+  padding-bottom: 93px;
+
+}
+.TopPicture {
+  width: 450px;
+  height: 306px;
+}
+
+.infoContainer {
+  width: 100%;
+  height: 100%;
+  padding-right: 137px;
+  padding-left: 0px;
+  padding-top: 72px;
+}
+
+#row-productInfo {
+  width: 100%;
+}
+
+#col-grid-info {
+  position: static;
+  padding: 20px;
+}
+
+#picturePos {
+  padding-top: 38px;
+  margin-left: 25%;
+}
+
+.infoContainer h1 {
+  font-family: Amatica SC;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+#type {
+  margin-top: -10px;
+}
+
+.infoContainer h2 {
+  padding-bottom: 10px;
+  font-family: Amatica SC;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.infoContainer h3 {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#VidareKnapp {
+  color:rgb(255, 255, 249);
+  width: 542px;
+  height: 46px;
+  background: #D78255;
+  border: 1px solid #E6E2DA;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+
+#ScrollDownInfo{
+  width: 100%;
+  padding-top: 55px;
+  text-align: center;
+  font-family: Halant;
+  font-size: 25px;
+  text-decoration-line: underline;
+  margin-left: -20%;
+ 
+}
+
+
+#ReadInfo {
+  margin-top: -20px;
+  margin-left: 25%;
+  width: 48px;
+  height: 48px;
+  background: #EED8D8;
+  border-radius: 100%;
+}
+.RubrikBlandat{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 83px;
+}
+#InfoLink {
+  margin-bottom: 90px;
+}
+.Blandat1{
+  background-image: Url(./Images/Blandat1.png);
+  margin-left: 50%;
+  width: 80px;
+  height: 310px;
+}
+.Blandat2{
+  background-image: Url(./Images/Blandat2.png);
+  margin-left: 50%;
+  width: 80px;
+  height: 310px;
+}
+.Blandat3{
+  background-image: Url(./Images/Blandat3.png);
+  margin-left: 50%;
+  width: 80px;
+  height: 310px;
+}
+.Blandat4{
+  background-image: Url(./Images/Blandat4.png);
+  margin-left: 50%;
+  width: 80px;
+  height: 310px;
+}
+.Oragne1{
+  background-image: Url(./Images/Blandat1-4.png);
+  margin-left: 50%;
+  width: 80px;
+  height: 310px;
+}
+.Oragne2{
+  background-image: Url(./Images/Orange1-4.png);
+  margin-left: 50%;
+  width: 80px;
+  height: 310px;  
+}
+.Oragne3{
+  background-image: Url(./Images/Orange1-4.png);
+  margin-left: 50%;
+  width: 80px;
+  height: 310px; 
+}
+.Oragne4{
+  background-image: Url(./Images/Orange1-4.png);
+  margin-left: 50%;
+  width: 80px;
+  height: 310px;
+}
+.Vitt1 {
+  background-image: Url(./Images/Vit1-2.png);
+  margin-left: 50%;
+  width: 80px;
+  height: 310px;
+
+}
+.Vitt2 {
+  background-image: Url(./Images/Vit1-2.png);
+  margin-left: 50%;
+  width: 80px;
+  height: 310px;
+  
+}
+.Vitt3 {
+  background-image: Url(./Images/Vit3-4.png);
+  margin-left: 50%;
+  width: 80px;
+  height: 310px;
+  
+}
+.Vitt4 {
+  background-image: Url(./Images/Vit3-4.png);
+  margin-left: 50%;
+  width: 80px;
+  height: 310px;
+  
+}
+.Rött1 {
+  background-image: Url(./Images/Red1.png);
+  margin-left: 50%;
+  width: 80px;
+  height: 310px; 
+}
+.Rött2 {
+  background-image: Url(./Images/Red2.png);
+  margin-left: 50%;
+  width: 80px;
+  height: 310px; 
+}
+.Rött3 {
+  background-image: Url(./Images/Red3.png);
+  margin-left: 50%;
+  width: 80px;
+  height: 310px; 
+}
+.Rött4 {
+  background-image: Url(./Images/Red4.png);
+  margin-left: 50%;
+  width: 80px;
+  height: 310px; 
+}
+.Bubble1 {
+  background-image: Url(./Images/Bubbel1.png);
+  margin-left: 50%;
+  width: 80px;
+  height: 310px; 
+}
+.Bubble2 {
+  background-image: Url(./Images/Bubbel2.png);
+  margin-left: 50%;
+  width: 80px;
+  height: 310px; 
+}
+.Bubble3 {
+  background-image: Url(./Images/Bubbel3.png);
+  margin-left: 50%;
+  width: 80px;
+  height: 310px; 
+}
+.Bubble4 {
+  background-image: Url(./Images/Bubbel4.png);
+  margin-left: 50%;
+  width: 80px;
+  height: 310px; 
+}
+.Taste1{
+  background-image: Url(./Images/Plats1.png);
+  margin-left: 50%;
+  width: 223px;
+  height: 274px;
+}
+.Taste2{
+  background-image: Url(./Images/Plats2.png);
+  margin-left: 50%;
+  width: 223px;
+  height: 274px; 
+}
+.Taste3{
+  background-image: Url(./Images/Plats3-4.png);
+  margin-left: 50%;
+  width: 223px;
+  height: 274px;
+}
+.Taste4{
+  background-image: Url(./Images/Plats3-4.png);
+  margin-left: 50%;
+  width: 223px;
+  height: 274px;  
+}
+#LadansViner {
+  position: absolute;
+  width: 100%;
+  height: 77px;
+  
+  font-family: Amatica SC;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 66px;
+  text-align: center;
+}
+#KommandeLador {
+  padding-right: 0px;
+  margin-top: 140px;
+  margin-bottom: 109px;
+  height: 77px;
+  font-family: Amatica SC;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 66px;
+  text-align: center;
+}
+.NextBlandat {
+  margin-left: 20%;
+  background-image: Url(./Images/BubbelMaj.png);
+  width: 224px;
+  height: 200px;
+  text-align: center;
+  margin-bottom: 28px;
+}
+.NextOrange {
+  margin-left: 20%;
+  background-image: Url(./Images/OrangeMaj.png);
+  width: 224px;
+  height: 200px;
+  text-align: center;
+  margin-bottom: 28px;
+}
+.NextWhite {
+  margin-left: 20%;
+  background-image: Url(./Images/VittMaj.png);
+  width: 224px;
+  height: 200px;
+  text-align: center;
+  margin-bottom: 28px;
+}
+.NextRed {
+  margin-left: 20%;
+  background-image: Url(./Images/RedMaj.png);
+  width: 224px;
+  height: 200px;
+  text-align: center;
+  margin-bottom: 28px;
+}
+.NextBubbel {
+  margin-left: 20%;
+  background-image: Url(./Images/BubbelMaj.png);
+  width: 224px;
+  height: 200px;
+  text-align: center;
+  margin-bottom: 28px;
+
+}
+.PlaceHolder1 {
+  margin-left: 20%;
+  background-image: url(./Images/PlaceHolder2end.png);
+  width: 224px;
+  height: 200px;
+  text-align: center;
+  margin-bottom: 28px;
+}
+.PlaceHolder2 {
+  margin-left: 20%;
+  background-image: url(./Images/PlaceHolder2end.png);
+  width: 224px;
+  height: 200px;
+  text-align: center;
+  margin-bottom: 28px;
+}
+#LinkTo1{
+  font-family: Halant;
+  margin-left: 15%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 39px;
+  text-align: center;
+  text-decoration-line: underline;
+  padding-bottom:  306px;
+}
+#LinkTo2{
+  font-family: Halant;
+  margin-left: 25%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 39px;
+  text-decoration-line: underline;
+  text-align: center;
+  padding-bottom:  306px;
+}
+#LinkTo3{
+  font-family: Halant;
+  margin-left: 25%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 39px;
+  text-decoration-line: underline;
+  text-align: center;
+  padding-bottom:  306px;
+}
+#BoxMonth1{
+font-family: Amatic SC;
+font-style: normal;
+font-weight: bold;
+font-size: 26px;
+line-height: 45px;
+text-align: center;
+}
+#BoxMonth2{
+  font-family: Amatic SC;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  font-size: 26px;
+  line-height: 45px;
+  text-align: center;
+}
+#BoxMonth3{
+  font-family: Amatic SC;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 45px;
+  text-align: center; 
+}
+#ColPaddingZero {
+  padding:0px;
+}
+#ContainerWindow {
+  border:0px;
+  margin-right:0;
+  margin-left:0;
+  max-width:100%;
+}
