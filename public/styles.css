@@ -785,8 +785,10 @@ line-height: 22px;
   top: 95px;
 }
 
-.footer {
-  
+.footers {
+ 
+  display: flex;
+  flex-wrap: wrap;
   display: flex;
   align-items: stretch;
   flex-direction: column;
@@ -794,7 +796,6 @@ line-height: 22px;
   width: 100%;
   height: 334px;
   left: 0px;
-  top: 1903px;
   background: #F3F1EE;
 }
 
@@ -818,14 +819,16 @@ color: #000000;
   list-style: none;
   justify-content: center;
 }
-.footer-container {
-  flex: 1;
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .Footerh1 {
   position: absolute;
   left: 170px;
-  top: 80px;
+  padding-top: 4.5rem;
   
   font-family: "Amatica SC", serif;
   font-style: normal;
@@ -837,11 +840,13 @@ color: #000000;
   
   color: #000000;
 }
+.footer-container {
+  flex: 1;
+}
 .Footerh2 {
   position: absolute;
   left: 68%;
-  top: 2000px;
-  
+  padding-top: 4.5rem;
   display: flex;
   font-family: "Amatica SC", serif;
   font-style: normal;
@@ -853,16 +858,11 @@ color: #000000;
   
   color: #000000;
 }
- footer body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
- }
+ 
 .footer-social {
   position: absolute;
   left: 59%;
-  top: 2030px;
-  bottom: 6.68%;
+  padding-top: 6rem;
 }
 .footer-social-list {
   display: flex;
@@ -871,13 +871,13 @@ color: #000000;
 .footer-social-list li {
   margin: 2.5rem;
   font-size: 1.3rem;
+  justify-content: center;
 }
 .lowtext li{
   position: absolute;
-  width: 224px;
-  height: 25px;
+
   left: 608px;
-  top: 2210px;
+  padding-top: 19rem;
   list-style: none;
   font-family: Halant;
   font-style: normal;
