@@ -12,6 +12,7 @@ import Confirm from './Components/Confirm'
 import WineBoxes from './Components/WineBoxes'
 import Navbar from './Components/Navbar'
 import ShoppingCart from './Components/ShoppingCart'
+import Footer from './Components/Footer'
 import { useState } from 'react'
 
 
@@ -51,6 +52,7 @@ const initialValues  = {
             <Route path='/Vinlådor' exact><WineBoxes/></Route>
             <Route path='/ShoppingCart' exact><ShoppingCart /></Route>
         </Switch>
+        <Footer />
 </Router>
 </>
     )
