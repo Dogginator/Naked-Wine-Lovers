@@ -72,7 +72,63 @@ const Kassa_V2 = () => {
     return (
         <div className="row" id="ContainerWindow">
             <form onSubmit={(event) => submitForm(event)}>
-                <div></div>
+                <div className="row">
+                    <div className="col"><h1><b>Kassa</b></h1></div>
+                </div>
+                <div className="row" >
+                    <div className="col" id="CostumerInfoContainer">
+                     <div className="row">
+                         <div className="col"><h2>Kontaktuppgifter</h2></div>
+                         </div>
+                            <div className="row">
+                                <div className="col"><input type="email" id="email" name="email" placeholder="E-post:" size="27" 
+                                                    value={email}
+                                                    onSubmit={e => setEmail(e.target.value)} 
+                                                    onChange={e => setEmail(e.target.value)} 
+                                                    onKeyPress={e => e.key === 'Enter'  && setEmail(e.target.value)}
+                                                    required 
+                                                    /></div>
+                            </div>
+                            <div className="row">
+                                <div className="col"><input type="checkbox" id="Nyhetsbrev" name="Nyhetsbrev" />
+                                <label for="Nyhetsbrev"> Jag tar gärna emot nyhetsbrev ifrån Naked Wine lovers</label>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col"><h2>Leveransadress</h2></div>
+                            </div>
+                            <div className="row">
+                                <div className="col"><input type="text" id="firstName" name="firstName" placeholder="Förnamn:" size="10"  />
+                                </div>
+                                <div className="col"><input type="text" id="lastName" name="lastName" placeholder="Efternamn:" size="10"  />
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col"><input type="text" id="Adress" name="Adress" placeholder="Gatuadress:" size="27" />
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col"><input type="text" id="Lgh" name="Lgh" placeholder="Lgh" size="27"  />
+                                </div>
+                            </div>  
+                            <div className="row">
+                                <div className="col"><input type="text" id="Postnummer" name="Postnummer" placeholder="Postnummer:" size="10"  />
+                                </div>
+                                <div className="col"><input type="text" id="Ort" name="Ort" placeholder="Stad/Ort:" size="10" />
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col"><select id="land" name="land" >
+                                    <option value="Sverige">Sverige</option>
+                                </select></div>
+                            </div>
+                            <div className="row">
+                                <div className="col"><input type="tel" id="telefonnummer" name="telefonnummer" placeholder="telefon" size="27" />
+                                </div>
+                            </div>         
+                    
+                    </div>
+                </div>
 
             </form>
         </div>

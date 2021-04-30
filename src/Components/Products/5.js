@@ -52,7 +52,7 @@ const Box5 = () => {
             <div className="row" id="ContainerWindow">
                 <div className="col" id="ColPaddingZero"/>
                 <div className="col" id="ColPaddingZero">
-                     <h1 className="RubrikBlandat"><b>LÅDANS VINER I APRIL 2021</b></h1>
+                     <h1 className="RubrikBlandat" ref={myRef} ><b>LÅDANS VINER I APRIL 2021</b></h1>
                 </div>
                 <div className="col" id="ColPaddingZero"/>
             </div>
@@ -60,7 +60,7 @@ const Box5 = () => {
                 <div className="col" id="ColPaddingZero">
                     <img className="Bubble1" alt="bottle of The marangoni effect" src="./Images/Bubbel1.png"></img>
                 </div>
-                <div className="col" ref={myRef} id="ColPaddingZero">
+                <div className="col" id="ColPaddingZero">
                     <h2>THE MARANGONI EFFECT</h2><br/>
                     <p>Mousserande, USA  2020</p><br/>
                     <p>
