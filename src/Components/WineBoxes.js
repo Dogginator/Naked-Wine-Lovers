@@ -22,11 +22,12 @@ const WineBox = (props) =>  {
                 <p>Hitta det perfekta naturvinet för dig!
                 Du väljer, vi levererar hem till dörren, inga konstigheter.
          <br></br>Nånting om att natutligt är bra, ekologiskt, giftfritt, glada vinodlare</p>
+          <img src="/Images/grape.png"></img>
               </header>
             <div class="wineboxContainer">
                 <div class="row" id="topRow">
                     
-                {items.map(item => <Box product={item} cart={props.cart} setCart={props.setCart}/>)}
+                {items.map(item => <Box key={item.propid} product={item} cart={props.cart} setCart={props.setCart}/>)}
                 </div>
             </div>
           </>)

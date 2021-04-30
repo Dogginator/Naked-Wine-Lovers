@@ -2,8 +2,13 @@ import React, { useState } from 'react';
 
 export const Box = (props) => {
 
+    const [grid,setGrid] = useState('');
+
     const OnClick = value => {
-        props.setCart([...props.cart,value])
+
+        props.cart.some(item => item.name === value.name) 
+        ? console.log('dubblettttt')
+        : props.setCart([...props.cart,value])
     }
 
     return (
@@ -21,7 +26,7 @@ export const Box = (props) => {
                     <p className="descText">
                         {props.product.description}</p>
                     <p className="descText" id="price">
-                        {props.product.price}</p>
+                        {props.product.price} SEK/Månad</p>
                 </div>
 
                 <button onClick={() => OnClick(props.product)} className="wineboxButton">Lägg till i varukorg</button>
