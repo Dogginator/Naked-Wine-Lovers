@@ -11,6 +11,7 @@ import Box6 from './Components/Products/6'
 import Confirm from './Components/Confirm'
 import Navbar from './Components/Navbar'
 import ShoppingCart from './Components/ShoppingCart'
+import Footer from './Components/Footer'
 import WineBox from './Components/WineBoxes'
 import Varukorg from './Components/Varukorg'
 import Vingardarna from './WineYards/Vingardarna'
@@ -65,7 +66,9 @@ const initialValues  = {
             <Route path='/JamesAndTheGiantGrape' exact><JamesAndTheGiantGrape/></Route>
             <Route path='/ThreeSeasonsVinyard' exact><ThreeSeasonsVinyard/></Route>
         </Switch>
+        
 </Router>
+<Footer />
 </>
     )
 }

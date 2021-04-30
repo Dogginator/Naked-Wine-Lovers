@@ -39,6 +39,7 @@ export const ShoppingCart = (props) => {
                 {(props.cart.length === 0 ? <h5>Snustorrt.. kanske lite vin?</h5> : <h1></h1>)}
                             {props.cart.map((prod) => itemOutput(prod))
                             }
+
                 </div>
                 <div className="row" id="totAndGarbage">
                         <p className="col" id="totalPrice">Totalt:</p>
