@@ -45,13 +45,13 @@ const Box1 = () => {
                 </div>
                 <div className="row" id="ContainerWindow">
                     <div className="col" id="ColPaddingZero"/>
-                    <div className="col" id="ColPaddingZero"><button type="button" id="VidareKnapp">Lägg till i varukorg</button></div>   
+                    <div className="col" id="ColPaddingZero" ><button type="button" id="VidareKnapp">Lägg till i varukorg</button></div>   
                 </div>
             </div>
             <div className="row" id="ContainerWindow">
                 <div className="col" id="ColPaddingZero"/>
                 <div className="col" id="ColPaddingZero">
-                     <h1 className="RubrikBlandat"><b>LÅDANS VINER I APRIL 2021</b></h1>
+                     <h1 className="RubrikBlandat" ref={myRef} ><b>LÅDANS VINER I APRIL 2021</b></h1>
                 </div>
                 <div className="col" id="ColPaddingZero"/>
             </div>
@@ -59,7 +59,7 @@ const Box1 = () => {
                 <div className="col" id="ColPaddingZero">
                     <img className="Blandat1" alt="Bottle of White is Blanc" src="./Images/Blandat1.png"></img>
                 </div>
-                <div className="col" ref={myRef} id="ColPaddingZero">
+                <div className="col" id="ColPaddingZero">
                     <h2>WHITE IS BLANC</h2><br/>
                     <p>Vitt, USA 2020</p><br/>
                     <p>
