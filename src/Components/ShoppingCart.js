@@ -38,6 +38,7 @@ export const ShoppingCart = (props) => {
                             {props.cart.map((prod) => itemOutput(prod))
                             }
                         </div>
+                        <hr id="ShoppingCartLine" color="#C26D3D"/>
                         <div className="shop-sub">
                 <Link to="/Varukorg">
                 <button type="button" className="shopping-visa-varukorg">Visa Varukorg</button>
