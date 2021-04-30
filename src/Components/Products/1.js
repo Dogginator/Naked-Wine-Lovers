@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import { IoIosArrowDown } from 'react-icons/io'
-
+import { Link } from 'react-router-dom'
 
 
 const Box1 = () => {
@@ -57,10 +57,10 @@ const Box1 = () => {
             </div>
             <div className="row" id="ContainerWindow">
                 <div className="col" id="ColPaddingZero">
-                    <img className="Blandat1" src="./Images/Blandat1.png"></img>
+                    <img className="Blandat1" alt="Bottle of White is Blanc" src="./Images/Blandat1.png"></img>
                 </div>
                 <div className="col" ref={myRef} id="ColPaddingZero">
-                    <h2>White is blanc</h2><br/>
+                    <h2>WHITE IS BLANC</h2><br/>
                     <p>Vitt, USA 2020</p><br/>
                     <p>
                     Detta vita vinet från Garden of Eden Vinyard i Kalifornien, USA. Inslag av päron, färska örter och honung. 
@@ -73,19 +73,19 @@ const Box1 = () => {
                     Sockerhalt 10 g/l   
                     </p><br/>
                     <p id="InfoLink">
-                    <b>Läs mer om vingården:</b> <a href="/GardenOfEden">Garden of Eden</a>
+                    <b>Läs mer om vingården:</b> <Link to="/GardenOfEden">Garden of Eden</Link>
                     </p>
                 </div>
                 <div className="col" id="ColPaddingZero">
-                    <img className="Taste1"src="./Images/Plats1.png"></img>
+                    <img className="Taste1" alt="Taste scale" src="./Images/Plats1.png"></img>
                 </div>
             </div>
             <div className="row" id="ContainerWindow">
             <div className="col" id="ColPaddingZero">
-                    <img className="Blandat2" src="./Images/Blandat2.png"></img>
+                    <img className="Blandat2" alt="Bottle of Orange you Glad" src="./Images/Blandat2.png"></img>
                 </div>
                 <div className="col" id="ColPaddingZero">
-                    <h2>orange you glad</h2><br/>
+                    <h2>ORANGE YOU GLAD</h2><br/>
                     <p>Orange, Frankrike  2020</p><br/>
                     <p>
                     Ett fermenterat vitt vin från James and the Giant Grape. 
@@ -98,19 +98,19 @@ const Box1 = () => {
                     Sockerhalt 9 g/l   
                     </p><br/>
                     <p id="InfoLink">
-                    <b>Läs mer om vingården:</b> <a href="/JamesAndTheGiantGrape">James and the Giant Grape</a>
+                    <b>Läs mer om vingården:</b> <Link to="/JamesAndTheGiantGrape">James and the Giant Grape</Link>
                     </p>
                 </div>
                 <div className="col" id="ColPaddingZero">
-                <img className="Taste2"src="./Images/Plats2.png"></img>
+                <img className="Taste2" alt="Taste scale" src="./Images/Plats2.png"></img>
                 </div>
             </div>
             <div className="row" id="ContainerWindow">
             <div className="col" id="ColPaddingZero">
-                    <img className="Blandat3" src="./Images/Blandat3.png"></img>
+                    <img className="Blandat3"  alt="Bottle of Pink Panther" src="./Images/Blandat3.png"></img>
                 </div>
                 <div className="col" id="ColPaddingZero">
-                    <h2>pink panther</h2><br/>
+                    <h2>PINK PANTHER</h2><br/>
                     <p>Mousserande, Frankrike 2020</p><br/>
                     <p>
                     Ett sött mousserande från Three Seasons Vinyard vid den franska 
@@ -123,19 +123,19 @@ const Box1 = () => {
                     Sockerhalt 11 g/l   
                     </p><br/>
                     <p id="InfoLink">
-                    <b>Läs mer om vingården:</b> <a href="/ThreeSeasonsVinyard">Three Seasons Vinyard</a>
+                    <b>Läs mer om vingården:</b> <Link to="/ThreeSeasonsVinyard">Three Seasons Vinyard</Link>
                     </p>
                 </div>
                 <div className="col" id="ColPaddingZero">
-                    <img className="Taste3"src="./Images/Plats3-4.png"></img>
+                    <img className="Taste3" alt="Taste scale" src="./Images/Plats3-4.png"></img>
                 </div>
             </div>
             <div className="row" id="ContainerWindow">
             <div className="col" id="ColPaddingZero">
-                    <img className="Blandat4" src="./Images/Blandat4.png"></img>
+                    <img className="Blandat4" alt="Bottle of Girl in red" src="./Images/Blandat4.png"></img>
                 </div>
                 <div className="col" id="ColPaddingZero">
-                    <h2>girl in red</h2><br/>
+                    <h2>GIRL IN RED</h2><br/>
                     <p>Rött, Spanien 2020</p><br/>
                     <p>
                     Ett mustigt rött vin från Amigos Vinyard med inslag av mörka 
@@ -147,11 +147,11 @@ const Box1 = () => {
                     Sockerhalt 8 g/l   
                     </p><br/>
                     <p id="InfoLink">
-                    <b>Läs mer om vingården:</b> <a href="/AmigosVinyard">Amigos Vinyard</a>
+                    <b>Läs mer om vingården:</b> <Link to="/AmigosVinyard">Amigos Vinyard</Link>
                     </p>
                 </div>
                 <div className="col" id="ColPaddingZero">
-                    <img className="Taste4"src="./Images/Plats3-4.png"></img>
+                    <img className="Taste4" alt="Taste scale" src="./Images/Plats3-4.png"></img>
                 </div>
             </div>
             <div className="row" id="ContainerWindow">
@@ -166,16 +166,16 @@ const Box1 = () => {
             </div>
             <div className="row" id="ContainerWindow">
                 <div className="col" id="ColPaddingZero"/>
-                <div className="col" id="ColPaddingZero"><img className="NextBlandat" src="./Images/BlandatMaj.png"/></div>
-                <div className="col" id="ColPaddingZero"><img className="PlaceHolder1" src="./Images/PlaceHolder2end.png"/></div>
-                <div className="col" id="ColPaddingZero"><img className="PlaceHolder2" src="./Images/PlaceHolder2end.png"/></div>
+                <div className="col" id="ColPaddingZero"><img className="NextBlandat" alt="Box of May" src="./Images/BlandatMaj.png"/></div>
+                <div className="col" id="ColPaddingZero"><img className="PlaceHolder1" alt="Box not Selected" src="./Images/PlaceHolder2end.png"/></div>
+                <div className="col" id="ColPaddingZero"><img className="PlaceHolder2" alt="Box not Selected" src="./Images/PlaceHolder2end.png"/></div>
                 <div className="col" id="ColPaddingZero"/>
             </div>
             <div className="row" id="ContainerWindow">
                 <div className="col" id="ColPaddingZero"/>
-                <div className="col" id="ColPaddingZero"><a id="LinkTo1" href="/">Här kan du läsa om Maj lådan!</a></div>
-                <div className="col" id="ColPaddingZero"><a id="LinkTo2" href="/">Ej urvalt ännu</a></div>
-                <div className="col" id="ColPaddingZero"><a id="LinkTo3" href="/">Ej urvalt ännu</a></div>
+                <div className="col" id="ColPaddingZero"><Link id="LinkTo1" to="/">Här kan du läsa om Maj lådan!</Link></div>
+                <div className="col" id="ColPaddingZero"><Link id="LinkTo2" to="/">Ej urvalt ännu</Link></div>
+                <div className="col" id="ColPaddingZero"><Link id="LinkTo3" to="/">Ej urvalt ännu</Link></div>
                 <div className="col" id="ColPaddingZero"/>
             </div>
         </>
