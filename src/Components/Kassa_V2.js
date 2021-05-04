@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const swish = "https://www.logo.wine/a/logo/Swish_(payment)/Swish_(payment)-Logo.wine.svg";
 const bankcard = "../Images/pngegg.png";
 const VinBox ="../Images/Vinbildconf.png";
-
+/* FUNKA FFS */
 
 
 
