@@ -6,6 +6,7 @@ const VinBox ="../Images/Vinbildconf.png";
 
 
 
+
 const Kassa_V2 = () => {
     const url = "https://my-json-server.typicode.com/Dogginator/Naked-Wine-Lovers/posts";
     const[email, setEmail] = useState('');
