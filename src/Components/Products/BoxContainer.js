@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { Link } from 'react-router-dom'
 export const Box = (props) => {
 
     const [grid,setGrid] = useState('');
@@ -19,7 +19,8 @@ export const Box = (props) => {
                     backgroundImage: `url(${props.product.background.url})`,
                     backgroundRepeat: 'no-repeat'
                     }}>
-                    <img className="wineboxImage" id="productImg" src={props.product.productimage.url}></img>
+                        
+                        <Link to={`/${props.product.prodid}`}><img className="wineboxImage" id="productImg" src={props.product.productimage.url}></img></Link>
                 </div>
 
                 <div className="boxInfo">
