@@ -1,13 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { useRef } from 'react';
-import ShoppingCart from './ShoppingCart'
+import OverlayCart from './OverlayCart'
 import Ploygon from './Polygon'
 import {useDetectOutsideClick} from './useDitectClickOutside'
-
+import { useSelector, useDispatch } from 'react-redux';
 
 const Navbar = (props) => {
 
+    const cart = useSelector(state => state.cart);
     const dropdownRef = useRef(null);
     const [isActive, setIsActive] = useDetectOutsideClick(dropdownRef, false);
     const onClick = () => setIsActive(!isActive);
@@ -39,10 +40,10 @@ return (
                 <a href="#Villkor">Villkor</a>
             </div>
             <div class="col-sm-4" id="gridNavBarRight">
-                <button onClick={onClick} className="menu-trigger">Varukorg({props.cart.length})</button>
+                <button onClick={onClick} className="menu-trigger">Varukorg({cart.length})</button>
                 <nav ref={dropdownRef} className={`menu ${isActive ? 'active' : 'inactive'}`}>
                 <Ploygon/>
-                <ShoppingCart cart={props.cart} setCart={props.setCart} />
+                <OverlayCart cart={props.cart} setCart={props.setCart} />
                 </nav>
             </div>
         </nav>      
