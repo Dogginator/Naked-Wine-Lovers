@@ -29,8 +29,9 @@ export const Box = (props) => {
                     <p className="descText" id="price">
                         {props.product.price} SEK/Månad</p>
                 </div>
-
+                    
                 <button onClick={() => OnClick(props.product)} className="wineboxButton">Lägg till i varukorg</button>
+                
             </div>
         </>
     )

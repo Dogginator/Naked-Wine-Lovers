@@ -4,6 +4,8 @@ import { useRef } from 'react';
 import ShoppingCart from './ShoppingCart'
 import Ploygon from './Polygon'
 import {useDetectOutsideClick} from './useDitectClickOutside'
+import { IoCartOutline } from 'react-icons/io5'
+import { CgMenu } from 'react-icons/cg'
 
 
 const Navbar = (props) => {
@@ -14,6 +16,7 @@ const Navbar = (props) => {
 return (
 
     <nav className="TopNavbar"> 
+    
         <hr id="UnderLine" color="Black"/>  
             <div class="col-sm-4" id="gridNavBarLeft">
             <Link to="/1">Hem</Link>
@@ -38,12 +41,15 @@ return (
             <div class="col-sm-4" id="gridNavBarRight">
                 <a href="#Villkor">Villkor</a>
             </div>
-            <div class="col-sm-4" id="gridNavBarRight">
+            <div class="col-sm-4" id="gridNavBarCart">
                 <button onClick={onClick} className="menu-trigger">Varukorg({props.cart.length})</button>
+               
                 <nav ref={dropdownRef} className={`menu ${isActive ? 'active' : 'inactive'}`}>
                 <Ploygon/>
                 <ShoppingCart cart={props.cart} setCart={props.setCart} />
                 </nav>
+                <CgMenu className="hamburgerMenu" size="2.5em"/>
+                <button onClick={onClick} className="menu-trigger-mobile"><IoCartOutline size="2.5em"/></button>
             </div>
         </nav>      
 );

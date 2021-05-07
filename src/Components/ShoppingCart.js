@@ -23,7 +23,7 @@ export const ShoppingCart = (props) => {
                 <br/>
                 <a>{prod.name}</a>
                 <br/>
-                <a>Antal:</a>
+                <a>Antal: {prod.size}</a>
                 </div>
             </div>
         );
@@ -47,7 +47,7 @@ export const ShoppingCart = (props) => {
                         <img src="/Images/Garbage.png" onClick={() => emptyCart()}></img></a>
                 </div>
                 <div className="shopping-cart-buttons">
-                    <Link to="/Varukorg">
+                    <Link to="/Kassa">
                         <button type="button" className="shopping-button-checkout">Checka ut</button>
                         </Link>
                     <button type="button" className="shopping-button-shop">Forsätt shoppa</button>

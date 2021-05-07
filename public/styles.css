@@ -603,6 +603,12 @@ body {
   left: 15%;
   padding-left: 7.4%;
 }
+#gridNavBarCart {
+  display: inline;
+  text-align: center;
+  left: 15%;
+  padding-left: 7.4%;
+}
 
 .IconNavbar {
   text-align: center;
@@ -620,6 +626,12 @@ body {
   border-width: 0.5px;
   width: 100%;
 }
+@media only screen and (min-width: 480px) {
+  .hamburgerMenu {
+    display: none;
+  }
+}
+
 
 .menu-trigger {
   font-weight: bold;
@@ -634,6 +646,9 @@ body {
   vertical-align: middle;
   transition: box-shadow 0.4s ease;
   margin-left: auto; /* Strictly for positioning */
+}
+.menu-trigger-mobile {
+  display: none;
 }
 
 .menu {
@@ -692,7 +707,6 @@ body {
   border-radius: 30px;
   padding: 20px;
   padding-bottom: 30px;
-
 }
 
 .shopping-cart-header {
@@ -751,28 +765,33 @@ body {
   width: 90%;
   height: 90%;
 }
+/* Footer */
 
-.footers {
- 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.TheFooter {
+  flex-shrink: 0;
+  margin-top: auto;
   display: flex;
   flex-wrap: wrap;
-  display: flex;
   align-items: stretch;
   flex-direction: column;
-  position: absolute;
   width: 100%;
   height: 334px;
-  left: 0px;
+  bottom: 0;
+
   background: #F3F1EE;
 }
 
 .footer-ul {
   list-style: none;
-  position: absolute;
-  width: 343px;
-  height: 202px;
-  left: 123px;
-  top: 150px;
+  position: relative;
+  margin-top: 2em;
+  margin-left: 10em;
 
   font-family: Halant;
   font-style: normal;
@@ -786,24 +805,16 @@ color: #000000;
   list-style: none;
   justify-content: center;
 }
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
 
 .Footerh1 {
-  position: absolute;
-  left: 170px;
-  padding-top: 4.5rem;
-  
+  justify-content: left;
   font-family: "Amatica SC", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
   line-height: 37px;
  
-  text-align: center;
+
   
   color: #000000;
 }
@@ -811,25 +822,19 @@ body {
   flex: 1;
 }
 .Footerh2 {
-  position: absolute;
-  left: 68%;
-  padding-top: 4.5rem;
+  justify-content: center;
   display: flex;
   font-family: "Amatica SC", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
   line-height: 37px;
-  
-  text-align: center;
-  
   color: #000000;
 }
  
 .footer-social {
-  position: absolute;
-  left: 59%;
-  padding-top: 6rem;
+  margin-top: 2em;
+  margin-right: 30em;
 }
 .footer-social-list {
   display: flex;
@@ -840,11 +845,12 @@ body {
   font-size: 1.3rem;
   justify-content: center;
 }
-.lowtext li{
-  position: absolute;
+.lowtext{
+  justify-content: center;
 
-  left: 608px;
-  padding-top: 19rem;
+}
+.lowtext li {
+  
   list-style: none;
   font-family: Halant;
   font-style: normal;
@@ -855,6 +861,8 @@ body {
   
   color: #000000;
 }
+
+
 
 /* Product-page */
 
