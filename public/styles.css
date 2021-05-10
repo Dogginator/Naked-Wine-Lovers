@@ -633,6 +633,14 @@ body {
 }
 
 
+#sepLine {
+  position: absolute;
+  margin: 0em;
+  padding: 0%;
+  border-width: 0.5px;
+  width: 100%;
+}
+
 .menu-trigger {
   font-weight: bold;
   background-color: #FAF8F7;
@@ -683,6 +691,11 @@ body {
   left: 0px;
   top: 328.51px;
   border: 1px solid #C26D3D;
+}
+
+.changeProductAmount {
+  background: none;
+  border: none;
 }
 
 #garbage-icon {
@@ -767,7 +780,86 @@ body {
 }
 /* Footer */
 
-body {
+#prodImg {
+  width: 30%;
+  height: 80%;
+}
+
+#cartCat {
+  text-align: center;
+  align-self: center;
+}
+
+#iconsCart {
+  text-align:end;
+}
+
+#paddingIcons {
+  padding: 4px;
+}
+
+#paddingBottle {
+  height: 25%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 12px;
+}
+
+.cartLine {
+  border-radius: 1px solid black;
+  background-color: #000000;
+}
+
+#topRowCart {
+  justify-content: center;
+  padding-bottom: 20px;
+  height: 300px;
+  width: 100%;
+}
+
+#middleRowCart {
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+}
+
+#bottomRowCart {
+  justify-content: flex-end;
+  width: 100%;
+  height: 100px;
+}
+
+.checkOutPayment {
+  color: white;
+  width: 20%;
+  height: 30%;
+  background: #C26D3D;
+  border-style: none;
+  border-radius: 10px;
+  border-color: none;
+}
+
+.cartBenefitBox {
+  align-self:flex-end;
+  width: 40%;
+  height: 65%;
+  background: #C9D5C7;
+  border-radius: 30px;
+}
+
+#paddingBenefitText {
+  padding: 4.5px;
+  margin: 0;
+}
+
+#headerTextBenefits {
+
+  padding-top: 1%;
+  padding-left: 7%;
+}
+
+.footers {
+ 
   display: flex;
   flex-direction: column;
   min-height: 100vh;

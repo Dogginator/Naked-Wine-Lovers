@@ -1,15 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { useRef } from 'react';
-import ShoppingCart from './ShoppingCart'
+import OverlayCart from './OverlayCart'
 import Ploygon from './Polygon'
 import {useDetectOutsideClick} from './useDitectClickOutside'
-import { IoCartOutline } from 'react-icons/io5'
-import { CgMenu } from 'react-icons/cg'
-
+import { useSelector, useDispatch } from 'react-redux';
 
 const Navbar = (props) => {
 
+    const cart = useSelector(state => state.cart);
     const dropdownRef = useRef(null);
     const [isActive, setIsActive] = useDetectOutsideClick(dropdownRef, false);
     const onClick = () => setIsActive(!isActive);
@@ -41,12 +40,11 @@ return (
             <div class="col-sm-4" id="gridNavBarRight">
                 <a href="#Villkor">Villkor</a>
             </div>
-            <div class="col-sm-4" id="gridNavBarCart">
-                <button onClick={onClick} className="menu-trigger">Varukorg({props.cart.length})</button>
-               
+            <div class="col-sm-4" id="gridNavBarRight">
+                <button onClick={onClick} className="menu-trigger">Varukorg({cart.length})</button>
                 <nav ref={dropdownRef} className={`menu ${isActive ? 'active' : 'inactive'}`}>
                 <Ploygon/>
-                <ShoppingCart cart={props.cart} setCart={props.setCart} />
+                <OverlayCart cart={props.cart} setCart={props.setCart} />
                 </nav>
                 <CgMenu className="hamburgerMenu" size="2.5em"/>
                 <button onClick={onClick} className="menu-trigger-mobile"><IoCartOutline size="2.5em"/></button>

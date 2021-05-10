@@ -1,14 +1,21 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
+import { useSelector, useDispatch } from 'react-redux';
+import { ADD_TO_CART, INCREASE } from '../../actions';
+
 export const Box = (props) => {
 
-    const [grid,setGrid] = useState('');
+    const cart = useSelector(state => state.cart);
+    const dispatch = useDispatch();
 
     const OnClick = value => {
-
-        props.cart.some(item => item.name === value.name) 
-        ? console.log('dubblettttt')
-        : props.setCart([...props.cart,value])
+        if(cart.some(item => item.name === value.name)) {
+            console.log('dubblettttt')
+        }
+        else {
+            dispatch(ADD_TO_CART(value));
+            dispatch(INCREASE(value.price));
+        }
     }
 
     return (
@@ -36,37 +43,5 @@ export const Box = (props) => {
         </>
     )
 }
-
-// const box = () => {
-
-// return (
-// <>
-
-// <div class="wineboxContainer">
-//   <div class="row" id="topRow">
-//     <div class="col-sm-4" id="wineboxgrid">
-//     {<BoxContainer boxId={1} winebox={'1'} frontPic={'Box1'}/>}
-//     </div>
-//     <div class="col-sm-4" id="wineboxgrid">
-//         {<BoxContainer boxId={2} winebox={'2'} frontPic={'Box2'}/>}
-//     </div>
-//     <div class="col-sm-4" id="wineboxgrid">
-//             {<BoxContainer boxId={3} winebox={'3'} frontPic={'Box3'}/>}
-//         </div>
-//   </div>
-
-//   <div class="row" id="downRow">
-//     <div class="col-sm-4" id="wineboxgrid">
-//     {<BoxContainer boxId={4} winebox={'4'} frontPic={'Box4'}/>}
-//     </div>
-//     <div class="col-sm-4" id="wineboxgrid">
-//         {<BoxContainer boxId={5} winebox={'5'} frontPic={'Box5'}/>}
-//     </div>
-//   </div>
-// </div>
-// </>
-// )
-
-// }
 
 export default Box;

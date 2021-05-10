@@ -6,6 +6,7 @@ const PRODUCTS_QUERY = gql`
       name
       price
       description
+      quantity
       productimage {
         id
         url

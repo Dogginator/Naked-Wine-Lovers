@@ -5,15 +5,22 @@ import App from './App';
 import { ApolloProvider } from "react-apollo";
 import ApolloClient from "apollo-boost";
 import reportWebVitals from './reportWebVitals';
+import { createStore } from 'redux';
+import allReducers from './reducers';
+import { Provider } from 'react-redux';
 
 const client = new ApolloClient({
   uri: "https://api-eu-central-1.graphcms.com/v2/cknxm2lmmxx7u01ytczj5e2l5/master"
 });
 
+const store = createStore(allReducers);
+
 ReactDOM.render(
+  <Provider store={store}>
   <ApolloProvider client={client}>
     <App />
-  </ApolloProvider>,
+  </ApolloProvider>
+  </Provider>,
   document.getElementById('root')
 );
 
