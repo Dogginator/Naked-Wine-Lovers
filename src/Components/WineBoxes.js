@@ -2,9 +2,9 @@ import React, { Component , useState } from 'react';
 import { Query } from 'react-apollo';
 import PRODUCTS_QUERY from './Products/Queries';
 import { Box } from './Products/BoxContainer';
-import ShoppingCart from './ShoppingCart'
+import OverlayCart from './OverlayCart'
 
-const WineBox = (props) =>  {
+const WineBox = () =>  {
 
     return (
       <Query query={PRODUCTS_QUERY}>
@@ -27,11 +27,11 @@ const WineBox = (props) =>  {
             <div class="wineboxContainer">
                 <div class="row" id="topRow">
                     
-                {items.map(item => <Box key={item.propid} product={item} cart={props.cart} setCart={props.setCart}/>)}
+                {items.map(item => <Box key={item.prodid} product={item}/>)}
                 </div>
             </div>
-          </>)
-        }}
+          </>
+          )}}
       </Query>
     );
   }
