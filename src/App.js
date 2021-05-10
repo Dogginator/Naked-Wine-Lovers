@@ -64,9 +64,9 @@ const initialValues  = {
             <Route path='/JamesAndTheGiantGrape' exact><JamesAndTheGiantGrape/></Route>
             <Route path='/ThreeSeasonsVinyard' exact><ThreeSeasonsVinyard/></Route>
         </Switch>
-        
+        <Footer />
 </Router>
-<Footer />
+
 </>
     )
 }

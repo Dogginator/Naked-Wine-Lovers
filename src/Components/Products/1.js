@@ -24,7 +24,7 @@ const Box1 = () => {
                         <div className="col" id="col-grid-info">
                             <div className="infoContainer">
 
-                                <h1>Blandat</h1>
+                                <h1 className="desktoph1">Blandat</h1>
                                 <p id="type">Vitt,  orange, rött och mousserande</p>
                                 <h2>Prenumerera 899 SEK /Månad</h2>
                                 <p>

@@ -1,0 +1,142 @@
+@media only screen and (max-width: 480px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      .footer-container {
+        flex: 1;
+      }
+    .TheFooter {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        flex-direction: column;
+
+        width: 100%;
+        height: 198px;
+        background: #F3F1EE;
+      }
+      .footer-ul {
+        top: 25%;
+        left: 5.81%;
+        right: 80%;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+       
+        color: #000000;
+        margin: 0;
+        padding: 0;
+      }
+      .footer-ul p {
+          margin:0;
+      }
+    
+      .Footerh1 {
+        left: 5.19%;
+        right: 80%;
+        bottom: 70%;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        color: #000000;
+      }
+   
+      .footer-social-list li, .footer-social, .Footerh2, .lowtext li, .menu-trigger{
+          display:none;
+      }
+    
+      #gridNavBarLeft, #gridNavBarRight,  #UnderLine {
+        display: none;
+      }
+      .menu-trigger-mobile {
+        background-color: #FAF8F7;
+        border-radius: 0px;
+        cursor: pointer;
+        display: flex;
+        justify-content:flex-end;
+        border: none;
+        transition: box-shadow 0.4s ease;
+        margin-left: 200px;
+        margin-top: -35px;
+      }
+
+      .shopping-cart {
+        margin: 20px 0;
+        margin-left: 290px;
+        float: right;
+        background: #FAF8F7;
+        width: 220px;
+        height: 500px;
+        border-radius: 30px;
+        padding: 20px;
+        padding-bottom: 30px;
+      }
+      .Shooping-cart-Ploygon {
+        background-image: url("/Images/Polygon.png");
+        position: absolute;
+        width: 26px;
+        height: 27px;
+        left: 480px;
+        top: 5px;
+      }
+      .winelogo {
+        width: 55px;
+        text-align: center;
+        background-color: #FAF8F7;
+       
+
+      }
+
+      .hamburgerMenu {
+          margin-top: 5px;
+          margin-left: -50px;
+        justify-content: left;
+      }
+      .wineboxImage {
+    
+        width: 152px;
+        height: 142px;
+        align-items: center;
+        
+      }
+      .descText {
+
+        line-height: 18px;
+        padding-right: 20px;
+        padding-top: 25px;
+        margin: 0px;
+        margin-bottom: 20px;
+      }
+      #price {
+        height: 30px;
+        padding-top: 40px;
+        text-align: right;
+      }
+      .wineboxButton {
+        text-align: center;
+        
+        margin-top: 0px;
+        border-radius: 30px;
+        color: white;
+        background-color: #D78255;
+        border: #D78255;
+        width: 100%;
+ 
+      }
+      .TopPicture {
+        width: 115.97px;
+        height: 120px;
+      }
+      .desktoph1 {
+          display: none;
+      }
+      #type, #ScrollDownInfo, #ReadInfo {
+          display:none;
+      }
+}
