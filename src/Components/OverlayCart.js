@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { EMPTY_CART, RESET_TOTAL, INCREASE_QTY, INCREASE_AMOUNT, DECREASE_AMOUNT, INCREASE, DECREASE } from '../actions';
+import { EMPTY_CART, RESET_TOTAL, INCREASE_QTY, DECREASE_QTY, INCREASE_AMOUNT, DECREASE_AMOUNT, INCREASE, DECREASE } from '../actions';
 
 export const OverlayCart = () => {
 
@@ -10,9 +10,9 @@ export const OverlayCart = () => {
     const numProducts = useSelector(state => state.products);
     const dispatch = useDispatch();
 
-    const increase_qty = (id,price) => {
-        dispatch(INCREASE_QTY(id));
-        dispatch(INCREASE(price));
+    const increase_qty = (id,quantity) => {
+        dispatch(INCREASE_QTY(id,quantity));
+        //dispatch(INCREASE(price));
     }
 
     const increaseProduct = (id,price) => {
@@ -20,9 +20,9 @@ export const OverlayCart = () => {
         dispatch(INCREASE(price));
     }
 
-    const decreaseProduct = (price) => {
-        dispatch(DECREASE_AMOUNT());
-        dispatch(DECREASE(price));
+    const decrease_qty = (id,quantity) => {
+        dispatch(DECREASE_QTY(id,quantity));
+        //dispatch(DECREASE(price));
     }
 
     const emptyCart = () => {
@@ -45,7 +45,7 @@ export const OverlayCart = () => {
                 <br/>
                 <a>{prod.name}</a>
                 <br/>
-                <a>Antal: <button className="changeProductAmount" onClick={() => decreaseProduct(prod.price)}>-</button>{numProducts}<button className="changeProductAmount" onClick={() => increaseProduct(prod.prodid,prod.price)}>+</button></a>
+                <a>Antal: <button className="changeProductAmount" onClick={() => decrease_qty(prod.prodid, {quantity: prod.quantity--})}>-</button>{prod.quantity}<button className="changeProductAmount" onClick={() => increase_qty(prod.prodid, {quantity: prod.quantity++})}>+</button></a>
                 </div>
             </div>
         );

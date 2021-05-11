@@ -13,7 +13,7 @@ const client = new ApolloClient({
   uri: "https://api-eu-central-1.graphcms.com/v2/cknxm2lmmxx7u01ytczj5e2l5/master"
 });
 
-const store = createStore(allReducers);
+const store = createStore(allReducers,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 ReactDOM.render(
   <Provider store={store}>
