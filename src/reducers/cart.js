@@ -3,37 +3,35 @@ import PRODUCTS_QUERY from "../Components/Products/Queries";
 const defaultState = [];
 
 const findProductIndex = (cart, productID) => {
-    return cart.findIndex(product => product.id === productID);
+    return cart.findIndex(product => product.prodid === productID);
 }
 
 const cartReducer = (state = defaultState, action) => {
     switch(action.type) {
         case 'EMPTY_CART':
+            state.map((prod) => prod.quantity = 1);
             return defaultState;
+
         case 'ADD_TO_CART':
             return [...state, action.payload];
-        case 'INCREASE_QTY':
-            const incPayload = action.payload;
-            const incCart = state;
 
-            const incProductIndex = findProductIndex(incCart, incPayload.id);
-            if (incProductIndex >= 0) {
-                let product = incCart[incProductIndex];
-                product.quantity = incPayload.quantity;
-                incCart[incProductIndex] = product;
-            }
-            return [...incCart];    
-        case 'DECREASE_QTY':
-            const decPayload = action.payload;
-            const decCart = state;
+        case 'CHANGE_QTY':
+            const increase = action.increase;
+            const payload = action.product;
+            const cart = [...state];
 
-            const decProductIndex = findProductIndex(decCart, decPayload.id);
-            if(decProductIndex >= 0) {
-                let product = decCart[decProductIndex];
-                product.quantity = decPayload.quantity;
-                decCart[decProductIndex] = product;
+            const productIndex = findProductIndex(cart, payload.prodid);
+            if (productIndex >= 0) {
+                let product = cart[productIndex];
+                (increase) ? product.quantity++ : product.quantity--;
+                cart[productIndex] = product;
             }
-            return [...decCart];
+
+            if (payload.quantity === 0) {
+                cart.splice(productIndex,1);
+            }
+
+            return [...cart];
         default:
             return state;
     }

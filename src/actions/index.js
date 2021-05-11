@@ -31,10 +31,11 @@ export const DECREASE = (price) => {
     }
 }
 
-export const INCREASE_QTY = (id,quantity) => {
+export const CHANGE_QTY = (payload,increase) => {
     return {
-            type: 'INCREASE_QTY',
-            payload: {id, quantity},
+            type: 'CHANGE_QTY',
+            product: payload,
+            increase: increase,
     }
 }
 

@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { EMPTY_CART, RESET_TOTAL, INCREASE_QTY, INCREASE_AMOUNT, DECREASE_AMOUNT, INCREASE, DECREASE } from '../actions';
+import { EMPTY_CART, RESET_TOTAL, INCREASE, DECREASE } from '../actions';
 
 const CartCheckout = () => {
 
@@ -25,7 +25,7 @@ const CartCheckout = () => {
                     <a>{prod.quantity}</a>
                 </div>
                 <div className="col-sm-2" id="cartCat">
-                    <a>{prod.price} SEK/månad</a>
+                    <a>{prod.price * prod.quantity} SEK/månad</a>
                 </div>
             </div>
         );
