@@ -169,7 +169,7 @@
 
 .col-sm-5 {
     background-color: #C2BEB5;
-    position: absolute;
+
     width: 660px;
     height: 845px;
     left: 382px;
@@ -182,7 +182,7 @@ body {
   }
 
   #ConfirmH1 {
-    position: absolute;
+
     width: 197px;
     height: 50px;
     left: 624px;
@@ -251,7 +251,7 @@ body {
     background-image: url(./Images/Vinbildconf.png);
   }
   #Confirmknappen {
-    position: absolute;
+
     width: 118px;
     height: 24px;
     left: 645px;
@@ -396,7 +396,7 @@ body {
   }
   
   .cvcCode {
-    position: absolute;
+
     font-size: 30px;
     margin-left: 250px;
     margin-top: 10px;
