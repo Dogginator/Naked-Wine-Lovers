@@ -859,7 +859,6 @@ body {
 }
 
 .footers {
- 
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -957,6 +956,12 @@ color: #000000;
 
 
 /* Product-page */
+
+@media only screen and (min-width: 480px) {
+  .mobileh1, #mobiletype, #MobilVidareKnapp, .MobilH3, #produktBR {
+    display: none;
+  }
+}
 
 .Product-page {
   background-color: #E4E0D7;

@@ -51,7 +51,7 @@
           display:none;
       }
     
-      #gridNavBarLeft, #gridNavBarRight,  #UnderLine {
+      #gridNavBarLeft, #gridNavBarRight, #UnderLine {
         display: none;
       }
       .menu-trigger-mobile {
@@ -64,6 +64,12 @@
         transition: box-shadow 0.4s ease;
         margin-left: 200px;
         margin-top: -35px;
+      }
+      #gridNavBarCart {
+        display: inline;
+        text-align: center;
+        left: 15%;
+        padding-left: 7.4%;
       }
 
       .shopping-cart {
@@ -89,8 +95,6 @@
         width: 55px;
         text-align: center;
         background-color: #FAF8F7;
-       
-
       }
 
       .hamburgerMenu {
@@ -99,14 +103,12 @@
         justify-content: left;
       }
       .wineboxImage {
-    
         width: 152px;
         height: 142px;
         align-items: center;
         
       }
       .descText {
-
         line-height: 18px;
         padding-right: 20px;
         padding-top: 25px;
@@ -120,7 +122,6 @@
       }
       .wineboxButton {
         text-align: center;
-        
         margin-top: 0px;
         border-radius: 30px;
         color: white;
@@ -136,7 +137,72 @@
       .desktoph1 {
           display: none;
       }
-      #type, #ScrollDownInfo, #ReadInfo {
+      #type, #ScrollDownInfo, #ReadInfo, #VidareKnapp {
           display:none;
+      }
+      #mobiletype {
+        width: 303px;
+        height: 22px;
+        left: 16px;
+        top: 130px;
+        
+        font-family: Halant;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+      }
+      .mobileh1 {
+        width: 303px;
+        height: 35px;
+        left: 17px;
+        top: 95px;
+        
+        font-family: Amatica SC;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 35px;
+      }
+      #MobilVidareKnapp {
+        display: flex;
+        margin-left: 35%;
+        
+        background: #D78255;
+        color: white;
+        border-radius: 30px;
+        border: 0;
+        width: 140%;
+        justify-content: center;
+      }
+      .produkth2 {
+        display: block;
+        width: 257px;
+        left: 40px;
+        top: 387px;
+        size: 10%;
+        font-size: 20px;
+      }
+      .produktP {
+        width: 257px;
+        left: 20%;
+        top: 0px;
+        
+        font-family: Halant;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 19px;
+      }
+      .produktH3 {
+        left: 0px;
+        top: 60%;
+        
+        font-family: Halant;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 19px;
+        display: none;
       }
 }
