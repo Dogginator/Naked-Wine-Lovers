@@ -29,6 +29,7 @@ const cartReducer = (state = defaultState, action) => {
 
             if (payload.quantity === 0) {
                 cart.splice(productIndex,1);
+                payload.quantity = 1;
             }
 
             return [...cart];
