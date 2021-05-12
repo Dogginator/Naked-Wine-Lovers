@@ -7,6 +7,21 @@ const Box1 = () => {
     const myRef = useRef(null);
     const executeScroll = () => myRef.current.scrollIntoView({ behavior: 'smooth' });
 
+    function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+      
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
 
     return (
         <>
@@ -29,20 +44,21 @@ const Box1 = () => {
                                 <h1 className="desktoph1">Blandat</h1>
                                 <p id="type">Vitt,  orange, rött och mousserande</p>
                                 <button type="button" id="MobilVidareKnapp">Lägg till i varukorg</button>
-                                <h2 className="produkth2">Prenumerera 899 SEK /Månad</h2>
+                                <h2 className="produkth2" >Prenumerera 899 SEK /Månad</h2>
                                 <p className="produktP">
                                     Vinlådan för dig som vill prova på det bästa av alla världar. I den här lådan får du en av varje. 
-                                    Det vill säga, ett vitt, ett orange, ett rött och ett mousserande. De passar alla till olika tillfällen, 
+                                    Det vill säga, ett vitt, ett orange, ett rött och ett mousserande. De passar alla till olika tillfällen,
+                                    <span id="dots"><button onclick={myFunction()} id="myBtn">... more</button></span><span id="more"> 
                                     men är alla lika goda! Månadens fyra gårdar är: Nonna Calbretta, Amigos, Three Season och Garden of Eden. 
-                                </p>
+                                    <br id="produktBR"/>
                                 <h3 className="produktH3">Så här funkar det.</h3>
-                                <p className="produktP">
+                                <br id="produktBR"/>
                                     <a className="MobilH3"><b>Så här funkar det.</b></a> <br id="produktBR"/>
                                     Detta är en prenumeration. Prenumererar du på denna låda så får du fyra flaskor blandade viner varje månad. 
                                     Vinerna är noga utvalda från de bästa vingårdarna och byts varje månad ut. 
                                     Denna produktsida är för vinerna du får i april månad. 
                                     Nedan ser du varje flaska som kommer med i den här lådan. 
-                                    Det är ingen bindningstid och du kan välja att avsluta prenumerationen när du vill. 
+                                    Det är ingen bindningstid och du kan välja att avsluta prenumerationen när du vill. </span>
                                 </p>
                             </div>
                         </div>
