@@ -196,8 +196,11 @@
   }
   .produkth2 {
     display: block;
-    width: 350px;
-    left: 40px;
+    width: 320px;
+    left: 30px;
+  }
+  .infoContainer h2 {
+    font-size: 18px;
   }
   .produktP {
     width: 257px;
@@ -278,5 +281,10 @@
     margin-left: 0;
     width: 223px;
     height: 274px;
+  }
+  .Oragne1, .Oragne2, .Oragne3, .Oragne4 {
+    width: 56px;
+    height: 200px;
+    top: 679px;
   }
 }

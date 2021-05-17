@@ -13,6 +13,8 @@ const Box2 = () => {
             <div className="Product-page">
                 <div className="row" id="row-productInfo">
                     <div className="col" id="col-grid-info">
+                    <h1 className="mobileh1">Orange</h1>
+                                <p id="mobiletype">Orange</p>
                         <div className="infoContainer" id="picturePos">
                             <p>
                                 <img className="TopPicture" src="./Images/BildOrangeLådan.png" alt="WineBox mixed"/>
@@ -24,16 +26,19 @@ const Box2 = () => {
                     <div className="col" id="col-grid-info">
                         <div className="infoContainer">
 
-                            <h1>Orange</h1>
+                            <h1 className="desktoph1">Orange</h1>
                             <p id="type">Orange</p>
-                            <h2>Prenumerera 789 SEK /Månad</h2>
-                            <p>
+                            <button type="button" id="MobilVidareKnapp">Lägg till i varukorg</button>
+                            <h2 className="produkth2">Prenumerera 789 SEK /Månad</h2>
+                            <p className="produktP">
                                 Vinlådan för dig som vill prova på det bästa av alla världar. I den här lådan får du en av varje. 
                                 Det vill säga, ett vitt, ett orange, ett rött och ett mousserande. De passar alla till olika tillfällen, 
                                 men är alla lika goda! Månadens fyra gårdar är: Nonna Calbretta, Amigos, Three Season och Garden of Eden. 
-                </p>
-                            <h3>Så här funkar det.</h3>
-                            <p>
+                </p> <br id="produktBR"/>
+                            <h3 className="produktH3">Så här funkar det.</h3>
+                            <br id="produktBR"/>
+                            <p className="produktP">
+                            <a className="MobilH3"><b>Så här funkar det.</b></a> <br id="produktBR"/>
                                 Detta är en prenumeration. Prenumererar du på denna låda så får du fyra flaskor blandade viner varje månad. 
                                 Vinerna är noga utvalda från de bästa vingårdarna och byts varje månad ut. 
                                 Denna produktsida är för vinerna du får i april månad. 
