@@ -1,7 +1,5 @@
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom';
-const swish = "https://www.logo.wine/a/logo/Swish_(payment)/Swish_(payment)-Logo.wine.svg";
-const bankcard = "../Images/pngegg.png";
 const VinBox ="../Images/Vinbildconf.png";
 /* FUNKA FFS */
 
@@ -35,68 +33,54 @@ const Kassa_V2 = () => {
             console.log(responseFromAPI)
         });
     }
-    
+    const [showPaymentCard, setShowPaymentCard] = useState(false);
+    const [showFaktura, setShowFaktura] = useState(false);
 
-    const[showSwish,setShowSwish] = useState(false);
-    const[showCard,setShowCard] = useState(false);
-  
-    const swishClick = () => {
-        setShowSwish(true);
-        setShowCard(false);
+    const cardClick = () =>{
+        setShowPaymentCard(true);
+        setShowFaktura(false);
     }
-  
-    const cardClick = () => {
-      setShowCard(true);
-      setShowSwish(false);
+    const fakturaClick = () =>{
+        setShowFaktura(true);
+        setShowPaymentCard(false);
     }
-  
-    const swishComp = () => {
+
+    const PaymentCard = () =>{
         return (
-          <>
-          <label className="phoneNumber">Telefonnummer</label>
-          <input id="numberInput" type="number" placeholder="+46"></input> 
-          </>
+            <div>
+                <div className="row">
+                    <div className="col"><input type="text" placeholder="Kortnummer"></input></div>
+                </div>
+            <div className="row">
+                <div className="col"><input type="text" placeholder="MM/ÅÅ"></input></div>
+                <div className="col"><input type="text" placeholder="CVC"></input></div>
+                </div> 
+            </div>
+
         );
     }
-  
-    const cardComp = () => {
+    const Faktura = () =>{
         return (
-          <>
-          <label className="cardNumber">Kortnummer</label>
-          <input id="numberInput" type="number" placeholder="0000-0000-0000-0000"></input> 
-          <label className="cvcCode">CVC</label>
-          <input id="cvcNumber" type="number" placeholder="123"></input> 
-          </>
+            <div>
+
+            </div>
+
         );
     }
 
     return (
         <div className="row" id="ContainerWindow">
+            <div className="col" id="KassaMain">
             <form onSubmit={(event) => submitForm(event)}>
                 <div className="row">
-                    <div className="col"><h1><b>Kassa</b></h1></div>
+                    <div className="col"/>
+                    <div className="col" id="KassaHeader"><h1><b>Kassa</b></h1></div>
+                    <div className="col"/>
                 </div>
                 <div className="row" >
                     <div className="col" id="CostumerInfoContainer">
-                     <div className="row">
-                         <div className="col"><h2>Kontaktuppgifter</h2></div>
-                         </div>
                             <div className="row">
-                                <div className="col"><input type="email" id="email" name="email" placeholder="E-post:" size="27" 
-                                                    value={email}
-                                                    onSubmit={e => setEmail(e.target.value)} 
-                                                    onChange={e => setEmail(e.target.value)} 
-                                                    onKeyPress={e => e.key === 'Enter'  && setEmail(e.target.value)}
-                                                    required 
-                                                    /></div>
-                            </div>
-                            <div className="row">
-                                <div className="col"><input type="checkbox" id="Nyhetsbrev" name="Nyhetsbrev" />
-                                <label for="Nyhetsbrev"> Jag tar gärna emot nyhetsbrev ifrån Naked Wine lovers</label>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col"><h2>Leveransadress</h2></div>
+                                <div className="col"><h2>Leveransinformation</h2></div>
                             </div>
                             <div className="row">
                                 <div className="col"><input type="text" id="firstName" name="firstName" placeholder="Förnamn:" size="10"  />
@@ -126,12 +110,101 @@ const Kassa_V2 = () => {
                             <div className="row">
                                 <div className="col"><input type="tel" id="telefonnummer" name="telefonnummer" placeholder="telefon" size="27" />
                                 </div>
-                            </div>         
+                            </div>
+                            <div className="row">
+                                <div className="col"><input type="checkbox" id="Nyhetsbrev" name="Nyhetsbrev" />
+                                    <label for="Nyhetsbrev"> Jag hämtar ut mina varor på Systembolaget</label>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col"><h2>Inloggningsuppgifter</h2></div>
+                            </div>
+                            <div className="row">
+                                <div className="col"><input type="email" id="email" name="email" placeholder="E-post:" size="27" 
+                                                    value={email}
+                                                    onSubmit={e => setEmail(e.target.value)} 
+                                                    onChange={e => setEmail(e.target.value)} 
+                                                    onKeyPress={e => e.key === 'Enter'  && setEmail(e.target.value)}
+                                                    required 
+                                                /></div>
+                            </div>
+                            <div className="row">
+                                <div className="col"><input type="password"></input></div>
+                            </div>
+                            <div className="row">
+                                <div className="col"><input type="password"></input></div>
+                            </div>
+                            <div className="row">
+                                <div className="col"><input type="checkbox" id="Nyhetsbrev" name="Nyhetsbrev" />
+                                    <label for="Nyhetsbrev"> Jag vill gärna bli meddelad via epost om nya viner och annan viktig information som Naked Wine Lovers vill dela med mig</label>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col"><hr color="Black"/>
+                                </div> 
+                            </div>
+                            <div className="row">
+                                <div className="col"><h2>Betalningsätt</h2></div>
+                            </div>
+                            <div className="row">
+                                <div className="col"><input type="checkbox" id="Kort" name="Kort" onClick={cardClick}/>
+                                    <label for="Kort"> Kort</label>
+                                </div>
+                            </div>
+                            <div className="row" id="Payment">
+                                {showFaktura && Faktura()}
+                                {showPaymentCard && PaymentCard()}
+                            </div>
+
+                            <div className="row">
+                                <div className="col"><input type="checkbox" id="Faktura" name="Faktura" onClick={fakturaClick} />
+                                    <label for="Faktura"> Betala med faktura</label>
+                                </div>
+                            </div>
+                            
+
                     
                     </div>
                 </div>
 
             </form>
+            <div className="row">
+                <div className="col">
+                    <Link>Återgå till varukorgen</Link>
+                </div>
+                <div className="col">
+                    <Link>
+                        <button>Bekrefta betalning</button>
+                    </Link>
+                    
+                </div>
+
+            </div>
+            </div>
+            <div className="col" id="VarukorgLittle">
+                <div className="row">
+                    <div className="col"><p>Översikt varukorg</p></div>
+                    <div className="col">
+                        <Link>Redigera</Link>
+                        </div>
+                </div>
+                <div className="row">
+                    <img alt="WineBox" src={VinBox} ></img>
+                </div>
+                <div className="row">
+                    <div className="col"><p>Delsumma</p></div>
+                    <div className="col"></div>
+                </div>
+                <div className="row">
+                    <div className="col"><p>Leverans</p></div>
+                    <div className="col"><p>0 SEK</p></div>
+                </div>
+                <div className="row">
+                    <div className="col"><p> Totalt att betala</p></div>
+                    <div className="col"></div>
+                </div>
+
+            </div>
         </div>
     );
 }

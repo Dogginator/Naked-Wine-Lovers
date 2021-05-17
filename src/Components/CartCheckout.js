@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { EMPTY_CART, RESET_TOTAL, INCREASE_QTY, INCREASE_AMOUNT, DECREASE_AMOUNT, INCREASE, DECREASE } from '../actions';
+import { EMPTY_CART, RESET_TOTAL, INCREASE, DECREASE } from '../actions';
 
 const CartCheckout = () => {
 
@@ -11,13 +11,18 @@ const CartCheckout = () => {
 
         return(
             <div className="row" id="prodRow">
-                <div className="col-sm-6">
+                <div className="col-sm-2">
                 <img id="prodImg" style={{
                     backgroundImage: `url(${prod.background.url})`,
                     backgroundRepeat: 'no-repeat'
                     }} src={prod.productimage.url}></img>
                 </div>
-
+                <div className="col-sm-1">
+                    <a>{prod.name}</a>
+                </div>
+                <div className="col-sm-3" id="prenumeration">
+                    <a>Prenumeration:</a>
+                </div>
                 <div className="col-sm-2" id="cartCat">
                     <a>{prod.price} SEK/månad</a>
                 </div>
@@ -25,7 +30,7 @@ const CartCheckout = () => {
                     <a>{prod.quantity}</a>
                 </div>
                 <div className="col-sm-2" id="cartCat">
-                    <a>{prod.price} SEK/månad</a>
+                    <a>{prod.price * prod.quantity} SEK/månad</a>
                 </div>
             </div>
         );
@@ -58,37 +63,38 @@ const CartCheckout = () => {
             </div>
         </div>
         <div className="row" id="middleRowCart">
+            <div>
             <h4>Din varukorg</h4>
+            <br/>
+            <a>Fortsätt handla</a>
+            </div>
         </div>
         <div className="container">
         <div className="row" id="prodRow">
         <div className="col-sm-6">
             <h5>Produkter:</h5>
-            <hr id="sepLine" color="Black"/>  
-
         </div>
         <div className="col-sm-2" id="cartCat">
             <h5>Pris</h5>
-            <hr id="sepLine" color="Black"/>  
-
         </div>
         <div className="col-sm-2" id="cartCat">
             <h5>Kvantitet</h5>
-            <hr id="sepLine" color="Black"/>  
-
         </div>
         <div className="col-sm-2" id="cartCat">
             <h5>Totalt</h5>
-            <hr id="sepLine" color="Black"/>  
-
         </div>
+        <hr id="sepLine2" color="Black"/>  
         </div>
 
         {cart.map(prod => itemOutput(prod))}
+        <hr id="sepLine2" color="Black"/>  
         </div>
         <div className="row" id="bottomRowCart">
-            <div className="col-sm-3">
-                <h6>Total: {totalPrice} / SEK</h6>
+            <div className="col-sm-7"></div>
+            <div className="col-sm-4">
+                <h6 className="totalPaymentCarts">Total: {totalPrice} / SEK</h6>
+                <a><input type="checkbox"></input>Jag godkänner Naked Wine Lovers Allmäna Villkor</a>
+                <br/>
                 <Link to="/Kassa">
                 <button className="checkOutPayment">Kassa</button>
                 </Link>

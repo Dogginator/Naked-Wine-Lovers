@@ -1,29 +1,26 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { EMPTY_CART, RESET_TOTAL, INCREASE_QTY, INCREASE_AMOUNT, DECREASE_AMOUNT, INCREASE, DECREASE } from '../actions';
+import { EMPTY_CART, RESET_TOTAL, CHANGE_QTY, INCREASE, DECREASE } from '../actions';
 
 export const OverlayCart = () => {
 
     const cart = useSelector(state => state.cart);
     const totalPrice = useSelector(state => state.totalPrice);
     const numProducts = useSelector(state => state.products);
+    // const increase = false;
     const dispatch = useDispatch();
 
-    const increase_qty = (id,price) => {
-        dispatch(INCREASE_QTY(id));
-        dispatch(INCREASE(price));
+    const change_qty = (increase, product) => {
+        dispatch(CHANGE_QTY(product,increase));
+        (increase) ? dispatch(INCREASE(product.price))
+        : dispatch(DECREASE(product.price));
     }
 
-    const increaseProduct = (id,price) => {
-        dispatch(INCREASE_AMOUNT());
-        dispatch(INCREASE(price));
-    }
-
-    const decreaseProduct = (price) => {
-        dispatch(DECREASE_AMOUNT());
-        dispatch(DECREASE(price));
-    }
+    // const decrease_qty = (id,price,quantity) => {
+    //     dispatch(DECREASE_QTY(id,quantity));
+    //     dispatch(DECREASE(price));
+    // }
 
     const emptyCart = () => {
         dispatch(EMPTY_CART());
@@ -45,7 +42,7 @@ export const OverlayCart = () => {
                 <br/>
                 <a>{prod.name}</a>
                 <br/>
-                <a>Antal: <button className="changeProductAmount" onClick={() => decreaseProduct(prod.price)}>-</button>{numProducts}<button className="changeProductAmount" onClick={() => increaseProduct(prod.prodid,prod.price)}>+</button></a>
+                <a>Antal: <button className="changeProductAmount" onClick={() => change_qty(false, prod)}>-</button>{prod.quantity}<button className="changeProductAmount" onClick={() => change_qty(true, prod)}>+</button></a>
                 </div>
             </div>
         );
