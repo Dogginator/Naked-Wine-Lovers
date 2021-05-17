@@ -52,11 +52,11 @@ const Kassa_Final = () => {
         return (
             <div>
                 <div className="row">
-                    <div className="col"><input type="text" placeholder="Kortnummer"></input></div>
+                    <div className="col"><input id="kortNum"type="text" placeholder="Kortnummer"></input></div>
                 </div>
             <div className="row">
-                <div className="col"><input type="text" placeholder="MM/ÅÅ"></input></div>
-                <div className="col"><input type="text" placeholder="CVC"></input></div>
+                <div className="col"><input id="mm/åå" type="text" placeholder="MM/ÅÅ"></input></div>
+                <div className="col"><input id="CVC" type="text" placeholder="CVC"></input></div>
                 </div> 
             </div>
 
@@ -130,10 +130,10 @@ const Kassa_Final = () => {
                                                 /></div>
                         </div>
                         <div className="row" id="ContainerWindow">
-                            <div className="col" id="ColPaddingZero"><input type="password"></input></div>
+                            <div className="col" id="ColPaddingZero"><input id="pass" type="password" placeholder=""></input></div>
                         </div>
                         <div className="row" id="ContainerWindow">
-                            <div className="col" id="ColPaddingZero"><input type="password"></input></div>
+                            <div className="col" id="ColPaddingZero"><input id="rePass" type="password" placeholder=""></input></div>
                         </div>
                         <div className="row" id="ContainerWindow">
                             <div className="col" id="ColPaddingZero"><input type="checkbox" id="Nyhetsbrev" name="Nyhetsbrev" />
