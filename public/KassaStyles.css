@@ -1,6 +1,7 @@
 /* Kassa */ 
 
-.Kassa {
+#KassaHeader {
+    display: inline-block;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 40px;
     font-style: normal;
@@ -9,18 +10,23 @@
     letter-spacing: 0em;
     width: 58px;
     height: 50px;
-    left: 689px;
+    margin-left: 280%;
     top: 177px;
 }
 
-.InputForm {
+
+#InputForm {
+    display:inline-block;
     background-color: #E4E0D7;
-    display: inline-block;
-    padding: 100px;
-    width: 660px;
-    height: 1345px;
-    left: 328px;
-    top: 259px;
+    padding-left: 45px;
+    padding-right: 100px;
+    padding-bottom: 48px;
+    padding-top: 54px;
+    width: 589px;
+    height: 1010px;
+    left: 12%;
+    top: 235px;
+    margin-bottom: 362px;
 }
 .Kontaktuppgifter {
     width: 135px;
@@ -29,12 +35,13 @@
     top: 338px;
 }
 #email{
-    width: 450px;
+    width: 444px;
     height: 50px;
     left: 420px;
     top: 370px;
     font-size: 14px;
     line-height: 22px;
+    margin-bottom: 15px;
 }
 .leveransadress{
     width: 98px;
@@ -43,68 +50,76 @@
     top: 516px;
 }
 #firstName {
-    width: 225px;
+    width: 217px;
     height: 50px;
     left: 420px;
     top: 548px;
     font-size: 14px;
     line-height: 22px;
+    margin-bottom: 15px;
 }
 #lastName {
-    width: 225px;
+    width: 220px;
     height: 50px;
-    left: 644px;
+    left: 427px;
     top: 548px;
     font-size: 14px;
     line-height: 22px;
+    margin-bottom: 15px;
 }
 #Adress {
-    width: 450px;
+    width: 444px;
     height: 50px;
     left: 420px;
     top: 613px;
     font-size: 14px;
     line-height: 22px;
+    margin-bottom: 15px;
 }
 #Lgh {
-    width: 450px;
+    width: 444px;
     height: 50px;
     left: 420px;
     top: 678px;
     font-size: 14px;
     line-height: 22px;
+    margin-bottom: 15px;
 }
 #Postnummer {
-    width: 225px;
+    width: 217px;
     height: 50px;
     left: 420px;
     top: 738px;
     font-size: 14px;
     line-height: 22px;
+    margin-bottom: 15px;
 }
 #Ort {
-    width: 225px;
+    width: 220px;
     height: 50px;
     left: 644px;
     top: 738px;
     font-size: 14px;
-    line-height: 22px; 
+    line-height: 22px;
+    margin-bottom: 15px;
 }
 #land {
-    width: 450px;
+    width: 444px;
     height: 50px;
     left: 420px;
     top: 798px;
     font-size: 14px;
     line-height: 22px;
+    margin-bottom: 15px;
 }
 #telefonnummer {
-    width: 450px;
+    width: 444px;
     height: 50px;
     left: 420px;
     top: 858px;
     font-size: 14px;
     line-height: 22px;
+    margin-bottom: 15px;
 }
 .Betalningsinformation {
     width: 150px;
@@ -120,320 +135,50 @@
     top: 992px;
     font-size: 14px;
     line-height: 22px;
+    margin-bottom: 15px;
 }
 
 #Betala {
-
     border: none;
-    background: #6C5647;
+    color: white;
+    background: #D78255;;
     width: 180px;
     height: 67px;
-    left: 561px;
-    top: 1500px;
+    left: 528px;
+    top: 1364px;
     border-radius: 30px;
-    font-size: 16px;
+    font-size: 12px;
     margin: 4px 2px;
 }
 #return {
-
-    width: 110px;
-    height: 19px;
-    left: 130px;
-    top: 480px;
-    font-size: 12px;
-    line-height: 19px;
-    color: black;
-
-}
-.VarukorgLitle {
-    background-color: #E4E0D7;
-    display: inline-block;
-
-    width: 360px;
-    height: 521px;
-    left: 1007px;
-    top: 259px;
-    padding: 50px;
-}
-#text1 {
-    font-size: 14px;
-    line-height: 22px;
+  width: 142px;
+  height: 19px;
+  left: 345px;
+  top: 1388px;
+  margin-top: 43px;
+  margin-right: 40px;
+  font-family: Halant;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 19px;
+  text-decoration-line: underline;
+  color: black;
 
 }
-#text2 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 18px;
-}
-
-.col-sm-5 {
-    background-color: #C2BEB5;
-
-    width: 660px;
-    height: 845px;
-    left: 382px;
-    top: 266px;
-    padding: 100px;
-    
-  }
-body {
-    background-color: #FAF8F7;;
-  }
-
-  #ConfirmH1 {
-
-    width: 197px;
-    height: 50px;
-    left: 624px;
-    top: 187px;
-    
-    font-family: Amatic SC;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 25px;
-    line-height: 50px;
-  }
-  #ConfirmH2 {
-    text-align: center;
-    font-family: Amatic SC;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 50px;
-    letter-spacing: 0em;
-  }
-  
-  #ConfirmH3 {
-    width: 225px;
-    height: 22px;
-    left: 530px;
-    top: 344px;
-    
-    font-family: Halant;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 22px;
-  }
-  
-  .bekräftelseInfo {
-    font-family: Amatic SC;
-    font-size: 15px;
-    margin-left: 40px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: left;
-  
-  }
-  .hr {
-    text-align: center;
-  }
-  
-  .bottle-wine {
-    font-size: 50px;
-  }
-  .DeliveryIcon {
-    font-size: 50px;
-  }
-
-   #p0 {
-    font-family: Amatic SC;
-    font-size: 15px;
-    margin-left: 130px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: left;
-  }
-  #PicP0 {
-    background-image: url(./Images/Vinbildconf.png);
-  }
-  #Confirmknappen {
-
-    width: 118px;
-    height: 24px;
-    left: 645px;
-    top: 1153px;
-    
-    font-family: Halant;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 24px;
-    /* identical to box height */
-    
-    text-decoration-line: underline;
-  }
-  
-  #Confirmknappen:hover {
-    cursor: pointer;
-  }
-  
-  #Subscribeknapp {
-      background-color: darkgray;
-      padding: 15px;
-      padding-left: 40px;
-      padding-right: 45px;
-      padding-top: 13px;
-      padding-bottom: 13px;
-      border-radius: 100px;
-      border: 0;
-      margin: 400px;
-      margin-left: 43em;
-  }
-  
-  #Subscribeknapp:hover {
-      background-color: dimgray;
-  }
-
-.payment-container {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-radius: 10px;
-    width: 500px;
-    height: 600px;
-    margin-top: 50px;
-    margin-left: -20px;
-  }
-  
-  #headerh2 {
-    color: grey;
-    font-size: 20px;
-    text-align: center;
-  }
-  
-  #hrheader {
-    width: 450px;
-    background-color: grey;
-  }
-  
-  #hrbelowpay {
-    margin-top: 10px;
-    width: 450px;
-    background-color: grey;
-  }
-  
-  .swishContainer {
-    border: 1px solid black;
-    border-radius: 4px;
-    width: 300px;
-    height: 200px;
-    margin: 100px;
-  }
-  
-  .icons-container {
-    width: 450px;
-    height: 200px;
-    margin-left: 23px;
-  }
-  
-  .swishButton {
-    padding: 0px;
-    margin-left: 40px;
-    margin-top: 20px;
+#VarukorgLitle {
     background-color: #E4E0D7;
-    border: 1px solid grey;
-  }
-
-  .swishButton:hover {
-    border: 1px solid black;
-  }
-  
-  #swishImg {
-    background-color: #E4E0D7;
-    width: 150px;
-    height: 150px;
-  }
-
-  #swishImg:hover {
-    background-color: #e9e6da;
-  }
-  
-  .cardButton {
-    margin-left: 50px;
-    border: 1px solid grey;
-    background-color: #E4E0D7;
-  }
-  
-  .cardButton:hover {
-    background-color: #e9e6da;
-    border: 1px solid black;
-  }
-  
-  #cardImg {
-    width: 150px;
-    height: 150px;
-  }
-  
-  .payment {
-    margin-left: 23px;
-    margin-top: 15px;
-    width: 450px;
-    height: 250px;
-  }
-  
-  .phoneNumber {
-    font-size: 30px;
-    margin-top: 0px;
-    margin-left: 100px;
-  }
-  
-  #numberInput {
-    text-align: center;
-    display: block;
+    width: 345px;
+    height: 423px;
+    left: 13%;
+    top: 235px;
     padding: 10px;
-    width: 400px;
-    margin-left: 13px;
-    margin-top: 20px;
-    font-size: 35px;
-  }
+}
+#Buttons{
+  position: relative;
+  height: 19px;
+  right: 35%;
+  top: 1275px;
+  margin-bottom: 276px;
   
-  .cardNumber {
-    font-size: 30px;
-    margin-top: 0px;
-    margin-left: 130px;
-  }
-  
-  .cvcCode {
-
-    font-size: 30px;
-    margin-left: 250px;
-    margin-top: 10px;
-  }
-  
-  #cvcNumber {
-    display: inline;
-    width: 80px;
-    padding: 10px;
-    margin-top: 10px;
-    margin-left: 330px;
-  }
-  
-  input::-webkit-outer-spin-button,
-  input::-webkit-inner-spin-button {
-      /* display: none; <- Crashes Chrome on hover */
-      -webkit-appearance: none;
-      margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
-  }
-  
-  input[type=number] {
-      -moz-appearance:textfield; /* Firefox */
-  }
-  
-  .submitSwish {
-    width: 424px;
-    height: 50px;
-    margin-left: 13px;
-    margin-top: 20px;
-  }
-  
-  .submitSwish:hover {
-    background-color: rgb(255, 255, 249);
-    border: 1px solid grey;
-  }
-  
-  ::placeholder {
-    color:grey;
-    opacity: 20%;
-  }
+}
