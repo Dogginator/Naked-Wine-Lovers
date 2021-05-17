@@ -21,15 +21,15 @@ const CartCheckout = () => {
                     <a>{prod.name}</a>
                 </div>
                 <div className="col-sm-3" id="prenumeration">
-                    <a>Prenumeration:</a>
+                    <a>Prenumeration: Månadsvis</a>
                 </div>
-                <div className="col-sm-2" id="cartCat">
+                <div className="col-sm-2" id="smallDevicePrice">
                     <a>{prod.price} SEK/månad</a>
                 </div>
-                <div className="col-sm-2" id="cartCat">
+                <div className="col-sm-2" id="smallDeviceQty">
                     <a>{prod.quantity}</a>
                 </div>
-                <div className="col-sm-2" id="cartCat">
+                <div className="col-sm-2" id="smallDeviceTotPrice">
                     <a>{prod.price * prod.quantity} SEK/månad</a>
                 </div>
             </div>
@@ -41,7 +41,7 @@ const CartCheckout = () => {
         <div className="row" id="topRowCart">
             <div className="cartBenefitBox">
                 <div className="row" id="headerTextBenefits">
-                    <h6>Du är ett steg från att börja din vinresa med Naked Wine Lovers</h6>
+                    <h6 id="smallDeviceHead">Du är ett steg från att börja din vinresa med Naked Wine Lovers</h6>
                 </div>
                 <div className="row">
                 <div className="col-sm-2" id="iconsCart">
@@ -53,7 +53,7 @@ const CartCheckout = () => {
                     <br/>
                     <img id="paddingIcons" src="/Images/credCard.png"></img>
                 </div>
-                <div className="col-sm-10">
+                <div className="col-sm-10" id="benefitText">
                     <p id="paddingBenefitText">Alltid fri frakt</p>
                     <p id="paddingBenefitText">Inga bindningstider. Avbryt prenumation när du vill</p>
                     <p id="paddingBenefitText">Byt vinlåda när du vill</p>
@@ -63,7 +63,7 @@ const CartCheckout = () => {
             </div>
         </div>
         <div className="row" id="middleRowCart">
-            <div>
+            <div id="centerMidHeader">
             <h4>Din varukorg</h4>
             <br/>
             <a>Fortsätt handla</a>
@@ -71,16 +71,16 @@ const CartCheckout = () => {
         </div>
         <div className="container">
         <div className="row" id="prodRow">
-        <div className="col-sm-6">
+        <div className="col-sm-6" id="alignProductsMidHead">
             <h5>Produkter:</h5>
         </div>
-        <div className="col-sm-2" id="cartCat">
+        <div className="col-sm-2">
             <h5>Pris</h5>
         </div>
-        <div className="col-sm-2" id="cartCat">
+        <div className="col-sm-2">
             <h5>Kvantitet</h5>
         </div>
-        <div className="col-sm-2" id="cartCat">
+        <div className="col-sm-2">
             <h5>Totalt</h5>
         </div>
         <hr id="sepLine2" color="Black"/>  
@@ -91,9 +91,9 @@ const CartCheckout = () => {
         </div>
         <div className="row" id="bottomRowCart">
             <div className="col-sm-7"></div>
-            <div className="col-sm-4">
+            <div className="col-sm-4" id="smallDeviceCheckoutInfo">
                 <h6 className="totalPaymentCarts">Total: {totalPrice} / SEK</h6>
-                <a><input type="checkbox"></input>Jag godkänner Naked Wine Lovers Allmäna Villkor</a>
+                <a id="smallDeviceJustify"><input type="checkbox"></input>Jag godkänner Naked Wine Lovers Allmäna Villkor</a>
                 <br/>
                 <Link to="/Kassa">
                 <button className="checkOutPayment">Kassa</button>

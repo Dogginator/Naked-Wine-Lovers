@@ -336,6 +336,8 @@ a ,a:hover, a:focus, a:active{
 #prodRow {
   padding-bottom: 15px;
   padding-left: 15px;
+  text-align: center;
+  align-self: center;
 }
 
 #prodInfo {
@@ -357,11 +359,6 @@ a ,a:hover, a:focus, a:active{
   text-align: center;
 }
 
-#cartCat {
-  text-align: center;
-  align-self: center;
-}
-
 #iconsCart {
   text-align:end;
 }
@@ -375,6 +372,10 @@ a ,a:hover, a:focus, a:active{
   padding-top: 5px;
   padding-bottom: 5px;
   padding-right: 12px;
+}
+
+#alignProductsMidHead {
+  padding-right: 90px;
 }
 
 .cartLine {
