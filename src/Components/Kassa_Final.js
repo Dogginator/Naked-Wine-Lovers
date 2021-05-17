@@ -73,7 +73,7 @@ const Kassa_Final = () => {
 
 
     return(
-        <div className="row" id="ContainerWindow">
+        <div className="container">
             <div className="row" id="ContainerWindow">
                 <div className="col" id="KassaHeader"><h1>KASSA</h1></div>
             </div>
