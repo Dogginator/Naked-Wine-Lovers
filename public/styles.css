@@ -958,7 +958,7 @@ color: #000000;
 /* Product-page */
 
 @media only screen and (min-width: 480px) {
-  .mobileh1, #mobiletype, #MobilVidareKnapp, .MobilH3, #produktBR {
+  .mobileh1, #mobiletype, #MobilVidareKnapp, .MobilH3, #produktBR, .h21mobil{
     display: none;
   }
 }
@@ -1060,25 +1060,25 @@ color: #000000;
   margin-bottom: 90px;
 }
 .Blandat1{
-  background-image: Url(./Images/Blandat1.png);
+
   margin-left: 50%;
   width: 80px;
   height: 310px;
 }
 .Blandat2{
-  background-image: Url(./Images/Blandat2.png);
+
   margin-left: 50%;
   width: 80px;
   height: 310px;
 }
 .Blandat3{
-  background-image: Url(./Images/Blandat3.png);
+
   margin-left: 50%;
   width: 80px;
   height: 310px;
 }
 .Blandat4{
-  background-image: Url(./Images/Blandat4.png);
+
   margin-left: 50%;
   width: 80px;
   height: 310px;
