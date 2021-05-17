@@ -1,0 +1,184 @@
+/* Kassa */ 
+
+#KassaHeader {
+    display: inline-block;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0em;
+    width: 58px;
+    height: 50px;
+    margin-left: 280%;
+    top: 177px;
+}
+
+
+#InputForm {
+    display:inline-block;
+    background-color: #E4E0D7;
+    padding-left: 45px;
+    padding-right: 100px;
+    padding-bottom: 48px;
+    padding-top: 54px;
+    width: 589px;
+    height: 1010px;
+    left: 12%;
+    top: 235px;
+    margin-bottom: 362px;
+}
+.Kontaktuppgifter {
+    width: 135px;
+    height: 22px;
+    left: 420px;
+    top: 338px;
+}
+#email{
+    width: 444px;
+    height: 50px;
+    left: 420px;
+    top: 370px;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+.leveransadress{
+    width: 98px;
+    height: 22px;
+    left: 420px;
+    top: 516px;
+}
+#firstName {
+    width: 217px;
+    height: 50px;
+    left: 420px;
+    top: 548px;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+#lastName {
+    width: 220px;
+    height: 50px;
+    left: 427px;
+    top: 548px;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+#Adress {
+    width: 444px;
+    height: 50px;
+    left: 420px;
+    top: 613px;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+#Lgh {
+    width: 444px;
+    height: 50px;
+    left: 420px;
+    top: 678px;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+#Postnummer {
+    width: 217px;
+    height: 50px;
+    left: 420px;
+    top: 738px;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+#Ort {
+    width: 220px;
+    height: 50px;
+    left: 644px;
+    top: 738px;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+#land {
+    width: 444px;
+    height: 50px;
+    left: 420px;
+    top: 798px;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+#telefonnummer {
+    width: 444px;
+    height: 50px;
+    left: 420px;
+    top: 858px;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+.Betalningsinformation {
+    width: 150px;
+    height: 22px;
+    left: 420px;
+    top: 965px;
+
+}
+#creditcard {
+    width: 444px;
+    height: 50px;
+    left: 420px;
+    top: 992px;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+
+#Betala {
+    border: none;
+    color: white;
+    background: #D78255;;
+    width: 180px;
+    height: 67px;
+    left: 528px;
+    top: 1364px;
+    border-radius: 30px;
+    font-size: 12px;
+    margin: 4px 2px;
+}
+#return {
+  width: 142px;
+  height: 19px;
+  left: 345px;
+  top: 1388px;
+  margin-top: 43px;
+  margin-right: 40px;
+  font-family: Halant;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 19px;
+  text-decoration-line: underline;
+  color: black;
+
+}
+#VarukorgLitle {
+    background-color: #E4E0D7;
+    width: 345px;
+    height: 423px;
+    left: 13%;
+    top: 235px;
+    padding: 10px;
+}
+#Buttons{
+  
+  height: 19px;
+  right: 35%;
+  top: 1275px;
+  margin-bottom: 276px;
+  
+}
