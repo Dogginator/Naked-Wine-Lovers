@@ -16,7 +16,6 @@ return (
 
     <nav className="TopNavbar"> 
     
-        <hr id="UnderLine" color="Black"/>  
             <div class="col-sm-4" id="gridNavBarLeft">
             <Link to="/1">Hem</Link>
             </div>
@@ -46,8 +45,13 @@ return (
                 <Ploygon/>
                 <OverlayCart cart={props.cart} setCart={props.setCart} />
                 </nav>
+
                 {/* <CgMenu className="hamburgerMenu" size="2.5em"/>
                 <button onClick={onClick} className="menu-trigger-mobile"><IoCartOutline size="2.5em"/></button> */}
+
+                {/* <CgMenu className="hamburgerMenu" size="2.5em"/> */}
+                {/* <button onClick={onClick} className="menu-trigger-mobile"><IoCartOutline size="2.5em"/></button> */}
+
             </div>
         </nav>      
 );
