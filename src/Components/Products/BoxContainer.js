@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux';
-import { ADD_TO_CART, INCREASE } from '../../actions';
+import { ADD_TO_CART, INCREASE, CHANGE_QTY } from '../../actions';
 
 export const Box = (props) => {
 
@@ -9,8 +9,9 @@ export const Box = (props) => {
     const dispatch = useDispatch();
 
     const OnClick = value => {
-        if(cart.some(item => item.name === value.name)) {
-            console.log('dubblettttt')
+        if(cart.some(item => item.prodid === value.prodid)) {
+            dispatch(CHANGE_QTY(value,true));
+            dispatch(INCREASE(value.price));
         }
         else {
             dispatch(ADD_TO_CART(value));
