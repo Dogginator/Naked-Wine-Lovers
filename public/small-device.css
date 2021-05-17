@@ -1,142 +1,282 @@
 @media only screen and (max-width: 480px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .footer-container {
+    flex: 1;
+  }
+  .TheFooter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    flex-direction: column;
 
-    body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-      }
-      .footer-container {
-        flex: 1;
-      }
-    .TheFooter {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: stretch;
-        flex-direction: column;
+    width: 100%;
+    height: 198px;
+    background: #f3f1ee;
+  }
+  .footer-ul {
+    top: 25%;
+    left: 5.81%;
+    right: 80%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
 
-        width: 100%;
-        height: 198px;
-        background: #F3F1EE;
-      }
-      .footer-ul {
-        top: 25%;
-        left: 5.81%;
-        right: 80%;
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 24px;
-       
-        color: #000000;
-        margin: 0;
-        padding: 0;
-      }
-      .footer-ul p {
-          margin:0;
-      }
-    
-      .Footerh1 {
-        left: 5.19%;
-        right: 80%;
-        bottom: 70%;
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 25px;
-        color: #000000;
-      }
-   
-      .footer-social-list li, .footer-social, .Footerh2, .lowtext li, .menu-trigger{
-          display:none;
-      }
-    
-      #gridNavBarLeft, #gridNavBarRight,  #UnderLine {
-        display: none;
-      }
-      .menu-trigger-mobile {
-        background-color: #FAF8F7;
-        border-radius: 0px;
-        cursor: pointer;
-        display: flex;
-        justify-content:flex-end;
-        border: none;
-        transition: box-shadow 0.4s ease;
-        margin-left: 200px;
-        margin-top: -35px;
-      }
+    color: #000000;
+    margin: 0;
+    padding: 0;
+  }
+  .footer-ul p {
+    margin: 0;
+  }
 
-      .shopping-cart {
-        margin: 20px 0;
-        margin-left: 290px;
-        float: right;
-        background: #FAF8F7;
-        width: 220px;
-        height: 500px;
-        border-radius: 30px;
-        padding: 20px;
-        padding-bottom: 30px;
-      }
-      .Shooping-cart-Ploygon {
-        background-image: url("/Images/Polygon.png");
-        position: absolute;
-        width: 26px;
-        height: 27px;
-        left: 480px;
-        top: 5px;
-      }
-      .winelogo {
-        width: 55px;
-        text-align: center;
-        background-color: #FAF8F7;
-       
+  .Footerh1 {
+    left: 5.19%;
+    right: 80%;
+    bottom: 70%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    color: #000000;
+  }
 
-      }
+  .footer-social-list li,
+  .footer-social,
+  .Footerh2,
+  .lowtext li,
+  .menu-trigger {
+    display: none;
+  }
 
-      .hamburgerMenu {
-          margin-top: 5px;
-          margin-left: -50px;
-        justify-content: left;
-      }
-      .wineboxImage {
-    
-        width: 152px;
-        height: 142px;
-        align-items: center;
-        
-      }
-      .descText {
+  #gridNavBarLeft,
+  #gridNavBarRight,
+  #UnderLine {
+    display: none;
+  }
+  .menu-trigger-mobile {
+    background-color: #faf8f7;
+    border-radius: 0px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    border: none;
+    transition: box-shadow 0.4s ease;
+    margin-left: 200px;
+    margin-top: -35px;
+  }
+  #gridNavBarCart {
+    display: inline;
+    text-align: center;
+    left: 15%;
+    padding-left: 7.4%;
+  }
 
-        line-height: 18px;
-        padding-right: 20px;
-        padding-top: 25px;
-        margin: 0px;
-        margin-bottom: 20px;
-      }
-      #price {
-        height: 30px;
-        padding-top: 40px;
-        text-align: right;
-      }
-      .wineboxButton {
-        text-align: center;
-        
-        margin-top: 0px;
-        border-radius: 30px;
-        color: white;
-        background-color: #D78255;
-        border: #D78255;
-        width: 100%;
- 
-      }
-      .TopPicture {
-        width: 115.97px;
-        height: 120px;
-      }
-      .desktoph1 {
-          display: none;
-      }
-      #type, #ScrollDownInfo, #ReadInfo {
-          display:none;
-      }
+  .shopping-cart {
+    margin: 20px 0;
+    margin-left: 290px;
+    float: right;
+    background: #faf8f7;
+    width: 220px;
+    height: 500px;
+    border-radius: 30px;
+    padding: 20px;
+    padding-bottom: 30px;
+  }
+  .Shooping-cart-Ploygon {
+    background-image: url("/Images/Polygon.png");
+    position: absolute;
+    width: 26px;
+    height: 27px;
+    left: 480px;
+    top: 5px;
+  }
+  .winelogo {
+    width: 55px;
+    text-align: center;
+    background-color: #faf8f7;
+  }
+
+  .hamburgerMenu {
+    margin-top: 5px;
+    margin-left: -50px;
+    justify-content: left;
+  }
+  .wineboxImage {
+    width: 152px;
+    height: 142px;
+    align-items: center;
+  }
+  .descText {
+    line-height: 18px;
+    padding-right: 20px;
+    padding-top: 25px;
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+  #price {
+    height: 30px;
+    padding-top: 40px;
+    text-align: right;
+  }
+  .wineboxButton {
+    text-align: center;
+    margin-top: 0px;
+    border-radius: 30px;
+    color: white;
+    background-color: #d78255;
+    border: #d78255;
+    width: 100%;
+  }
+  .TopPicture {
+    width: 115.97px;
+    height: 120px;
+  }
+  .desktoph1 {
+    display: none;
+  }
+  #type,
+  #ScrollDownInfo,
+  #ReadInfo,
+  #VidareKnapp,
+  .h21,
+  .DesktopInfo,
+  #Kommandelador,
+  #BoxMonth1,
+  #BoxMonth2,
+  #BoxMonth3,
+  .NextBlandat,
+  .PlaceHolder1,
+  .PlaceHolder2,
+  #LinkTo1,
+  #LinkTo2,
+  #LinkTo3,
+  #KommandeLador {
+    display: none;
+  }
+  #mobiletype {
+    width: 303px;
+    height: 22px;
+    left: 16px;
+    top: 130px;
+
+    font-family: Halant;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .mobileh1 {
+    width: 303px;
+    height: 35px;
+    left: 17px;
+    top: 95px;
+
+    font-family: Amatica SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+  }
+  #MobilVidareKnapp {
+    display: flex;
+    margin-left: 35%;
+
+    background: #d78255;
+    color: white;
+    border-radius: 30px;
+    border: 0;
+    width: 140%;
+    justify-content: center;
+  }
+  .produkth2 {
+    display: block;
+    width: 350px;
+    left: 40px;
+  }
+  .produktP {
+    width: 257px;
+    left: 20%;
+    top: 0px;
+
+    font-family: Halant;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 19px;
+  }
+  .produktH3 {
+    left: 0px;
+    top: 60%;
+
+    font-family: Halant;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 19px;
+    display: none;
+  }
+  .Product-page {
+    background-color: #e4e0d7;
+    font-family: Halant;
+    display: inline-block;
+    width: 100%;
+    height: 660px;
+    padding-bottom: 93px;
+  }
+  #more {
+    display: none;
+  }
+  .RubrikBlandat {
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 97.89%;
+    width: 300px;
+    font-family: Amatica SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .Blandat1 {
+    width: 56px;
+    height: 200px;
+    top: 679px;
+  }
+  .Blandat2,
+  .Blandat3,
+  .Blandat4 {
+    width: 56px;
+    height: 200px;
+    top: 679px;
+  }
+  .h21mobil {
+    left: 0%;
+    right: 0%;
+    top: 28.04%;
+    bottom: 0%;
+    width: 500px;
+    font-family: Amatica SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 53px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .Taste1, .Taste2, .Taste3, .Taste4 {
+    margin-left: 0;
+    width: 223px;
+    height: 274px;
+  }
 }

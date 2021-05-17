@@ -5,6 +5,8 @@ import OverlayCart from './OverlayCart'
 import Ploygon from './Polygon'
 import {useDetectOutsideClick} from './useDitectClickOutside'
 import { useSelector, useDispatch } from 'react-redux';
+import { CgMenu } from 'react-icons/cg';
+import { IoCartOutline } from 'react-icons/io5';
 
 const Navbar = (props) => {
 
@@ -15,7 +17,8 @@ const Navbar = (props) => {
 return (
 
     <nav className="TopNavbar"> 
-    
+        <hr id="UnderLine" color="Black"/>  
+
             <div class="col-sm-4" id="gridNavBarLeft">
             <Link to="/1">Hem</Link>
             </div>
@@ -39,12 +42,16 @@ return (
             <div class="col-sm-4" id="gridNavBarRight">
                 <a href="#Villkor">Villkor</a>
             </div>
-            <div class="col-sm-4" id="gridNavBarRight">
+            <div class="col-sm-4" id="gridNavBarCart">
                 <button onClick={onClick} className="menu-trigger">Varukorg({cart.length})</button>
+                <CgMenu className="hamburgerMenu" size="2.5em"/>
+                <button onClick={onClick} className="menu-trigger-mobile"><IoCartOutline size="2.5em"/></button>
                 <nav ref={dropdownRef} className={`menu ${isActive ? 'active' : 'inactive'}`}>
                 <Ploygon/>
                 <OverlayCart cart={props.cart} setCart={props.setCart} />
+                
                 </nav>
+
 
                 {/* <CgMenu className="hamburgerMenu" size="2.5em"/>
                 <button onClick={onClick} className="menu-trigger-mobile"><IoCartOutline size="2.5em"/></button> */}
@@ -52,8 +59,10 @@ return (
                 {/* <CgMenu className="hamburgerMenu" size="2.5em"/> */}
                 {/* <button onClick={onClick} className="menu-trigger-mobile"><IoCartOutline size="2.5em"/></button> */}
 
+
             </div>
-        </nav>      
+
+    </nav>      
 );
 }
 
