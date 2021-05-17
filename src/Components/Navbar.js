@@ -45,8 +45,13 @@ return (
                 <Ploygon/>
                 <OverlayCart cart={props.cart} setCart={props.setCart} />
                 </nav>
+
+                {/* <CgMenu className="hamburgerMenu" size="2.5em"/>
+                <button onClick={onClick} className="menu-trigger-mobile"><IoCartOutline size="2.5em"/></button> */}
+
                 {/* <CgMenu className="hamburgerMenu" size="2.5em"/> */}
                 {/* <button onClick={onClick} className="menu-trigger-mobile"><IoCartOutline size="2.5em"/></button> */}
+
             </div>
         </nav>      
 );

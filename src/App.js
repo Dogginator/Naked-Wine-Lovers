@@ -1,6 +1,8 @@
 import { useSelector, useDispatch } from 'react-redux';
 import React from 'react'
 import {BrowserRouter as Router,Route, Switch } from 'react-router-dom';
+import Kassa_Final from './Components/Kassa_Final'
+import Kassa_V2 from './Components/Kassa_V2'
 import Kassa from './Components/Kassa'
 import Box1 from './Components/Products/1'
 import Box2 from './Components/Products/2'
@@ -52,7 +54,7 @@ const initialValues  = {
             <Route path='/4' exact component={Box4}></Route>
             <Route path='/5' exact component={Box5}></Route>
             <Route path='/6' exact component={Box6}></Route>
-            <Route path='/Kassa' exact><Kassa setCostumerInfo = {setCostumerInfo} /></Route>
+            <Route path='/Kassa' exact><Kassa_Final setCostumerInfo = {setCostumerInfo} /></Route>
             <Route path='/Confirm' exact><Confirm costumerInfo = {costumerInfo} /></Route>
             <Route path='/Vinlådor' exact><WineBox/></Route>
             <Route path='/OverlayCart' exact><OverlayCart/></Route>
