@@ -8,11 +8,14 @@ const Box1 = () => {
     const executeScroll = () => myRef.current.scrollIntoView({ behavior: 'smooth' });
 
 
+
     return (
         <>
             <div className="Product-page">
                     <div className="row" id="row-productInfo">
                         <div className="col" id="col-grid-info">
+                        <h1 className="mobileh1">Blandat</h1>
+                                <p id="mobiletype">Vitt, orange, rött och mousserande</p>
                             <div className="infoContainer" id="picturePos">
                                 <p>
                                     <img className="TopPicture" src="./Images/BildBlandatLådan.png" alt="WineBox mixed"/>
@@ -26,14 +29,17 @@ const Box1 = () => {
 
                                 <h1 className="desktoph1">Blandat</h1>
                                 <p id="type">Vitt,  orange, rött och mousserande</p>
-                                <h2>Prenumerera 899 SEK /Månad</h2>
-                                <p>
+                                <button type="button" id="MobilVidareKnapp">Lägg till i varukorg</button>
+                                <h2 className="produkth2" >Prenumerera 899 SEK /Månad</h2>
+                                <p className="produktP">
                                     Vinlådan för dig som vill prova på det bästa av alla världar. I den här lådan får du en av varje. 
-                                    Det vill säga, ett vitt, ett orange, ett rött och ett mousserande. De passar alla till olika tillfällen, 
+                                    Det vill säga, ett vitt, ett orange, ett rött och ett mousserande. De passar alla till olika tillfällen,
+                                    
                                     men är alla lika goda! Månadens fyra gårdar är: Nonna Calbretta, Amigos, Three Season och Garden of Eden. 
-                                </p>
-                                <h3>Så här funkar det.</h3>
-                                <p>
+                                    <br id="produktBR"/>
+                                <h3 className="produktH3">Så här funkar det.</h3>
+                                <br id="produktBR"/>
+                                    <a className="MobilH3"><b>Så här funkar det.</b></a> <br id="produktBR"/>
                                     Detta är en prenumeration. Prenumererar du på denna låda så får du fyra flaskor blandade viner varje månad. 
                                     Vinerna är noga utvalda från de bästa vingårdarna och byts varje månad ut. 
                                     Denna produktsida är för vinerna du får i april månad. 
@@ -56,23 +62,25 @@ const Box1 = () => {
                     <div className="col" id="ColPaddingZero"/>
                 </div>
                 <div className="row" id="ContainerWindow">
+                <h2 className="h21mobil">WHITE IS BLANC</h2>
                     <div className="col" id="ColPaddingZero">
+                    
                         <img className="Blandat1" alt="Bottle of White is Blanc" src="./Images/Blandat1.png"></img>
                     </div>
                     <div className="col" id="ColPaddingZero">
-                        <h2>WHITE IS BLANC</h2><br/>
-                        <p>Vitt, USA 2020</p><br/>
-                        <p>
+                        <h2 className="h21">WHITE IS BLANC</h2><br/>
+                        <p className="DesktopInfo">Vitt, USA 2020</p><br/>
+                        <p className="DesktopInfo">
                         Detta vita vinet från Garden of Eden Vinyard i Kalifornien, USA. Inslag av päron, färska örter och honung. 
                         Ett bra första steg för dig som från början gillar vitt vin, men ännu inte prövat naturvin. 
                         Funkar perfekt till fisk eller vegetarisk. 
                         </p><br/>
-                        <p>
+                        <p className="DesktopInfo">
                         Flaska: 750 ml
                         Alkoholhalt 12%
                         Sockerhalt 10 g/l   
                         </p><br/>
-                        <p id="InfoLink">
+                        <p className="DesktopInfo" id="InfoLink">
                         <b>Läs mer om vingården:</b> <Link to="/GardenOfEden">Garden of Eden</Link>
                         </p>
                     </div>
@@ -81,23 +89,24 @@ const Box1 = () => {
                     </div>
                 </div>
                 <div className="row" id="ContainerWindow">
+                <h2 className="h21mobil">ORANGE YOU GLAD</h2>
                 <div className="col" id="ColPaddingZero">
                         <img className="Blandat2" alt="Bottle of Orange you Glad" src="./Images/Blandat2.png"></img>
                     </div>
                     <div className="col" id="ColPaddingZero">
-                        <h2>ORANGE YOU GLAD</h2><br/>
-                        <p>Orange, Frankrike  2020</p><br/>
-                        <p>
+                        <h2 className="h21">ORANGE YOU GLAD</h2><br/>
+                        <p className="DesktopInfo" >Orange, Frankrike  2020</p><br/>
+                        <p className="DesktopInfo">
                         Ett fermenterat vitt vin från James and the Giant Grape. 
                         Från norra Italien kommer denna otämjda rebell. Med smak av torkad frukt, 
                         rostade nötter och job funkar det här vinet bäst till mustiga grytor och mycket kryddor.
                         </p><br/>
-                        <p>
+                        <p className="DesktopInfo">
                         Flaska: 750 ml
                         Alkoholhalt 11,5%
                         Sockerhalt 9 g/l   
                         </p><br/>
-                        <p id="InfoLink">
+                        <p className="DesktopInfo" id="InfoLink">
                         <b>Läs mer om vingården:</b> <Link to="/JamesAndTheGiantGrape">James and the Giant Grape</Link>
                         </p>
                     </div>
@@ -106,23 +115,24 @@ const Box1 = () => {
                     </div>
                 </div>
                 <div className="row" id="ContainerWindow">
+                <h2 className="h21mobil">PINK PANTHER</h2>
                 <div className="col" id="ColPaddingZero">
                         <img className="Blandat3"  alt="Bottle of Pink Panther" src="./Images/Blandat3.png"></img>
                     </div>
                     <div className="col" id="ColPaddingZero">
-                        <h2>PINK PANTHER</h2><br/>
-                        <p>Mousserande, Frankrike 2020</p><br/>
-                        <p>
+                        <h2 className="h21">PINK PANTHER</h2><br/>
+                        <p className="DesktopInfo">Mousserande, Frankrike 2020</p><br/>
+                        <p className="DesktopInfo">
                         Ett sött mousserande från Three Seasons Vinyard vid den franska 
                         riveran. Med sina toner av äppelcider, citrus och vita blommor 
                         funkar detta bäst som apertif eller till desserter. 
                         </p><br/>
-                        <p>
+                        <p className="DesktopInfo">
                         Flaska: 750 ml
                         Alkoholhalt 11,8%
                         Sockerhalt 11 g/l   
                         </p><br/>
-                        <p id="InfoLink">
+                        <p className="DesktopInfo" id="InfoLink">
                         <b>Läs mer om vingården:</b> <Link to="/ThreeSeasonsVinyard">Three Seasons Vinyard</Link>
                         </p>
                     </div>
@@ -135,18 +145,18 @@ const Box1 = () => {
                         <img className="Blandat4" alt="Bottle of Girl in red" src="./Images/Blandat4.png"></img>
                     </div>
                     <div className="col" id="ColPaddingZero">
-                        <h2>GIRL IN RED</h2><br/>
-                        <p>Rött, Spanien 2020</p><br/>
-                        <p>
+                        <h2 className="h21">GIRL IN RED</h2><br/>
+                        <p className="DesktopInfo">Rött, Spanien 2020</p><br/>
+                        <p className="DesktopInfo">
                         Ett mustigt rött vin från Amigos Vinyard med inslag av mörka 
                         körsbär, blåbär och lakrits. Perfekt till kött och fågel. 
                         </p><br/>
-                        <p>
+                        <p className="DesktopInfo">
                         Flaska: 750 ml
                         Alkoholhalt 12%
                         Sockerhalt 8 g/l   
                         </p><br/>
-                        <p id="InfoLink">
+                        <p className="DesktopInfo" id="InfoLink">
                         <b>Läs mer om vingården:</b> <Link to="/AmigosVinyard">Amigos Vinyard</Link>
                         </p>
                     </div>
