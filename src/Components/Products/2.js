@@ -34,9 +34,9 @@ const Box2 = () => {
                                 Vinlådan för dig som vill prova på det bästa av alla världar. I den här lådan får du en av varje. 
                                 Det vill säga, ett vitt, ett orange, ett rött och ett mousserande. De passar alla till olika tillfällen, 
                                 men är alla lika goda! Månadens fyra gårdar är: Nonna Calbretta, Amigos, Three Season och Garden of Eden. 
-                </p> <br id="produktBR"/>
+                </p> 
                             <h3 className="produktH3">Så här funkar det.</h3>
-                            <br id="produktBR"/>
+                            <br id="produktBR" className="hideBRonMobile"/>
                             <p className="produktP">
                             <a className="MobilH3"><b>Så här funkar det.</b></a> <br/>
                                 Detta är en prenumeration. Prenumererar du på denna låda så får du fyra flaskor blandade viner varje månad. 

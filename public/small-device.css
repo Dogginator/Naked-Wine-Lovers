@@ -158,7 +158,9 @@
   #LinkTo3,
   #KommandeLador,
   .NextOrange,
-  .For_desktop {
+  .For_desktop,
+  .hideBRonMobile,
+  .NextWhite {
     display: none;
   }
   #mobiletype {
