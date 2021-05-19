@@ -119,7 +119,7 @@ const Box4 = () => {
                 </div>
                 <div className="col" id="ColPaddingZero">
                     <h2 className="h21">ROSES ARE RED</h2><br/>
-                    <p>Rött, Frankrike 2020</p><br/>
+                    <p className="DesktopInfo">Rött, Frankrike 2020</p><br/>
                     <p className="DesktopInfo">
                     Ett sött mousserande från Three Seasons Vinyard vid den franska 
                     riveran. Med sina toner av äppelcider, citrus och vita blommor 

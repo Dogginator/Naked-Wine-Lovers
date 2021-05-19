@@ -160,7 +160,9 @@
   .NextOrange,
   .For_desktop,
   .hideBRonMobile,
-  .NextWhite {
+  .NextWhite,
+  .NextRed,
+  .NextBubbel {
     display: none;
   }
   #mobiletype {
