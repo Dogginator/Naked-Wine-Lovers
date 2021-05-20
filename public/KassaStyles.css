@@ -10,7 +10,7 @@
     letter-spacing: 0em;
     width: 58px;
     height: 50px;
-    margin-left: 280%;
+    margin-left: 5%;
     top: 177px;
 }
 
@@ -24,7 +24,7 @@
     padding-top: 54px;
     width: 589px;
     height: 1010px;
-    left: 12%;
+    left: 5%;
     top: 235px;
     margin-bottom: 362px;
 }
@@ -170,15 +170,15 @@
     background-color: #E4E0D7;
     width: 345px;
     height: 423px;
-    left: 13%;
+    left: 6.5%;
     top: 235px;
     padding: 10px;
 }
 #Buttons{
   
   height: 19px;
-  right: 35%;
-  top: 1275px;
-  margin-bottom: 276px;
+  left:5%;
+  top: 1388px;
+  
   
 }
