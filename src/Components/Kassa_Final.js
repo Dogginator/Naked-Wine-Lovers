@@ -73,19 +73,6 @@ const Kassa_Final = () => {
 
 
     return(
-        <>
-        <div className="row">
-            <div className="col-md-4">.col-md-4</div>
-            <div className="col-md-4 offset-md-4">.col-md-4 .offset-md-4</div>
-        </div>
-        <div className="row">
-            <div className="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
-            <div className="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
-        </div>
-        <div className="row">
-            <div className="col-md-6 offset-md-3">.col-md-6 .offset-md-3</div>
-        </div>
-        </>
         <div className="container">
             <div className="row" id="ContainerWindow">
                 <div className="col" id="KassaHeader"><h1>KASSA</h1></div>
