@@ -25,7 +25,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 22px;
 
     color: #000000;
     margin: 0;
@@ -134,7 +134,7 @@
     width: 100%;
   }
   .TopPicture {
-    width: 115.97px;
+    width: 152px;
     height: 120px;
   }
   .desktoph1 {
@@ -156,7 +156,13 @@
   #LinkTo1,
   #LinkTo2,
   #LinkTo3,
-  #KommandeLador {
+  #KommandeLador,
+  .NextOrange,
+  .For_desktop,
+  .hideBRonMobile,
+  .NextWhite,
+  .NextRed,
+  .NextBubbel {
     display: none;
   }
   #mobiletype {
@@ -186,7 +192,7 @@
   #MobilVidareKnapp {
     display: flex;
     margin-left: 35%;
-
+    margin-bottom: 20%;
     background: #d78255;
     color: white;
     border-radius: 30px;
@@ -196,14 +202,22 @@
   }
   .produkth2 {
     display: block;
-    width: 350px;
-    left: 40px;
+    width: 320px;
+    left: 30px;
+  }
+  .infoContainer {
+    width: 100%;
+    height: 100%;
+  }
+  .infoContainer h2 {
+    font-size: 18px;
+    text-align: center;
   }
   .produktP {
     width: 257px;
-    left: 20%;
+    margin-left: 28%;
     top: 0px;
-
+    
     font-family: Halant;
     font-style: normal;
     font-weight: normal;
@@ -226,7 +240,7 @@
     font-family: Halant;
     display: inline-block;
     width: 100%;
-    height: 660px;
+    height: 817px;
     padding-bottom: 93px;
   }
   #more {
@@ -264,19 +278,37 @@
     right: 0%;
     top: 28.04%;
     bottom: 0%;
-    width: 500px;
+    width: 100%;
     font-family: Amatica SC;
     font-style: normal;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 53px;
     display: flex;
     align-items: center;
     text-align: center;
+    margin-left: 15%;
+    margin-top: 20%;
+  }
+  #Orange_you_glad {
+    margin-left: 3%;
+  }
+  #White_is_blanc {
+    margin-left: 10%;
+  }
+  .RubrikBlandat{
+    margin-top: 0;
+    margin-bottom: 0;
   }
   .Taste1, .Taste2, .Taste3, .Taste4 {
     margin-left: 0;
-    width: 223px;
-    height: 274px;
+    margin-right: 30px;
+    width: 180px;
+    height: 204px;
+  }
+  .Oragne1, .Oragne2, .Oragne3, .Oragne4 {
+    width: 56px;
+    height: 200px;
+    top: 679px;
   }
 }
