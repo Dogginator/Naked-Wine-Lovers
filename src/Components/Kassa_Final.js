@@ -50,12 +50,12 @@ const Kassa_Final = () => {
 
     const PaymentCard = () =>{
         return (
-            <div>
+            <div className="container">
                 <div className="row">
                     <div className="col"><input id="kortNum"type="text" placeholder="Kortnummer"></input></div>
                 </div>
             <div className="row">
-                <div className="col"><input id="mm/åå" type="text" placeholder="MM/ÅÅ"></input></div>
+                <div className="col"><input id="mmåå" type="text" placeholder="MM/ÅÅ"></input></div>
                 <div className="col"><input id="CVC" type="text" placeholder="CVC"></input></div>
                 </div> 
             </div>
@@ -64,7 +64,7 @@ const Kassa_Final = () => {
     }
     const Faktura = () =>{
         return (
-            <div>
+            <div className="container">
 
             </div>
 
