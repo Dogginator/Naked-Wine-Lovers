@@ -10,7 +10,7 @@
     letter-spacing: 0em;
     width: 58px;
     height: 50px;
-    margin-left: 280%;
+    margin-left: 5%;
     top: 177px;
 }
 
@@ -23,10 +23,10 @@
     padding-bottom: 48px;
     padding-top: 54px;
     width: 589px;
-    height: 1010px;
-    left: 12%;
+    height: 1110px;
+    left: 5%;
     top: 235px;
-    margin-bottom: 362px;
+    margin-bottom: 262px;
 }
 .Kontaktuppgifter {
     width: 135px;
@@ -128,14 +128,30 @@
     top: 965px;
 
 }
-#creditcard {
-    width: 444px;
+#kortNum {
+    width: 470px;
     height: 50px;
     left: 420px;
     top: 992px;
     font-size: 14px;
     line-height: 22px;
     margin-bottom: 15px;
+}
+#mmåå {
+  width: 216px;
+  height: 50px;
+  left: 288px;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+#CVC {
+  width: 220px;
+  height: 50px;
+  left: 295px;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 15px;
 }
 
 #Betala {
@@ -148,7 +164,7 @@
     top: 1364px;
     border-radius: 30px;
     font-size: 12px;
-    margin: 4px 2px;
+    
 }
 #return {
   width: 142px;
@@ -170,15 +186,16 @@
     background-color: #E4E0D7;
     width: 345px;
     height: 423px;
-    left: 13%;
+    left: 6.5%;
     top: 235px;
-    padding: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 0;
 }
 #Buttons{
-  
-  height: 19px;
-  right: 35%;
-  top: 1275px;
-  margin-bottom: 276px;
+display:inline-flex;
+padding: 0;
+margin-bottom: 276px;
+margin-left:15%;
   
 }

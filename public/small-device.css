@@ -77,6 +77,130 @@
     padding-left: 7.4%;
   }
 
+        /* line-height: 18px;
+        padding-right: 20px;
+        padding-top: 25px;
+        margin: 0px;
+        margin-bottom: 20px;
+      } */
+      #price {
+        height: 30px;
+        padding-top: 40px;
+        text-align: right;
+      }
+      .wineboxButton {
+        text-align: center;
+        
+        margin-top: 0px;
+        border-radius: 30px;
+        color: white;
+        background-color: #D78255;
+        border: #D78255;
+        width: 100%;
+ 
+      }
+      .TopPicture {
+        width: 115.97px;
+        height: 120px;
+      }
+      .desktoph1 {
+          display: none;
+      }
+      #type, #ScrollDownInfo, #ReadInfo {
+          display:none;
+      }
+
+      /* Kassa */
+
+      #smallDeviceHead {
+        font-size: 12px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 5px;
+      }
+
+      #topRowCart {
+        height: 220px;
+        margin: 0px;
+      }
+
+      .cartBenefitBox {
+        width: 80%;
+        height: 90%;
+      }
+
+      #benefitText {
+        width: 72%;
+      }
+
+      #paddingBenefitText {
+        width: 100%;
+        font-size: 10px;
+      }
+
+      #paddingIcons {
+        padding: 3px;
+      }
+
+      #iconsCart {
+        width: 28%;
+      }
+
+      #middleRowCart {
+        margin: 0px;
+      }
+
+      #prodRow h5{
+        display: none;
+      }
+
+      #centerMidHeader {
+        text-align: center;
+      }
+
+      #prenumeration {
+        text-align: center;
+      }
+
+      #smallDevicePrice::before {
+        text-align: center;
+        content: "Månadskostnad: ";
+      }
+
+      #smallDeviceQty::before {
+        text-align: center;
+        content: "Kvantitet: ";
+      }
+
+      #smallDeviceTotPrice::before {
+        text-align: center;
+        content: "Totalt: ";
+      }
+
+      #smallDeviceCheckoutInfo {
+        width: 100%;
+        padding-left: 40px;
+        margin: 0px;
+        text-align: center;
+      }
+
+      .totalPaymentCarts {
+        margin-left: 0;
+      } 
+
+      .checkOutPayment {
+        margin-left: 0;
+        width: 100%;
+      }
+
+      #smallDeviceJustify {
+        font-size: 10px;
+      }
+
+
+
+
+}
   .shopping-cart {
     margin: 20px 0;
     margin-left: 290px;
@@ -330,6 +454,7 @@
     height: 200px;
     top: 679px;
   }
+
   .ReadMoreButton {
     border: 0;
     background-color: #faf8f7;
@@ -373,3 +498,4 @@
     margin-left: 2%;
   }
 }
+
