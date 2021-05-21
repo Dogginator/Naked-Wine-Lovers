@@ -1,12 +1,18 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import { IoIosArrowDown } from 'react-icons/io'
 import { Link } from 'react-router-dom'
+import { Modal } from "react-responsive-modal";
 
 
 
 const Box3 = () => {
     const myRef = useRef(null);
     const executeScroll = () => myRef.current.scrollIntoView({ behavior: 'smooth' });
+
+    const [open, setOpen] = useState(false);
+
+    
+    const onCloseModal = () => setOpen(false);
 
 
     return (
@@ -85,6 +91,7 @@ const Box3 = () => {
                 </div>
                 <div className="col" id="ColPaddingZero">
                     <img className="Taste1" alt="Taste scale" src="./Images/Plats1.png"></img>
+                    <button className="ReadMoreButton" onClick={() => setOpen(true)}>Läs mer här!</button>
                 </div>
             </div>
             <div className="row" id="ContainerWindow">
@@ -111,6 +118,7 @@ const Box3 = () => {
                 </div>
                 <div className="col" id="ColPaddingZero">
                 <img className="Taste2" alt="Taste scale" src="./Images/Plats2.png"></img>
+                <button className="ReadMoreButton" onClick={() => setOpen(true)}>Läs mer här!</button>
                 </div>
             </div>
             <div className="row" id="ContainerWindow">
@@ -137,6 +145,7 @@ const Box3 = () => {
                 </div>
                 <div className="col" id="ColPaddingZero">
                     <img className="Taste3" alt="Taste scale" src="./Images/Plats3-4.png"></img>
+                    <button className="ReadMoreButton" onClick={() => setOpen(true)}>Läs mer här!</button>
                 </div>
             </div>
             <div className="row" id="ContainerWindow">
@@ -162,6 +171,7 @@ const Box3 = () => {
                 </div>
                 <div className="col" id="ColPaddingZero">
                     <img className="Taste4" alt="Taste scale" src="./Images/Plats3-4.png"></img>
+                    <button className="ReadMoreButton" onClick={() => setOpen(true)}>Läs mer här!</button>
                 </div>
             </div>
             <div className="row" id="ContainerWindow">
@@ -188,6 +198,7 @@ const Box3 = () => {
                 <div className="col" id="ColPaddingZero"><Link id="LinkTo3" to="/">Ej urvalt ännu</Link></div>
                 <div className="col" id="ColPaddingZero"/>
             </div>
+            <Link to="/Vinlådor" className="BacktoBoxes"> Tillbaka till vinlådor </Link>
         </>
     )
 }

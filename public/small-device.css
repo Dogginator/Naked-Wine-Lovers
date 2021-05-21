@@ -248,15 +248,25 @@
     padding-top: 40px;
     text-align: right;
   }
-  .wineboxButton {
-    text-align: center;
-    margin-top: 0px;
-    border-radius: 30px;
-    color: white;
+
+  .wineboxButtonMobil {
+    width: 133px;
+    height: 27px;
+    border-radius: 5px;
     background-color: #d78255;
-    border: #d78255;
-    width: 100%;
+    font-family: Amatica SC;
+    font-style: normal;
+    margin-left: 10%;
+    font-size: 16px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 0;
+    color: #ffffff;
   }
+
   .TopPicture {
     width: 152px;
     height: 120px;
@@ -286,7 +296,10 @@
   .hideBRonMobile,
   .NextWhite,
   .NextRed,
-  .NextBubbel {
+  .NextBubbel,
+  #descInfo,
+  .wineboxButton,
+  .react-responsive-modal-closeButton {
     display: none;
   }
   #mobiletype {
@@ -341,7 +354,7 @@
     width: 257px;
     margin-left: 28%;
     top: 0px;
-    
+
     font-family: Halant;
     font-style: normal;
     font-weight: normal;
@@ -411,7 +424,7 @@
     display: flex;
     align-items: center;
     text-align: center;
-    margin-left: 15%;
+    margin-left: 10%;
     margin-top: 20%;
   }
   #Orange_you_glad {
@@ -420,18 +433,69 @@
   #White_is_blanc {
     margin-left: 10%;
   }
-  .RubrikBlandat{
+  .RubrikBlandat {
     margin-top: 0;
     margin-bottom: 0;
   }
-  .Taste1, .Taste2, .Taste3, .Taste4 {
+  .Taste1,
+  .Taste2,
+  .Taste3,
+  .Taste4 {
     margin-left: 0;
     margin-right: 30px;
-    width: 180px;
+    width: 170px;
     height: 204px;
   }
-  .Oragne1, .Oragne2, .Oragne3, .Oragne4 {
+  .Oragne1,
+  .Oragne2,
+  .Oragne3,
+  .Oragne4 {
     width: 56px;
     height: 200px;
     top: 679px;
   }
+
+  .ReadMoreButton {
+    border: 0;
+    background-color: #faf8f7;
+    width: 154px;
+    height: 32px;
+    margin-left: 20%;
+    top: 0px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: underline;
+
+    color: #d78255;
+  }
+
+  .Overlay_container {
+    display: relative;
+    position: absolute;
+    width: 257px;
+    height: 315px;
+    margin-left: 10%;
+    top: 0px;
+    z-index: 2;
+    background: #ffffff;
+    border-radius: 4px;
+    border: solid 2px lightgray;
+  }
+  .overlaytext {
+    font-size: 16px;
+  }
+  .BacktoBoxes {
+    font-family: Poppins;
+    font-size: 14px;
+    text-decoration: underline;
+    margin-left: 2%;
+  }
+}
+
