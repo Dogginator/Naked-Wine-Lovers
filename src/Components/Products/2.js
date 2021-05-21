@@ -1,11 +1,19 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import { IoIosArrowDown } from 'react-icons/io'
 import { Link } from 'react-router-dom'
+import { Modal } from "react-responsive-modal";
+import { setNestedObjectValues } from 'formik';
+
 
 
 const Box2 = () => {
     const myRef = useRef(null);
     const executeScroll = () => myRef.current.scrollIntoView({ behavior: 'smooth' });
+    
+    const [open, setOpen] = useState(false);
+
+    
+    const onCloseModal = () => setOpen(false);
 
 
     return (
@@ -84,6 +92,23 @@ const Box2 = () => {
                 </div>
                 <div className="col" id="ColPaddingZero">
                     <img className="Taste1" alt="Taste scale" src="./Images/Plats1.png"></img>
+                    <button className="ReadMoreButton" onClick={() => setOpen(true)}>Läs mer här!</button>
+                    <Modal open={open} center>
+                    <div className="Overlay_container">
+                    <h2>Orange, USA 2020</h2>
+                    <p className="overlaytext">
+                    Detta vita vinet från Garden of Eden Vinyard i Kalifornien, USA. Inslag av päron, färska örter och honung. 
+                    Ett bra första steg för dig som från början gillar vitt vin, men ännu inte prövat naturvin. 
+                    Funkar perfekt till fisk eller vegetarisk. 
+                    </p>
+                    <p className="overlaytext"> 
+                    Flaska: 750 ml
+                    Alkoholhalt 12%
+                    Sockerhalt 10 g/l <button className="closeOverlay" onClick={onCloseModal}>STÄNG</button>
+                    
+                    </p>
+                    </div>
+        </Modal>
                 </div>
             </div>
             <div className="row" id="ContainerWindow">
@@ -110,6 +135,7 @@ const Box2 = () => {
                 </div>
                 <div className="col" id="ColPaddingZero">
                 <img className="Taste2" alt="Taste scale" src="./Images/Plats2.png"></img>
+                <button className="ReadMoreButton" onClick={() => setOpen(true)}>Läs mer här!</button>
                 </div>
             </div>
             <div className="row" id="ContainerWindow">
@@ -136,6 +162,7 @@ const Box2 = () => {
                 </div>
                 <div className="col" id="ColPaddingZero">
                     <img className="Taste3" alt="Taste scale" src="./Images/Plats3-4.png"></img>
+                    <button className="ReadMoreButton" onClick={() => setOpen(true)}>Läs mer här!</button>
                 </div>
             </div>
             <div className="row" id="ContainerWindow">
@@ -161,6 +188,7 @@ const Box2 = () => {
                 </div>
                 <div className="col" id="ColPaddingZero">
                     <img className="Taste4" alt="Taste scale" src="./Images/Plats3-4.png"></img>
+                    <button className="ReadMoreButton" onClick={() => setOpen(true)}>Läs mer här!</button>
                 </div>
             </div>
             <div className="row" id="ContainerWindow">
@@ -187,6 +215,7 @@ const Box2 = () => {
                 <div className="col" id="ColPaddingZero"><Link id="LinkTo3" to="/">Ej urvalt ännu</Link></div>
                 <div className="col" id="ColPaddingZero"/>
             </div>
+            <Link to="/Vinlådor" className="BacktoBoxes"> Tillbaka till vinlådor </Link>
         </>
     )
 }

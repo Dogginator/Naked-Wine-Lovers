@@ -32,10 +32,11 @@ export const Box = (props) => {
                 </div>
 
                 <div className="boxInfo">
-                    <p className="descText">
+                    <p className="descText" id="descInfo">
                         {props.product.description}</p>
                     <p className="descText" id="price">
                         {props.product.price} SEK/Månad</p>
+                        <Link to={`/${props.product.prodid}`}><button className="wineboxButtonMobil">LÄS MER</button> </Link>
                 </div>
                     
                 <button onClick={() => OnClick(props.product)} className="wineboxButton">Lägg till i varukorg</button>
