@@ -67,7 +67,7 @@ return (
                 <div className="col-sm"></div>
             </div>
                     <div>
-                    <Link to="/">
+                    <Link to="/Vinlådor">
                         <a href="/" id="Confirmknappen">Tillbaka till start</a>
                     </Link>
                 </div>

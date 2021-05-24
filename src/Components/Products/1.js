@@ -1,11 +1,17 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import { IoIosArrowDown } from 'react-icons/io'
 import { Link } from 'react-router-dom'
+import { Modal } from "react-responsive-modal";
 
 
 const Box1 = () => {
     const myRef = useRef(null);
     const executeScroll = () => myRef.current.scrollIntoView({ behavior: 'smooth' });
+
+    const [open, setOpen] = useState(false);
+
+    
+    const onCloseModal = () => setOpen(false);
 
 
 
@@ -36,7 +42,8 @@ const Box1 = () => {
                                     Det vill säga, ett vitt, ett orange, ett rött och ett mousserande. De passar alla till olika tillfällen,
                                     
                                     men är alla lika goda! Månadens fyra gårdar är: Nonna Calbretta, Amigos, Three Season och Garden of Eden. 
-                                    <br id="produktBR"/>
+                                    <br className="For_desktop"/>
+                                    <br />
                                 <h3 className="produktH3">Så här funkar det.</h3>
                                 <br id="produktBR"/>
                                     <a className="MobilH3"><b>Så här funkar det.</b></a> <br id="produktBR"/>
@@ -62,7 +69,7 @@ const Box1 = () => {
                     <div className="col" id="ColPaddingZero"/>
                 </div>
                 <div className="row" id="ContainerWindow">
-                <h2 className="h21mobil">WHITE IS BLANC</h2>
+                <h2 className="h21mobil" id="White_is_blanc">WHITE IS BLANC</h2>
                     <div className="col" id="ColPaddingZero">
                     
                         <img className="Blandat1" alt="Bottle of White is Blanc" src="./Images/Blandat1.png"></img>
@@ -86,15 +93,16 @@ const Box1 = () => {
                     </div>
                     <div className="col" id="ColPaddingZero">
                         <img className="Taste1" alt="Taste scale" src="./Images/Plats1.png"></img>
+                        <button className="ReadMoreButton" onClick={() => setOpen(true)}>Läs mer här!</button>
                     </div>
                 </div>
                 <div className="row" id="ContainerWindow">
-                <h2 className="h21mobil">ORANGE YOU GLAD</h2>
+                <h2 className="h21mobil" id="Orange_you_glad">ORANGE YOU GLAD</h2>
                 <div className="col" id="ColPaddingZero">
                         <img className="Blandat2" alt="Bottle of Orange you Glad" src="./Images/Blandat2.png"></img>
                     </div>
                     <div className="col" id="ColPaddingZero">
-                        <h2 className="h21">ORANGE YOU GLAD</h2><br/>
+                        <h2 className="h21" >ORANGE YOU GLAD</h2><br/>
                         <p className="DesktopInfo" >Orange, Frankrike  2020</p><br/>
                         <p className="DesktopInfo">
                         Ett fermenterat vitt vin från James and the Giant Grape. 
@@ -112,6 +120,7 @@ const Box1 = () => {
                     </div>
                     <div className="col" id="ColPaddingZero">
                     <img className="Taste2" alt="Taste scale" src="./Images/Plats2.png"></img>
+                    <button className="ReadMoreButton" onClick={() => setOpen(true)}>Läs mer här!</button>
                     </div>
                 </div>
                 <div className="row" id="ContainerWindow">
@@ -138,9 +147,11 @@ const Box1 = () => {
                     </div>
                     <div className="col" id="ColPaddingZero">
                         <img className="Taste3" alt="Taste scale" src="./Images/Plats3-4.png"></img>
+                        <button className="ReadMoreButton" onClick={() => setOpen(true)}>Läs mer här!</button>
                     </div>
                 </div>
                 <div className="row" id="ContainerWindow">
+                <h2 className="h21mobil">GIRL IN RED</h2>
                 <div className="col" id="ColPaddingZero">
                         <img className="Blandat4" alt="Bottle of Girl in red" src="./Images/Blandat4.png"></img>
                     </div>
@@ -162,6 +173,7 @@ const Box1 = () => {
                     </div>
                     <div className="col" id="ColPaddingZero">
                         <img className="Taste4" alt="Taste scale" src="./Images/Plats3-4.png"></img>
+                        <button className="ReadMoreButton" onClick={() => setOpen(true)}>Läs mer här!</button>
                     </div>
                 </div>
                 <div className="row" id="ContainerWindow">
@@ -188,6 +200,7 @@ const Box1 = () => {
                     <div className="col" id="ColPaddingZero"><Link id="LinkTo3" to="/">Ej urvalt ännu</Link></div>
                     <div className="col" id="ColPaddingZero"/>
                 </div>
+                <Link to="/Vinlådor" className="BacktoBoxes"> Tillbaka till vinlådor </Link>
         </>
     )
 }
