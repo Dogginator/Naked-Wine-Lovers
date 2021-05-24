@@ -23,7 +23,7 @@
     padding-bottom: 48px;
     padding-top: 54px;
     width: 589px;
-    height: 1110px;
+    height: 1210px;
     left: 5%;
     top: 235px;
     margin-bottom: 262px;
@@ -61,30 +61,13 @@
 #lastName {
     width: 220px;
     height: 50px;
-    left: 427px;
+    left: 423px;
     top: 548px;
     font-size: 14px;
     line-height: 22px;
     margin-bottom: 15px;
 }
-#Adress {
-    width: 444px;
-    height: 50px;
-    left: 420px;
-    top: 613px;
-    font-size: 14px;
-    line-height: 22px;
-    margin-bottom: 15px;
-}
-#Lgh {
-    width: 444px;
-    height: 50px;
-    left: 420px;
-    top: 678px;
-    font-size: 14px;
-    line-height: 22px;
-    margin-bottom: 15px;
-}
+
 #Postnummer {
     width: 217px;
     height: 50px;
@@ -94,20 +77,12 @@
     line-height: 22px;
     margin-bottom: 15px;
 }
-#Ort {
+
+#land {
     width: 220px;
     height: 50px;
-    left: 644px;
+    left: 423px;
     top: 738px;
-    font-size: 14px;
-    line-height: 22px;
-    margin-bottom: 15px;
-}
-#land {
-    width: 444px;
-    height: 50px;
-    left: 420px;
-    top: 798px;
     font-size: 14px;
     line-height: 22px;
     margin-bottom: 15px;
@@ -127,6 +102,17 @@
     left: 420px;
     top: 965px;
 
+}
+#pass {
+    width: 444px;
+    height: 50px;
+    margin-bottom: 15px;
+    
+}
+#rePass {
+    width: 444px;
+    height: 50px;
+    margin-bottom: 15px;
 }
 #kortNum {
     width: 470px;
@@ -198,4 +184,13 @@ padding: 0;
 margin-bottom: 276px;
 margin-left:15%;
   
+}
+#lablekassa1{
+    font-size: 14px;
+}
+#lablekassa2{
+    font-size: 14px; 
+}
+#Redigera{
+    margin-left: 95px;
 }

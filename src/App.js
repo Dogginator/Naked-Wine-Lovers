@@ -32,13 +32,12 @@ const initialValues  = {
     Nyhetsbrev: '',
     firstName: '',
     lastName: '',
-    Adress: '',
-    Lgh: '',
     Postnummer: '',
-    Ort: '',
-    land: '',
+    Ombud: '',
     telefonnummer: '',
     creditcard: '',
+    monthYear: '',
+    CVC: '',
 };
 
     const [costumerInfo, setCostumerInfo]  = useState(initialValues);
