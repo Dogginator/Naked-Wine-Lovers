@@ -23,7 +23,7 @@
     padding-bottom: 48px;
     padding-top: 54px;
     width: 589px;
-    height: 1110px;
+    height: 1210px;
     left: 5%;
     top: 235px;
     margin-bottom: 262px;
@@ -190,4 +190,7 @@ margin-left:15%;
 }
 #lablekassa2{
     font-size: 14px; 
+}
+#Redigera{
+    margin-left: 95px;
 }

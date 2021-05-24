@@ -173,53 +173,48 @@ const Kassa_Final = () => {
                                 <div className="col" id="ColPaddingZero"><label id="labelKassa1">Betalningsätt</label></div>
                             </div>
                             <div className="row" id="ContainerWindow">
-                                <div className="col" id="ColPaddingZero"><input type="checkbox" id="Kort" name="Kort" onClick={cardClick}/>
-                                    <label for="Kort" id="ColPaddingZero"> Kort</label>
+                                <div className="col" id="ColPaddingZero"><input type="radio" id="Kort" name="pick" onClick={cardClick}/>
+                                    <label for="Kort" id="ColPaddingZero"> Kort</label><br/>
+                                    <input type="radio" id="Faktura" name="pick" onClick={fakturaClick} />
+                                    <label for="a"> Betala med faktura</label>
                                 </div>
                             </div>
                             <div className="row" id="Payment">
                                 {showFaktura && Faktura()}
                                 {showPaymentCard && PaymentCard()}
                             </div>
-
-
-                            <div className="row" id="ContainerWindow">
-                                 <div className="col" id="ColPaddingZero"><input type="checkbox" id="Faktura" name="Faktura" onClick={fakturaClick} />
-                                   <label for="a"> Betala med faktura</label>
-                               </div>
-                           </div>
                     </form>
                 </div>
                  <div className="col" id="VarukorgLitle">
                  <div className="row" id="ContainerWindow">
-                     <div className="col" id="ColPaddingZero"><p>Översikt varukorg</p></div>
+                     <div className="col" id="ColPaddingZero"><label>Översikt varukorg</label></div>
                      <div className="col" id="ColPaddingZero">
-                         <Link>Redigera</Link>
+                         <Link to="/CartCheckout" id="Redigera">Redigera</Link>
                          </div>
                  </div>
                  <div className="row" id="ContainerWindow">
                      <img alt="WineBox" ></img>
                  </div>
                  <div className="row" id="ContainerWindow">
-                     <div className="col" id="ColPaddingZero"><p>Delsumma</p></div>
+                     <div className="col" id="ColPaddingZero"><label>Delsumma</label></div>
                      <div className="col"id="ColPaddingZero"></div>
                  </div>
                  <div className="row" id="ContainerWindow">
-                     <div className="col" id="ColPaddingZero"><p>Leverans</p></div>
-                     <div className="col" id="ColPaddingZero"><p>0 SEK</p></div>
+                     <div className="col" id="ColPaddingZero"><label>Leverans</label></div>
+                     <div className="col" id="ColPaddingZero"><label>0 SEK</label></div>
                  </div>
                  <div className="row" id="ContainerWindow">
-                     <div className="col" id="ColPaddingZero"><p> Totalt att betala</p></div>
+                     <div className="col" id="ColPaddingZero"><label> Totalt att betala</label></div>
                      <div className="col" id="ColPaddingZero"></div>
                  </div>
                  </div>
              </div>
              <div className="row" id="Buttons">
                  <div className="col" id="ColPaddingZero">
-                     <Link id="return">Återgå till varukorgen</Link>
+                     <Link  to="/CartCheckout" id="return">Återgå till varukorgen</Link>
                  </div>
                  <div className="col" id="ColPaddingZero">
-                     <Link>
+                     <Link to="/Confirm">
                          <button id="Betala">Bekrefta betalning</button>
                      </Link>
                     
