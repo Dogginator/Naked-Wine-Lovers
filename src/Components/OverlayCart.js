@@ -8,7 +8,6 @@ export const OverlayCart = () => {
     const cart = useSelector(state => state.cart);
     const totalPrice = useSelector(state => state.totalPrice);
     const numProducts = useSelector(state => state.products);
-    // const increase = false;
     const dispatch = useDispatch();
 
     const change_qty = (increase, product) => {
@@ -16,11 +15,6 @@ export const OverlayCart = () => {
         (increase) ? dispatch(INCREASE(product.price))
         : dispatch(DECREASE(product.price));
     }
-
-    // const decrease_qty = (id,price,quantity) => {
-    //     dispatch(DECREASE_QTY(id,quantity));
-    //     dispatch(DECREASE(price));
-    // }
 
     const emptyCart = () => {
         dispatch(EMPTY_CART());

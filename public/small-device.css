@@ -125,15 +125,18 @@
       }
 
       .cartBenefitBox {
+        position: static;
         width: 80%;
         height: 90%;
       }
 
       #benefitText {
+        position: static;
         width: 72%;
       }
 
       #paddingBenefitText {
+        position: static;
         width: 100%;
         font-size: 10px;
       }
@@ -154,6 +157,14 @@
         display: none;
       }
 
+      #prodRow {
+        padding-bottom: 10px;
+      }
+
+      #smallDevicePicturePos {
+        position: static;
+      }
+
       #centerMidHeader {
         text-align: center;
       }
@@ -170,6 +181,11 @@
       #smallDeviceQty::before {
         text-align: center;
         content: "Kvantitet: ";
+      }
+
+      
+      #smallDeviceTotPrice {
+        position: static;
       }
 
       #smallDeviceTotPrice::before {
@@ -195,12 +211,9 @@
 
       #smallDeviceJustify {
         font-size: 10px;
-      }
-
-
-
-
+      }    
 }
+
   .shopping-cart {
     margin: 20px 0;
     margin-left: 290px;
@@ -212,6 +225,16 @@
     padding: 20px;
     padding-bottom: 30px;
   }
+
+  .prodImg {
+    width: 20%;
+    display: none;
+  }
+
+  #prodInfo {
+    
+  }
+
   .Shooping-cart-Ploygon {
     background-image: url("/Images/Polygon.png");
     position: absolute;

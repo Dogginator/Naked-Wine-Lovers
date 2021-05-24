@@ -1,8 +1,21 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { EMPTY_CART, RESET_TOTAL, INCREASE, DECREASE } from '../actions';
+import { EMPTY_CART, RESET_TOTAL, DELETE_PRODUCT, CHANGE_QTY, INCREASE, DECREASE } from '../actions';
 
 const CartCheckout = () => {
+    const dispatch = useDispatch();
+
+    const deleteProduct = (product) => {
+        dispatch(DELETE_PRODUCT(product));
+        dispatch(DECREASE(product.price * product.quantity));
+    }
+
+
+    const change_qty = (increase, product) => {
+        dispatch(CHANGE_QTY(product,increase));
+        (increase) ? dispatch(INCREASE(product.price))
+        : dispatch(DECREASE(product.price));
+    }
 
     const totalPrice = useSelector(state => state.totalPrice);
     const cart = useSelector(state => state.cart);
@@ -11,7 +24,7 @@ const CartCheckout = () => {
 
         return(
             <div className="row" id="prodRow">
-                <div className="col-sm-2">
+                <div className="col-sm-2" id="smallDevicePicturePos">
                 <img id="prodImg" style={{
                     backgroundImage: `url(${prod.background.url})`,
                     backgroundRepeat: 'no-repeat'
@@ -19,17 +32,18 @@ const CartCheckout = () => {
                 </div>
                 <div className="col-sm-1">
                     <a>{prod.name}</a>
+                    <button className="deleteProd" onClick={() => deleteProduct(prod)}>Ta bort</button>
                 </div>
                 <div className="col-sm-3" id="prenumeration">
                     <a>Prenumeration: Månadsvis</a>
                 </div>
-                <div className="col-sm-2" id="smallDevicePrice">
+                <div className="col-sm-2" id="checkoutPrice">
                     <a>{prod.price} SEK/månad</a>
                 </div>
-                <div className="col-sm-2" id="smallDeviceQty">
-                    <a>{prod.quantity}</a>
+                <div className="col-sm-2" id="checkoutQty">
+                <button className="changeProductAmount" onClick={() => change_qty(false, prod)}>-</button>{prod.quantity}<button className="changeProductAmount" onClick={() => change_qty(true, prod)}>+</button>
                 </div>
-                <div className="col-sm-2" id="smallDeviceTotPrice">
+                <div className="col-sm-2" id="checkoutTotPrice">
                     <a>{prod.price * prod.quantity} SEK/månad</a>
                 </div>
             </div>
@@ -80,7 +94,7 @@ const CartCheckout = () => {
         <div className="col-sm-2">
             <h5>Kvantitet</h5>
         </div>
-        <div className="col-sm-2">
+        <div className="col-sm-2" id="totalPositionCart">
             <h5>Totalt</h5>
         </div>
         <hr id="sepLine2" color="Black"/>  

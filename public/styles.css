@@ -401,6 +401,37 @@ a ,a:hover, a:focus, a:active{
   height: 100px;
 }
 
+#totalPositionCart {
+  position: static;
+}
+
+#prenumeration {
+  text-align: center;
+}
+
+.deleteProd {
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  text-decoration: underline;
+}
+
+#checkoutPrice::before {
+  text-align: center;
+  content: "Månadskostnad: ";
+}
+
+#checkoutTotPrice {
+  position: static;
+}
+
+#smallDeviceTotPrice::before {
+  text-align: center;
+  content: "Totalt: ";
+}
+
 .checkOutPayment {
   margin-left: 65%;
   color: white;
