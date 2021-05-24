@@ -11,7 +11,7 @@
     width: 58px;
     height: 50px;
     margin-left: 5%;
-    top: 177px;
+    top: 167px;
 }
 
 
@@ -25,7 +25,7 @@
     width: 589px;
     height: 1210px;
     left: 5%;
-    top: 235px;
+    margin-top: 222px;
     margin-bottom: 262px;
 }
 .Kontaktuppgifter {
@@ -169,6 +169,7 @@
 
 }
 #VarukorgLitle {
+    display: inline-block;
     background-color: #E4E0D7;
     width: 345px;
     height: 423px;
@@ -185,12 +186,20 @@ margin-bottom: 276px;
 margin-left:15%;
   
 }
-#lablekassa1{
+#labelkassa1{
     font-size: 14px;
+    font-weight: bold;
 }
-#lablekassa2{
-    font-size: 14px; 
+#labelkassa2{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.54);
+    font-style: normal;
+    font-weight: bold;
+    line-height: 21px;
+}
+#labelKassa3{
+    font-size: 12px;
 }
 #Redigera{
-    margin-left: 95px;
+    margin-left: 123px;
 }
