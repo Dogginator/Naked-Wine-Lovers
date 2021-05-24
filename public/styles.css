@@ -540,7 +540,7 @@ color: #000000;
 /* Product-page */
 
 @media only screen and (min-width: 480px) {
-  .mobileh1, #mobiletype, #MobilVidareKnapp, .MobilH3, #produktBR, .h21mobil{
+  .mobileh1, #mobiletype, #MobilVidareKnapp, .MobilH3, #produktBR, .h21mobil, .ReadMoreButton, .BacktoBoxes, .wineboxButtonMobil{
     display: none;
   }
 }
