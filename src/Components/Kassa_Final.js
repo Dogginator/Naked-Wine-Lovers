@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
 const VinBox ="../Images/Vinbildconf.png";
 
 
@@ -33,6 +34,8 @@ const Kassa_Final = () => {
     }
     const [showPaymentCard, setShowPaymentCard] = useState(false);
     const [showFaktura, setShowFaktura] = useState(false);
+    const cart = useSelector(state => state.cart);
+    const totalPrice = useSelector(state => state.totalPrice);
 
     const cardClick = () =>{
         if(setShowPaymentCard === true ){
@@ -46,6 +49,27 @@ const Kassa_Final = () => {
     const fakturaClick = () =>{
         setShowFaktura(true);
         setShowPaymentCard(false);
+    }
+
+    const itemOutput = (prod) => {
+        return(
+            <div className="row" id="prodRow">
+                <div className="col-sm-4">
+                <img className="miniCartProdImg" style={{
+                    backgroundImage: `url(${prod.background.url})`,
+                    backgroundRepeat: 'no-repeat'
+                    }} src={prod.productimage.url}></img>
+                </div>
+
+                <div className="col-sm-8" id="prodInfo">
+                <a>{prod.price} SEK/månad</a>
+                <br/>
+                <a>{prod.name}</a>
+                <br/>
+                <a>Antal: {prod.quantity}</a>
+                </div>
+            </div>
+        );
     }
 
     const PaymentCard = () =>{
@@ -78,12 +102,12 @@ const Kassa_Final = () => {
         );
     }
 
-
     return(
         <div className="container">
             <div className="row" id="ContainerWindow">
                 <div className="col" id="KassaHeader"><h1>KASSA</h1></div>
             </div>
+
             <div className="row" id="ContainerWindow">
                 <div className="col" id="InputForm">
                     <form onSubmit={(event) => submitForm(event)}>
@@ -185,8 +209,23 @@ const Kassa_Final = () => {
                             </div>
                     </form>
                 </div>
+
                  <div className="col" id="VarukorgLitle">
-                 <div className="row" id="ContainerWindow">
+                    <div className="row" id="miniCartHeader">
+                        <div className="col-sm-6">Översikt Varukorg</div>
+                        <div className="col-sm-6">
+                        <Link to="/CartCheckout">
+                            <button type="button" id="editButton">Redigera</button>
+                        </Link>
+                        </div>
+                    </div>
+                    {cart.map((prod) => itemOutput(prod))}
+                    <div className="row">
+                        <div className="col"><h4 id="miniCartTotal">Totalt att betala: </h4>{totalPrice}</div>
+                    </div>
+
+
+                 {/* <div className="row" id="ContainerWindow">
                      <div className="col" id="ColPaddingZero"><label>Översikt varukorg</label></div>
                      <div className="col" id="ColPaddingZero">
                          <Link to="/CartCheckout" id="Redigera">Redigera</Link>
@@ -206,7 +245,7 @@ const Kassa_Final = () => {
                  <div className="row" id="ContainerWindow">
                      <div className="col" id="ColPaddingZero"><label> Totalt att betala</label></div>
                      <div className="col" id="ColPaddingZero"></div>
-                 </div>
+                 </div> */}
                  </div>
              </div>
              <div className="row" id="Buttons">

@@ -57,11 +57,11 @@ export const OverlayCart = () => {
                 <div className="row" id="totAndGarbage">
                         <p className="col" id="totalPrice">Totalt:{totalPrice}</p>
                         <a className="col" id="garbage-icon">
-                        <img src="/Images/Garbage.png" onClick={() => emptyCart()}></img></a>
+                        <img src="/Images/Garbage.png" id="garbageIcon"onClick={() => emptyCart()}></img></a>
                 </div>
                 <div className="shopping-cart-buttons">
                     <Link to="/CartCheckout">
-                        <button type="button" className="shopping-button-checkout">Checka ut</button>
+                        <button type="button" disabled={cart.length === 0} className="shopping-button-checkout">Checka ut</button>
                         </Link>
                     <button type="button" className="shopping-button-shop">Forsätt shoppa</button>
                 </div>

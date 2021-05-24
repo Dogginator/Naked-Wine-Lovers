@@ -231,10 +231,6 @@
     display: none;
   }
 
-  #prodInfo {
-    
-  }
-
   .Shooping-cart-Ploygon {
     background-image: url("/Images/Polygon.png");
     position: absolute;
@@ -519,5 +515,33 @@
     font-size: 14px;
     text-decoration: underline;
     margin-left: 2%;
+  }
+
+  #kortNum,#telefonnummer,#email,#pass,#rePass {
+    width: 220px;
+  }
+
+  #InputForm {
+    left: 0%;
+    margin-top: 40px;
+    position: static;
+  }
+
+  #KassaHeader {
+    top: 20px;
+    text-align: center;
+    margin-left: 0;
+    position: static;
+  }
+
+  .orderInfo {
+    background-color: #E4E0D7;
+    width: 290px;
+    height: 290px;
+    margin-top: 20px;
+  }
+
+  #labelKassa1,#labelKassa2 {
+    position: static;
   }
 
