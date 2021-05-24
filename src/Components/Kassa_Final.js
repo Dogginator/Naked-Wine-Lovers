@@ -51,12 +51,19 @@ const Kassa_Final = () => {
     const PaymentCard = () =>{
         return (
             <div className="container">
-                <div className="row">
-                    <div className="col"><input id="kortNum"type="text" placeholder="Kortnummer"></input></div>
+                <div className="row" id="ContainerWindow">
+                    <div className="col" id="ColPaddingZero"><label id="labelKassa">Kortnummer</label></div>
                 </div>
-            <div className="row">
-                <div className="col"><input id="mmåå" type="text" placeholder="MM/ÅÅ"></input></div>
-                <div className="col"><input id="CVC" type="text" placeholder="CVC"></input></div>
+                <div className="row" id="ContainerWindow">
+                    <div className="col" id="ColPaddingZero"><input id="kortNum"type="text" placeholder=""></input></div>
+                </div>
+                <div className="row" id="ContainerWindow">
+                            <div className="col" id="ColPaddingZero"><label id="labelKassa">MM/ÅÅ</label></div>
+                            <div className="col" id="ColPaddingZero"><label id="labelKassa">CVC</label></div>
+                </div>
+            <div className="row" id="ContainerWindow">
+                <div className="col" id="ColPaddingZero" ><input id="mmåå" type="text" placeholder=""></input></div>
+                <div className="col" id="ColPaddingZero" ><input id="CVC" type="text" placeholder=""></input></div>
                 </div> 
             </div>
 
@@ -81,35 +88,40 @@ const Kassa_Final = () => {
                 <div className="col" id="InputForm">
                     <form onSubmit={(event) => submitForm(event)}>
                     <div className="row" id="ContainerWindow">
-                        <div className="col" id="ColPaddingZero"><h2>Leveransinformation</h2></div>
+                        <div className="col" id="ColPaddingZero"><lable id="labelKassa1">Leveransinformation</lable></div>
                         </div>
                         <div className="row" id="ContainerWindow">
-                                <div className="col" id="ColPaddingZero"><input type="text" id="firstName" name="firstName" placeholder="Förnamn:" size=""  />
-                                </div>
-                                <div className="col" id="ColPaddingZero"><input type="text" id="lastName" name="lastName" placeholder="Efternamn:" size=""  />
-                                </div>
+                            <div className="col" id="ColPaddingZero"><label id="labelKassa2">Förnamn</label></div>
+                            <div className="col" id="ColPaddingZero"><label id="labelKassa2">Efternamn</label></div>
                         </div>
                         <div className="row" id="ContainerWindow">
-                                <div className="col" id="ColPaddingZero"><input type="text" id="Adress" name="Adress" placeholder="Gatuadress:" size="27" />
+                                <div className="col" id="ColPaddingZero"><input type="text" id="firstName" name="firstName" size="10"  />
                                 </div>
-                        </div>
-                        <div className="row" id="ContainerWindow">
-                                <div className="col" id="ColPaddingZero"><input type="text" id="Lgh" name="Lgh" placeholder="Lgh" size="27"  />
-                                </div>
-                        </div>  
-                        <div className="row" id="ContainerWindow">
-                                <div className="col" id="ColPaddingZero"><input type="text" id="Postnummer" name="Postnummer" placeholder="Postnummer:" size="10"  />
-                                </div>
-                                <div className="col" id="ColPaddingZero"><input type="text" id="Ort" name="Ort" placeholder="Stad/Ort:" size="10" />
+                                <div className="col" id="ColPaddingZero"><input type="text" id="lastName" name="lastName" size="10"  />
                                 </div>
                         </div>
                         <div className="row" id="ContainerWindow">
-                            <div className="col" id="ColPaddingZero"><select id="land" name="land" >
-                                <option value="Sverige">Sverige</option>
-                            </select></div>
+                            <div className="col" id="ColPaddingZero"><label id="labelKassa2">Postnummer</label></div>
+                            <div className="col" id="ColPaddingZero"><label id="labelKassa2">Ombud</label></div>
                         </div>
                         <div className="row" id="ContainerWindow">
-                            <div className="col" id="ColPaddingZero"><input type="tel" id="telefonnummer" name="telefonnummer" placeholder="telefon" size="27" />
+                                <div className="col" id="ColPaddingZero"><input type="text" id="Postnummer" name="Postnummer" placeholder="" size="10"  />
+                                </div>
+                                <div className="col" id="ColPaddingZero">
+                                    <select id="land" name="land" >
+                                        <option value="Sverige"></option>
+                                        <option value="Sverige">Ombud1</option>
+                                        <option value="Sverige">Ombud2</option>
+                                        <option value="Sverige">Ombud3</option>
+                                    </select>  
+                                </div>
+                                
+                        </div>
+                        <div className="row" id="ContainerWindow">
+                            <div className="col" id="ColPaddingZero"><label id="labelKassa2">Telefonnummer</label></div>
+                        </div>
+                        <div className="row" id="ContainerWindow">
+                            <div className="col" id="ColPaddingZero"><input type="tel" id="telefonnummer" name="telefonnummer" size="27" />
                             </div>
                         </div>
                         <div className="row" id="ContainerWindow">
@@ -118,10 +130,17 @@ const Kassa_Final = () => {
                             </div>
                         </div>
                         <div className="row" id="ContainerWindow">
-                            <div className="col" id="ColPaddingZero"><h2>Inloggningsuppgifter</h2></div>
+                            <div className="col" id="ColPaddingZero"><hr color="Black"/>
+                            </div> 
                         </div>
                         <div className="row" id="ContainerWindow">
-                            <div className="col" id="ColPaddingZero"><input type="email" id="email" name="email" placeholder="E-post:" size="27" 
+                            <div className="col" id="ColPaddingZero"><label id="labelKassa1">Skapa Konto</label></div>
+                        </div>
+                        <div className="row" id="ContainerWindow">
+                            <div className="col" id="ColPaddingZero"><label id="labelKassa2">E-post</label></div>
+                        </div>
+                        <div className="row" id="ContainerWindow">
+                            <div className="col" id="ColPaddingZero"><input type="email" id="email" name="email" placeholder="" size="27" 
                                                 value={email}
                                                 onSubmit={e => setEmail(e.target.value)} 
                                                 onChange={e => setEmail(e.target.value)} 
@@ -130,7 +149,13 @@ const Kassa_Final = () => {
                                                 /></div>
                         </div>
                         <div className="row" id="ContainerWindow">
+                            <div className="col" id="ColPaddingZero"><label id="labelKassa2">Lösenord</label></div>
+                        </div>
+                        <div className="row" id="ContainerWindow">
                             <div className="col" id="ColPaddingZero"><input id="pass" type="password" placeholder=""></input></div>
+                        </div>
+                        <div className="row" id="ContainerWindow">
+                            <div className="col" id="ColPaddingZero"><label id="labelKassa2">Bekräfta lösenord</label></div>
                         </div>
                         <div className="row" id="ContainerWindow">
                             <div className="col" id="ColPaddingZero"><input id="rePass" type="password" placeholder=""></input></div>
@@ -145,7 +170,7 @@ const Kassa_Final = () => {
                             </div> 
                         </div>
                         <div className="row" id="ContainerWindow">
-                                <div className="col" id="ColPaddingZero"><h2>Betalningsätt</h2></div>
+                                <div className="col" id="ColPaddingZero"><label id="labelKassa1">Betalningsätt</label></div>
                             </div>
                             <div className="row" id="ContainerWindow">
                                 <div className="col" id="ColPaddingZero"><input type="checkbox" id="Kort" name="Kort" onClick={cardClick}/>
