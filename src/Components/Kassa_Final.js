@@ -126,7 +126,7 @@ const Kassa_Final = () => {
                         </div>
                         <div className="row" id="ContainerWindow">
                             <div className="col" id="ColPaddingZero"><input type="checkbox" id="Nyhetsbrev" name="Nyhetsbrev" />
-                                <label for="Nyhetsbrev"> Jag hämtar ut mina varor på Systembolaget</label>
+                                <label id="labelKassa3" for="Nyhetsbrev"> Jag hämtar ut mina varor på Systembolaget</label>
                             </div>
                         </div>
                         <div className="row" id="ContainerWindow">
@@ -162,7 +162,7 @@ const Kassa_Final = () => {
                         </div>
                         <div className="row" id="ContainerWindow">
                             <div className="col" id="ColPaddingZero"><input type="checkbox" id="Nyhetsbrev" name="Nyhetsbrev" />
-                                <label for="Nyhetsbrev"> Jag vill gärna bli meddelad via epost om nya viner och annan viktig information som Naked Wine Lovers vill dela med mig</label>
+                                <label id="labelKassa3"for="Nyhetsbrev"> Jag vill gärna bli meddelad via epost om nya viner och annan viktig information som Naked Wine Lovers vill dela med mig</label>
                             </div>
                         </div>
                         <div className="row" id="ContainerWindow">
