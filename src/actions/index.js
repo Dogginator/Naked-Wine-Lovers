@@ -1,3 +1,10 @@
+export const INSERT_PRODUCTS = (products) => {
+    return {
+        type: 'INSERT_PRODUCTS',
+        payload: products
+    }
+}
+
 export const ADD_TO_CART = (product) => {
     return {
         type: 'ADD_TO_CART',

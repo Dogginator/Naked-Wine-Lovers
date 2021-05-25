@@ -2,9 +2,14 @@ import React, { Component , useState } from 'react';
 import { Query } from 'react-apollo';
 import PRODUCTS_QUERY from './Products/Queries';
 import { Box } from './Products/BoxContainer';
+import { useDispatch, useSelector } from 'react-redux';
+import { INSERT_PRODUCTS } from '../actions';
 import OverlayCart from './OverlayCart'
 
 const WineBox = () =>  {
+
+  const dispatch = useDispatch();
+  const items = useSelector(state => state.productsCMS);
 
     return (
       <Query query={PRODUCTS_QUERY}>
@@ -13,7 +18,8 @@ const WineBox = () =>  {
           if (loading) return <div>Fetching products.....</div>
           if (error)   return <div>Error fetching products</div>
 
-          const items = data.products;
+          dispatch(INSERT_PRODUCTS(data.products));
+          //const items = data.products;
 
           return (
             <>
