@@ -7,6 +7,7 @@ import { ADD_TO_CART, INCREASE, CHANGE_QTY } from '../../actions'
 
 
 
+
 const Box1 = () => {
     const myRef = useRef(null);
     const executeScroll = () => myRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -26,11 +27,8 @@ const Box1 = () => {
         }
     }
 
-    
 
     const [open, setOpen] = useState(false);
-
-    
     const onCloseModal = () => setOpen(false);
 
 
@@ -78,7 +76,12 @@ const Box1 = () => {
                     </div>
                     <div className="row" id="ContainerWindow">
                         <div className="col" id="ColPaddingZero"/>
+
+                        //<div className="col" id="ColPaddingZero" >
+                        //<button type="button" id="VidareKnapp">Lägg till i varukorg</button></div>   
+
                         <div className="col" id="ColPaddingZero" ><button type="button" id="VidareKnapp" onClick={() => AddToCart(items[0])}>Lägg till i varukorg</button></div>   
+
                     </div>
                 </div>
                 <div className="row" id="ContainerWindow">
