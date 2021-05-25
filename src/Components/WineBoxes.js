@@ -19,7 +19,6 @@ const WineBox = () =>  {
           if (error)   return <div>Error fetching products</div>
 
           dispatch(INSERT_PRODUCTS(data.products));
-          //const items = data.products;
 
           return (
             <>
