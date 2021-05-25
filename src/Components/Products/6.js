@@ -1,12 +1,16 @@
 import React, { useRef } from 'react'
 import { IoIosArrowDown } from 'react-icons/io'
 import { Link } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux';
+import { ADD_TO_CART } from '../../actions'
 
 
 
 const Box6 = () => {
     const myRef = useRef(null);
     const executeScroll = () => myRef.current.scrollIntoView({ behavior: 'smooth' });
+    const items = useSelector(state => state.productsCMS);
+    const dispatch = useDispatch();
 
 
     return (
