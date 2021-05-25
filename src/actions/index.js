@@ -57,3 +57,10 @@ export const DECREASE_AMOUNT = () => {
             type: 'DECREASE_PRODUCT'
     }
 }
+
+export const DELETE_PRODUCT = (payload) => {
+    return {
+            type: 'DELETE_PRODUCT',
+            product: payload
+    }
+}

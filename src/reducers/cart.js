@@ -33,6 +33,23 @@ const cartReducer = (state = defaultState, action) => {
             }
 
             return [...cart];
+
+        case 'DELETE_PRODUCT':
+            const tempValue = [...state];
+            const prodIndex = findProductIndex(tempValue, action.product.prodid);
+            if (prodIndex >= 0) {
+                let product = tempValue[prodIndex];
+                product.quantity = 0;
+                tempValue[prodIndex] = product;
+            }
+
+            if (action.product.quantity === 0) {
+                tempValue.splice(prodIndex,1);
+                action.product.quantity = 1;
+            }
+
+            return [...tempValue];
+        
         default:
             return state;
     }

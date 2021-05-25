@@ -171,19 +171,45 @@
 #VarukorgLitle {
     display: inline-block;
     background-color: #E4E0D7;
-    width: 345px;
-    height: 423px;
+    width: 105px;
+    height: 600px;
     left: 6.5%;
-    top: 235px;
+    top: 222px;
     padding-left: 10px;
     padding-top: 10px;
     padding-right: 0;
 }
+
+#miniCartHeader {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#miniCartTotal {
+    display: inline;
+}
+
+.miniCartProdImg {
+    width: 60%;
+    height: 90%;
+}
+
 #Buttons{
 display:inline-flex;
 padding: 0;
 margin-bottom: 276px;
 margin-left:15%;
+}
+
+#editButton {
+    background: none;
+    color: black;
+    border: none;
+    margin-right: 20px;
+    padding-right: 10px;
+    float: right;
+    cursor: pointer;
+}
   
 }
 #labelkassa1{
