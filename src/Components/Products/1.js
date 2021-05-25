@@ -4,9 +4,12 @@ import { Link } from 'react-router-dom'
 import { Modal } from "react-responsive-modal";
 
 
+
 const Box1 = () => {
     const myRef = useRef(null);
     const executeScroll = () => myRef.current.scrollIntoView({ behavior: 'smooth' });
+
+    
 
     const [open, setOpen] = useState(false);
 
