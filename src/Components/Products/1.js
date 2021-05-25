@@ -5,15 +5,13 @@ import { Modal } from "react-responsive-modal";
 
 
 
+
 const Box1 = () => {
     const myRef = useRef(null);
     const executeScroll = () => myRef.current.scrollIntoView({ behavior: 'smooth' });
 
-    
 
     const [open, setOpen] = useState(false);
-
-    
     const onCloseModal = () => setOpen(false);
 
 
@@ -61,7 +59,8 @@ const Box1 = () => {
                     </div>
                     <div className="row" id="ContainerWindow">
                         <div className="col" id="ColPaddingZero"/>
-                        <div className="col" id="ColPaddingZero" ><button type="button" id="VidareKnapp">Lägg till i varukorg</button></div>   
+                        <div className="col" id="ColPaddingZero" >
+                        <button type="button" id="VidareKnapp">Lägg till i varukorg</button></div>   
                     </div>
                 </div>
                 <div className="row" id="ContainerWindow">
