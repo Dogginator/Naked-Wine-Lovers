@@ -26,6 +26,7 @@
     "react-scripts": "4.0.3",
     "react-use-window-sessionstorage": "^1.0.9",
     "redux": "^4.1.0",
+    "redux-form": "^8.3.7",
     "web-vitals": "^1.1.1"
   },
   "scripts": {

@@ -28,8 +28,10 @@ useEffect(() => {
 
 const cart = useSelector(state => state.cart);
 const totalPrice = useSelector(state => state.totalPrice);
+const custInfo = useSelector(state => state.custInfo);
 
 const itemOutput = (prod) => {
+
     return(
         <div className="row" id="prodRow">
             <div className="col-sm-4">
@@ -52,6 +54,7 @@ const itemOutput = (prod) => {
 
 return (
     <>
+        {console.log(custInfo)};
      <div className="container" id="confrimContainer">
             <h2 id="ConfirmH1">Tack för ditt köp!</h2>
             <div className="row" id="confirmRow">

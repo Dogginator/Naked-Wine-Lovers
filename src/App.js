@@ -9,7 +9,6 @@ import Box2 from './Components/Products/2'
 import Box3 from './Components/Products/3'
 import Box4 from './Components/Products/4'
 import Box5 from './Components/Products/5'
-import Box6 from './Components/Products/6'
 import Confirm from './Components/Confirm'
 import Navbar from './Components/Navbar'
 import OverlayCart from './Components/OverlayCart'
@@ -23,6 +22,7 @@ import GardenOfEden from './WineYards/GardenOfEden'
 import JamesAndTheGiantGrape from './WineYards/JamesAndTheGiantGrape'
 import ThreeSeasonsVinyard from './WineYards/ThreeSeasonsVinyard'
 import { useState } from 'react'
+import FormOuput from './Components/Products/FromOutput';
 
 
 const App = () => {
@@ -52,8 +52,8 @@ const initialValues  = {
             <Route path='/3' exact component={Box3}></Route>
             <Route path='/4' exact component={Box4}></Route>
             <Route path='/5' exact component={Box5}></Route>
-            <Route path='/6' exact component={Box6}></Route>
-            <Route path='/Kassa' exact><Kassa_Final setCostumerInfo = {setCostumerInfo} /></Route>
+            <Route path='/6' exact component={FormOuput}></Route>
+            <Route path='/Kassa' exact><Kassa_Final/></Route>
             <Route path='/Confirm' exact><Confirm costumerInfo = {costumerInfo} /></Route>
             <Route path='/Vinlådor' exact><WineBox/></Route>
             <Route path='/OverlayCart' exact><OverlayCart/></Route>
