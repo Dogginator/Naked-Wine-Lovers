@@ -1017,3 +1017,73 @@ text-align: center;
   margin-left:0;
   max-width:100%;
 }
+#ConfirmH1 {
+  margin-left: 42%;
+  margin-top: 5%;
+  font-family: 'Amatic SC', sans-serif;
+  font-weight: bold;
+  color: #000000;
+}
+#ConfirmH3 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+.bekräftelseInfo {
+  font-family: Poppins;
+  color:#000000;
+  font-size: 16px;
+}
+#confirmRow {
+  width: 660px;
+  height: 845px;
+  margin-left: 23%;
+  margin-top: 8%;
+
+background: #C4C4C4;
+}
+#confirmText {
+  margin-left: 15%;
+}
+.confirmInfo{
+  margin-top: 7%;
+}
+#Confirmknappen {
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins', italic;
+  text-decoration: underline;
+}
+.ConfirmKnappContainer {
+  padding-top: 3%;
+  padding-bottom: 10%;
+}
+.ConfirmTotalPrice{
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 16px;
+  color: #000000;
+}
+#prodPrice {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 14px;
+  color: #000000;
+}
+#prodName {
+  font-family: Amatic SC;
+  font-weight: bold;
+  font-size: 14px;
+  color: #000000;
+}
+#prodQuantity {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 14px;
+  color: #000000;
+}
