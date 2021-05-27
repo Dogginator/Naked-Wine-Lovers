@@ -71,8 +71,6 @@ export const DELETE_PRODUCT = (payload) => {
             product: payload
     }
 }
-<<<<<<< HEAD
-=======
 
 export const ADD_USER_INFO = (custInfo) => {
     return {
@@ -80,4 +78,3 @@ export const ADD_USER_INFO = (custInfo) => {
         payload: custInfo,
     }
 }
->>>>>>> master
