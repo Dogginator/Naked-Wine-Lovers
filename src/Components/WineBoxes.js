@@ -8,6 +8,8 @@ import OverlayCart from './OverlayCart'
 
 const WineBox = () =>  {
 
+  console.log(window.location.pathname);
+
   const dispatch = useDispatch();
   const items = useSelector(state => state.productsCMS);
 

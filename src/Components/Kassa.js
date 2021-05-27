@@ -2,8 +2,6 @@ import React, {useState} from 'react'
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 //import { Field, reduxForm } from 'redux-form'
-import { Form, Field } from 'react-final-form'
-
 
 
 const Kassa = () =>{
