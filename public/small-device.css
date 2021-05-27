@@ -56,7 +56,9 @@
 
   #gridNavBarLeft,
   #gridNavBarRight,
-  #UnderLine {
+  #UnderLine,
+  #UnderLineLeft,
+  #UnderLineRight {
     display: none;
   }
   .menu-trigger-mobile {
