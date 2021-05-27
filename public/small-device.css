@@ -56,7 +56,9 @@
 
   #gridNavBarLeft,
   #gridNavBarRight,
-  #UnderLine {
+  #UnderLine,
+  #UnderLineLeft,
+  #UnderLineRight {
     display: none;
   }
   .menu-trigger-mobile {
@@ -67,7 +69,7 @@
     justify-content: flex-end;
     border: none;
     transition: box-shadow 0.4s ease;
-    margin-left: 200px;
+    margin-left: 65%;
     margin-top: -35px;
   }
   #gridNavBarCart {
@@ -543,5 +545,46 @@
 
   #labelKassa1,#labelKassa2 {
     position: static;
+  }
+
+  /* Bekräftelse */
+  #confirmHide {
+    display: none;
+  }
+
+  #confirmRow {
+    display: flex;
+    width: 100%;
+    height: 90%;
+    justify-content: center;
+    margin-top: 8%;
+    margin-left: 0%;
+  }
+  #confirmText {
+    margin-left: 0%;
+  }
+  .confirmInfo{
+    margin-top: 0%;
+    display:flex;
+  }
+
+  #confirmContainer {
+    padding: 0;
+    margin: 0;
+  }
+  #ConfirmH1 {
+    margin-left: 25%;
+  }
+
+  .miniCartProdImg {
+    width: 20%;
+    height: 100%;
+    display: flex;
+  }
+  #prodInfo {
+    text-align: left;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
   }
 

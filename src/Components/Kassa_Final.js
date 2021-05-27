@@ -4,7 +4,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Field, reduxForm } from 'redux-form';
 import { ADD_USER_INFO } from '../actions'
 import Confirm from './Confirm';
-import Button from './KassaFunq/Button'
+import Button from './KassaFunq/Button';
+import history from '../Function/History';
 const VinBox = "../Images/Vinbildconf.png";
 
 
@@ -25,6 +26,11 @@ const Kassa_Final = props => {
     console.log(custInfo);
 
     const { handleSubmit } = props;
+
+    const submitHandler = (event) => {
+        event.preventDefault();
+        history.push("/Confirm")
+    }
 
     const cardClick = () =>{
         if(setShowPaymentCard === true ){
@@ -101,6 +107,7 @@ const Kassa_Final = props => {
             <div className="row" id="ContainerWindow">
                 <div className="col" id="InputForm">
                     {/* <form onSubmit={(event) => submitForm(event)}> */}
+                    {/* <form onSubmit={(e) => submitHandler(e)}> */}
                     <form onSubmit={handleSubmit}>
                     <div className="row" id="ContainerWindow">
                         <div className="col" id="ColPaddingZero"><label id="labelKassa1">Leveransinformation</label></div>
@@ -195,7 +202,7 @@ const Kassa_Final = props => {
                                 {showFaktura && Faktura()}
                                 {showPaymentCard && PaymentCard()}
                             </div>
-                         {/* <button type="submit" id="Betala">Bekräfta betalning</button> */}
+                         <button type="submit" id="Betala">Bekräfta betalning</button>
                     </form>
                 </div>
 
@@ -218,8 +225,7 @@ const Kassa_Final = props => {
                      <Link  to="/CartCheckout" id="return">Återgå till varukorgen</Link>
                  </div>
                  <div className="col" id="ColPaddingZero">
-                                <Button/>
-                              {/*   <button type="submit" id="Betala" onClick={OnConfirm}>Bekräfta betalning</button> */}
+                                    {/* <Button/> */}
                  </div>
              </div>
          </div>
@@ -227,8 +233,8 @@ const Kassa_Final = props => {
 }
 
 const onSubmit = (values, dispatch) => {
-    console.log("hej");
     dispatch(ADD_USER_INFO(values));
+    history.push("/Confirm");
 }
 
 export default reduxForm({

@@ -10,7 +10,6 @@ export const Confirm = () => {
                 color: color,
                 backgroundColor: color,
                 height: 0.5
-
             }}
         />
     );
@@ -49,7 +48,7 @@ return (
      <div className="container" id="confrimContainer">
             <h2 id="ConfirmH1">Tack för ditt köp!</h2>
             <div className="row" id="confirmRow">
-                <div className="col-cm "></div>
+                <div className="col-cm " id="confirmHide"></div>
                 <div className="col-sm-8" id="confirmText">
 
                     <h3 id="ConfirmH3"> Ordernummer: 13589138813</h3>
@@ -61,7 +60,7 @@ return (
                     <Line color="black" />
                 <div className="bekräftelseInfo">
                     
-                        <p className="confirmInfo" id="p1">Håll utkik efter ditt bekräftelsemail som har skickats till din e-post </p>
+                        <p className="confirmInfo" id="p1">Håll utkik efter ditt bekräftelsemail som har skickats till din e-post ({custInfo.email}) </p>
                         
                    
                     
