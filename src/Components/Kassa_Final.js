@@ -4,7 +4,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Field, reduxForm } from 'redux-form';
 import { ADD_USER_INFO } from '../actions'
 import Confirm from './Confirm';
-import Button from './KassaFunq/Button';
 import history from '../Function/History';
 const VinBox = "../Images/Vinbildconf.png";
 

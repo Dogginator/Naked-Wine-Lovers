@@ -59,7 +59,7 @@ return (
                     <Line color="black" />
                 <div className="bekräftelseInfo">
                     
-                        <p className="confirmInfo" id="p1">Håll utkik efter ditt bekräftelsemail som har skickats till din e-post ({custInfo.email}) </p>
+                        <p className="confirmInfo" id="p1">Håll utkik efter ditt bekräftelsemail som har skickats till din e-post (<a id="fontWeight">{custInfo.email}</a>)</p>
                         
                    
                     

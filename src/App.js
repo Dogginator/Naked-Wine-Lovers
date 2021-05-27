@@ -34,6 +34,7 @@ const App = () => {
         <Router history={history}>
     <Navbar/>
         <Switch>
+            <Route path='/' exact component={Homepage}></Route>
             <Route path='/Homepage' exact component={Homepage}></Route>
             <Route path='/1' exact component={Box1}></Route>
             <Route path='/2' exact component={Box2}></Route>

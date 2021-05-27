@@ -150,16 +150,19 @@ p {
     text-align: center;
     padding: 10px;
     margin-top: 0px;
+    margin-left: 15%;
     color: white;
     background: #6642B1;
     border-radius: 10px;
-    Width :
-    223px;
-    Height: 
-    44px;
+    Width:223px;
+    Height:44px;
     cursor: pointer;
     font-family: Poppins;
     border: 0;
+  }
+
+  .wineboxButton:hover {
+    background: #815dce;
   }
 
 
@@ -1106,6 +1109,7 @@ text-align: center;
   font-size: 16px;
 }
 #confirmRow {
+  border-radius: 15px;
   width: 660px;
   height: 90%;
   margin-left: 23%;
@@ -1113,6 +1117,11 @@ text-align: center;
 
 background: #C4C4C4;
 }
+
+#fontWeight {
+  font-weight: bold;
+}
+
 #confirmText {
   margin-left: 15%;
 }

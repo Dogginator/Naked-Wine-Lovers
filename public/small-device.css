@@ -547,11 +547,12 @@
 
   #confirmRow {
     display: flex;
-    width: 100%;
+    width: 90%;
     height: 90%;
     justify-content: center;
     margin-top: 8%;
-    margin-left: 0%;
+    margin-left: 3%;
+    border-radius: 15px;
   }
   #confirmText {
     margin-left: 0%;
@@ -581,7 +582,9 @@
     justify-content: space-between;
   }
   #VarukorgLitle{
+    height: auto;
     top:0;
     left:0;
+    padding-bottom: 20px;
   }
 }
