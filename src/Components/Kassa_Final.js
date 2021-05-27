@@ -192,7 +192,7 @@ const Kassa_Final = props => {
                                 {showFaktura && Faktura()}
                                 {showPaymentCard && PaymentCard()}
                             </div>
-                         <button type="submit" id="Betala">Bekräfta betalning</button>
+                         {/* <button type="submit" id="Betala">Bekräfta betalning</button> */}
                     </form>
                 </div>
 
