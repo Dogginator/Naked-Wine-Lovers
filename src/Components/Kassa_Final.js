@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Field, reduxForm } from 'redux-form';
 import { ADD_USER_INFO } from '../actions'
 import Confirm from './Confirm';
+import Button from './KassaFunq/Button'
 const VinBox = "../Images/Vinbildconf.png";
 
 
@@ -214,9 +215,7 @@ const Kassa_Final = props => {
                      <Link  to="/CartCheckout" id="return">Återgå till varukorgen</Link>
                  </div>
                  <div className="col" id="ColPaddingZero">
-                     {/* <Link to="/Confirm">
-                         <button type="submit" id="Betala">Bekräfta betalning</button>
-                     </Link>              */}
+                                    <Button/>
                  </div>
              </div>
          </div>
