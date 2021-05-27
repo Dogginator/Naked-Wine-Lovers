@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Field, reduxForm } from 'redux-form';
 import { ADD_USER_INFO } from '../actions'
 import Confirm from './Confirm';
+import Button from './KassaFunq/Button'
 const VinBox = "../Images/Vinbildconf.png";
 
 
@@ -64,15 +65,15 @@ const Kassa_Final = props => {
                     <div className="col" id="ColPaddingZero"><label id="labelKassa">Kortnummer</label></div>
                 </div>
                 <div className="row" id="ContainerWindow">
-                    <div className="col" id="ColPaddingZero"><input id="kortNum"type="text" placeholder=""></input></div>
+                    <div className="col" id="ColPaddingZero"><input id="kortNum" type="text" name="cardNumb" placeholder=""/></div>
                 </div>
                 <div className="row" id="ContainerWindow">
                             <div className="col" id="ColPaddingZero"><label id="labelKassa">MM/ÅÅ</label></div>
                             <div className="col" id="ColPaddingZero"><label id="labelKassa">CVC</label></div>
                 </div>
             <div className="row" id="ContainerWindow">
-                <div className="col" id="ColPaddingZero" ><input id="mmåå" type="text" placeholder=""></input></div>
-                <div className="col" id="ColPaddingZero" ><input id="CVC" type="text" placeholder=""></input></div>
+                <div className="col" id="ColPaddingZero" ><input id="mmåå" type="text" name="monthYear" placeholder=""/></div>
+                <div className="col" id="ColPaddingZero" ><input   id="CVC" type="text" name="CVC" placeholder=""/></div>
                 </div> 
             </div>
 
@@ -88,6 +89,7 @@ const Kassa_Final = props => {
     }
 
     return(
+        
         <div className="container">
             <div className="row" id="ContainerWindow">
                 <div className="col" id="KassaHeader"><h1>KASSA</h1></div>
@@ -115,15 +117,18 @@ const Kassa_Final = props => {
                             <div className="col" id="ColPaddingZero"><label id="labelKassa2">Ombud</label></div>
                         </div>
                         <div className="row" id="ContainerWindow">
-                                <div className="col" id="ColPaddingZero"><Field type="text" component="input" id="Postnummer" name="Postnummer" placeholder=""/>
+                                <div className="col" id="ColPaddingZero"><input type="text" id="Postnummer" name="postCode" placeholder="" size="10"  />
                                 </div>
                                 <div className="col" id="ColPaddingZero">
-                                    {/* <input type="select" component="input" id="land" name="land" >
+{/*                                     <select component="select" id="pickUp" name="pickUp" >
                                         <option value="Sverige"></option>
-                                        <option value="Sverige">Ombud1</option>
-                                        <option value="Sverige">Ombud2</option>
-                                        <option value="Sverige">Ombud3</option>
-                                    </input>   */}
+                                        <option value="Ombud1">Ombud1</option>
+                                        <option value="Ombud2">Ombud2</option>
+                                        <option value="Ombud3">Ombud3</option>
+                                        <option value="Ombud4">Ombud4</option>
+                                        <option value="Ombud5">Ombud5</option>
+                                        <option value="Ombud6">Ombud6</option>
+                                    </select>   */}
                                 </div>
                                 
                         </div>
@@ -210,9 +215,7 @@ const Kassa_Final = props => {
                      <Link  to="/CartCheckout" id="return">Återgå till varukorgen</Link>
                  </div>
                  <div className="col" id="ColPaddingZero">
-                     {/* <Link to="/Confirm">
-                         <button type="submit" id="Betala">Bekräfta betalning</button>
-                     </Link>              */}
+                                    <Button/>
                  </div>
              </div>
          </div>

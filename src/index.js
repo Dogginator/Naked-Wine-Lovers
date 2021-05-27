@@ -5,10 +5,15 @@ import App from './App';
 import { ApolloProvider } from "react-apollo";
 import ApolloClient from "apollo-boost";
 import reportWebVitals from './reportWebVitals';
-import { createStore } from 'redux';
+import { createStore, combineReducers } from 'redux';
+import { reducer as formReducer } from 'redux-form'
 import allReducers from './reducers';
 import { Provider } from 'react-redux';
 
+
+//const rootReducer = combineReducers({
+//  form: formReducer
+//})
 const client = new ApolloClient({
   uri: "https://api-eu-central-1.graphcms.com/v2/cknxm2lmmxx7u01ytczj5e2l5/master"
 });
