@@ -32,11 +32,15 @@ a ,a:hover, a:focus, a:active{
   height: 300px;
   text-align: center;
   padding-top: 6%;
+  font-family: Amatic SC;
+}
+.wineboxHeader p {
+  font-family: Poppins;
 }
 
   .wineboxContainer {
     background-color: #FAF8F7;
-    font-family: 'AmaticaSC';
+    font-family: 'Amatic SC';
     width: 100%;
     height: 100%;
   }
@@ -95,11 +99,13 @@ a ,a:hover, a:focus, a:active{
     padding-top: 20px;
     padding-bottom: 50px;
     text-align: center;
+    font-family: Poppins;
   }
 
   .headerBoxItem h3 {
     margin: 0px;
     padding: 10px;
+    font-family: Amatic SC;
   }
 
   .boxInfo {
@@ -115,12 +121,15 @@ a ,a:hover, a:focus, a:active{
     padding-top: 30px;
     margin: 0px;
     margin-bottom: 5px;
+    font-family: Poppins;
   }
 
   #price {
     height: 30px;
     padding-top: 0px;
     text-align: right;
+    font-family: Amatic SC;
+    font-size: 20px;
   }
 
   .wineboxButton {
@@ -133,6 +142,8 @@ a ,a:hover, a:focus, a:active{
     width: 100%;
     height: 44px;
     cursor: pointer;
+    font-family: Poppins;
+    border: 0;
   }
 
   .wineboxButton:hover {
@@ -151,6 +162,7 @@ a ,a:hover, a:focus, a:active{
   font-size: 12px;
   line-height: 19px;
   padding-top: 35px;
+  font-family: Poppins;
 }
 
 .menu-trigger:hover{
@@ -301,7 +313,7 @@ a ,a:hover, a:focus, a:active{
   float: right;
   background: #FAF8F7;
   width: 326px;
-  height: 500px;
+  height: auto;
   border-radius: 30px;
   padding: 20px;
   padding-bottom: 30px;
@@ -514,7 +526,7 @@ a ,a:hover, a:focus, a:active{
   margin-top: 2em;
   margin-left: 10em;
 
-  font-family: Halant;
+  font-family: Amatic SC;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -529,7 +541,7 @@ color: #000000;
 
 .Footerh1 {
   justify-content: left;
-  font-family: "Amatica SC", serif;
+  font-family: "Amatic SC", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
@@ -545,7 +557,7 @@ color: #000000;
 .Footerh2 {
   justify-content: center;
   display: flex;
-  font-family: "Amatica SC", serif;
+  font-family: "Amatic SC", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
@@ -567,18 +579,18 @@ color: #000000;
   justify-content: center;
 }
 .lowtext{
-  justify-content: center;
+  margin-top: 5%;
 
 }
 .lowtext li {
   
   list-style: none;
-  font-family: Halant;
+  font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 25px;
-  text-align: center;
+  
   
   color: #000000;
 }
@@ -595,12 +607,19 @@ color: #000000;
 
 .Product-page {
   background-color: #E4E0D7;
-  font-family: Halant;
+  font-family: 'Poppins', sans-serif;
   display:inline-block;
   width: 100%;
   height: 660px;
   padding-bottom: 93px;
 
+}
+.DesktopInfo{
+  font-family: 'Poppins', sans-serif;
+  font-size: 16pt;
+}
+.desktoph1 {
+  font-family: 'Amatic SC', serif;
 }
 .TopPicture {
   width: 450px;
@@ -630,18 +649,19 @@ color: #000000;
 }
 
 .infoContainer h1 {
-  font-family: Amatica SC;
+  font-family: Amatic SC;
   font-size: 36px;
   font-weight: bold;
 }
 
 #type {
+  font-family: 'Amatic SC';
   margin-top: -10px;
 }
 
 .infoContainer h2 {
   padding-bottom: 10px;
-  font-family: Amatica SC;
+  font-family: Amatic SC;
   font-size: 24px;
   font-weight: bold;
 }
@@ -665,13 +685,16 @@ color: #000000;
   width: 100%;
   padding-top: 55px;
   text-align: center;
-  font-family: Halant;
+  font-family: Poppins;
   font-size: 25px;
   text-decoration-line: underline;
   margin-left: -20%;
  
 }
-
+.h21 {
+  font-family: Amatic SC;
+  font-size: 45px;
+}
 
 #ReadInfo {
   margin-top: -20px;
@@ -682,6 +705,7 @@ color: #000000;
   border-radius: 100%;
 }
 .RubrikBlandat{
+  font-family: Amatic SC;
   text-align: center;
   margin-top: 30px;
   margin-bottom: 83px;
@@ -690,49 +714,49 @@ color: #000000;
   margin-bottom: 90px;
 }
 .Blandat1{
-
+  font-family: Amatic SC;
   margin-left: 50%;
   width: 80px;
   height: 310px;
 }
 .Blandat2{
-
+  font-family: Amatic SC;
   margin-left: 50%;
   width: 80px;
   height: 310px;
 }
 .Blandat3{
-
+  font-family: Amatic SC;
   margin-left: 50%;
   width: 80px;
   height: 310px;
 }
 .Blandat4{
-
+  font-family: Amatic SC;
   margin-left: 50%;
   width: 80px;
   height: 310px;
 }
 .Oragne1{
-  
+  font-family: Amatic SC;
   margin-left: 50%;
   width: 80px;
   height: 310px;
 }
 .Oragne2{
-  
+  font-family: Amatic SC;
   margin-left: 50%;
   width: 80px;
   height: 310px;  
 }
 .Oragne3{
-  
+  font-family: Amatic SC;
   margin-left: 50%;
   width: 80px;
   height: 310px; 
 }
 .Oragne4{
-  
+  font-family: Amatic SC;
   margin-left: 50%;
   width: 80px;
   height: 310px;
@@ -742,34 +766,35 @@ color: #000000;
   margin-left: 50%;
   width: 80px;
   height: 310px;
-
+  font-family: Amatic SC;
 }
 .Vitt2 {
   background-image: Url(./Images/Vit1-2.png);
   margin-left: 50%;
   width: 80px;
   height: 310px;
-  
+  font-family: Amatic SC;
 }
 .Vitt3 {
   background-image: Url(./Images/Vit3-4.png);
   margin-left: 50%;
   width: 80px;
   height: 310px;
-  
+  font-family: Amatic SC;
 }
 .Vitt4 {
   background-image: Url(./Images/Vit3-4.png);
   margin-left: 50%;
   width: 80px;
   height: 310px;
-  
+  font-family: Amatic SC;
 }
 .Rött1 {
   background-image: Url(./Images/Red1.png);
   margin-left: 50%;
   width: 80px;
   height: 310px; 
+  font-family: Amatic SC;
 }
 .Rött2 {
   background-image: Url(./Images/Red2.png);
@@ -782,6 +807,7 @@ color: #000000;
   margin-left: 50%;
   width: 80px;
   height: 310px; 
+  font-family: Amatic SC;
 }
 .Rött4 {
   background-image: Url(./Images/Red4.png);
@@ -794,24 +820,28 @@ color: #000000;
   margin-left: 50%;
   width: 80px;
   height: 310px; 
+  font-family: Amatic SC;
 }
 .Bubble2 {
   background-image: Url(./Images/Bubbel2.png);
   margin-left: 50%;
   width: 80px;
   height: 310px; 
+  font-family: Amatic SC;
 }
 .Bubble3 {
   background-image: Url(./Images/Bubbel3.png);
   margin-left: 50%;
   width: 80px;
   height: 310px; 
+  font-family: Amatic SC;
 }
 .Bubble4 {
   background-image: Url(./Images/Bubbel4.png);
   margin-left: 50%;
   width: 80px;
   height: 310px; 
+  font-family: Amatic SC;
 }
 .Taste1{
   
@@ -842,7 +872,7 @@ color: #000000;
   width: 100%;
   height: 77px;
   
-  font-family: Amatica SC;
+  font-family: Amatic SC;
   font-style: normal;
   font-weight: bold;
   font-size: 45px;
@@ -854,7 +884,7 @@ color: #000000;
   margin-top: 140px;
   margin-bottom: 109px;
   height: 77px;
-  font-family: Amatica SC;
+  font-family: Amatic SC;
   font-style: normal;
   font-weight: bold;
   font-size: 45px;
@@ -919,7 +949,7 @@ color: #000000;
   margin-bottom: 28px;
 }
 #LinkTo1{
-  font-family: Halant;
+  font-family: Poppins;
   margin-left: 15%;
   font-style: normal;
   font-weight: normal;
@@ -928,9 +958,10 @@ color: #000000;
   text-align: center;
   text-decoration-line: underline;
   padding-bottom:  306px;
+  color: black;
 }
 #LinkTo2{
-  font-family: Halant;
+  font-family: Poppins;
   margin-left: 25%;
   font-style: normal;
   font-weight: normal;
@@ -941,7 +972,7 @@ color: #000000;
   padding-bottom:  306px;
 }
 #LinkTo3{
-  font-family: Halant;
+  font-family: Poppins;
   margin-left: 25%;
   font-style: normal;
   font-weight: normal;
@@ -985,4 +1016,74 @@ text-align: center;
   margin-right:0;
   margin-left:0;
   max-width:100%;
+}
+#ConfirmH1 {
+  margin-left: 42%;
+  margin-top: 5%;
+  font-family: 'Amatic SC', sans-serif;
+  font-weight: bold;
+  color: #000000;
+}
+#ConfirmH3 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+.bekräftelseInfo {
+  font-family: Poppins;
+  color:#000000;
+  font-size: 16px;
+}
+#confirmRow {
+  width: 660px;
+  height: 845px;
+  margin-left: 23%;
+  margin-top: 8%;
+
+background: #C4C4C4;
+}
+#confirmText {
+  margin-left: 15%;
+}
+.confirmInfo{
+  margin-top: 7%;
+}
+#Confirmknappen {
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins', italic;
+  text-decoration: underline;
+}
+.ConfirmKnappContainer {
+  padding-top: 3%;
+  padding-bottom: 10%;
+}
+.ConfirmTotalPrice{
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 16px;
+  color: #000000;
+}
+#prodPrice {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 14px;
+  color: #000000;
+}
+#prodName {
+  font-family: Amatic SC;
+  font-weight: bold;
+  font-size: 14px;
+  color: #000000;
+}
+#prodQuantity {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 14px;
+  color: #000000;
 }

@@ -23,7 +23,7 @@
     padding-bottom: 48px;
     padding-top: 54px;
     width: 589px;
-    height: 1210px;
+    height: auto;
     left: 5%;
     margin-top: 222px;
     margin-bottom: 262px;
@@ -211,7 +211,10 @@ margin-left:15%;
     cursor: pointer;
 }
   
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 #labelkassa1{
     font-size: 14px;
     font-weight: bold;

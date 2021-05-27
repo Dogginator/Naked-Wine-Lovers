@@ -2,15 +2,32 @@ import React, { useRef, useState } from 'react'
 import { IoIosArrowDown } from 'react-icons/io'
 import { Link } from 'react-router-dom'
 import { Modal } from "react-responsive-modal";
+import { useDispatch, useSelector } from 'react-redux';
+import { ADD_TO_CART, INCREASE, CHANGE_QTY } from '../../actions'
+
 
 
 const Box1 = () => {
     const myRef = useRef(null);
     const executeScroll = () => myRef.current.scrollIntoView({ behavior: 'smooth' });
+    const items = useSelector(state => state.productsCMS);
+    const dispatch = useDispatch();
+    const cart = useSelector(state => state.cart);
+
+    const AddToCart = (prod) => {
+
+        if(cart.some(item => item.prodid === prod.prodid)) {
+            dispatch(CHANGE_QTY(prod,true));
+            dispatch(INCREASE(prod.price));
+        }
+        else {
+            dispatch(ADD_TO_CART(prod));
+            dispatch(INCREASE(prod.price));
+        }
+    }
+
 
     const [open, setOpen] = useState(false);
-
-    
     const onCloseModal = () => setOpen(false);
 
 
@@ -35,7 +52,7 @@ const Box1 = () => {
 
                                 <h1 className="desktoph1">Blandat</h1>
                                 <p id="type">Vitt,  orange, rött och mousserande</p>
-                                <button type="button" id="MobilVidareKnapp">Lägg till i varukorg</button>
+                                <button type="button" id="MobilVidareKnapp" onClick={() => AddToCart(items[0])}>Lägg till i varukorg</button>
                                 <h2 className="produkth2" >Prenumerera 899 SEK /Månad</h2>
                                 <p className="produktP">
                                     Vinlådan för dig som vill prova på det bästa av alla världar. I den här lådan får du en av varje. 
@@ -58,7 +75,12 @@ const Box1 = () => {
                     </div>
                     <div className="row" id="ContainerWindow">
                         <div className="col" id="ColPaddingZero"/>
-                        <div className="col" id="ColPaddingZero" ><button type="button" id="VidareKnapp">Lägg till i varukorg</button></div>   
+
+                        {/* //<div className="col" id="ColPaddingZero" >
+                        //<button type="button" id="VidareKnapp">Lägg till i varukorg</button></div>    */}
+
+                        <div className="col" id="ColPaddingZero" ><button type="button" id="VidareKnapp" onClick={() => AddToCart(items[0])}>Lägg till i varukorg</button></div>   
+
                     </div>
                 </div>
                 <div className="row" id="ContainerWindow">

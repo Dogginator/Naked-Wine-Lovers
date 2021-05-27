@@ -1,3 +1,10 @@
+export const INSERT_PRODUCTS = (products) => {
+    return {
+        type: 'INSERT_PRODUCTS',
+        payload: products
+    }
+}
+
 export const ADD_TO_CART = (product) => {
     return {
         type: 'ADD_TO_CART',
@@ -64,3 +71,13 @@ export const DELETE_PRODUCT = (payload) => {
             product: payload
     }
 }
+<<<<<<< HEAD
+=======
+
+export const ADD_USER_INFO = (custInfo) => {
+    return {
+        type: 'ADD_USER_INFO',
+        payload: custInfo,
+    }
+}
+>>>>>>> master
