@@ -44,11 +44,15 @@ const itemOutput = (prod) => {
 
 return (
     <>
+<<<<<<< HEAD
+     <div className="container" id="confirmContainer">
+=======
         {console.log(custInfo)};
      <div className="container" id="confrimContainer">
+>>>>>>> cdb26db498de88bf2cc757e7cd2b3af796f15048
             <h2 id="ConfirmH1">Tack för ditt köp!</h2>
             <div className="row" id="confirmRow">
-                <div className="col-cm "></div>
+                <div className="col-cm " id="confirmHide"></div>
                 <div className="col-sm-8" id="confirmText">
 
                     <h3 id="ConfirmH3"> Ordernummer: 13589138813</h3>
