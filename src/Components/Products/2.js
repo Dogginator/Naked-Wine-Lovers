@@ -45,7 +45,7 @@ const Box2 = () => {
                                 <img className="TopPicture" src="./Images/BildOrangeLådan.png" alt="WineBox mixed"/>
                             </p>
                             <p id="ScrollDownInfo">Här kan du läsa om flaskorna!</p>
-                            <button type="button" id="ReadInfo" onClick={executeScroll}><IoIosArrowDown /></button>
+                            <button type="button" id="ReadInfo" onClick={executeScroll}><IoIosArrowDown id="DownArrow" size="22px" /></button>
                         </div>
                     </div>
                     <div className="col" id="col-grid-info">
@@ -63,7 +63,7 @@ const Box2 = () => {
                             <h3 className="produktH3">Så här funkar det.</h3>
                             <br id="produktBR" className="hideBRonMobile"/>
                             <p className="produktP">
-                            <a className="MobilH3"><b>Så här funkar det.</b></a> <br/>
+                            <a className="MobilH3"><b>Så här funkar det.</b></a> <br id="produktBR"/>
                                 Detta är en prenumeration. Prenumererar du på denna låda så får du fyra flaskor blandade viner varje månad. 
                                 Vinerna är noga utvalda från de bästa vingårdarna och byts varje månad ut. 
                                 Denna produktsida är för vinerna du får i april månad. 
@@ -104,7 +104,7 @@ const Box2 = () => {
                     Sockerhalt 10 g/l   
                     </p><br/>
                     <p id="InfoLink" className="DesktopInfo">
-                    <b>Läs mer om vingården:</b> <Link to="/GardenOfEden">Garden of Eden</Link>
+                    <b>Läs mer om vingården:</b> <Link to="/GardenOfEden"  className="InfoLinkVinyard">Garden of Eden</Link>
                     </p>
                 </div>
                 <div className="col" id="ColPaddingZero">
@@ -147,7 +147,7 @@ const Box2 = () => {
                     Sockerhalt 9 g/l   
                     </p><br/>
                     <p id="InfoLink" className="DesktopInfo">
-                    <b>Läs mer om vingården:</b> <Link to="/JamesAndTheGiantGrape">James and the Giant Grape</Link>
+                    <b>Läs mer om vingården:</b> <Link to="/JamesAndTheGiantGrape" className="InfoLinkVinyard">James and the Giant Grape</Link>
                     </p>
                 </div>
                 <div className="col" id="ColPaddingZero">
@@ -174,7 +174,7 @@ const Box2 = () => {
                     Sockerhalt 11 g/l   
                     </p><br/>
                     <p id="InfoLink" className="DesktopInfo">
-                    <b>Läs mer om vingården:</b> <Link to="/ThreeSeasonsVinyard">Three Seasons Vinyard</Link>
+                    <b>Läs mer om vingården:</b> <Link to="/ThreeSeasonsVinyard" className="InfoLinkVinyard">Three Seasons Vinyard</Link>
                     </p>
                 </div>
                 <div className="col" id="ColPaddingZero">
@@ -200,7 +200,7 @@ const Box2 = () => {
                     Sockerhalt 8 g/l   
                     </p><br/>
                     <p id="InfoLink" className="DesktopInfo">
-                    <b>Läs mer om vingården:</b> <Link to="/AmigosVinyard">Amigos Vinyard</Link>
+                    <b>Läs mer om vingården:</b> <Link to="/AmigosVinyard" className="InfoLinkVinyard">Amigos Vinyard</Link>
                     </p>
                 </div>
                 <div className="col" id="ColPaddingZero">

@@ -14,7 +14,7 @@
 
 .TopNavbar a:hover, a:focus, a:active {
   text-decoration: none;
-  color: #C26D3D;
+  color: #6642B1;
 }
 
 a ,a:hover, a:focus, a:active{
@@ -131,7 +131,7 @@ a ,a:hover, a:focus, a:active{
 
   #price {
     height: 30px;
-    padding-top: 0px;
+    padding-top: 1px;
     text-align: right;
     font-family: Amatic SC;
     font-size: 20px;
@@ -142,19 +142,18 @@ a ,a:hover, a:focus, a:active{
     text-align: center;
     padding: 10px;
     margin-top: 0px;
-    border-radius: 4px;
     color: white;
-    background-color: #D78255;
-    width: 100%;
-    height: 44px;
+    background: #6642B1;
+    border-radius: 10px;
+    Width :
+    223px;
+    Height: 
+    44px;
     cursor: pointer;
     font-family: Poppins;
     border: 0;
   }
 
-  .wineboxButton:hover {
-    background-color: #e69366;
-  }
 
 /* Navbar */
   
@@ -172,7 +171,7 @@ a ,a:hover, a:focus, a:active{
 }
 
 .menu-trigger:hover{
-  color: #C26D3D;
+  color: #6642B1;
   font-size: 13px;
 }
 
@@ -349,10 +348,12 @@ a ,a:hover, a:focus, a:active{
 .shopping-button-checkout {
   margin-bottom: 10px;
   width: 100%;
-  background: #C26D3D;
+  background: #6642B1;
   border-radius: 30px;
   color: white;
   cursor: pointer;
+  border: 0;
+  font-family: Poppins;
 }
 
 .shopping-button-checkout:disabled {
@@ -541,8 +542,10 @@ a ,a:hover, a:focus, a:active{
 color: #000000;
 }
 .footer-social-list {
+  display: flex;
   list-style: none;
   justify-content: center;
+    margin-left: 78%;
 }
 
 .Footerh1 {
@@ -561,7 +564,7 @@ color: #000000;
   flex: 1;
 }
 .Footerh2 {
-  justify-content: center;
+  justify-content: flex-end;
   display: flex;
   font-family: "Amatic SC", serif;
   font-style: normal;
@@ -624,9 +627,7 @@ color: #000000;
   font-family: 'Poppins', sans-serif;
   font-size: 16pt;
 }
-.desktoph1 {
-  font-family: 'Amatic SC', serif;
-}
+
 .TopPicture {
   width: 450px;
   height: 306px;
@@ -656,13 +657,14 @@ color: #000000;
 
 .infoContainer h1 {
   font-family: Amatic SC;
-  font-size: 36px;
+  font-size: 48pt;
   font-weight: bold;
 }
 
 #type {
   font-family: 'Amatic SC';
   margin-top: -10px;
+  font-size: 18pt;
 }
 
 .infoContainer h2 {
@@ -679,12 +681,15 @@ color: #000000;
 
 #VidareKnapp {
   color:rgb(255, 255, 249);
-  width: 542px;
-  height: 46px;
-  background: #D78255;
+  width: 467px;
+  height: 44px; 
+  background: #6642B1;
+  border-radius: 10px;
   border: 1px solid #E6E2DA;
   box-sizing: border-box;
-  border-radius: 30px;
+  font-size: 16px;
+  font-family: Poppins;
+  
 }
 
 #ScrollDownInfo{
@@ -699,7 +704,8 @@ color: #000000;
 }
 .h21 {
   font-family: Amatic SC;
-  font-size: 45px;
+  font-size: 48pt;
+  font-weight: bold;
 }
 
 #ReadInfo {
@@ -707,8 +713,15 @@ color: #000000;
   margin-left: 25%;
   width: 48px;
   height: 48px;
-  background: #EED8D8;
+  background: #6642B1;
   border-radius: 100%;
+  border: 0;
+}
+#DownArrow {
+  color: white;
+  margin-top: 10px;
+  border-radius: 3px;
+
 }
 .RubrikBlandat{
   font-family: Amatic SC;
@@ -718,6 +731,16 @@ color: #000000;
 }
 #InfoLink {
   margin-bottom: 90px;
+  font-size: 16px;
+}
+.InfoLinkVinyard {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration-line: underline;
+  color: #6642B1;
 }
 .Blandat1{
   font-family: Amatic SC;
