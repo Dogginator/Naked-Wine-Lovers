@@ -210,7 +210,7 @@ const Kassa_Final = props => {
                     <div className="row" id="miniCartHeader">
                         <div className="col-sm-6">Översikt Varukorg</div>
                         <div className="col-sm-6">
-                            <button type="button" id="editButton">Redigera</button>
+                            
                         </div>
                     </div>
                     {cart.map((prod) => itemOutput(prod))}
@@ -225,7 +225,7 @@ const Kassa_Final = props => {
                      <Link  to="/CartCheckout" id="return">Återgå till varukorgen</Link>
                  </div>
                  <div className="col" id="ColPaddingZero">
-                                    {/* <Button/> */}
+                 <button type="button" id="editButton">Redigera</button>
                  </div>
              </div>
          </div>
