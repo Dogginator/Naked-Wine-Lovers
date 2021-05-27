@@ -1,41 +1,27 @@
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-const VinBox ="../Images/Vinbildconf.png";
+import { Field, reduxForm } from 'redux-form';
+import { ADD_USER_INFO } from '../actions'
+import Confirm from './Confirm';
+import Button from './KassaFunq/Button'
+const VinBox = "../Images/Vinbildconf.png";
 
 
-const Kassa_Final = () => {
-    const url = "https://my-json-server.typicode.com/Dogginator/Naked-Wine-Lovers/posts";
-    const[email, setEmail] = useState('');
-    const submitForm = (event) => {
-        event.preventDefault();
+const Kassa_Final = props => {
 
-        const requestBody = {
-            email : email,
-            
-        };
-        fetch(url, {
-            method: 'POST',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(requestBody)
-        }).then(responseFromAPI => {
-            if(responseFromAPI.status === 404) {
-                alert("Det gick fel, sidan finns inte");
-            }
-            else {
-                alert("Det gick bra!");
-                setEmail('');
-                
-            }
-            console.log(responseFromAPI)
-        });
-    }
+    const custInfo = useSelector(state => state.custInfo);
+
+    console.log("Detta är mitt förnamn: " + custInfo.firstName);
+    
     const [showPaymentCard, setShowPaymentCard] = useState(false);
     const [showFaktura, setShowFaktura] = useState(false);
     const cart = useSelector(state => state.cart);
     const totalPrice = useSelector(state => state.totalPrice);
+
+    console.log(custInfo);
+
+    const { handleSubmit } = props;
 
     const cardClick = () =>{
         if(setShowPaymentCard === true ){
@@ -79,15 +65,15 @@ const Kassa_Final = () => {
                     <div className="col" id="ColPaddingZero"><label id="labelKassa">Kortnummer</label></div>
                 </div>
                 <div className="row" id="ContainerWindow">
-                    <div className="col" id="ColPaddingZero"><input id="kortNum"type="text" placeholder=""></input></div>
+                    <div className="col" id="ColPaddingZero"><input id="kortNum" type="text" name="cardNumb" placeholder=""/></div>
                 </div>
                 <div className="row" id="ContainerWindow">
                             <div className="col" id="ColPaddingZero"><label id="labelKassa">MM/ÅÅ</label></div>
                             <div className="col" id="ColPaddingZero"><label id="labelKassa">CVC</label></div>
                 </div>
             <div className="row" id="ContainerWindow">
-                <div className="col" id="ColPaddingZero" ><input id="mmåå" type="text" placeholder=""></input></div>
-                <div className="col" id="ColPaddingZero" ><input id="CVC" type="text" placeholder=""></input></div>
+                <div className="col" id="ColPaddingZero" ><input id="mmåå" type="text" name="monthYear" placeholder=""/></div>
+                <div className="col" id="ColPaddingZero" ><input   id="CVC" type="text" name="CVC" placeholder=""/></div>
                 </div> 
             </div>
 
@@ -103,6 +89,7 @@ const Kassa_Final = () => {
     }
 
     return(
+        
         <div className="container">
             <div className="row" id="ContainerWindow">
                 <div className="col" id="KassaHeader"><h1>KASSA</h1></div>
@@ -110,18 +97,19 @@ const Kassa_Final = () => {
 
             <div className="row" id="ContainerWindow">
                 <div className="col" id="InputForm">
-                    <form onSubmit={(event) => submitForm(event)}>
+                    {/* <form onSubmit={(event) => submitForm(event)}> */}
+                    <form onSubmit={handleSubmit}>
                     <div className="row" id="ContainerWindow">
-                        <div className="col" id="ColPaddingZero"><lable id="labelKassa1">Leveransinformation</lable></div>
+                        <div className="col" id="ColPaddingZero"><label id="labelKassa1">Leveransinformation</label></div>
                         </div>
                         <div className="row" id="ContainerWindow">
                             <div className="col" id="ColPaddingZero"><label id="labelKassa2">Förnamn</label></div>
                             <div className="col" id="ColPaddingZero"><label id="labelKassa2">Efternamn</label></div>
                         </div>
                         <div className="row" id="ContainerWindow">
-                                <div className="col" id="ColPaddingZero"><input type="text" id="firstName" name="firstName" size="10"  />
+                                <div className="col" id="ColPaddingZero"><Field type="text" component="input" id="firstName" name="firstName"/>
                                 </div>
-                                <div className="col" id="ColPaddingZero"><input type="text" id="lastName" name="lastName" size="10"  />
+                                <div className="col" id="ColPaddingZero"><Field type="text" component="input" id="lastName" name="lastName"/>
                                 </div>
                         </div>
                         <div className="row" id="ContainerWindow">
@@ -129,15 +117,18 @@ const Kassa_Final = () => {
                             <div className="col" id="ColPaddingZero"><label id="labelKassa2">Ombud</label></div>
                         </div>
                         <div className="row" id="ContainerWindow">
-                                <div className="col" id="ColPaddingZero"><input type="text" id="Postnummer" name="Postnummer" placeholder="" size="10"  />
+                                <div className="col" id="ColPaddingZero"><input type="text" id="Postnummer" name="postCode" placeholder="" size="10"  />
                                 </div>
                                 <div className="col" id="ColPaddingZero">
-                                    <select id="land" name="land" >
+{/*                                     <select component="select" id="pickUp" name="pickUp" >
                                         <option value="Sverige"></option>
-                                        <option value="Sverige">Ombud1</option>
-                                        <option value="Sverige">Ombud2</option>
-                                        <option value="Sverige">Ombud3</option>
-                                    </select>  
+                                        <option value="Ombud1">Ombud1</option>
+                                        <option value="Ombud2">Ombud2</option>
+                                        <option value="Ombud3">Ombud3</option>
+                                        <option value="Ombud4">Ombud4</option>
+                                        <option value="Ombud5">Ombud5</option>
+                                        <option value="Ombud6">Ombud6</option>
+                                    </select>   */}
                                 </div>
                                 
                         </div>
@@ -145,11 +136,11 @@ const Kassa_Final = () => {
                             <div className="col" id="ColPaddingZero"><label id="labelKassa2">Telefonnummer</label></div>
                         </div>
                         <div className="row" id="ContainerWindow">
-                            <div className="col" id="ColPaddingZero"><input type="tel" id="telefonnummer" name="telefonnummer" size="27" />
+                            <div className="col" id="ColPaddingZero"><Field type="tel" component="input" id="telefonnummer" name="telefonnummer"/>
                             </div>
                         </div>
                         <div className="row" id="ContainerWindow">
-                            <div className="col" id="ColPaddingZero"><input type="checkbox" id="Nyhetsbrev" name="Nyhetsbrev" />
+                            <div className="col" id="ColPaddingZero"><Field type="checkbox" component="input" id="Nyhetsbrev" name="Nyhetsbrev" />
                                 <label id="labelKassa3" for="Nyhetsbrev"> Jag hämtar ut mina varor på Systembolaget</label>
                             </div>
                         </div>
@@ -164,28 +155,22 @@ const Kassa_Final = () => {
                             <div className="col" id="ColPaddingZero"><label id="labelKassa2">E-post</label></div>
                         </div>
                         <div className="row" id="ContainerWindow">
-                            <div className="col" id="ColPaddingZero"><input type="email" id="email" name="email" placeholder="" size="27" 
-                                                value={email}
-                                                onSubmit={e => setEmail(e.target.value)} 
-                                                onChange={e => setEmail(e.target.value)} 
-                                                onKeyPress={e => e.key === 'Enter'  && setEmail(e.target.value)}
-                                                required 
-                                                /></div>
+                            <div className="col" id="ColPaddingZero"><Field type="email" component="input" id="email" name="email" placeholder=""/></div>
                         </div>
                         <div className="row" id="ContainerWindow">
                             <div className="col" id="ColPaddingZero"><label id="labelKassa2">Lösenord</label></div>
                         </div>
                         <div className="row" id="ContainerWindow">
-                            <div className="col" id="ColPaddingZero"><input id="pass" type="password" placeholder=""></input></div>
+                            <div className="col" id="ColPaddingZero"><Field id="pass" component="input" type="password" placeholder=""/></div>
                         </div>
                         <div className="row" id="ContainerWindow">
                             <div className="col" id="ColPaddingZero"><label id="labelKassa2">Bekräfta lösenord</label></div>
                         </div>
                         <div className="row" id="ContainerWindow">
-                            <div className="col" id="ColPaddingZero"><input id="rePass" type="password" placeholder=""></input></div>
+                            <div className="col" id="ColPaddingZero"><Field id="rePass" component="input" type="password" placeholder=""/></div>
                         </div>
                         <div className="row" id="ContainerWindow">
-                            <div className="col" id="ColPaddingZero"><input type="checkbox" id="Nyhetsbrev" name="Nyhetsbrev" />
+                            <div className="col" id="ColPaddingZero"><Field type="checkbox" component="input" id="Nyhetsbrev" name="Nyhetsbrev" />
                                 <label id="labelKassa3"for="Nyhetsbrev"> Jag vill gärna bli meddelad via epost om nya viner och annan viktig information som Naked Wine Lovers vill dela med mig</label>
                             </div>
                         </div>
@@ -197,9 +182,9 @@ const Kassa_Final = () => {
                                 <div className="col" id="ColPaddingZero"><label id="labelKassa1">Betalningsätt</label></div>
                             </div>
                             <div className="row" id="ContainerWindow">
-                                <div className="col" id="ColPaddingZero"><input type="radio" id="Kort" name="pick" onClick={cardClick}/>
-                                    <label for="Kort" id="ColPaddingZero"> Kort</label><br/>
-                                    <input type="radio" id="Faktura" name="pick" onClick={fakturaClick} />
+                                <div className="col" id="ColPaddingZero"><input type="radio" component="input" id="Kort" name="pick" onClick={cardClick}/>
+                                    <label for="Kort" id="ColPaddingZero">Kort</label><br/>
+                                    <input type="radio" component="input" id="Faktura" name="pick" onClick={fakturaClick}/>
                                     <label for="a"> Betala med faktura</label>
                                 </div>
                             </div>
@@ -207,6 +192,7 @@ const Kassa_Final = () => {
                                 {showFaktura && Faktura()}
                                 {showPaymentCard && PaymentCard()}
                             </div>
+                         {/* <button type="submit" id="Betala">Bekräfta betalning</button> */}
                     </form>
                 </div>
 
@@ -214,38 +200,14 @@ const Kassa_Final = () => {
                     <div className="row" id="miniCartHeader">
                         <div className="col-sm-6">Översikt Varukorg</div>
                         <div className="col-sm-6">
-                        <Link to="/CartCheckout">
                             <button type="button" id="editButton">Redigera</button>
-                        </Link>
                         </div>
                     </div>
                     {cart.map((prod) => itemOutput(prod))}
                     <div className="row">
-                        <div className="col"><h4 id="miniCartTotal">Totalt att betala: </h4>{totalPrice}</div>
+                        <div className="col"><h4 id="miniCartTotal">Totalt att betala: </h4></div>
                     </div>
 
-
-                 {/* <div className="row" id="ContainerWindow">
-                     <div className="col" id="ColPaddingZero"><label>Översikt varukorg</label></div>
-                     <div className="col" id="ColPaddingZero">
-                         <Link to="/CartCheckout" id="Redigera">Redigera</Link>
-                         </div>
-                 </div>
-                 <div className="row" id="ContainerWindow">
-                     <img alt="WineBox" ></img>
-                 </div>
-                 <div className="row" id="ContainerWindow">
-                     <div className="col" id="ColPaddingZero"><label>Delsumma</label></div>
-                     <div className="col"id="ColPaddingZero"></div>
-                 </div>
-                 <div className="row" id="ContainerWindow">
-                     <div className="col" id="ColPaddingZero"><label>Leverans</label></div>
-                     <div className="col" id="ColPaddingZero"><label>0 SEK</label></div>
-                 </div>
-                 <div className="row" id="ContainerWindow">
-                     <div className="col" id="ColPaddingZero"><label> Totalt att betala</label></div>
-                     <div className="col" id="ColPaddingZero"></div>
-                 </div> */}
                  </div>
              </div>
              <div className="row" id="Buttons">
@@ -253,15 +215,19 @@ const Kassa_Final = () => {
                      <Link  to="/CartCheckout" id="return">Återgå till varukorgen</Link>
                  </div>
                  <div className="col" id="ColPaddingZero">
-                     <Link to="/Confirm">
-                         <button id="Betala">Bekrefta betalning</button>
-                     </Link>
-                    
+                                    <Button/>
                  </div>
              </div>
          </div>
-
     );
 }
 
-export default Kassa_Final
+const onSubmit = (values, dispatch) => {
+    console.log("hej");
+    dispatch(ADD_USER_INFO(values));
+}
+
+export default reduxForm({
+    form: 'simple',
+    onSubmit,  // a unique identifier for this form
+  })(Kassa_Final)

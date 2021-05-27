@@ -71,3 +71,10 @@ export const DELETE_PRODUCT = (payload) => {
             product: payload
     }
 }
+
+export const ADD_USER_INFO = (custInfo) => {
+    return {
+        type: 'ADD_USER_INFO',
+        payload: custInfo,
+    }
+}

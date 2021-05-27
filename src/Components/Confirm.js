@@ -14,22 +14,15 @@ export const Confirm = () => {
             }}
         />
     );
-const [info, setInfo] = useState([]);
-const loadCostumerInfo = async () => {
-const response = await fetch("https://my-json-server.typicode.com/Dogginator/Naked-Wine-Lovers/posts");
-const data = await response.json();
-setInfo(data)
-}
-useEffect(() => {
-  if(info.length === 0){
-      loadCostumerInfo()
-  }  
-})
+
+
 
 const cart = useSelector(state => state.cart);
 const totalPrice = useSelector(state => state.totalPrice);
+const custInfo = useSelector(state => state.custInfo);
 
 const itemOutput = (prod) => {
+
     return(
         <div className="row" id="prodRow">
             <div className="col-sm-4">
@@ -52,7 +45,12 @@ const itemOutput = (prod) => {
 
 return (
     <>
+<<<<<<< HEAD
      <div className="container" id="confirmContainer">
+=======
+        {console.log(custInfo)};
+     <div className="container" id="confrimContainer">
+>>>>>>> cdb26db498de88bf2cc757e7cd2b3af796f15048
             <h2 id="ConfirmH1">Tack för ditt köp!</h2>
             <div className="row" id="confirmRow">
                 <div className="col-cm " id="confirmHide"></div>
@@ -66,10 +64,10 @@ return (
                          </p>
                     <Line color="black" />
                 <div className="bekräftelseInfo">
-                    {info.map(mail => (
-                        <p className="confirmInfo" id="p1">Håll utkik efter ditt bekräftelsemail som har skickats till din e-post {mail.email}</p>
+                    
+                        <p className="confirmInfo" id="p1">Håll utkik efter ditt bekräftelsemail som har skickats till din e-post </p>
                         
-                    ))}
+                   
                     
                 <p id="p2" className="confirmInfo">Vi meddlar dig via e-post när dina varor har skickats.  <br />
                 Vi hoppas att du ska bli nöjd!</p>

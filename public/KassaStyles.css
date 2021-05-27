@@ -23,7 +23,7 @@
     padding-bottom: 48px;
     padding-top: 54px;
     width: 589px;
-    height: 1210px;
+    height: auto;
     left: 5%;
     margin-top: 222px;
     margin-bottom: 262px;
@@ -78,7 +78,7 @@
     margin-bottom: 15px;
 }
 
-#land {
+#pickUp {
     width: 220px;
     height: 50px;
     left: 423px;
