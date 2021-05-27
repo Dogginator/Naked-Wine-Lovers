@@ -9,6 +9,9 @@ const VinBox = "../Images/Vinbildconf.png";
 
 
 const Kassa_Final = props => {
+    const OnConfirm = () => {
+        this.props.history.push('./Confirm')
+    }
 
     const custInfo = useSelector(state => state.custInfo);
 
@@ -120,7 +123,7 @@ const Kassa_Final = props => {
                                 <div className="col" id="ColPaddingZero"><input type="text" id="Postnummer" name="postCode" placeholder="" size="10"  />
                                 </div>
                                 <div className="col" id="ColPaddingZero">
-{/*                                     <select component="select" id="pickUp" name="pickUp" >
+                                    <Field component="select" id="pickUp" name="pickUp" >
                                         <option value="Sverige"></option>
                                         <option value="Ombud1">Ombud1</option>
                                         <option value="Ombud2">Ombud2</option>
@@ -128,7 +131,7 @@ const Kassa_Final = props => {
                                         <option value="Ombud4">Ombud4</option>
                                         <option value="Ombud5">Ombud5</option>
                                         <option value="Ombud6">Ombud6</option>
-                                    </select>   */}
+                                    </Field>  
                                 </div>
                                 
                         </div>
@@ -215,7 +218,8 @@ const Kassa_Final = props => {
                      <Link  to="/CartCheckout" id="return">Återgå till varukorgen</Link>
                  </div>
                  <div className="col" id="ColPaddingZero">
-                                    <Button/>
+                                <Button/>
+                              {/*   <button type="submit" id="Betala" onClick={OnConfirm}>Bekräfta betalning</button> */}
                  </div>
              </div>
          </div>
