@@ -78,7 +78,7 @@
     margin-bottom: 15px;
 }
 
-#land {
+#pickUp {
     width: 220px;
     height: 50px;
     left: 423px;
@@ -211,7 +211,7 @@ margin-left:15%;
     cursor: pointer;
 }
   
-}
+
 #labelkassa1{
     font-size: 14px;
     font-weight: bold;

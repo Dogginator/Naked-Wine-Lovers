@@ -1,7 +1,9 @@
 import { GrDeliver } from 'react-icons/gr';
 import { Link } from 'react-router-dom'
 import React, {useEffect, useState} from 'react'
-
+import { connect } from 'react-redux'
+import { formValueSelector } from 'redux-form'
+import Kassa_Final from './Kassa_Final'
 export const Confirm = () => {
     const Line = ({ color }) => (
         <hr
@@ -13,17 +15,11 @@ export const Confirm = () => {
             }}
         />
     );
-const [info, setInfo] = useState([]);
-const loadCostumerInfo = async () => {
-const response = await fetch("https://my-json-server.typicode.com/Dogginator/Naked-Wine-Lovers/posts");
-const data = await response.json();
-setInfo(data)
-}
-useEffect(() => {
-  if(info.length === 0){
-      loadCostumerInfo()
-  }  
-})
+    //const selector = formValueSelector('inputFromCostumer') // <-- same as form name
+    //Kassa_Final = connect(state => {
+    //    const email = selector(state, 'email')
+    //    })(Kassa_Final)    
+
 
 return (
     <>
@@ -43,10 +39,7 @@ return (
                          </p>
                     <Line color="black" />
                 <div className="bekräftelseInfo">
-                    {info.map(mail => (
-                        <p id="p1">Håll utkik efter ditt bekräftelsemail som har skickats till din e-post {mail.email}</p>
-                        
-                    ))}
+                        <p id="p1">Håll utkik efter ditt bekräftelsemail som har skickats till din e-post {}</p>
                 <p id="p2">Vi meddlar dig via e-post när dina varor har skickats.  <br />
                 Vi hoppas att du ska bli nöjd!</p>
                  <p id="p3">
@@ -67,8 +60,8 @@ return (
                 <div className="col-sm"></div>
             </div>
                     <div>
-                    <Link to="/Vinlådor">
-                        <a href="/" id="Confirmknappen">Tillbaka till start</a>
+                    <Link to="/Vinlådor" id="Confirmknappen">
+                        Tillbaka till start
                     </Link>
                 </div>
         </div>
