@@ -33,9 +33,13 @@ a ,a:hover, a:focus, a:active{
   text-align: center;
   padding-top: 6%;
   font-family: Amatic SC;
+  
 }
 .wineboxHeader p {
   font-family: Poppins;
+}
+.wineboxHeader h2{
+  font-weight: bold;
 }
 
   .wineboxContainer {
@@ -106,6 +110,7 @@ a ,a:hover, a:focus, a:active{
     margin: 0px;
     padding: 10px;
     font-family: Amatic SC;
+    font-weight: bold;
   }
 
   .boxInfo {
@@ -130,6 +135,7 @@ a ,a:hover, a:focus, a:active{
     text-align: right;
     font-family: Amatic SC;
     font-size: 20px;
+    font-weight: bold;
   }
 
   .wineboxButton {
@@ -1041,7 +1047,7 @@ text-align: center;
 }
 #confirmRow {
   width: 660px;
-  height: 845px;
+  height: 90%;
   margin-left: 23%;
   margin-top: 8%;
 
