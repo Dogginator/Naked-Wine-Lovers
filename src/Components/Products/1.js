@@ -44,7 +44,7 @@ const Box1 = () => {
                                     <img className="TopPicture" src="./Images/BildBlandatLådan.png" alt="WineBox mixed"/>
                                 </p>
                                 <p id="ScrollDownInfo">Här kan du läsa om flaskorna!</p>
-                                <button type="button" id="ReadInfo" onClick={executeScroll}><IoIosArrowDown /></button>
+                                <button type="button" id="ReadInfo" onClick={executeScroll}><IoIosArrowDown id="DownArrow" size="22px"/></button>
                             </div>
                         </div>
                         <div className="col" id="col-grid-info">
@@ -110,7 +110,7 @@ const Box1 = () => {
                         Sockerhalt 10 g/l   
                         </p><br/>
                         <p className="DesktopInfo" id="InfoLink">
-                        <b>Läs mer om vingården:</b> <Link to="/GardenOfEden">Garden of Eden</Link>
+                        <b>Läs mer om vingården:</b> <Link to="/GardenOfEden" className="InfoLinkVinyard">Garden of Eden</Link>
                         </p>
                     </div>
                     <div className="col" id="ColPaddingZero">
@@ -137,7 +137,7 @@ const Box1 = () => {
                         Sockerhalt 9 g/l   
                         </p><br/>
                         <p className="DesktopInfo" id="InfoLink">
-                        <b>Läs mer om vingården:</b> <Link to="/JamesAndTheGiantGrape">James and the Giant Grape</Link>
+                        <b>Läs mer om vingården:</b> <Link to="/JamesAndTheGiantGrape" className="InfoLinkVinyard">James and the Giant Grape</Link>
                         </p>
                     </div>
                     <div className="col" id="ColPaddingZero">
@@ -164,7 +164,7 @@ const Box1 = () => {
                         Sockerhalt 11 g/l   
                         </p><br/>
                         <p className="DesktopInfo" id="InfoLink">
-                        <b>Läs mer om vingården:</b> <Link to="/ThreeSeasonsVinyard">Three Seasons Vinyard</Link>
+                        <b>Läs mer om vingården:</b> <Link to="/ThreeSeasonsVinyard" className="InfoLinkVinyard">Three Seasons Vinyard</Link>
                         </p>
                     </div>
                     <div className="col" id="ColPaddingZero">
@@ -190,7 +190,7 @@ const Box1 = () => {
                         Sockerhalt 8 g/l   
                         </p><br/>
                         <p className="DesktopInfo" id="InfoLink">
-                        <b>Läs mer om vingården:</b> <Link to="/AmigosVinyard">Amigos Vinyard</Link>
+                        <b>Läs mer om vingården:</b> <Link to="/AmigosVinyard" className="InfoLinkVinyard">Amigos Vinyard</Link>
                         </p>
                     </div>
                     <div className="col" id="ColPaddingZero">
