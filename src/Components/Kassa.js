@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 //import { Field, reduxForm } from 'redux-form'
 
 
+
 const Kassa = () =>{
     const [showPaymentCard, setShowPaymentCard] = useState(false);
     const [showFaktura, setShowFaktura] = useState(false);
