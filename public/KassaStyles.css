@@ -1,8 +1,17 @@
 /* Kassa */ 
+@font-face {
+    font-family: 'AmaticaSC';
+    src: url('fonts/AmaticaSC.eot'); /* IE9 Compat Modes */
+    src: url('fonts/AmaticaSC.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/AmaticaSC.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/AmaticaSC.woff') format('woff'), /* Pretty Modern Browsers */
+         url('fonts/AmaticaSC.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('fonts/AmaticaSC.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
 
 #KassaHeader {
     display: inline-block;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Amatic SC;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -16,6 +25,7 @@
 
 
 #InputForm {
+    font-family: Poppins;
     display:inline-block;
     background-color: #E4E0D7;
     padding-left: 45px;
@@ -26,7 +36,7 @@
     height: auto;
     left: 5%;
     margin-top: 222px;
-    margin-bottom: 262px;
+    margin-bottom: 20px;
 }
 .Kontaktuppgifter {
     width: 135px;
@@ -143,7 +153,7 @@
 #Betala {
     border: none;
     color: white;
-    background: #D78255;;
+    background:  #6642B1;;;
     width: 180px;
     height: 67px;
     left: 528px;
@@ -169,6 +179,7 @@
 
 }
 #VarukorgLitle {
+    font-family: Poppins;
     display: inline-block;
     background-color: #E4E0D7;
     width: 105px;
@@ -212,10 +223,12 @@ margin-left:15%;
 }
   
 #labelkassa1{
+    font-family: Poppins;
     font-size: 14px;
     font-weight: bold;
 }
 #labelkassa2{
+    font-family: Poppins;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.54);
     font-style: normal;
@@ -223,7 +236,9 @@ margin-left:15%;
     line-height: 21px;
 }
 #labelKassa3{
+    font-family: Poppins;
     font-size: 12px;
+    
 }
 #Redigera{
     margin-left: 123px;

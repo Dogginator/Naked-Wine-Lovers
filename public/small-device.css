@@ -12,24 +12,22 @@
     flex-wrap: wrap;
     align-items: stretch;
     flex-direction: column;
-
+    padding: 0;
     width: 100%;
     height: 198px;
     background: #f3f1ee;
   }
   .footer-ul {
-    top: 25%;
-    left: 5.81%;
-    right: 80%;
+    top: 10%;
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
-
     color: #000000;
     margin: 0;
-    padding: 0;
+    width: 100%;
+    padding-left: 10px;
   }
   .footer-ul p {
     margin: 0;
@@ -90,17 +88,7 @@
         padding-top: 40px;
         text-align: right;
       }
-      .wineboxButton {
-        text-align: center;
-        
-        margin-top: 0px;
-        border-radius: 30px;
-        color: white;
-        background-color: #D78255;
-        border: #D78255;
-        width: 100%;
- 
-      }
+
       .TopPicture {
         width: 115.97px;
         height: 120px;
@@ -214,7 +202,7 @@
       #smallDeviceJustify {
         font-size: 10px;
       }    
-}
+
 
   .shopping-cart {
     margin: 20px 0;
@@ -271,11 +259,11 @@
   }
 
   .wineboxButtonMobil {
-    width: 133px;
+    width: 134px;
     height: 27px;
-    border-radius: 5px;
-    background-color: #d78255;
-    font-family: Amatica SC;
+    border-radius: 10px;
+    background: #6642B1;
+    font-family: Amatic SC;
     font-style: normal;
     margin-left: 10%;
     font-size: 16px;
@@ -329,7 +317,7 @@
     left: 16px;
     top: 130px;
 
-    font-family: Halant;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -341,7 +329,7 @@
     left: 17px;
     top: 95px;
 
-    font-family: Amatica SC;
+    font-family: Amatic SC;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -351,12 +339,13 @@
     display: flex;
     margin-left: 35%;
     margin-bottom: 20%;
-    background: #d78255;
+    background: #6642B1;
+    border-radius: 3px;
     color: white;
-    border-radius: 30px;
     border: 0;
     width: 140%;
     justify-content: center;
+    font-family: Poppins;
   }
   .produkth2 {
     display: block;
@@ -366,6 +355,7 @@
   .infoContainer {
     width: 100%;
     height: 100%;
+    padding-top: 0;
   }
   .infoContainer h2 {
     font-size: 18px;
@@ -376,7 +366,7 @@
     margin-left: 28%;
     top: 0px;
 
-    font-family: Halant;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -398,7 +388,7 @@
     font-family: Halant;
     display: inline-block;
     width: 100%;
-    height: 817px;
+    height: 870px;
     padding-bottom: 93px;
   }
   #more {
@@ -437,7 +427,7 @@
     top: 28.04%;
     bottom: 0%;
     width: 100%;
-    font-family: Amatica SC;
+    font-family: Amatic SC;
     font-style: normal;
     font-weight: bold;
     font-size: 28px;
@@ -455,8 +445,11 @@
     margin-left: 10%;
   }
   .RubrikBlandat {
+    display: flex;
+    justify-content: center;
     margin-top: 0;
     margin-bottom: 0;
+    font-family: Amatic SC;
   }
   .Taste1,
   .Taste2,
@@ -483,7 +476,7 @@
     height: 32px;
     margin-left: 20%;
     top: 0px;
-
+    color: #6642B1;
     font-family: Poppins;
     font-style: normal;
     font-weight: 300;
@@ -494,7 +487,7 @@
     text-align: center;
     text-decoration-line: underline;
 
-    color: #d78255;
+    
   }
 
   .Overlay_container {
@@ -587,4 +580,8 @@
     display: flex;
     justify-content: space-between;
   }
-
+  #VarukorgLitle{
+    top:0;
+    left:0;
+  }
+}
