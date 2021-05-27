@@ -313,7 +313,7 @@ a ,a:hover, a:focus, a:active{
   float: right;
   background: #FAF8F7;
   width: 326px;
-  height: 500px;
+  height: auto;
   border-radius: 30px;
   padding: 20px;
   padding-bottom: 30px;
