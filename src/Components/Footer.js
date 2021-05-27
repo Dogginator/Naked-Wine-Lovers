@@ -6,7 +6,7 @@ import { RiFacebookCircleLine } from 'react-icons/ri';
 const Footer = () => {
     return (
         <>
-        <div class="footer-container">
+        <div className="footer-container">
         <footer className="TheFooter">
         
         <section className="footer-section" id="footer">
