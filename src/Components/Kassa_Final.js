@@ -103,12 +103,12 @@ const Kassa_Final = props => {
             <div className="row" id="ContainerWindow">
                 <div className="col" id="KassaHeader"><h1>KASSA</h1></div>
             </div>
-
+            <form onSubmit={handleSubmit}>
             <div className="row" id="ContainerWindow">
                 <div className="col" id="InputForm">
                     {/* <form onSubmit={(event) => submitForm(event)}> */}
                     {/* <form onSubmit={(e) => submitHandler(e)}> */}
-                    <form onSubmit={handleSubmit}>
+                    {/* <form onSubmit={handleSubmit}> */}
                     <div className="row" id="ContainerWindow">
                         <div className="col" id="ColPaddingZero"><label id="labelKassa1">Leveransinformation</label></div>
                         </div>
@@ -202,20 +202,20 @@ const Kassa_Final = props => {
                                 {showFaktura && Faktura()}
                                 {showPaymentCard && PaymentCard()}
                             </div>
-                         <button type="submit" id="Betala">Bekräfta betalning</button>
-                    </form>
+                         
+                    {/* </form> */}
                 </div>
 
                  <div className="col" id="VarukorgLitle">
                     <div className="row" id="miniCartHeader">
                         <div className="col-sm-6">Översikt Varukorg</div>
                         <div className="col-sm-6">
-                            
+                          <button type="button" id="editButton">Redigera</button>   
                         </div>
                     </div>
                     {cart.map((prod) => itemOutput(prod))}
                     <div className="row">
-                        <div className="col"><h4 id="miniCartTotal">Totalt att betala: </h4></div>
+                        <div className="col"><h4 id="miniCartTotal">Totalt att betala: {totalPrice} </h4></div>
                     </div>
 
                  </div>
@@ -225,9 +225,10 @@ const Kassa_Final = props => {
                      <Link  to="/CartCheckout" id="return">Återgå till varukorgen</Link>
                  </div>
                  <div className="col" id="ColPaddingZero">
-                 <button type="button" id="editButton">Redigera</button>
+                    <button type="submit" id="Betala">Bekräfta betalning</button>
                  </div>
              </div>
+              </form> 
          </div>
     );
 }
