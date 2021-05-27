@@ -10,7 +10,6 @@ export const Confirm = () => {
                 color: color,
                 backgroundColor: color,
                 height: 0.5
-
             }}
         />
     );
@@ -65,7 +64,7 @@ return (
                     <Line color="black" />
                 <div className="bekräftelseInfo">
                     
-                        <p className="confirmInfo" id="p1">Håll utkik efter ditt bekräftelsemail som har skickats till din e-post </p>
+                        <p className="confirmInfo" id="p1">Håll utkik efter ditt bekräftelsemail som har skickats till din e-post ({custInfo.email}) </p>
                         
                    
                     

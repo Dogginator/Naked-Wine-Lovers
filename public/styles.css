@@ -22,6 +22,14 @@ a ,a:hover, a:focus, a:active{
   color: black;
 }
 
+h1 {
+  font-family: Amatic SC;
+}
+
+p {
+  font-family: Poppins;
+}
+
 
 
  /* WineBox  */
@@ -184,6 +192,10 @@ a ,a:hover, a:focus, a:active{
   border-radius: 100%;
 }
 
+.winelogo.home {
+  background: none;
+}
+
 #gridNavBarLeft {
   display: inline;
   text-align: center;
@@ -209,6 +221,26 @@ a ,a:hover, a:focus, a:active{
   width: 100%;
   height: 78.69px;
   top: 49px;
+}
+
+#UnderLineLeft {
+  position: absolute;
+  top: 89px;
+  margin: 0em;
+  padding: 0%;
+  border-width: 0.5px;
+  left: 0;
+  width: 47%;
+}
+
+#UnderLineRight {
+  position: absolute;
+  top: 89px;
+  margin: 0em;
+  padding: 0%;
+  right: 0;
+  border-width: 0.5px;
+  width: 47%;
 }
 
 #UnderLine {
@@ -257,6 +289,11 @@ a ,a:hover, a:focus, a:active{
   transition: box-shadow 0.4s ease;
   margin-left: auto; /* Strictly for positioning */
 }
+
+.menu-trigger.hideBackground {
+  background: none;
+}
+
 .menu-trigger-mobile {
   display: none;
 }
@@ -1093,3 +1130,81 @@ background: #C4C4C4;
   font-size: 14px;
   color: #000000;
 }
+
+.headerImage {
+  width: 100%;
+  height: 300px;
+}
+
+#headerImg {
+  margin-top: -100px;
+    position: static;
+    z-index: 1;
+    width: 100%;
+    height: 600px;
+}
+
+.homePageHeader {
+  width: 100%;
+  height: 300px;
+  background-color: #000000;
+}
+
+#headerText {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  align-items: center;
+  text-align: center;
+}
+
+.homepageInfo {
+  margin-top: 200px;
+}
+
+.infoBoxHomepage {
+  margin-left: 50px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  width: 90%;
+  height: 255px;
+  background-color: #dbdbdb;
+  border-radius: 15px;
+}
+
+#setPadding {
+  width: 100%;
+  padding: 0;
+}
+
+#boxTextPos {
+  padding-top: 5px;
+  text-align: center;
+}
+
+#h1PosAbsolute {
+  top: 20px;
+  left: 200px;
+  position: absolute;
+}
+
+#h1PosAbsoluteRight {
+  top: 20px;
+  left: 250px;
+  position: absolute;
+}
+
+#textPos {
+  text-align: left;
+}
+
+#imagePosGrape {
+  padding-top: 7px;
+  padding-left: 40px;
+}
+
+#grapePos {
+  padding-bottom: 17px;
+  display: block;
+}
+

@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import React from 'react'
-import {BrowserRouter as Router,Route, Switch } from 'react-router-dom';
+import {Router, BrowserRouter as BrowserRoute,Route, Switch } from 'react-router-dom';
 import Kassa_Final from './Components/Kassa_Final'
 import Kassa_V2 from './Components/Kassa_V2'
 import Kassa from './Components/Kassa'
@@ -23,30 +23,18 @@ import JamesAndTheGiantGrape from './WineYards/JamesAndTheGiantGrape'
 import ThreeSeasonsVinyard from './WineYards/ThreeSeasonsVinyard'
 import { useState } from 'react'
 import FormOuput from './Components/Products/FromOutput';
+import history from './Function/History';
+import Homepage from './Components/Homepage';
 
 
 const App = () => {
-    
-const initialValues  = {
-    email: '',
-    Nyhetsbrev: '',
-    firstName: '',
-    lastName: '',
-    Postnummer: '',
-    Ombud: '',
-    telefonnummer: '',
-    creditcard: '',
-    monthYear: '',
-    CVC: '',
-};
-
-    const [costumerInfo, setCostumerInfo]  = useState(initialValues);
 
     return (
         <>
-        <Router>
+        <Router history={history}>
     <Navbar/>
         <Switch>
+            <Route path='/Homepage' exact component={Homepage}></Route>
             <Route path='/1' exact component={Box1}></Route>
             <Route path='/2' exact component={Box2}></Route>
             <Route path='/3' exact component={Box3}></Route>
@@ -54,7 +42,7 @@ const initialValues  = {
             <Route path='/5' exact component={Box5}></Route>
             <Route path='/6' exact component={FormOuput}></Route>
             <Route path='/Kassa' exact><Kassa_Final/></Route>
-            <Route path='/Confirm' exact><Confirm costumerInfo = {costumerInfo} /></Route>
+            <Route path='/Confirm' exact><Confirm/></Route>
             <Route path='/Vinlådor' exact><WineBox/></Route>
             <Route path='/OverlayCart' exact><OverlayCart/></Route>
             <Route path='/CartCheckout' exact><CartCheckout/></Route>
