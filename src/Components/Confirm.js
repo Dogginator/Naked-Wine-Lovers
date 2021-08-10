@@ -4,6 +4,7 @@ import React, {useEffect, useState} from 'react'
 import { useSelector } from 'react-redux';
 
 export const Confirm = () => {
+
     const Line = ({ color }) => (
         <hr
             style={{
@@ -19,6 +20,9 @@ export const Confirm = () => {
 const cart = useSelector(state => state.cart);
 const totalPrice = useSelector(state => state.totalPrice);
 const custInfo = useSelector(state => state.custInfo);
+
+console.log(custInfo);
+
 
 const itemOutput = (prod) => {
 

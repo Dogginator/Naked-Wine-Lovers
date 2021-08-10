@@ -1,20 +1,25 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { EMPTY_CART, RESET_TOTAL, DELETE_PRODUCT, CHANGE_QTY, INCREASE, DECREASE } from '../actions';
+import { useState } from 'react';
 
 const CartCheckout = () => {
     const dispatch = useDispatch();
+    const [checkBox,setCheckBox] = useState(false);
 
     const deleteProduct = (product) => {
         dispatch(DELETE_PRODUCT(product));
         dispatch(DECREASE(product.price * product.quantity));
     }
 
-
     const change_qty = (increase, product) => {
         dispatch(CHANGE_QTY(product,increase));
         (increase) ? dispatch(INCREASE(product.price))
         : dispatch(DECREASE(product.price));
+    }
+
+    const checkBoxHandler = () => {
+        setCheckBox(!checkBox);
     }
 
     const totalPrice = useSelector(state => state.totalPrice);
@@ -107,10 +112,10 @@ const CartCheckout = () => {
             <div className="col-sm-7"></div>
             <div className="col-sm-4" id="smallDeviceCheckoutInfo">
                 <h6 className="totalPaymentCarts">Total: {totalPrice} / SEK</h6>
-                <a id="smallDeviceJustify"><input type="checkbox"></input>Jag godkänner Naked Wine Lovers Allmäna Villkor</a>
+                <a id="smallDeviceJustify"><input type="checkbox" onChange={() => checkBoxHandler()}></input>Jag godkänner Naked Wine Lovers Allmäna Villkor</a>
                 <br/>
                 <Link to="/Kassa">
-                <button className="checkOutPayment">Kassa</button>
+                <button className="checkOutPayment" disabled={!checkBox}>Kassa</button>
                 </Link>
             </div>
         </div>

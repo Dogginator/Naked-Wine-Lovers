@@ -2,34 +2,20 @@ import React, {useState} from 'react'
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { Field, reduxForm } from 'redux-form';
-import { ADD_USER_INFO } from '../actions'
+import { ADD_USER_INFO, EMPTY_CART, RESET_TOTAL } from '../actions'
 import Confirm from './Confirm';
 import history from '../Function/History';
 const VinBox = "../Images/Vinbildconf.png";
 
 
 const Kassa_Final = props => {
-    const OnConfirm = () => {
-        this.props.history.push('./Confirm')
-    }
-
-    const custInfo = useSelector(state => state.custInfo);
-
-    console.log("Detta är mitt förnamn: " + custInfo.firstName);
     
     const [showPaymentCard, setShowPaymentCard] = useState(false);
     const [showFaktura, setShowFaktura] = useState(false);
     const cart = useSelector(state => state.cart);
     const totalPrice = useSelector(state => state.totalPrice);
 
-    console.log(custInfo);
-
     const { handleSubmit } = props;
-
-    const submitHandler = (event) => {
-        event.preventDefault();
-        history.push("/Confirm")
-    }
 
     const cardClick = () =>{
         if(setShowPaymentCard === true ){
@@ -92,7 +78,6 @@ const Kassa_Final = props => {
             <div className="container">
 
             </div>
-
         );
     }
 
@@ -105,9 +90,6 @@ const Kassa_Final = props => {
             <form onSubmit={handleSubmit}>
             <div className="row" id="ContainerWindow">
                 <div className="col" id="InputForm">
-                    {/* <form onSubmit={(event) => submitForm(event)}> */}
-                    {/* <form onSubmit={(e) => submitHandler(e)}> */}
-                    {/* <form onSubmit={handleSubmit}> */}
                     <div className="row" id="ContainerWindow">
                         <div className="col" id="ColPaddingZero"><label id="labelKassa1">Leveransinformation</label></div>
                         </div>
@@ -209,7 +191,7 @@ const Kassa_Final = props => {
                     <div className="row" id="miniCartHeader">
                         <div className="col-sm-6">Översikt Varukorg</div>
                         <div className="col-sm-6">
-                          <button type="button" id="editButton">Redigera</button>   
+                        <Link  to="/CartCheckout" id="editButton">Redigera</Link>
                         </div>
                     </div>
                     {cart.map((prod) => itemOutput(prod))}
@@ -233,6 +215,7 @@ const Kassa_Final = props => {
 }
 
 const onSubmit = (values, dispatch) => {
+    dispatch(EMPTY_CART());
     dispatch(ADD_USER_INFO(values));
     history.push("/Confirm");
 }

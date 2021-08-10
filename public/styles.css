@@ -522,6 +522,12 @@ p {
   border-style: none;
   border-radius: 10px;
   border-color: none;
+  cursor: pointer;
+}
+
+.checkOutPayment:disabled {
+  background-color: grey;
+  cursor: default;
 }
 
 .totalPaymentCarts {
